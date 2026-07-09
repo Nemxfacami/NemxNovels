@@ -1,5 +1,5 @@
 # NemxNovels
-Reliable and hardworking kitchen professional with 2 years of experience preparing meals in a busy restaurant environment. Skilled in food preparation, hygiene, stock control, and working efficiently under pressure.
+Official source code for the NemxNovels website—a responsive platform for publishing original novels, stories, articles, news, and creative content.
 
 # Copyright © 2026 Nemx. All rights reserved.
 
