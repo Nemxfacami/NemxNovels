@@ -1,0 +1,19 @@
+/* Default (Desktop) */
+.pc-html {
+    display: block;
+}
+
+.mobile-html {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .pc-html {
+        display: none;
+    }
+
+    .mobile-html {
+        display: block;
+    }
+}

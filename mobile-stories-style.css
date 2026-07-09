@@ -1,0 +1,102 @@
+@media (max-width:480px){   
+     *{
+          margin:0rem;
+          padding:0rem;
+          user-select:none;
+          box-sizing:border-box;
+          scrollbar-width:none;
+      }
+      
+      img{width:100%;height:100%;margin:0rem}
+      a{text-decoration:none}
+      
+      body{background:rgb(24, 24 ,24);margin:0rem;display:block;padding:0rem}
+
+
+    main.mobile-stories-section{
+        width:100%;
+        height: 100vh;
+        background:none;
+        padding:4rem 1rem 1rem 1rem; 
+        border-left:none;
+    }
+
+    section.mobile-book-stories-list{
+        width:100%;
+        height:13rem;
+        background:none;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    section.mobile-book-stories-cover{
+        width:9rem;
+        height:13rem;
+        border-radius:1rem;
+        border:0.3rem solid white;
+        background: white;
+        position: relative;
+    }
+
+    img.mobile-book-stories-cover{
+        border-radius:1rem;
+        position: absolute;
+    }
+
+    section.mobile-book-cover-chapter-master{
+        width:90%;
+        height: 20%;
+        background: white;
+        border-radius:1rem;
+        position: absolute;
+        bottom:2%;
+        left:50%;
+        transform: translateX(-50%);
+        padding:0.3rem;
+        display: flex;
+      
+    }
+
+    section.mobile-book-cover-chapter-master-icon{
+        width:25%;
+        height: 100%;
+        background:none;
+        padding:0.4rem;
+   
+        border-radius: 1rem;
+    }
+
+     section.mobile-book-cover-chapter-master-details{
+        width:75%;
+        height:100%;
+        background:none;
+        padding:0.2rem;
+     }
+
+     p#mobile-book-cover-chapter-master-title,#mobile-book-cover-chapter-master-number{
+        font-size:0.8rem;
+        color:black;
+     }
+
+
+
+     
+
+    section.mobile-header-books-container{
+      display:none;
+    }
+
+  aside.mobile-closed-sidenav{display:none}
+    
+  div.pagination-for-tablets{display:none;}
+  div.pc-pagination{display:block}
+  section.tablet-profile-container{
+    display:none;
+  }
+
+}
+
+
+
+

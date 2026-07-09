@@ -1,0 +1,132 @@
+  @media (max-width: 768px) {
+    
+  
+  *{
+          margin:0rem;
+          padding:0rem;
+          user-select:none;
+          box-sizing:border-box;
+      }
+      
+      img{width:100%;height:100%;margin:0rem;display: block;}
+      a{text-decoration:none}
+      
+      body{background:rgb(24, 24 ,24);margin:0rem;}
+
+      
+      section.intro-header{
+        width:100%;
+        height:55px;
+        background:#000;
+        position: relative;
+        top:0%;
+        z-index:1000000;
+        display:flex;
+        justify-content: space-between;
+      }
+
+      div#nn-logo{
+        height:100%;
+        background:none;
+        padding:0.2rem;
+      }
+
+       div#nn-site-name{
+        height:100%;
+        background:none;
+        padding:0.4rem;
+      }
+
+      header.nn-header{
+        position: relative;
+        height: auto ;
+        margin-top:none;
+      }
+
+     
+      div.hero-bg{
+        margin-top:none;
+        position: absolute;
+      
+    
+      }
+
+      section.header-nagivation-mother{
+         display:none;
+      }
+  
+
+
+      section.nemx-logo{
+        width:100%;
+        height:26%;
+        background:none;
+        position: absolute;
+        top:10%;
+        padding-top:1rem;
+        display: flex;
+        
+        justify-content: center;
+      }
+
+
+      @font-face{
+         font-family: 'SigmarOneLocal';
+         src: url('SigmarOne.ttf')
+         format('truetype');
+
+      }
+
+      p#nemx-logo{
+        -webkit-text-stroke: 3px black;
+        color:white;
+        font-family: 'SigmarOneLocal';
+        font-size: clamp(4em, 10.8vw, 10.8rem);
+      }
+
+    section.header-content-section{
+      display:none;
+    }
+
+
+    section.header-books-container{
+      width:100%;
+      height:50%;
+      background:none;
+      position: absolute;
+      bottom:0%;
+      padding:0rem 0 1rem 2.2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    div.header-cover{
+      width:22%;
+      height:100%;
+      border-radius:1rem;
+      background: none;
+      margin-right:2rem;
+    }
+
+    img.header-covers{border-radius:1rem;object-fit: cover;}
+
+
+    section.tablet-profile-container{
+      display: block;
+      width:100%;
+      position: absolute;
+      top:0%;
+      background:none;
+      padding:0.4rem 1.7rem 0.4rem 0.4rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    div#tablet-profile-box{
+      width:3rem;
+      height:3rem;
+    }
+
+    img.tablet-profile{border-radius:50%}
+  
+}

@@ -1,0 +1,203 @@
+aside.asidenav-section{display:none}
+
+
+@media (max-width: 768px) {
+
+
+    *{
+          margin:0rem;
+          padding:0rem;
+          user-select:none;
+          box-sizing:border-box;
+      }
+      
+      img{width:100%;height:100%;margin:0rem;display: block;}
+      a{text-decoration:none}
+      
+         
+      aside.asidenav-section{
+          width:20rem;
+          height:100vh;
+          position:fixed;
+          top:0%;
+          display: block;
+          background:rgb(20,20,20);
+          z-index:100000000000;
+      }
+      
+      header.asidenav-header{
+          width:100%;
+          height:8%;
+          display:flex;
+          justify-content:space-between;
+          padding:0 0.5rem 0 0.5rem;
+          margin-bottom:1rem;
+      }
+      
+      div#asidenav-icon{
+          width:45%;
+          height:100%;
+          padding:0.3rem 0 0.3rem 0;
+      }
+      
+      div#asidenav-exit{
+          width:20%;
+          height:100%;
+          background:none;
+          padding:0.7rem 1.1rem 0.7rem 1.1rem;
+      }
+      
+      main.asidenav-body{
+          width:100%;
+          height:92%;
+          overflow-y:scroll;
+          
+      }
+      
+      section.asidenav-content{
+          width:100%;
+          height:8%;
+          background:none;
+          padding-right:1rem;
+          margin-bottom:0.5rem;
+      }
+      
+      section.asidenav-container{
+          width:100%;
+          height:100%;
+          border-top-right-radius:2rem;
+          border-bottom-right-radius:2rem;
+          padding-left:0.5rem;
+          display:flex;
+      }
+      
+      div#asidenav-page-icon{
+          width:20%;
+          height:100%;
+          background:none;
+          padding:0.5rem 1rem 0.5rem 1rem;
+      }
+      
+      div#asidenav-page-name{
+          width:60%;
+          height:100%;
+          background:none;
+          display:flex;
+          padding-left:1rem;
+          align-items:center;
+          font-weight:bold;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      div#asidenav-page-select{
+          width:20%;
+          height:100%;
+          color:black;
+          display:grid;
+          place-items:center;
+      }
+      
+      section.asidenav-selectors-container-section{
+          width:100%;
+          height:30%;
+          background:none;
+          margin:0.5rem 0 1rem ;
+          display:flex;
+          padding-right:1rem;
+          justify-content:flex-end;
+      }
+      
+      section.asidenav-selectors-container{
+          width:90%;
+          height:100%;
+          background:rgb(40,40,40);
+          border-left:0.1rem solid grey;
+          padding:1rem;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      
+      div#asidenav-selector-pages{
+          width:100%;
+          height:33%;
+          border-radius:1rem;
+          display:flex;
+          padding:1rem;
+          color:white;
+          align-items:center;
+      }
+      
+      div#asidenav-books-number{
+          padding:0.5rem 0.8rem 0.5rem 0.8rem;
+          border-radius:50%;
+          background:dodgerblue;
+          font-weight:bold;
+      }
+      
+      section.aside-profile{
+          width:100%;
+          height:13%;
+          padding:0 1rem 1rem 1rem;
+          background:none;
+          margin-bottom:4rem;
+      }
+      
+      section.aside-profile-section{
+          width:100%;
+          height:100%;
+          border-radius:1rem;
+          background:rgb(60,60,60);
+          font-family: 'Times New Roman', Times, serif;
+          display:flex;
+          padding:0.5rem 0.2rem 0.5rem 0.2rem;
+      }
+      
+      section.aside-profile-picture{
+          width:19%;
+          height:100%;
+          background:none;
+          padding:0rem 0.6rem 0rem 0.6rem;
+      }
+      
+      img.aside-profile{border-radius:50%}
+      
+      section.aside-profile-details{
+          width:61%;
+          height:100%;
+          background:none;
+          display:flex;
+          flex-flow:column;
+          color:white;
+          padding-left:0.2rem;
+          justify-content:center;
+      }
+      
+    
+      
+      p#aside-profile-title{
+          font-size:0.9rem;
+      }
+      
+      section.aside-profile-icon{
+          width:20%;
+          height:100%;
+          background:none;
+          padding:0.1rem 0.6rem 0.1rem 0.6rem;
+      }
+      
+      /* Sidebar starts hidden */
+aside.asidenav-section{
+    transform:translateX(-100%);
+    transition:transform 0.3s ease;
+}
+
+/* Visible state */
+aside.asidenav-section.active{
+    transform:translateX(0);
+}
+
+
+}
+
+ 
+ 

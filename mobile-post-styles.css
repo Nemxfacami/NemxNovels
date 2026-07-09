@@ -1,0 +1,299 @@
+
+        section.mobile-feed-post{
+            width:100%;
+            height:30rem;
+            background: white;
+            border-radius:2rem;
+            position:relative;
+            margin-bottom:5rem;
+        }
+
+        div#mobile-feed-top-right-corner{
+            position: absolute;
+            top:0%;
+            right:0%;
+            background: rgb(24, 24 ,24);
+            width:40%;
+            height:12%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        div.mobile-feed-post-corner{
+            width:90%;
+            height:80%;
+            background: #892323;
+            border-radius: 1rem;
+            color:white;
+            position: absolute;
+            z-index:2;
+            display: grid;
+            place-items: center;
+        }
+
+        div.mobile-black{
+            width:20%;
+            height:12%;
+            background: rgb(24, 24 ,24);
+            position: absolute;
+        }
+
+        div.mobile-white{
+            width:20%;
+            height:12%;
+            background: white;
+            position: absolute;
+            z-index:0;
+        }
+
+        div#mobile-black1,div#mobile-white1{
+            top:0;
+            right:40%;
+        }
+
+        div#mobile-black2,div#mobile-white2{
+            top:0%;
+            right:20%;
+        }
+
+        div#mobile-black4,div#mobile-white4{
+            top:12%;
+            right:0%;
+        }
+
+        div#mobile-white1{
+            border-top-right-radius: 1rem;
+            
+        }
+
+        div#mobile-white2{
+            background: rgb(24, 24 ,24);
+            border-bottom-left-radius: 1rem;
+        }
+
+        div#mobile-white4{
+            border-top-right-radius: 1rem;
+        }
+
+
+
+
+
+
+
+        /* POST CONTENT STYLES HERE */
+
+        section.mobile-post-header{
+            width:60%;
+            height:12%;
+            background:none;
+            position: absolute;
+            z-index:3;
+            display:flex;
+            padding:0.5rem 0.5rem 0 0.5rem;
+        }
+
+        section.mobile-post-header-profile-section{
+            width:30%;
+            height:100%;
+            background:none;
+            padding:0.4rem 0.8rem 0 0.3rem;
+        }
+
+        div#mobile-post-header-profile-container{
+            width:100%;
+            height:100%;
+            background:none;
+            border-radius: 50%;
+        }
+
+        img.mobile-post-header-profile-image{border-radius: 50%;object-fit: cover;}
+
+        div#mobile-post-header-profile-name{
+            font-weight:bold;
+            font-size:1.1rem;
+            display:grid;
+            place-items: center;
+            padding-left:0.2rem;
+        }
+
+        section.mobile-caption-section{
+            width:100%;
+            height:20%;
+            background:none;
+            position: absolute;
+            top:12%;
+            padding:1rem 0.7rem 0 0.7rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section.mobile-post-image-section{
+            width:100%;
+            height:68%;
+            background:none;
+            border-bottom-left-radius:2rem;
+            border-bottom-right-radius:2rem;
+            position: absolute;
+            top:32%;
+
+        }
+
+        img.mobile-post-image{
+            border-bottom-left-radius:2rem;
+            border-bottom-right-radius:2rem;
+            object-fit: cover;
+        }
+        
+
+
+
+        .mobile-viewer{
+            position: fixed;
+            inset:0;
+            background:rgba(0,0,0,0.9);
+            display:none;
+            justify-content: center;
+            align-items: center;
+            z-index:9999;
+        }
+
+        .mobile-viewer .activemobile{
+            display:flex;
+        }
+
+        .mobile-viewer img#mobile-viewerImg{
+            max-width:95%;
+            max-height: 95%;
+            object-fit: contain;
+        }
+
+        .mobile-viewer .mobile-close{
+            position: absolute;
+            top:20px;
+            right:25px;
+            font-size:40px;
+            color:white;
+            cursor: pointer;
+        }
+
+
+        section.mobile-post-view-article-section{
+            width:100%;
+            height:15%;
+            background:none;
+            position: absolute;
+            bottom:0%;
+            display:flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding:1rem;
+        }
+
+        div#mobile-post-view-article,a.mobile-post-view-article{
+            width:30%;
+            height:100%;
+            background: rgb(216, 216, 216);
+            border-radius: 1rem;
+            display: grid;
+            place-items: center;
+        }
+
+        p#mobile-post-view-article{
+            color:black;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+         section.mobile-post-image-section-article{
+            width:100%;
+            height:53%;
+            background:none;
+            position: absolute;
+            top:32%;
+        }
+
+        section.mobile-post-image-section-quote{
+            width:100%;
+            height:88%;
+            background:none;
+            border-bottom-left-radius:2rem;
+            border-bottom-right-radius:2rem;
+            position: absolute;
+            top:20%;
+        }
+
+        img.mobile-post-image-article{
+            object-fit: cover;
+        }
+
+        div#mobile-post-header-profile-container-quote{
+            width:100%;
+            height:100%;
+            background:none;
+            border-radius: 50%;
+        }
+
+        div#mobile-post-header-profile-name-quote{
+            font-weight:bold;
+            font-size:1.1rem;
+            display:grid;
+            place-items: center;
+            padding-left:none;
+        }
+
+         section.mobile-feed-post-quote{
+            width:100%;
+            height:25rem;
+            background:white;
+            border-radius:2rem;
+            position:relative;
+            margin-bottom:6rem;
+        }
+
+         section.mobile-post-header-profile-section-quote{
+            width:30%;
+            height:100%;
+            background:none;
+            padding:0.4rem 1.5rem 0 0.3rem;
+        }
+
+         section.mobile-post-view-article-section-confidential{
+            width:100%; 
+            height:15%;
+            background:none;
+            position: absolute;
+            bottom:0%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:1rem;
+        }
+
+        div#mobile-post-view-article-confidential-badge{
+            width:50%;
+            height: 100%;
+            background:none;
+        }
+
+        img.mobile-confidential{
+            object-fit: cover;
+        }
+
+         div#mobile-post-view-article-confidential,a.mobile-post-view-article-confidential{
+            width:30%;
+            height:100%;
+            background: rgb(24, 24 ,24);
+            border-radius: 1rem;
+            display: grid;
+            place-items: center;
+        }
+
+        p#mobile-post-view-article-anomaly{
+            color:white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+     

@@ -1,0 +1,204 @@
+     *{
+          margin:0rem;
+          padding:0rem;
+          user-select:none;
+          box-sizing:border-box;
+          scrollbar-width:none;
+      }
+      
+      img{width:100%;height:100%;margin:0rem}
+      a{text-decoration:none}
+      
+      body{background:rgb(24, 24 ,24);margin:0rem;display:flex;
+    justify-content: center;flex-flow:column;}
+
+
+    main.stories-section{
+        width:70%;
+        height: 100vh;
+        background:none;
+        padding:4rem 4rem 4rem 4rem; 
+        border-left:0.1rem solid grey;
+        overflow:scroll;
+    }
+
+    section.book-stories-list{
+        width:100%;
+        height:15rem;
+        background:none;
+        display: flex;
+        align-items: center;
+    }
+
+    section.book-stories-cover{
+        width:11rem;
+        height:15rem;
+        border-radius:1rem;
+        margin-right:3rem;
+        border:0.3rem solid white;
+        background: white;
+        position: relative;
+    }
+
+    img.book-stories-cover{
+        border-radius:1rem;
+        position: absolute;
+    }
+
+    section.book-cover-chapter-master{
+        width:90%;
+        height: 20%;
+        background: white;
+        border-radius:1rem;
+        position: absolute;
+        bottom:2%;
+        left:50%;
+        transform: translateX(-50%);
+        padding:0.3rem;
+        display: flex;
+      
+    }
+
+    section.book-cover-chapter-master-icon{
+        width:25%;
+        height: 100%;
+        background:none;
+        padding:0.4rem;
+   
+        border-radius: 1rem;
+    }
+
+     section.book-cover-chapter-master-details{
+        width:75%;
+        height:100%;
+        background:none;
+        padding:0.2rem;
+     }
+
+     p#book-cover-chapter-master-title,#book-cover-chapter-master-number{
+        font-size:0.8rem;
+        color:black;
+     }
+
+
+
+     
+
+    section.header-books-container{
+      display:none;
+    }
+
+  aside.closed-sidenav{display:none}
+    
+  div.pagination-for-tablets{display:none;}
+  div.pc-pagination{display:block}
+  section.tablet-profile-container{
+    display:none;
+  }
+
+@media (max-width: 768px) {
+    main.main-content-feed{
+        width:85%;
+        border-right:none;
+        padding:6rem 5rem 5rem 5rem;
+        position: relative;
+    }
+
+    aside.side-navigation{
+      display:none;
+    }
+
+    aside.closed-sidenav{
+      display:block;
+      width:15%;
+      height:100vh;
+      background:none;
+      position:sticky;
+      top:0%;
+      padding:1rem 1rem 1rem 1rem;
+    }
+
+    header.closed-sidenav-header{
+      width:100%;
+      height:11%;
+      background:rgb(14, 107, 165);
+      border-radius: 1em;
+      border:0.1rem solid white;
+    }
+
+    section.closed-sidenav-link{
+      width:100%;
+      height: 11%;
+      border-radius:1rem;
+      padding:0.8rem;
+      margin-top: 1rem;
+    }
+
+    section.closed-sidenav-link:hover{
+      background: rgb(48, 48, 48);
+    }
+
+    section#closed-sidenav-link{
+      background:whitesmoke;
+      border:0.1rem solid white;
+    }
+
+    section#closed-sidenav-link:hover{
+      background: rgb(154, 153, 153);
+    }
+
+    section.closed-sidenav-link-profile{
+      width:100%;
+      height: 9%;
+      border-radius:50%;
+      padding:0 0.5rem 0 0.5rem;
+      margin-top:1rem;
+    }
+
+    img.closed-sidenav-profile{border-radius:50%}
+
+    
+      div.pc-pagination{
+        display:none;
+      }
+
+      div.pagination-for-tablets{display:block}
+  
+      
+    main.stories-section{
+        width:85%;
+        height: 100vh;
+        background:none;
+        padding:4rem 4rem 4rem 4rem; 
+        border-left:0.1rem solid grey;
+        overflow-y:scroll;
+    }
+
+    section.book-stories-list{
+        width:100%;
+        height:15rem;
+        background:none;
+        display: flex;
+        align-items: center;
+    }
+
+    section.book-stories-cover{
+        width:11rem;
+        height:15rem;
+        border-radius:1rem;
+        margin-right:3rem;
+        border:0.3rem solid white;
+        background: white;
+        position: relative;
+    }
+
+    img.book-stories-cover{
+        border-radius:1rem;
+        position: absolute;
+    }
+
+}
+
+
+
+
