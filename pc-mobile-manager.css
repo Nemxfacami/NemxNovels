@@ -8,14 +8,12 @@
 }
 
 html, body {
-  height: 100%;
-  overflow: hidden;
-  min-height: 0;
+  height: auto;
+  overflow: visible;
 }
 
 main.nemx-main-section {
-  height: 100vh;
-  min-height: 0;
+  height: 100%;
   display: flex;
 }
 
@@ -37,21 +35,6 @@ main.nemx-main-section > main {
         display: block;
     }
 
-    html, body {
-  height: 100%;
-  overflow: hidden;
-  min-height: 0;
-}
+    
 
-main.nemx-main-section {
-  height: 100vh;
-  min-height: 0;
-  display: flex;
-}
-
-main.nemx-main-section > aside,
-main.nemx-main-section > main {
-  height: 100vh;
-  min-height: 0;
-}
 }
