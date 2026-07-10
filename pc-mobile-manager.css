@@ -7,10 +7,7 @@
     display: none;
 }
 
-html, body {
-  height: 100%;
-  overflow: hidden;
-}
+
 
 .pc-html {
   height: 100vh;
@@ -40,11 +37,6 @@ main.news-section {
         display: block;
     }
 
-    
-html, body {
-  height: 100%;
-  overflow: hidden;
-}
 
 .pc-html {
   height: 100vh;
