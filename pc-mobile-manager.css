@@ -7,23 +7,10 @@
     display: none;
 }
 
-html, body {
-  height: 100vh;
-  overflow: hidden;
-}
-
-
-main.nemx-main-section {
-  height: 100vh;
-  overflow: hidden; /* don't let this one scroll either */
-}
 
 /* Mobile */
 @media (max-width: 480px) {
-    html, body {
-  height: 100vh;
-  overflow: hidden;
-}
+ 
     .pc-html {
         display: none;
     }
