@@ -16,12 +16,12 @@
 
     main.news-section{
         width:40%;
-        height: 100vh;
+      
         background:none;
         padding:3rem 4rem 4rem 4rem; 
         border-left:0.1rem solid grey;
         border-right:0.1rem solid grey;
-        overflow-y:scroll;
+        position:relative;
 
     }
 
