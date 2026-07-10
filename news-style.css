@@ -21,7 +21,7 @@
         padding:3rem 4rem 4rem 4rem; 
         border-left:0.1rem solid grey;
         border-right:0.1rem solid grey;
-        overflow:scroll;
+        overflow-y:scroll;
 
     }
 
