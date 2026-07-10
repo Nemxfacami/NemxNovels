@@ -22,7 +22,7 @@
         border-left:0.1rem solid grey;
         border-right:0.1rem solid grey;
         overflow-y:scroll;
-
+        position: relative;
     }
 
     
