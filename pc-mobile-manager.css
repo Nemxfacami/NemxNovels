@@ -7,9 +7,30 @@
     display: none;
 }
 
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.pc-html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+main.nemx-main-section {
+  height: 100vh;
+  overflow: hidden; /* don't let this one scroll either */
+}
+
+main.news-section {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
 
 /* Mobile */
 @media (max-width: 480px) {
+    
  
     .pc-html {
         display: none;
@@ -18,4 +39,26 @@
     .mobile-html {
         display: block;
     }
+
+    
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.pc-html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+main.nemx-main-section {
+  height: 100vh;
+  overflow: hidden; /* don't let this one scroll either */
+}
+
+main.news-section {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
 }
