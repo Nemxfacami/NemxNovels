@@ -7,21 +7,6 @@
     display: none;
 }
 
-html, body {
-  height: auto;
-  overflow: visible;
-}
-
-main.nemx-main-section {
-  height: 100%;
-  display: flex;
-}
-
-main.nemx-main-section > aside,
-main.nemx-main-section > main {
-  height: 100vh;
-  min-height: 0;
-}
 
 /* Mobile */
 @media (max-width: 480px) {
