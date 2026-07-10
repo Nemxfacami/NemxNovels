@@ -7,21 +7,14 @@
     display: none;
 }
 
-
-
-.pc-html {
+main.nemx-main-section {
+  display: flex;
   height: 100vh;
   overflow: hidden;
 }
-
-main.nemx-main-section {
-  height: 100vh;
-  overflow: hidden; /* don't let this one scroll either */
-}
-
-main.news-section {
-  height: 100vh;
-  overflow-y: scroll;
+main.nemx-main-section > aside,
+main.nemx-main-section > main {
+  min-height: 0;
 }
 
 
@@ -37,20 +30,14 @@ main.news-section {
         display: block;
     }
 
-
-.pc-html {
+main.nemx-main-section {
+  display: flex;
   height: 100vh;
   overflow: hidden;
 }
-
-main.nemx-main-section {
-  height: 100vh;
-  overflow: hidden; /* don't let this one scroll either */
+main.nemx-main-section > aside,
+main.nemx-main-section > main {
+  min-height: 0;
 }
-
-main.news-section {
-  height: 100vh;
-  overflow-y: scroll;
-}
-
+    
 }
