@@ -70,7 +70,9 @@
       height:83%;
       background: none;
       border-bottom:0.5rem solid black;
-  
+      display:flex;
+      flex-flow:column;
+      justify-content: center;
       font-weight: bold;
       font-family: Arial, Helvetica, sans-serif;
       padding-top:3rem;
