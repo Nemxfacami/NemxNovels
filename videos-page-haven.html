@@ -27,7 +27,7 @@
 
 <main class ="pc-html" tabindex="0">
 
-  <main class ="nemx-main-section">
+  <main class ="nemx-main-section" tabindex="0">
 
 
 
@@ -73,10 +73,9 @@
                         <img src ="videos.png"/>
                     </div>
                     <select class ="sidenav-link-selector" style ="color:black;" onchange="window.location.href=this.value">
-                        <option value ="videos-page-angel.html">Angel's Notes Videos </option>                        
+                        <option value ="videos-page-haven.html">Havenfall Videos </option>                        
                         <option value ="videos-page-raven.html">Ravenport Videos </option>
-                        <option value ="videos-page-haven.html">Havenfall Videos </option>
-
+                        <option value ="videos-page-angel.html">Angel's Notes Videos </option>
                     </select>
                     <span class="arrow" style ="color:black">▼</span>
                  </section>  
@@ -379,13 +378,17 @@
 
         <main class ="videos-section" tabindex="0">
           
-            <main class ="article-page-section">
+            <main class ="article-page-section" tabindex="0">
             
 
     <!-- VIDEOS POST -->
 
 
-     <section class ="feed-post">
+     <section class ="feed-post" 
+     data-title="The Hole of Havenfall | (OFFICIAL DUMBLE)" 
+     data-description="A mysterious gateway..."
+     data-date="Published in 24 June 26"
+     data-thumbnail="nemx.png">
          <div id ="feed-top-right-corner">
             <div class ="feed-post-corner">
                 #RV01
@@ -463,13 +466,17 @@
 
 
 
-           <main class ="article-page-section">
+           <main class ="article-page-section" tabindex="0">
             
 
     <!-- VIDEOS POST -->
 
 
-     <section class ="feed-post">
+     <section class ="feed-post"
+     data-title="The Hole of Havenfall | (OFFICIAL DUMBLE)" 
+     data-description="A mysterious gateway..."
+     data-date="Published in 24 June 26"
+     data-thumbnail="nemx.png">
          <div id ="feed-top-right-corner">
             <div class ="feed-post-corner">
                 #RV01
@@ -548,7 +555,11 @@
     <!-- VIDEOS POST -->
 
 
-     <section class ="feed-post">
+     <section class ="feed-post"
+     data-title="The Hole of Havenfall | (OFFICIAL DUMBLE)" 
+     data-description="A mysterious gateway..."
+     data-date="Published in 24 June 26"
+     data-thumbnail="nemx.png">
          <div id ="feed-top-right-corner">
             <div class ="feed-post-corner">
                 #RV01
@@ -643,29 +654,30 @@
 
     <!-- PAGINATION for Tablets -->
       
+    
+    <div class ="pagination-for-tablets">
+  <div class="pagination-container">
+        <ul class="pagination">
+            <li><a href="#" class="pagination-link page-nav-btn">Previous</a></li>
 
-  <div class="mobile-pagination-container">
-        <ul class="mobile-pagination">
-            <li><a href="#" class="mobile-pagination-link page-nav-btn">Previous</a></li>
+            <li><a href="index.html" class="pagination-link activepage">1</a></li>
 
-            <li><a href="#" class="mobile-pagination-link mobile-activepage">1</a></li>
+            <li><a href="#" class="pagination-link">2</a></li>
 
-            <li><a href="#" class="mobile-pagination-link">2</a></li>
+            <li><span class="dots">...</span></li>
 
-            <li><span class="mobile-dots">...</span></li>
+            <li><a href="#" class="pagination-link">3</a></li>
 
 
-            <li><a href="#" class ="mobile-pagination-link">5</a></li>
+            <li><a href="#" class ="pagination-link">5</a></li>
 
-            <li><a href="#" class="mobile-pagination-link page-nav-btn">Next</a></li>
+            <li><a href="#" class=" pagination-link page-nav-btn">Next</a></li>
         </ul>
-
     </div>
+    </div>
+
          
-         
-
-
-
+     
 
         </main>
 
@@ -675,7 +687,7 @@
         <!-- ASIDE RIGHT SIDE SECTION -->
 
 
-        <aside class ="video-info-section" tabindex="0">
+        <aside class ="video-info-section">
             <section class ="video-details-containers">
                 <div id ="video-thumbnail-section">
                     <img class ="video-thumbnail" src ="immortal.png"/>
@@ -683,10 +695,10 @@
 
            <section class ="video-title-section">
                 <p id ="video-title-section">
-                    THE AVO ELC3 GEN  | (OFFICIAL DUMBLE)
+                     Select a video to preview | (OFFICIAL DUMBLE)
                 </p>
                 <p id ="video-title-username">
-                    @wanderersvideos  | Published 24 March 2026
+                    @prometheus-vault  | <span id ="uploaded-date">Published Decades Ago</span>
                 </p>
 
              
@@ -697,8 +709,11 @@
                     Video Description
           </p> 
 
-          <section class ="description-section">
-                    sdsfeffe    
+          <section class ="description-section"  id ="description-section">
+                    Hover over any video thumbnail to
+                    view its description, category,
+                    duration, upload date and other
+                    details here.    
           </section>
 
 
@@ -723,7 +738,7 @@
 <main class ="mobile-html" tabindex="0">
 
     
-          <aside class ="mobile-asidenav-section" tabindex="0">
+          <aside class ="mobile-asidenav-section">
         <header class ="mobile-asidenav-header">
             <div id ="mobile-asidenav-icon">
                  <img src ="bluelogo2.png"/>
@@ -814,7 +829,7 @@
         <section class ="mobile-asidenav-selectors-container-section">
              <section class ="mobile-asidenav-selectors-container">
                  <a href ="videos-page-raven.html" class ="mobile-asidenav-selector-pages">
-                 <div id ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages" >
                      Ravenport Videos
                  </div>
                  </a>
@@ -1069,7 +1084,7 @@
 
 
         
-
+<script src ="video-details-hover.js"></script>
 <script src="book-scrolling-script.js"></script>
 <script src ="aside-sidenav.js"></script>
 
