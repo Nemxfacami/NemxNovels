@@ -290,6 +290,7 @@
       height:100vh;
       background:none;
       display:flex;
+      overflow:hidden;
       align-items:flex-start;
     }
     
@@ -546,6 +547,8 @@
       border-right:0.1rem solid grey;
       padding:2rem 4rem 2rem 4rem;
       overflow-y: auto;
+      position:sticky;
+      top:0;
     }
 
 
