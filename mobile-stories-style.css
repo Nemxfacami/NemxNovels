@@ -19,6 +19,8 @@
         background:none;
         padding:4rem 1rem 1rem 1rem; 
         border-left:none;
+        display:flex;
+        flex-flow:column;
     }
 
     section.mobile-book-stories-list{
