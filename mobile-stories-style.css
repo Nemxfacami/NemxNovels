@@ -23,24 +23,27 @@
         flex-flow:column;
     }
 
-    section.mobile-book-stories-list{
-        width:100%;
-        height:13rem;
-        background:none;
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        margin-bottom:2.5rem;
-    }
 
-    section.mobile-book-stories-cover{
-        width:9rem;
-        height:13rem;
-        border-radius:1rem;
-        border:0.3rem solid white;
-        background: white;
-        position: relative;
-    }
+section.mobile-book-stories-list{
+    width: 100%;
+    height: auto;
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+section.mobile-book-stories-cover{
+    width: 100%;
+    aspect-ratio: 9 / 13;
+    height: auto;
+    border-radius: 1rem;
+    border: 0.3rem solid white;
+    background: white;
+    position: relative;
+}
+  
 
     img.mobile-book-stories-cover{
         border-radius:1rem;
