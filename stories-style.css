@@ -35,7 +35,8 @@ section.book-stories-list{
 
 section.book-stories-cover{
     width: 100%;
-    height: 15rem;
+    height: auto;
+    aspect-ratio: 11 / 15;   
     border-radius: 1rem;
     margin-right: 0;
     border: 0.3rem solid white;
