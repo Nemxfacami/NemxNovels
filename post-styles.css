@@ -112,7 +112,7 @@
 
         div#post-header-profile-name{
             font-weight:bold;
-            font-size:1.1rem;
+            font-size:1rem;
             display:grid;
             place-items: center;
             padding-left:0.2rem;
@@ -237,7 +237,7 @@
 
         div#post-header-profile-name-quote{
             font-weight:bold;
-            font-size:1.1rem;
+            font-size:1rem;
             display:grid;
             place-items: center;
             padding-left:none;
