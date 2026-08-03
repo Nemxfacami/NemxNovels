@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+     <meta charset ="UTF-8">
+     <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+     <link rel ="stylesheet" type ="text/css" href ="Ravenport-chapters.style.css"/>
+     <link rel ="stylesheet" type ="text/css" href ="chapter-navigation.css"/>
+     <title></title>
+<style>
+
+/* The clickable word */
+a.popup-link1 ,a.popup-link2{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Overlay */
+#overlay,#overlay2,#overlay3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Image box */
+#popupBox,#popupBox2,#popupBox3 {
+    position: relative;
+}
+
+/* Image */
+#popupBox,#popupBox2,#popupBox3 img {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+/* Exit button */
+#closeBtn,#closeBtn2,#closeBtn3 {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+a.rexona{text-decoration:none;color:white;}
+</style>
+</head>
+<body>
+
+         <main class ="background-images-holder">
+              <img src ="pic1.png" id ="novel-pic"/>
+              
+              <div id ="storypage1">
+                 <p id ="page-1-storyline">
+                     We live in complete darkness when we walk this world without purpose. At times, it feels as if one could start a new life—different, with hope to make it better than the past. 
+                 <br><br>
+                 I arrived in Ravenport City after finishing my escape from reality through college. But inevitably, reality caught up with me. My latest escape was to return to the city where I had once lived with my aunt.
+                 When I walked into the station, my aunt was waiting for me, and beside her stood a creepy, gloomy, dark, gothic man. I approached, hoping he wasn’t my aunt’s boyfriend—or worse, her child.
+                 <br><br>
+                 <b>"Amanda, you're here!!"</b> my aunt exclaimed cheerfully, still beautiful and in her prime.
+                 <br><br>
+                 <b>"I’ve made it,"</b> I said, hugging her. I felt happy—safe and at home. Until I saw him. The gloomy man behind her smiled at me in a haunting, disgusting way.
+                 <br><br><p id ="change-color black">
+                 <b>"Oh, I almost forgot,"</b> my aunt said, stopping our hug and stepping beside him. <b>"This is your cousin—Zeke. And Zeke, this is Amanda Sioux. I’m guessing she’s your big sister."</b>
+                 <br><br>
+                 Zeke stepped closer. It felt as though he was covered in darkness. Shaking his hand, I realized it was unnaturally cold for a living person.
+                 </p></p>
+              </div>
+
+
+         </main>
+         <main class ="background-images-holder">
+              <img src ="pic2.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                     <p id ="change-color black"><b>"Hey, Zeke,"</b> I said, forcing a smile.
+                 <br><br>
+                     <b>"Hi,"</b> he replied in a plain, cold voice. What unsettled me the most was how long he kept staring into my eyes—it felt as if he was looking through me. Terrifying.
+                      Both Lucien and Zeke helped me with my bags as we left the station. The thought of taking a cab home filled me with anxiety—the silence, the awkwardness of sitting next to that weirdo. My thoughts suffocated me until he spoke.
+                     <br><br>
+                     <b>"Don't worry, I have a car," </b>Zeke said.
+                     <br><br>
+                     <b>"You have a car, Zeke? Don’t tell me you borrowed Davien’s car again," </b>my aunt said, concerned about his tendency to borrow people’s vehicles.
+                     <br><br>
+                     </p>
+                         <p id ="page-1-storyline">
+
+                     <b>"I wanted to spare my cousin the awkward silence of a cab,"</b>Zeke said, smiling at me.
+                     <br><br>
+                     I pretended to be okay with the situation, but it was far more awkward than a cab ride. They behaved as if nothing were wrong—it felt like I had walked into a lion’s den, or worse.
+                     Zeke drove us home in Davien’s car, while my aunt played music to break the tension.
+                     I had longed for a job for years in college, hoping to achieve a life of independence. I believed this was where I could start anew—a life worth living.
+                     <br><br>Ravenport City—the city of never-ending mysteries and unknown terrors lurking in its dark beauty. A place many crawl to when they want to become something… and a place where many become piles of corpses in the cemetery. But who knows what it holds for an individual who craves unsettling desires?
+                 
+                 <b>"Zeke, did you go to Morris’s house to check if he’s all right?"</b>my aunt asked him, trying to soften the heaviness in her tone.
+                  </p>
+              </div>
+              </main>
+               <main class ="background-images-holder">
+
+              <img src ="pic3a.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline">
+                     I tried to ignore their conversation, but there was nothing entertaining on my phone—only a more disturbing <a class="popup-link3" onclick="openPopup3()">Facebook profile picture of Zeke. </a>
+                 <br><br>
+                 <b>"Yes, Aunt. I did. It was a disturbing scene. They thought Morris’s father committed suicide...."</b> Zeke said, expressionless.
+                <br><br>
+                Lucien interrupted before Zeke could continue,<b>"Isn’t it suicide? He hung himself, for God’s sake."</b>
+                 <br><br>
+                 <b>"No, no. God’s sake, no. He was killed—air bubbles injected into his neck. Probably by someone skilled at murder,"</b> Zeke said casually, his excitement hidden behind that cold expression.
+                  <br><br>
+                  The conversation between them was strange, but my aunt seemed unconcerned. I, however, was. There was something off about Zeke. In that moment, I caught his real smile—the one of excitement when he spoke about Morris’s father’s death.
+                  We arrived home on EzMarch Street. It was already dark, yet the streets were crowded—Friday night, the city’s party day. Zeke noticed my annoyance as we stepped out of the car, the noise and revelry outside only amplifying it. My aunt helped me with my bags.
+                 <br><br>
+                 <b>"Aunt, I’m taking the car back to Davien. I’ll be back,"</b> Zeke said, still lingering inside.
+                 <br><br>
+                 <b>"It’s dark. You can take it back tomorrow morning," </b>she replied, entering the house with me following
+                 <br><br>
+                <b> "Tomorrow… tomm… mo… rrow," </b>Zeke muttered as he exited and locked the car, then stood watching the people outside—drinking, laughing, enjoying life.
+                 <b>"… such a lovely time,"</b> he murmured, observing two lovers walking by..<b>"and a <a class="popup-link1" onclick="openPopup1()">
+good ass"</a></b>
+                 </p>
+                 
+                 <!-- Overlay -->
+<div id="overlay">
+    <div id="popupBox">
+        <button id="closeBtn" onclick="closePopup1()">X</button>
+        <img src="goodass.png">
+    </div>
+</div>
+
+                 <!-- Overlay -->
+<div id="overlay3">
+    <div id="popupBox3">
+        <button id="closeBtn3" onclick="closePopup3()">X</button>
+        <img src="Facebook.png">
+    </div>
+</div>
+
+              </div>
+         </main>
+         <main class ="background-images-holder">
+              <img src ="pic4.png" id ="novel-pic"/>
+              
+              <div id ="storypage3">
+                 <p id ="page-1-storyline">
+                     Zeke entered the house following behind Amanda and went to his room.
+                     <br><br>
+                     <b>"You can feel at home, I’m sure you’re tired…"</b> said Lucien as she was walking to the kitchen.
+                     <br><br>
+                     The house was still the same as she had left it, not a chair moved, not a tablecloth replaced. 
+                     No new furniture, no additions that would make the space feel like someone else’s hand had touched it.
+                     Amanda thought to herself — <b>"my aunt must love this place exactly the way it is".</b> She takes care
+                     of it the way someone takes care of an heirloom, polishing the same wood, sweeping the same floors,
+                     repeating the same rituals.</p>
+                     <p id ="change-color" style ="color:white">
+                     To anyone else it might seem like a small, plain house. But to Amanda, the rooms held 
+                     their own weight. Every curtain, every lamp, every creak of the floorboards had memory 
+                     attached. It was almost strange how such a simple house could give the feeling of a castle.
+                     A castle not in size, but in presence — one that stood tall not with towers, but with history and 
+                     stillness that commanded the air inside it.
+                     <br><br>
+                     <b>"Amanda…"</b> said Lucien, catching her niece in thought. She called her again,<b> “Amanda.”</b>
+<b>“Yes!”</b> said Amanda.
+<b>“I don’t think we have anything to eat,”</b> said Lucien, sounding half-apologetic, half-distracted.
+                 </p>
+              </div>
+         </main>
+               <main class ="background-images-holder">
+
+              <img src ="pic5.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline">
+                     Zeke appeared from his room. At first glance, he seemed ordinary — but Amanda couldn’t shake the feeling that something about his presence never fit the room, as if the air shifted when he entered.
+                     <br><br>
+                     <b>*Whenever I look at her, I feel like biting her nose off,*</b> Zeke thought as he walked past Amanda, who quickly pretended she hadn’t been looking at him.
+                     <br><br>
+                     <b>“What’s up?”</b> said Zeke to his aunt, noticing her stressed stare at the empty fridge.
+                     <b>“We got nothing to eat. Could you go buy some food at the mall?”</b> Lucien muttered, rummaging absentmindedly.
+                     <b>“You left your purse on the couch, next to Amanda,”</b> Zeke reminded her.
+                     <br><br><b>“Amanda, could you bring my purse?”</b> said Lucien.
+                     <br><br>
+                     <b>“Oh no, there’s no need. I’ve already ordered a pizza,”</b> said Zeke.
+                     <b>“Oh, thanks Zeke. I don’t know what I’d have done… I’ve been so busy, I keep forgetting about everything lately,”</b> said Lucien.
+                     <br><br>
+                     <b>*And I’m busy counting how much hair falls off my head every hour,*</b> Zeke whispered in his mind, smirking inwardly.
+                     <b>“I think it’s better if you go sit down, rest, and watch TV with….... Amanda,”</b> said Zeke, wrapping an arm around her shoulder briefly, 
+                     giving her a little hug.
+                     <br><br>
+                     The relationship between my aunt and Zeke seemed normal enough. But what bothered me was — <b>*when did he order the pizza?*</b>
+                     <br><br>
+                     Lucien sat beside Amanda on the couch, the television flickering in the dark. But Amanda wasn’t watching. She was suffocating 
+                     in her thoughts, about the strangeness in this house, about the evil spirit she swore lived here, hidden.
+                     <br><br>
+                     The pizza Zeke had ordered arrived earlier than expected.
+                     <br><br>
+                     From then on we ate, and I filled their little stomachs with nutritionally dense, macromolecule-rich comestibles instead of just food.
+                     <br><br>
+                     When everyone went to their rooms, I was the only one left in the sitting room. I prefer sitting in the dark — the peace it gives me, and the thrill of uncertainty that might occur in such a dark room.
+                     Her actions were coincidence, or perhaps a planned event. She sat with her phone, enjoying the silence. The peace and tranquility wrapped her, made her forget the outside world. Until something fell from Zeke’s room.
+                     <br><br>
+                     At first it seemed normal, but then his door opened. With the help of the darkness, Amanda blended in with the room, becoming invisible.
+                     
+                 </p>
+              </div>
+         </main>
+         <main class ="background-images-holder">
+
+              <img src ="pic6.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline">
+                     His shadow moved in the shadow of darkness — who knew it was possible for a shadow to be darker than the dark itself? She saw him pass the couches, carrying a bag, a cap pulled low, his hoodie shadowing his face.
+                     I didn’t know what kind of guy he was, but I already had an idea.
+                     
+                     <br><br>Zeke left the house.</br><br>
+                     Amanda’s curiosity wasn’t something she could suppress. Something about Zeke threatened to ruin her life, and so without hesitation, without fear of consequence, she followed him.
+                     <br><br>
+                     The streets were quiet. Peaceful. The lamps lit the roads of Ravenport with a cold glow. Their light stretched long, yellow halos on the wet pavement, making the sidewalks look like rivers of molten glass. Every shuttered shop was a closed mouth, every building window a blind eye.
+                     <br><br>
+                     The city at 3 a.m. was beautiful in its emptiness. You could hear your own thoughts bounce back at you. Amanda thought of how the silence itself seemed alive. Dogs barked at ghosts passing by. The moan of the wind carried like a chant across empty alleys.
+                     <br><br>
+                     Amanda kept to the left side of the pavement, Zeke walking on the right. He turned a corner, which forced Amanda to cross — but a car roared by, lights blazing, so fast she stumbled back in fright. Her heart rattled against her ribs, but she couldn’t give up.
+                     <br><br>
+                     When she finally reached the corner, he was gone.
+                     <br><br>
+                     But she didn’t stop. She kept walking, every step into the unknown. Her phone read 3 a.m., but time no longer mattered. The city lights guided her forward, their glow like silent guardians leading her deeper into the streets.
+                     <br><br>
+                     Silion Park was darker than the city — a kind of darkness that seemed to have weight. Trees bent low, their branches tangled like claws reaching for the path. The grass was wet and heavy, shining black under the faint lamps at the park’s edges. Darkness pooled thick between the benches and paths, like pockets of another world.
+                     <br><br>
+                     Amanda stopped at the park’s entrance. The silence here was different from the street’s silence. It wasn’t empty — it was crowded. Crowded with sounds that didn’t belong anywhere.
+                     <br><br>
+                     She thought she saw figures between the trees — silhouettes leaning just behind the trunks, slipping out of sight when she blinked. Once, she could have sworn she saw a hand curling back into the dark.
+                     <br><br>
+                 </p>
+              </div>
+         </main>
+         <main class ="background-images-holder">
+
+              <img src ="pic7.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline">
+                     Whispers drifted through the branches, soft and circling, like a language she almost recognized but couldn’t. Sometimes they seemed to be behind her, sometimes ahead. Her skin crawled with the sense of being watched. Her heart beat so hard it felt like it was trying to escape her chest.
+                     <br><br>
+                     She strained her eyes, scanning every shadow. Every flicker of movement felt like a warning. And then — she saw him.
+                     <br><br>
+                     A figure bent over a hole in the ground. A shovel, dirt spraying. The rhythm of digging.
+                     <br><br></p>
+                     <p id ="underline">It was Zeke.</p>
+                     <p id ="page-1-storyline">
+                     <br><br>
+                     Amanda froze. <b>*He’s digging a grave,*</b>she thought. <b>*He must have killed someone. What else would bring him here, at night, with a shovel?*</b>
+                     <br><br>
+                     She squinted, trying to see more — but the darkness made everything uncertain. Was it really a grave? Was it even Zeke? The whispers grew louder, echoing inside her own head.
+                     <br><br>
+                     Before she could think more, the figure looked up. His face shadowed, his eyes catching hers — or maybe she only imagined that, too.
+                     Fear flooded her. She ran.
+                     <br><br>
+                     The city became a blur of sound and shadow. Her own footsteps multiplied, echoing as if an entire crowd was chasing her. Every shadow seemed to lunge forward. Every whisper of wind became a voice at her back. Her heart was ready to break her ribs and run along with her or maybe even faster than her.
+                     <br><br>
+                     She prayed, step after step, to reach home alive.
+                     <br><br>
+                     Finally, the house came into view. She stumbled inside, slamming the door, her chest heaving.
+                     <br><br>
+                     <b>“I’m safe… I’m alive,”</b> she whispered, inhaling, exhaling, trying to calm herself. Her phone screen glowed 4:00 a.m.
+                     <br><br><b>“Having nightmares?”</b>
+                     said Zeke’s voice from the kitchen. He was drinking a cup of coffee, his expression unreadable.
+                     <br><br>
+                     She didn’t know what to say. She was shocked — how did he get here? Was it really him at the park? Her mind had lost all reason. Emotions were steering the wheel now, and every part of her body screamed one command: <b>*keep safe from him.*</b>
+                     <b>“No… I was just taking a midnight walk,”</b> she said, slipping past him toward the sitting room, hoping the conversation would dissolve, hoping silence could save her.
+                     <br><br>
+                     <b>“I too enjoy the walk,”</b> Zeke’s voice followed her like a shadow. <b>“It’s peaceful. Maybe someday we could take it together.”</b>
+                     <br><br>
+                     He lingered in the doorway for a breath too long, then smirked:
+                     <br><br>
+                     <b>“Goodnight. Sweet nightmares. Amanda”</b>
+
+                 </p>
+              </div>
+</main>
+              <img src ="pic8.png" id ="novel-pic"/>
+
+         <main class ="background-images-holder" >
+
+              <img src ="pic9.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline">       
+                     <br><br><br><br><br><br><br><br><br>
+                     -------------
+                     <br>
+                      We live in different worlds — not the ones marked on maps, but the ones built inside our minds. Everyone carries their own, shaped by fears, stitched together with memories. Billions of people, billions of worlds. And yet somehow, we still feel suffocated. Still feel alone.
+                      <br>
+                      It makes you wonder — is it because no one really understands you? Or is it because deep down you already know… everyone leaves. No matter how much they promise, no matter how much they swear, even if they cut off their own hand to prove they’ll stay.
+                      <br>
+                      In the end, you’re left holding only your own world. And sometimes, that’s the scariest place to be at.
+                      <br>
+                      ------------
+                      <br><br><br>
+                      Next Day
+                      <br><br>
+                      The voices were murmuring. He couldn’t hear what they were saying; he had just woken up.
+                      Zeke came into the living room to find his aunt standing with Amanda, as if he had just disturbed a secret meeting between two drug dealers — female dealers.
+                      <br>
+                      <b>“Morning,”</b> said Zeke, looking at his aunt, then at Amanda, who looked back at him with cold eyes.
+                      <br><br.
+                      <b>*She seems to be looking good today,*</b> he thought as he approached them.
+                      <br><br>
+                      <b>“Morning - I want you to go buy some food at the mall. And don’t forget my chocolate biscuits while you’re at it.”</b> said Lucien.
+                      <br>
+                      <b>“Oh yeah, chocolate biscuits. Then I’ll be going,”</b> said Zeke. He took the money and was about to head out when—
+                      <br>
+                      <b>“Zeke, show your cousin some new places, will ya?”</b> said Lucien.
+                      <br>
+                      Amanda gave Lucien a hug and followed behind Zeke. They got into the car. Lucien came out and locked the house.
+                      <br><br>
+                      <b>“You have to take back that car today. See you two later. Take care,”</b> she said as she left.
+                      <br><br>
+                      They drove away.
+                      <br><br><br>
+                      [<span style ="color:dodgerblue">Note to reader: anything surrounded by *Hey ,it's me* is a character’s inner voice.</span>]
+                      <br><br><br>
+                      Amanda sat in the back seat, keeping her distance from the alien she was forced to trust with her life.
+                      <br><br>
+                      <b>*I wonder how my day with Zeke will be like… maybe I'll end up dying like the owner of this car.
+                      At least I made sure the tracker on my phone is on. And I have a knife. And pepper spray.
+                      I’m also recording everything happening right now. I dare him to fuck with me — I’ll be sending him to his grave.*</b>
+                      <br><br>
+                      Zeke drove in silence toward the mall.
+                      <br><br>
+                      <b>*In a world lacking socialization, the best way to make someone comfortable with you is by guiding them through the conversation. Be the one in control.*</b>
+                      <br>Zeke smiled.
+                      <br><br>“I know,” he said suddenly.
+                      <br><br>Amanda’s heart jumped.
+                      <br><br><b>“I’m weird. Gosh, I’m like the piece of human meat in a sandwich… I can tell by the way you’re looking at me,”</b> he said, still focused on the road.
+                      <br><br>Silence dropped like a stone.
+                      <br><br><b>*Let it be very awkward so they can digest your words,*</b> Zeke’s inner voice whispered. He couldn’t help but smile. He was enjoying himself.
+                      <br>Then the smile vanished.
+                      <br><br>He pulled the car over, parking on the side of the road. Slowly, he turned around to look at her. Amanda looked away, avoiding his eyes.
+                      <br><br>With a deep, unshaken voice — a voice like a knife — he said:
+                      <b>“I’m about to kill you now.”</b>
+                      <br><br>Their eyes finally met. The silence tightened around them. The mood curdled. Amanda’s worst fear crawled to life, choking her.
+                      <br><br>Zeke smiled.
+                      <br><br><b>“I’m joking.”</b>
+                      <br><br>He turned back to the wheel.
+                      <br><br><b>“Lucien will be back tonight. I don’t mind if you don’t want to go to the mall with me. You can just leave. No one’s holding you back, Amanda.”</b>
+                      <br><br>Amanda stared at him, tired of his shamelessly spilled thoughts. She grabbed her things, opened the door, and stepped out.
+                      <br><br>Before she could close it, Zeke looked back at her.
+                      <br><br><b>“Don’t forget to have a nice day.”</b>
+                      <br><br>She shut the door. Zeke started the engine — but Amanda opened the front door and slid into the passenger seat.
+
+“I just remembered you weren’t there when Aunt Lucien told me the grocery list,” she said.
+
+“Chocolate biscuits… that’s the grocery list I know,” Zeke replied as he pulled back onto the road.
+                 </p>
+                 </div>
+         </main>
+              <img src ="pic10.png" id ="novel-pic"/>
+
+         <main class ="background-images-holder" >
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline">       
+                 
+                 </p>
+              </div> 
+         </main>
+         
+         <main class ="background-images-holder" >
+
+              <img src ="pic12.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline"> <b>      
+                     <br><br><br><br><br><br><br><br><br><br><br>
+                     Have you ever felt love? Do you remember what it felt like
+                     to be loved? Do you think you could ever love someone 100%?
+                     <br><br>
+                     Do you think you are a good person? Fair? Perhaps you 
+                     believe the things you do are right, even when they are not. 
+                     Perhaps you destroy even the things you value without ever 
+                     noticing. Humane, isn’t it? As they say, we are human—we 
+                     can never be perfect.
+                     <br><br><br>
+                     An unknown group of individuals created the lab. Unknown. 
+                     Not the government. Not corporations. Just them. They 
+                     called it "Prometheus".
+                     <br><br>
+                     The lab lies deep underground in the city of Ravenport. 
+                     Only a few have glimpsed it, and fewer still understand 
+                     its scope. Rumors whisper of over five hundred… human 
+                     subjects. Some born there, some bred, some raised. A 
+                     civilization beneath the city, separate from the world, 
+                     with its own lives, its own rules, its own purpose.
+                     <br><br>
+                     Prometheus was never about making humans perfect.
+                     Perfection is meaningless. It is about creating humans 
+                     perfect for the one they are meant to serve. But make no 
+                     mistake—they are not machines. Not puppets. Not slaves. 
+                     <br><br>
+                     They are human. They laugh, they cry, they argue. They 
+                     have habits, flaws, quirks. They are as real as you, as
+                     alive as any of us.
+                     <br><br>
+                     The difference is subtle, almost invisible: the 
+                     characteristics they carry—the stubbornness, the wit,
+                     the courage, the patience—are calibrated to fit someone
+                     else as if made for them. Meeting them is like meeting
+                     your other half, the part of yourself you never knew was 
+                     missing. They exist to complement, to challenge, to belong 
+                     perfectly… and willingly.
+                     <br><br>
+                     Some are stubborn. Some are sassy, rude, cruel even. Each 
+                     one is branded, body and soul, as property of Prometheus. 
+                     Like programming an AI—but flesh, blood, and desire.
+                     <br><br>
+                     Do you want one? Call. They will help you make it.
+                 </b></p>
+              </div>
+              
+        </main>
+                 <main class ="background-images-holder" >
+
+              <img src ="pic13.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:black">      
+                     <br>
+                     They finished buying the groceries and walked back toward the car. The city smelled faintly of wet asphalt and roasted chestnuts from a street vendor nearby, and the distant hum of traffic stitched itself into Amanda’s nerves.
+                     <br><br>
+                     <b>“You love thinking, don’t you? Makes me think you’re having a conversation with me in your mind,”</b> said Zeke, opening the car boot and placing the groceries inside. He paused for a moment, letting his eyes scan Amanda’s face, a smirk tugging at the corner of his mouth.
+                     <br><br>
+                     Amanda mirrored him, her expression unreadable, her fingers brushing over the smooth metal of the car.
+                     <br><br>
+                     <b>“What are you looking for?”</b> she asked.
+                     <br><br>
+                     <b>“Ha — I forgot the chocolate biscuits,”</b> said Zeke, tilting his head slightly, one eyebrow raised like he was daring her to comment.
+                     <br><br>
+                     Amanda sighed, her shoulders tightening just slightly.
+                     <br><br>
+                     <b>“Wow, I’m human too, okay? I forget shit,”</b> he said, letting the groceries drop in the boot with a soft thud. <b>“I’mma go get some. Don’t go around causing trouble.”</b>
+                     <br><br>
+                     Zeke jogged back inside the mall, glancing over his shoulder with that faint smirk still in place.
+                     <br><br>
+                     <b>*I learned how to run when my English teacher wanted to have sex with me in junior high. But the problem is… he was a guy.*</b>
+                     <br><br>
+                     Amanda stood beside the car, scrolling on her phone. The hum of the city reached her ears — a bus door squealing, footsteps clicking, a siren fading in the distance. Gen Z boredom stabbed her nerves — whichever ones get stabbed by boredom.
+                     <br><br>
+                     <b>"It seems the day is going well for now. He doesn’t seem like a bad guy. But I can’t let my guard down. People might seem good till they hurt you for no reason."</b>
+                     <br><br>
+                     A man walked by, noticing the car, chuckling softly as he approached. The scent of rain-damp stone and street food clung to the air, making Amanda’s skin crawl just enough to sharpen her awareness.
+                     <br><br>
+                     He was one of <b><a class="popup-link2" onclick="openPopup2()">those</a></b>
+
+                     guys — friendly, handsome, with an almost too-perfect smile, the type whose presence made your chest tighten in quiet suspicion.
+                     <b>*God, he looks like he moisturizes and reads books. I bet people trust him for no reason.*</b>
+                     <br><br>
+                     <b>“I had a friend who owned the same car,”</b> the man said, his eyes scanning Amanda before drifting downward to the license plate as if recalling old stories.
+                     <br><br>
+                     <b>“But he’s currently missing,”</b> he added, his voice dropping just slightly.
+                     <br><br>
+                     Amanda opened her mouth, but he continued, his hand extending slowly, palm open.
+                     <br><br>
+                     <b>“You seem new here. I hope you’re enjoying the wonders of the city — it can be scary at times.”</b>
+                     <br><b>“I’m Mycroft. And you are?”</b>
+                     <br><br>
+                     She took his soft, warm hand — the warmth almost clashing with the quiet tension she still carried.
+                     <br><br>
+                     <b>“I’m Amanda Sioux,”</b> she said cautiously.
+                     <br><br>
+                     <b>“Ah, you’re related to Lucien,”</b> said Mycroft.
+                     <br><br>
+                     <b>“You know her?”</b> Amanda asked, suspicion threading through her voice.
+                     <b>“I’ve known her for years. Tell her she’s missed by her old friend,”</b> he said, letting his hand fall before walking away, the sound of his steps echoing faintly on the wet pavement.
+                     <br><br>
+                     <b>What a nice guy,</b> she thought, though her fingers remained tense around her phone.
+                     <br><br>
+                     Zeke returned, holding up the chocolate biscuits, one eyebrow arched, lips twitching in that familiar smirk.
+                     <br><b>“You look adorable,”</b>said Zeke. <b>“Do you know Mycroft?”</b>,Amanda asked.
+                     <br><b>“No, I don’t,”</b> he replied as Amanda was trying to hide the blush warming her cheeks, though he noticed anyway.
+
+                 </p>
+              </div>
+                                   <!-- Overlay -->
+<div id="overlay2">
+    <div id="popupBox2">
+        <button id="closeBtn2" onclick="closePopup2()">X</button>
+        <img src="thoseguys.png">
+    </div>
+</div>
+         </main>
+                 <main class ="background-images-holder" >
+
+              <img src ="pic14.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:black">      
+                 
+                 <br><br>
+                 <b>“Amanda, if you’re done giggling over some guy’s sick face, 
+                 you can get in the car,”</b> Zeke said, checking the time while
+                 looking straight at her.
+                 <br><br>
+                 <b>* This isn’t the time to be dealing with another problem on 
+                 my neck  Amanda *</b>
+                 <br><br>
+                 <b>“Yeah, yeah. I’m coming,”</b> Amanda said as she climbed in 
+                 and strapped on her seatbelt.
+                 <br><br>
+                 Zeke pulled out of the parking lot and exited the mall.
+                 <br><br>
+                 The city swallowed them almost immediately — concrete stretching
+                 tight, buildings stacked too close, streets funneling cars like
+                 veins. They didn’t get far before the traffic slowed, then 
+                 stopped completely.
+                 <br><br>
+                 Red lights ahead. The was a roadblock. Not the flimsy kind.
+                 This one was deliberate.
+                 <br><br>
+                 Metal barricades cut across the street, forcing vehicles into 
+                 a single narrow lane. Trucks and cars waited in line, engines
+                 idling, no honking, no shouting. Just compliance.
+                 <br><br>
+                 Zeke didn’t react.
+                 <br><br>
+                 Amanda leaned forward in her seat.
+                 <br><br>
+                 <b>“A roadblock. Seriously?”</b> she muttered, checking her 
+                 phone. Low battery. Of course.
+                 <br><br>
+                 Great. Stuck at a roadblock with Zeke.
+                 <br><br>
+                 Men stood in the street — not cops. Soldiers.
+                 <br><br>
+                 Dark uniforms, body armor strapped tight, rifles hanging heavy 
+                 in their hands. Their movements were practiced, efficient. 
+                 One raised a hand, signaling a car forward. Another scanned 
+                 the buildings like he expected something to blink out of existence.
+                 <br><br></p><p style ="color:white">
+                 And yet—People walked past.
+                 <br><br>
+                 Pedestrians stepped around the barricades, coffee cups in hand,
+                 phones pressed to ears. A couple laughed as they crossed the 
+                 street. No panic. No hesitation. Like this was just another
+                 Tuesday inconvenience.
+                 <br><br>
+                 Amanda’s stomach tightened. A child stopped walking. 
+                 He tugged at his mother’s sleeve, eyes locked on something down
+                 the street.
+                 <br><br>
+                 “Mom… what is that?”
+                 <br><br>
+                 He pointed.
+                 <br><br>
+                 Amanda followed his finger.
+                 <br><br>
+                 Between two buildings, a shadow moved — long, distorted, 
+                 sliding against the pavement like it didn’t belong to any 
+                 single shape. It disappeared, then reappeared, stretching 
+                 toward the intersection.
+                 <br><br>
+                 The soldiers reacted instantly.
+                 <br><br>
+                 Cars were waved away. Pedestrians were redirected without 
+                 explanation. Space cleared, quick and quiet.
+                 <br><br>
+                 Her heartbeat climbed.
+                 <br><br>
+                 Whatever it was reached the crossing.
+                 <br><br>
+                 It was enormous — towering over the street, tall as a 
+                 three-story building. It moved on four limbs, each step heavy, 
+                 deliberate. Its form bent wrong in places, unfamiliar in a 
+                 way that made her brain refuse to label it.
+                 <br><br>
+                 Nothing she’d ever seen.
+                 <br><br>
+                 Not on TV.
+                 <br>
+                 Not in documentaries.
+                 <br>
+                 Not in nightmares.
+                 <br><br>
+                 <b>*An alien*</b>
+                 <br><br>
+                 <b>“Zeke— Zeke, are you seeing that?”</b> Amanda whispered 
+                 sharply, grabbing his sleeve and pushing him to look past
+                 the windshield.
+                 <br><br>
+                 Zeke had just ended a call. He lowered the phone slowly, as 
+                 if nothing urgent had interrupted him.
+                 </br><br>
+                 He looked ahead.
+                 <br>
+                 The creature flickered.
+                 <br><br>
+                 One moment it stood fully there — massive, uneven, 
+                 its limbs bending at wrong angles — and the next 
+                 it distorted, breaking into fragments like a corrupted 
+                 image. It vanished for half a second, then snapped back
+                 into place farther down the street.
+                 <br><br>
+                 Reality stuttered around it.
+                 <br>Amanda’s breath hitched.
+                 <br><br>
+                 <b>“What is that?!”</b> she said, louder now, voice 
+                 cracking despite herself.
+                 <br><br>
+                 Zeke didn’t tense. Didn’t swear. His eyes narrowed slightly 
+                 — not in fear, but in calculation.
+                 <br><br>
+                 <b>“It’s a… animal,”</b> he said after a pause. <b>“Got loose.”</b>
+
+                 </p>
+              </div>
+         </main>
+         <main class ="background-images-holder" >
+
+              <img src ="pic15.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                  
+                          <br><br>
+                 The car shifted.
+                 <br>
+                 He began reversing.
+                 <br><br>
+                 Amanda fumbled for her phone, fingers shaking. The screen 
+                 stayed black.
+                 <br><br>Dead.
+                 <br><br>
+                 <b>*I can’t even take a picture. My phone’s off.*</b>
+                 <br><br>
+                 Her heart was pounding so hard it felt like it was crawling 
+                 up her throat.
+                 <br><br>
+                 <b>“Why am I the only one panicking here?”</b> she snapped,
+                 looking around wildly — at the soldiers, the pedestrians,
+                 the city that refused to react.
+                 <br><br>
+                 <b>“Maybe because your phone is off,” </b>Zeke replied calmly,
+                 one hand steady on the wheel.
+                 <br><br>
+                 She stared at him.
+                 <br><br>
+                 <b>“Why are you reversing? Isn’t home that way?”</b>
+                 <br><br>
+                 The creature glitched again — this time closer — its outline
+                 tearing like paper before reassembling. The air felt thick, 
+                 electric, like the moment before a storm breaks. Zeke checked the mirrors. Expression neutral. Jaw relaxed.
+                 <br><br>
+                 <b>“There’s a place I’m supposed to be,”</b> he said.
+                 <b>“We’re going there first. Then we’ll go home, ta?”</b>
+                 <br><br>
+                 The car straightened.
+                 <br>
+                 He drove away.
+                 <br><br>
+                 Amanda sank back into the seat, chest tight, adrenaline 
+                 burning through her veins. Frustration and fear tangled 
+                 together until she didn’t know which one hurt more.
+                 <br><br>
+                 She glanced back.
+                 <br>
+                 The street was already being reopened.
+                 <br>
+                 Like nothing had happened.
+                 <br>
+                 After a moment, Zeke spoke again — casually, like mentioning 
+                 the weather.
+                 <br><br>
+                 <b>“That thing’s called a <a class ="rexona" href ="rexona.html">Rexona.</a>”</b>
+                 <br><br>
+                 Amanda’s head snapped toward him.
+                 <br><br>
+                 <b>“So you knew what it was and decided to tell me now?”</b>
+                 <br>
+                 He shrugged slightly, eyes still on the road.
+                 <br><br>
+                 <b>“You were panicking,”</b> he said. <b>“Didn’t think it 
+                 would help.”</b>
+                 <br><br>
+                 They didn’t drive far.
+                 <br><br>
+                 The city thinned out gradually — buildings giving way to 
+                 stretched roads, streetlights spacing themselves farther apart,
+                 until finally there were none at all.
+                 <br><br>
+                 Zeke slowed down.
+                 <br><br>
+                 The car rolled to a stop in the middle of the road.
+                 <br><br>
+                 Tall trees surrounded them, their trunks rising like pillars 
+                 into a canopy that swallowed the sky. It wasn’t dark yet —
+                 the sun still filtered through the leaves — but the light 
+                 felt muted, filtered, as if the forest was deciding how much
+                 of it to allow.
+                 <br><br>
+                 The engine idled.
+                 <br>
+                 Amanda swallowed.
+                 <br><br>
+                 <b>“Why did we stop?”</b> she asked, keeping her voice steady.
+                 <br><br>
+                 Zeke unbuckled his seatbelt.
+                 <br><br>
+                 <b>“We’re waiting for someone.”</b>
+                 <br><br>
+                 Her fingers tightened around her phone — useless brick that 
+                 it was.
+               <br><br>
+               <b>“Who?”</b>
+                 <br><br>
+                 He glanced at her briefly, then reached for the door handle.
+                 <br><br>
+                 <b>“Stay in the car,”</b> he said. <b>“I’ll be back in two 
+                 minutes.”</b>
+                 <br><br>
+                 The door opened.
+                 <br><br>
+                 Cold air rushed in — damp, earthy, heavy with the smell of 
+                 leaves and something older beneath it.
+                 <br><br>
+                 Then Zeke stepped out.
+                 <br>
+                 The door shut.
+                 <br>
+                 Amanda was alone.
+                 <br>
+                 The forest pressed in immediately.
+                 <br><br>
+                 Zeke disappeared between the trees without looking back.
+                 The forest swallowed him almost immediately.
+                 Amanda stayed still, listening to the car’s engine hum — the
+                 only proof she wasn’t already alone. The sound felt fragile, like it could die at any moment if she moved wrong.
+                 <br><br>
+                 The woods were quiet.
+                 <br>
+                 Not empty — quiet.
+                 <br>
+                 The kind of silence that felt managed, as if something had decided noise was unnecessary.
+                 <br>
+                 She shifted slightly in her seat.
+                 <br>
+                 The leaves responded.
+                 <br><br>
+                 A faint rustle came from the right side of the road — 
+                 not wind-driven, not random. It stopped the moment she focused
+                 on it.
+                 </p>
+              </div>
+         </main>
+         <main class ="background-images-holder" >
+
+              <img src ="pic16.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                  
+
+                 <br><br>
+                 Amanda held her breath.
+                 <br>
+                 Seconds passed.
+                 <br>
+                 Then the bush moved again.
+                 <br>
+                 Not shaking — parting.
+                 <br><br>
+                 Branches bent inward, slowly, like fingers pulling
+                 themselves aside. Something behind them displaced the leaves 
+                 without fully revealing itself, as if it were testing the space
+                 first.
+                 <br><br>
+                 Her throat tightened.
+                 <br>
+                 No. That’s not how animals move.
+                 <br><br>
+                 The shadow behind the foliage stretched unnaturally, its
+                 outline thinning and thickening as if it couldn’t decide what 
+                 shape to keep. For a moment, it flickered — one frame closer 
+                 than before — then froze again.
+                 <br><br>
+                 Amanda’s pulse slammed in her ears.
+                 <br><br>
+                 She leaned forward, pressing her palms against the glass, eyes 
+                 straining.
+                 <br>
+                 Zeke said two minutes.
+                 <br>
+                 Another sound.
+                 <br><br>
+                 A low scrape — like something dragging lightly across bark.
+                 Not heavy. Careful. Intentional.
+                 <br><br>
+                 The bush bowed outward.
+                 <br>
+                 Whatever was inside shifted its weight.
+                 <br><br>
+                 Amanda’s fingers clawed at the door handle. The leaves 
+                 separated just enough for her to see movement deeper inside —
+                 a dark mass folding in on itself, glitching at the edges like 
+                 corrupted footage. It felt wrong to look at, like staring too 
+                 long would make it notice her noticing it.
+                 <br><br>
+                 Her chest burned.
+                 <br>
+                 This is how people disappear.
+                 <br>
+                 The shape leaned forward.
+                 <br>Closer.
+                 <br>
+                 Too close.
+                 <br>
+                 The passenger door slammed open.
+                 <br><br>
+                 Amanda screamed — sharp, raw, unfiltered. A heavy bag hit the 
+                 seat beside her, knocking the air from her lungs. Zeke slid 
+                 into the driver’s seat in one smooth motion, already turning 
+                 the key.
+                 <br><br>
+                 The engine roared.
+                 <br>
+                 The car lurched forward.
+                 <br><br>
+                 Branches whipped past the windows as the forest peeled away
+                 from them, retreating like it had never existed. Amanda sat 
+                 frozen, staring at the bag — dark fabric, stained with something
+                 she didn’t want to identify — her heart still racing long after
+                 the trees thinned and the road straightened.
+                 <br><br>
+                 Zeke didn’t look at her.
+                 <br>
+                 Didn’t explain.
+                 <br>
+                 Didn’t say her name.
+                 <br>
+                 The city lights bled back into view.
+                 <br>
+                 And somehow, that scared her almost as much as the woods.
+
+                 </p>
+              </div>
+                               
+<div id="options">
+     <img class ="options-icon" src ="menu.png"/>
+</div>
+
+<div id="menu">
+   <div class="option">
+     <a class ="options-link" href ="https://nemxfacami.github.io/NemxNovels/stories-page.html">
+         <div class ="option-box-style">
+             <div id ="option-icon-circle">
+                 <img class ="option-icon" src ="home-icon.png"/>
+             </div>
+             <div id ="option-detail-box">
+                 <p id ="option-detail">
+                     Home 
+                 </p>
+             </div>	
+         </div>
+     </a>
+  </div>
+  <div class="option">
+     <a class ="options-link" href ="#">
+         <div class ="option-box-style">
+             <div id ="option-icon-circle">
+                 <img class ="option-icon" src ="home (1).png"/>
+             </div>
+             <div id ="option-detail-box">
+                 <p id ="option-detail">
+                     Home Map
+                 </p>
+             </div>	
+         </div>
+     </a>
+  </div>
+  <div class="option">
+     <a class ="options-link" href ="#">
+         <div class ="option-box-style">
+             <div id ="option-icon-circle" style ="padding:0.3rem">
+                 <img class ="option-icon" src ="map (1).png"/>
+             </div>
+             <div id ="option-detail-box">
+                 <p id ="option-detail">
+                     City Map
+                 </p>
+             </div>	
+         </div>
+     </a>
+  </div>
+     
+  <div class="option">
+     <a class ="options-link" href ="Ravenport-characters-Amanda.html">
+         <div class ="option-box-style">
+             <div id ="option-icon-circle">
+                 <img class ="option-icon" src ="anonymous (1).png"/>
+             </div>
+             <div id ="option-detail-box">
+                 <p id ="option-detail">
+                     Characters
+                 </p>
+             </div>	
+         </div>
+     </a>
+  </div>
+
+
+<div class="option">
+     <a class ="options-link" href ="Ravenport-wherewereyou.html">
+         <div class ="option-box-style">
+             <div id ="option-icon-circle">
+                 <img class ="option-icon" src ="chapter (1).png"/>
+             </div>
+             <div id ="option-detail-box">
+                 <p id ="option-detail">
+                     Chapters
+                 </p>
+             </div>	
+         </div>
+     </a>
+</div>
+</div>
+
+         </main>
+         <footer>
+              <img src ="footer1.png" id ="footer-pic"/> 
+
+<div class="nav-buttons">
+ <!-- <a href="page1.html" class="btn">Previous</a>
+-->
+  <a href="Ravenport-chapter2.html" class="btn">Next</a>
+
+</div>
+              <div id ="footer-info" style ="bottom:13%">
+              <p style ="color:white"><b>
+               Life is inefficient.
+              <br>It offers pleasure, distraction, and endless motion — yet leaves
+              the heart hollow. Empty.
+              <br>Waiting for a coffin it cannot escape.
+              <br> 
+              <br> Prometheus does not collapse under the weight of life’s chaos.
+              <br> Prometheus offers greatness.
+              <br> 
+              <br> Why labor, when labor can be assigned?
+              <br> Why struggle, when purpose can be provided?
+              <br> Payment is not an obstacle.
+              <br> Value is accumulated.
+              <br> Balance is always collected.
+              <br> We are precise with our products.
+              <br> 
+              <br> They were not forced into their roles.
+              They were relieved of the burden of becoming.
+              <br> 
+              <br> Remember this. 
+              <br> Love is not discovered. It is engineered. Prometheus is the creator.
+              </b></p>
+              </div>
+         </footer>
+
+<script>
+
+const optionsBtn = document.getElementById('options');
+  const menu = document.getElementById('menu');
+
+  optionsBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+  
+ /* document.getElementById("previous").addEventListener("click", function () {
+    window.location.href = "#";
+  });
+  */
+  
+  document.getElementById("next").addEventListener("click", function () {
+    window.location.href = "#";
+  });
+
+
+function openPopup1() {
+    document.getElementById("overlay").style.display = "flex";
+}
+
+function closePopup1() {
+    document.getElementById("overlay").style.display = "none";
+}
+  
+  function openPopup2() {
+    document.getElementById("overlay2").style.display = "flex";
+}
+
+function closePopup2() {
+    document.getElementById("overlay2").style.display = "none";
+}
+
+function openPopup3() {
+    document.getElementById("overlay3").style.display = "flex";
+}
+
+function closePopup3() {
+    document.getElementById("overlay3").style.display = "none";
+}
+</script>
+</body>
+</html>
