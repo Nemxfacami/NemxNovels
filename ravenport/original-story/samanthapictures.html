@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+     <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+
+<title>Image Gallery</title>
+
+<style>
+body{
+    background:#0f0f0f;
+    margin:0;
+    font-family:Arial;
+}
+
+      *{
+          margin:0rem;
+          padding:0rem;
+          user-select:none;
+          box-sizing:border-box;
+      }
+
+img{width:100%;height:100%;display:block;margin:0%}
+
+/* Gallery layout */
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    padding:20px;
+    justify-content:center;
+}
+
+/* Images keep their natural proportions */
+.gallery img{
+    max-height:250px;
+    width:auto;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* Fullscreen viewer */
+.viewer{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.92);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+/* Image inside viewer */
+.viewer img{
+    max-width:95%;
+    max-height:95%;
+    object-fit:contain; /* prevents stretching */
+}
+
+/* Close button */
+.close{
+    position:absolute;
+    top:25px;
+    right:35px;
+    font-size:40px;
+    color:white;
+    cursor:pointer;
+}
+
+div#exit{
+    position:fixed;
+    top:1rem;
+    left:1rem;
+    background:#892323;
+    width:3.5rem;
+    height:3.5rem;
+    border-radius:50%;
+    padding:0.7rem;
+}
+
+</style>
+</head>
+<body>
+
+
+<div id ="exit">
+  <a href ="Ravenport-characters.html">
+  <img src ="exit.png"/>
+  </a>
+</div>
+
+<div class="gallery">
+    <img src="nature1.jpg">
+    <img src="nature2.jpg">
+    <img src="nature3.jpg">
+    <img src="nature4.jpeg">
+    <img src="nature5.jpeg">
+    <img src="nature6.jpeg">
+    <img src="nature7.jpeg">
+    <img src="nature8.jpeg">
+    <img src="nature9.jpeg">
+    <img src="nature10.jpeg">
+    <img src="nature11.jpeg">
+
+
+</div>
+
+<div class="viewer" id="viewer">
+    <span class="close" id="close">&times;</span>
+    <img id="viewer-img">
+</div>
+
+<script>
+const galleryImages = document.querySelectorAll(".gallery img");
+const viewer = document.getElementById("viewer");
+const viewerImg = document.getElementById("viewer-img");
+const closeBtn = document.getElementById("close");
+
+galleryImages.forEach(img => {
+    img.addEventListener("click", () => {
+        viewer.style.display = "flex";
+        viewerImg.src = img.src;
+    });
+});
+
+closeBtn.onclick = () => viewer.style.display = "none";
+
+viewer.onclick = (e) => {
+    if(e.target !== viewerImg){
+        viewer.style.display = "none";
+    }
+};
+</script>
+
+</body>
+</html>
+

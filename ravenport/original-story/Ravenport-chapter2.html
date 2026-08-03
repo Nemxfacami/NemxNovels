@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+     <meta charset ="UTF-8">
+     <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+     <link rel ="stylesheet" type ="text/css" href ="Ravenport-chapters.style.css"/>
+     <link rel ="stylesheet" type ="text/css" href ="chapter-navigation.css"/>
+
+     <title></title>
+<style>
+
+/* The clickable word */
+a.popup-link ,a.popup-link2{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Overlay */
+#overlay,#overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Image box */
+#popupBox,#popupBox2 {
+    position: relative;
+}
+
+/* Image */
+#popupBox,#popupBox2 img {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+/* Exit button */
+#closeBtn,#closeBtn2 {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+   </style>  
+</head>
+<body>
+
+         <main class ="background-images-holder">
+              <img src ="2pic1.png" id ="novel-pic"/>
+              
+              <div id ="storypage3" style ="height:78%">
+                 <p id ="page-1-storyline">
+                     <br>
+                     <b>“Ah… love.”</b>
+                     <br><br>
+                     The word lingered in the dark like smoke.
+                     <br><br>
+                     A shadow shifted within the room, barely visible 
+                     except for the slow movement of a figure reclining 
+                     in a chair. The only light came from a narrow window
+                     overlooking the city, Ravenport stretching endlessly 
+                     below — alive, glowing, indifferent.
+                     <br><br>
+                     <b>“Something so many people receive,”</b>
+                     he continued softly,
+                     <b>“and yet discard like it’s worthless.”</b>
+                     <br><br>
+                     A quiet laugh escaped him. Not amused — hollow.
+                     <br><br>
+                     He leaned forward, resting his elbows on his knees,
+                     fingers interlaced.
+                     <br><br>
+                     <b>“I crave it,”</b> he whispered. <b>“Desperately.”</b>
+                     <br><br>
+                     <b>His eyes closed for a moment, as if <a class="popup-link" onclick="openPopup()">
+                     picturing someone’s 
+                     face.</a></b>
+                     <br><br>
+                     <b>“Such beautiful eyes…”</b>
+                     Another breathy laugh. <b>“Haha.”</b>
+                     <br><br>
+                     The sound died quickly.
+                     <br><br>
+                     Silence filled the room again — thick, heavy, familiar.
+                     <br><br>
+                     <b>“The world is so big,”</b> he murmured, rising slowly 
+                     from his seat, <b>“and yet I am alone.”</b>
+                     <br><br>
+                     He walked toward the window. The city reflected faintly in
+                     the glass — fractured, distant, unreachable. From up here
+                     , people were just moving dots. Lives. Desires. Weaknesses.
+                     <br><br>
+                     All so close.
+                     <br>
+                     All so far.
+                     <br><br>
+                     <b>“I crave something…”</b>
+                     <br><br>
+                     He paused.
+                     <br><br>
+                     The room seemed to hold its breath with him.
+                     His gaze dropped — to the table beside the window, where 
+                     a dagger lay untouched. Steel caught the city’s light, a
+                     thin spark dancing along its edge.
+                     <br><br>
+                     His lips curved upward.
+                     <br><br>
+                     <b>“Ah.”</b>
+                     <br><br>
+                     The loneliness twisted into clarity.
+                     <br><br>
+                     <b>“If I cannot be given what I deserve,”</b>
+                     he said quietly, <b>“then I will take control of this 
+                     city.”</b>
+                     <br><br>
+                     His fingers brushed the dagger, not gripping it — just 
+                     acknowledging its presence.
+                     <br><br>
+                     <b>“And from it,”</b> he continued, voice steady now,
+                     <b>“I will take the love I am owed.”</b>
+                     <br><br>
+                     He laughed again.
+                     <br><br>
+                     This time, it echoed — bouncing off the walls, folding back
+                     into itself, filling the room until it sounded less like 
+                     amusement and more like a promise.
+
+                 </p>
+              </div>
+<!-- Overlay -->
+<div id="overlay">
+    <div id="popupBox">
+        <button id="closeBtn" onclick="closePopup()">X</button>
+        <img src="picturingsomeone.png">
+    </div>
+</div>
+
+         </main>
+
+         <main class ="background-images-holder" >
+
+              <img src ="2pic2.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">  
+                  <br>
+                  It was night, Ravenport City drenched in one of its loveliest 
+                  rains — at least for those who adored a rainy night.
+                  Streetlights glimmered on wet asphalt, reflecting the endless 
+                  drizzle like molten gold. The soft patter of raindrops against
+                  the windows mixed with the occasional distant honk of a lonely
+                  car. Shadows stretched and twisted across the slick streets, 
+                  hiding secrets Amanda didn’t want to uncover — yet somehow, 
+                  always noticed.
+                  <br><br>
+                  Amanda sat in the sitting room, curled on the couch, the dim
+                  glow of the TV painting soft rectangles of light across her 
+                  face. Midnight had arrived, and the city outside whispered 
+                  through the rain — quiet, patient, indifferent. She wasn’t 
+                  enjoying the night. Not at all. She was miserable, desperate.
+                  <br><br>
+                  Her laptop glowed in her lap, a portal to <i>Jobless</i>, 
+                  a website she had scoured endlessly. She’d tried every job 
+                  site she could think of, applied to countless positions —
+                  nothing. The posts that might have caught her eye either
+                  required experience she didn’t have or simply ignored her.
+                  <br><br>
+                  <b>*Ugh… I can’t even find a single job. I went to the best 
+                  college, and I can’t get a job.*</b>
+                  <br><br>
+                  Her inner scream echoed softly in the empty room. In the 
+                  background, the TV murmured its monotonous news cycle —<a style ="color:white" href="RVPnews.html">
+                  RVP 
+                  News</a>, the city’s lifeblood of updates, flickering across the 
+                  screen like a restless ghost.
+                  <br><br>
+                  She scrolled through social media, drowning in the curated
+                  pleasures of the internet. Bright posts, screaming headlines,
+                  and the endless parade of perfection and desire filled the
+                  screen.
+                  <br><br>
+                  <b>*I feel like I can never get a job…*</b>
+                  <br><br>
+                  Her eyes caught a post — a photo, a message, a story — she 
+                  didn’t know what exactly, but it struck a nerve deep inside.
+                  <br><br>
+                  <b>*It’s a pandemic — it’s as if the entire world agreed the 
+                  best job for a female is to sell their bodies. What bullshit
+                  is this.*</b>
+                  <br><br>
+                  The rain drummed harder on the window, tapping out a rhythm 
+                  that matched her growing agitation. She scrolled deeper, 
+                  curiosity and dread mingling, diving into corners of the
+                  internet where the shadows of society crept unchecked.
+                  <br><br>
+                  Meanwhile, the TV’s broadcast drifted into the room, darker
+                  than before. The anchor’s calm voice carried an unsettling 
+                  edge.
+                  <br><br>
+                  <b>"Authorities have confirmed the discovery of three bodies 
+                  in Silion Park this afternoon. The victims, all young, were
+                  found partially buried, with no signs of immediate 
+                  identification. Police warn that these murders are likely 
+                  linked, urging residents to exercise caution after dusk.
+                  Silion Park will remain under investigation as the city
+                  grapples with the grim reality of this crime."</b>
+                  <br><br>
+                  Amanda froze for a moment, the words sinking in like stones 
+                  dropped in her chest. She looked at the screen, but her 
+                  attention quickly drifted back to the glowing phone in her
+                  hands.
+                  <br><br>
+                  <b>*Even twelve-year-old girls have been brainwashed into 
+                  this nightmare — pushed into porn, exposed to everything
+                  too soon…*</b>
+                  <br><br>
+                  She flung her phone across the couch, letting it land with a
+                  soft thud. Her chest heaved as she exhaled, trying to shake 
+                  the heaviness settling into her bones. She leaned back, the 
+                  couch swallowing her, rain tapping against the glass, TV
+                  murmuring ominously in the background.
+                  <br><br>
+                  Slowly, fatigue took over. Her eyes grew heavy, the glow of 
+                  the city outside and the fractured light from the TV blurring 
+                  together. She let herself relax, sinking deeper into the couch, 
+                  into the darkness, into sleep.
+                  <br><br>
+                  Zeke’s room was a chaos that mirrored his mind. Clothes and 
+                  papers were scattered across the floor, books lay open with 
+                  pages curling as if they were breathing, and half-drunk
+                  bottles of wine glimmered in the faint light of a single 
+                  overhead bulb. A corkboard on the wall was cluttered with 
+                  pictures and scribbles, threads connecting faces and notes 
+                  in a way that made sense only to him. One corner of the board
+                  showed a drawing of a childlike black monster, lines dark and
+                  jagged, eyes hollow — he crossed it out with a sharp swipe of
+                  his marker.
+                  <br><br>
+                  Scripts lay splayed across the desk, their pages filled with 
+                  meticulously calculated dialogue, notes in the margins about 
+                  timing and human reaction. Knives rested beside the books, 
+                  their steel catching the dim glow, polished yet menacing.
+
+                 </p>
+              </div>
+         </main>
+         
+         <main class ="background-images-holder" >
+
+              <img src ="2pic3.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                 
+                 <b>“Do you know what the difference between planners and 
+                 strategists is?”</b> Zeke said aloud, almost conversationally,
+                 as he stuffed a duffel bag with bottles of wine, knives, 
+                 and other tools.
+                 <br><br>
+                 <b>*No,*</b> he answered himself.
+                  <br><br>
+                  <b>“A planner is a man content to count his coins before the
+                  fire consumes the world. He draws lines, charts paths,
+                  imagines contingencies,” </b> he said, standing and zipping the 
+                  bag, eyes drifting to the board as he crossed out another
+                  scribble.
+                  <br><br>
+                  <b>*Tell me, what about the strategist? How is it different
+                  from the planner?*</b>
+                  <br><br>
+                  <b>“Ah, right,”</b> he replied, voice low and almost approving
+                  of the question.<b> “A strategist, on the other hand… he 
+                  understands decay. He knows the world is broken, inevitable,
+                  and moves through it like a shadow that cannot be stopped.
+                  He does not care if the pieces survive; he knows how to break
+                  them, and how to bend them to his will — a strategist creates 
+                  inevitability.”</b>
+                  <br><br>
+                  He swung the duffel bag over his shoulder and moved toward the
+                  door, the soles of his shoes silent against the worn 
+                  floorboards. The hall was dark, the air heavy with the 
+                  scent of old paper and faint cologne.
+                  <br><br>
+                  He entered the sitting room where Amanda slept, her body 
+                  curled on the couch, breathing shallow and steady. The TV
+                  flickered in the corner, playing a horror movie — shadows 
+                  of monsters crawling across the walls, their movements 
+                  mirrored by the occasional twitch of Amanda’s eyelids.
+                  <br><br>
+                  <b>*She’s sleeping… or maybe faking, waiting to follow me
+                  into the woods and ruin my beautiful nutcracker,*</b> he
+                  thought, a faint smile tugging at his lips.
+                  <br><br>
+                  Zeke passed her without a sound, the faint click of the TV
+                  remote pressing him to a whisper, and slipped out into the 
+                  night, leaving Amanda to her dreams and the flickering shadows.
+                  The rain outside tapped against the windowpane, rhythmic and
+                  cold, blending with the low hum of the horror movie.
+                  <br><br>
+                  The house felt alive, holding its breath, waiting.
+
+                 </p>
+              </div>
+         </main>
+ 
+          <main class ="background-images-holder" >
+
+              <img src ="2pic4.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                     The night was drenched in rain, the kind that made the city
+                     streets shimmer with reflections of broken neon lights. 
+                     Zeke moved through it like he owned the darkness, coat 
+                     clinging to him, hair plastered to his forehead, coughing 
+                     lightly as the cold bit at his lungs. His immune system 
+                     wasn’t the strongest, but that never stopped him.
+                     <br><br>
+                     <b>*It's night — I've taken matters into my own majestic 
+                     hands. As they say ' When the sun is down, the demons rise.' *</b>
+                     <br><br>
+                     Ignoring the shadows of Mycroft and his lingering desire 
+                     to track Davien — already settled — he pressed forward. 
+                     <br><br>
+                     <b>“Today I’ll be capturing what I call a Dark Child,”</b>
+                     he murmured, stopping in the middle of the wet street.
+                     <br><br>
+                     <b>*It’s not always a child, obviously, but appearances 
+                     don’t matter. This… this thing isn’t of this world.
+                     Like… a sperm rising from the depths of hell.*</b>
+                     <br><br>
+                     He squinted into the tree line, cautious. “I still don’t 
+                     know how it came to be,” he muttered aloud, scanning the 
+                     dark woods as if expecting a pair of eyes to glow back at 
+                     him.
+                     <br><br>
+                     <b>“I know, I know… you may continue explaining — no need
+                     to start a pointless argument,”</b> he added, sarcasm 
+                     cutting through the damp air, talking to himself as usual.
+                     <br><br>
+                     <b>*The Dark Child has a weakness,*</b> his inner voice
+                     replied sharply.<b> *It feeds on negative energy.*</b>
+                     <br><br>
+                     Zeke exhaled slowly. <b>“You mean frequencies?”</b>
+                     <br><br>
+                     <b>*Not frequencies,*</b> the voice hissed. <b>*Emotions,
+                     like Grief, despair, pain… the darker, the better.*</b>
+                     <br><br>
+                     <b>“How is that a weakness?”</b> he asked, eyebrows 
+                     furrowed.<b> “Sounds like a superpower to me.”</b>
+                     <br><br>
+                     <b>*Exactly, it’s dangerous. But its weakness is proximity.
+                     It can’t feed unless it’s near its source.*</b>
+                     <br><br>
+                     He paused, a branch snapping somewhere deep in the woods
+                     catching his attention. <b>*Let’s get a gun ready.*</b>
+                     <br><br>
+                      ---
+                     <br><br>
+                     Meanwhile, Amanda was in Zeke’s room — a sanctuary of
+                     madness and curiosity. Books, scrolls, and scraps of 
+                     paper covered every surface, ink-stained sketches of 
+                     impossible creatures crawling along the walls. On the
+                     desk, pages written in a language she didn’t know swirled
+                     with diagrams, circles, and strange symbols. The air 
+                     smelled of old parchment and faint, lingering candle wax.
+                     It was as if she just went back to the 1400AD.
+                     <br><br>
+                     She ran her fingers over a map pinned to the wall. 
+                     <b>“A map… so this is where he might be heading.” </b>
+                     she murmured, eyes wide.<b> “This isn’t just insanity…
+                     he’s aware of things most people can’t even imagine.” </b>
+                     Her pulse quickened.<b> *I've gotten curious about this
+                     place too.*</b>
+                     <br><br>
+                     She lingered a moment, taking mental notes, imagining the 
+                     labyrinthine thoughts that led him here. Then, a
+                     mischievous grin spread across her face. <b>“Well, I 
+                     guess I need some protection… a knife should do.”</b>
+                     <br><br>
+                     Backtracking with purpose, she returned to the kitchen, 
+                     snatched a small hunting knife, and gave herself a playful
+                     little nod in the mirror.<b> *Okay, Amanda… let’s see if 
+                     following Zeke tonight gets us anywhere.*</b> She
+                     slipped it into her jacket pocket, the thrill of 
+                     curiosity mixed with danger giving her a rare sense of 
+                     excitement.
+                     <br><br>
+                     ---
+                     <br><br>
+                     Lethe Vestige crouched in the shadows of a bush across 
+                     from Lucien’s house, eyes trained on Amanda as she emerged.
+                     Love or loneliness — the distinction had long blurred. To
+                     him, she was a reason, a spark, something to focus the ache
+                     that had been burning in his chest for as long as he could
+                     remember.
+                     <br><br>
+                     <b>*In a world full of people, and yet I am alone… am I
+                     meant to be left behind?*</b>
+                     <br><br>
+                     Pain wrapped around him like a cloak, heavy and suffocating,
+                     his heart twisting as if it were being wrenched from his
+                     chest. His movements were strange, jerky, almost compulsive,
+                     yet there was focus in his gaze.
+                     <br><br>
+                     <b>“Again and again… it always ends like this,”</b> he
+                     muttered, tears slipping down his cheeks. <b>“I remember
+                     everything… but they don’t. Why does life always steals
+                     what matters the most to me?”</b>
+                     <br><br>
+                     His body tensed as he followed Amanda from the shadows,
+                     hesitant but deliberate, a ghost in the night. Each step
+                     was careful, unsteady in its humanity yet unwavering in 
+                     purpose.
+                     <br><br>
+                     The moon hung low over Cartercel Lake, casting a silver 
+                     glow across the water. The air smelled faintly of pine
+                     and wet earth, a gentle breeze ruffling the leaves.
+                     Laughter echoed across the small clearing as five friends 
+                     sprawled on blankets, a pile of half-empty bottles and
+                     snacks scattered around them.
+                     <br><br>
+                 
+                 </p>
+              </div>
+         </main>
+           <main class ="background-images-holder" >
+
+              <img src ="2pic5.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                     Three boys and two girls — two couples entwined in
+                     whispered secrets and playful shoves, while the fifth, a 
+                     boy, sat a little apart, glancing at his girlfriend with 
+                     a hopeful smile. Music pulsed softly from a portable 
+                     speaker, the bass vibrating through the grass as the 
+                     friends danced barefoot on the dew-kissed ground.
+                     <br><br>
+                     One of the girls tossed her hair back, squealing as the 
+                     other tried to cover her face with whipped cream from a 
+                     hastily grabbed dessert. The boys hooted and cheered, 
+                     trying to dodge the flurry of sugar and laughter, and 
+                     someone accidentally toppled a cooler, sending ice cubes
+                     skittering across the blanket. The chaos only made them
+                     laugh harder.
+                     <br><br>
+                     The night felt endless, as if the world had melted away, 
+                     leaving just the glow of firelight and the warmth of 
+                     friendship. Each small gesture — a hand held, a glance
+                     exchanged, a whispered joke — wrapped the group in a
+                     bubble of careless joy.
+                     <br><br>
+                     But the night seemed to be having other plans for them. 
+                     Shadows lengthened unnaturally along the tree line, the
+                     laughter fading into an uneasy silence. Something unseen 
+                     pressed at the edges of the clearing, a subtle weight 
+                     that made the hair on the back of their necks rise. 
+                     The wind carried a strange whisper through the branches, 
+                     and the water of the lake darkened, reflecting not the
+                     moon but something deeper, more sinister.
+                     <br><br>
+                     Unaware of the eyes watching them from the darkness, 
+                     the friends continued their revelry — but the balance 
+                     had already shifted. The fun, the warmth, the light of 
+                     their laughter was now a fragile illusion, teetering on 
+                     the brink of something that could swallow it whole. Zeke 
+                     enjoyed the view from afar .
+                     <br><br>
+                     The five of them lounged on the grassy edge of Cartercel 
+                     Lake, beer bottles glinting in the moonlight. Two couples, 
+                     heads leaning together, hands brushing, and one guy sitting 
+                     slightly apart, glancing at his girlfriend every few seconds.
+                     <br><br>
+                     Liam raised his bottle. <b> “Yo, remember when that 
+                     college teach told me to stop drinking?”</b> He laughed,
+                     spilling a little on his shorts.
+                     <br><br>
+                     Stacy nudged him playfully, rolling her eyes. <b>“And look
+                     at you now, Mr. Responsible. Totally listening, huh?”</b>
+                     <br><br>
+                     Ethan, leaning close to Maya, smirked. <b>“Some rules are 
+                     made to be broken, honestly. Like, who even follows college
+                     rules anyway?”</b>
+                     <br><br>
+                     Maya laughed, flicking his shoulder. <b>“Exactly. And 
+                     rules are boring. Like, live a little!”</b>
+                     <br><br>
+                     
+                 </p>
+              </div>
+         </main> 
+         <main class ="background-images-holder" >
+
+              <img src ="2pic6.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                 
+                     <a style ="color:white" href ="caleb.html">Caleb </a>,sitting a little back, fiddled with his cup,
+                     watching the couples. “Yeah… I guess. I mean… just don’t, like, get too crazy. Last time someone almost fell in the lake.” He glanced down at the water, sighing, feeling a little left out as the other couples laughed and leaned into each other.
+                     <br><br>
+                     Stacy  leaned forward, grinning. <b>“Relax, bro, we’re fine.
+                     Unless you scared already?”</b>
+                     <br><br>
+                     Liam laughed loudly, bumping Caleb with his shoulder.</b>
+                     “Scared? Nah, you’re just jealous. Admit it!”</b>
+                     <br><br>
+                     Maya nudged her boyfriend again.<b> “He’s always pretending
+                     to be chill, but I saw him eyeing the snacks like a hawk.”</b>
+                     <br><br>
+                     Ethan winked at her.<b> “Better safe than sorry, I guess. 
+                     This place is kinda… creepy at night, not gonna lie.”</b>
+                     <br><br>
+                     Stacy tilted her head, eyes sparkling.<b> “Creepy? It’s
+                     perfect. Moonlight, lake, music, us. Come on, don’t be a
+                     buzzkill.”</b>
+                     <br><br>
+                     Caleb sighed, forcing a laugh.<b> “Yeah… yeah, perfect.”</b>
+                     But his smile didn’t reach his eyes. He took a long swig, 
+                     staring at the water rippling under the moon.
+                     <br><br>
+                     The laughter and playful teasing continued around him, 
+                     louder, brighter — a sharp contrast to the shadow gathering
+                     in the woods just beyond the lake’s edge.
+                     <br><br>
+                     Zeke was crouched behind the thick trees, the darkness of
+                     the woods oozing around him like wet ink. His eyes glinted
+                     in the faint moonlight, sharp and predatory. Everything was
+                     unfolding exactly as he had imagined. He slipped a hand
+                     into his pocket, fingers brushing the smooth glass of his
+                     <a class="popup-link2" onclick="openPopup2()">phone</a> — 
+                     his tiny dagger to manipulate fate — and dialed.
+                     <br><br>
+                     On the other end, Caleb’s phone vibrated. He picked it up,
+                     expecting Emilia. His friends noticed and went silent, the
+                     pause heavy, expectant.
+                     <br><br>
+                     <b>“Hey… Emilia just might not make it,”</b>Zeke said 
+                     smoothly, teeth glinting in a devilish grin, <b>
+                     “something came up.”</b>
+                     <br><br>
+                     <b>“What do you mean she’s not coming — WHO ARE YOU?!” </b>
+                     Caleb’s voice cracked, panic rising.
+                     <br><br>
+                     Zeke cut the call. Just like that. The line went dead. He 
+                     lingered in the shadows, watching the ripples of confusion 
+                     and worry spread across the group like water.
+                 </p>
+              </div>
+              <!-- Overlay -->
+<div id="overlay2">
+    <div id="popupBox2">
+        <button id="closeBtn2" onclick="closePopup2()">X</button>
+        <img src="wallpaper.png">
+    </div>
+</div>
+         </main>
+         <main class ="background-images-holder" >
+
+              <img src ="2pic7.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                     
+                     <br><br>
+                     <b>*People are most vulnerable when they think they’re 
+                     protected by numbers. What I just did is use:</b>
+                     <br><br>
+                    <b> - Authority by possession (her phone = instant credibility)</b>
+                       <br>
+                    <b> - Incomplete information (no explanation = obsessive curiosity)</b>
+                    <br><b>
+                        - Abrupt withdrawal (cutting the line = panic loop)
+                     <br><br>
+                     The human mind is… beautifully fragile.*</b>
+                     <br><br>
+                     Maya’s voice broke the silence.<b> “Wait… was that your 
+                     girlfriend? She gonna show up or nah?”</b>
+                     <br><br>
+                     Caleb shook his head, uneasy. <b>“No… she’s not coming. But 
+                     some random dude picked up. That’s… weird.”</b>
+                     <br><br>
+                     The girls leaned in, whispering. <b>“Ooo, this is messy,” </b>
+                     Maya teased.
+                     <br><br>
+                     The boys smirked, nudging each other knowingly. Liam leaned
+                     toward Caleb, elbowing him. <b>“Bro, forget her. Honestly,
+                     I’ve seen Roxanne glancing your way — you might be in luck.”</b>
+                     <br><br>
+                     Maya laughed, flicking Liam’s arm. <b>“Yeah, she’s totally
+                     into you. Don’t sweat Emilia.”</b>
+                     <br><br>
+                     Ethan grinned, reclining in the grass. <b>“Lowkey though…
+                     I’ve seen Emilia talking to this shady dude once. Not sure 
+                     what that was about.”</b>
+                     <br><br>
+                     <b>“Damn,” </b>Liam muttered, <b>“pouring salt on the wound.”</b>
+                     <br><br>
+                     Maya tilted her head, playful but sharp.<b> “Right? I saw
+                     it too. Weird vibes.”</b>
+                     <br><br>
+                     Roxanne remained only in their stories, her presence 
+                     lingering as gossip and tension. Maya waved a hand 
+                     dismissively. <b>“Whatever. Tonight’s about fun, not drama.”</b>
+                     <br><br>
+                     Laughter bubbled, bottles clinking in the moonlight, 
+                     music soft from a speaker hidden in the grass. The two
+                     couples leaned into each other, whispers and playful 
+                     touches painting the night with warmth.
+                     <br><br>
+                     Caleb felt the sharp edges of loneliness dig into him. 
+                     The laughter felt too bright, too loud — a reminder that 
+                     he was… separate. His gaze drifted to the shadows at the 
+                     treeline. The kiss of cool night air, the distant rustle 
+                     of leaves, beckoned him. Slowly, he stood, hands fidgeting, 
+                     and wandered toward the woods.
+                     <br><br>
+                     Behind the trees, Zeke’s smile widened, teeth catching the 
+                     moonlight. Darkness clung to him like a cloak. Every movement
+
+                 </p>
+              </div>
+         </main>
+         <main class ="background-images-holder" >
+
+              <img src ="2pic8.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                     
+                      deliberate, every breath measured. <b>*Soon,*</b> he thought,
+                     <b>*the grief will call to me.*</b>
+                     <br><br>
+                     When Caleb was wandering the woods, lonely and spiraling, 
+                     the silence pressed against him like judgment. Every step 
+                     felt louder than it should’ve been, every thought heavier.
+                     His phone buzzed once — nothing. No message. No explanation. 
+                     Just absence.
+                     <br><br>
+                     A shadow slid beside him.
+                     He flinched.
+                     <br><br>
+                     <b>“What are you doing out here all alone at night?”</b>
+                     Zeke’s voice came smooth, almost conversational. He stood 
+                     too close, a bottle of wine dangling loosely from his 
+                     fingers. His face was cold, unreadable — yet beneath it, 
+                     something restrained itself, fighting the urge to enjoy 
+                     the moment.
+                     <br><br>
+                     <b>“I should be asking you that,”</b> Caleb said, forcing 
+                     steadiness as his eyes dropped to the bottle.
+                     <br><br>
+                     <b>“I’m drinking while enjoying the beauty of the moon and 
+                     the quietness of the woods — 'as they say, the moon knows
+                     all the lonely ones' -”</b>
+                     Zeke extended the bottle toward him.
+                     <b>“It’s amazing how someone can be alone… yet have people
+                     around them, right?”</b>
+                     <br><br>
+                     His side‑eye lingered a second too long.
+                     <br><br>
+                     Caleb looked up at the moon like it might answer for him. 
+                     Pale. Distant. Uncaring.
+                     <b>“Yeah… I’ve noticed,”</b> he said, taking a sip.
+                     <br><br>
+                     The wine burned on the way down.
+                     <br><br>
+                     <b>*In times of someone else’s grief, I tend to lack the 
+                     empathy to comfort them. But I’m badly good at helping 
+                     them either learn from their mistakes or worsen it for
+                     my own benefit. In the end, I’m wise enough to lead them
+                     to sheer greatness — turning a flower without leaves into
+                     a black rose. I call myself Zekius Prime Mento.*</b>
+                     <br><br>
+                     <b>“I’ve been cheated on before,”</b>
+                     Zeke exhaled, faking weight behind the words as he snatched
+                     the bottle back and took a deep pull. The gesture was
+                     deliberate — calculated to pull Caleb in.
+                     <br><br>
+                     <b>“I hope you are not a cheater, friend.”</b>
+                     <br><br>
+                     Caleb shook his head quickly.<b> “No. I was supposed to be
+                     with my girlfriend today… but she never came.”</b>
+                     <br><br>
+                     <b>*Sounds sexual, I may say.*</b>
+                     <br><br>
+                     Zeke watched him blink too often. Watched his balance shift.
+
+                 </p>
+              </div>
+         </main>
+         <main class ="background-images-holder" >
+
+              <img src ="2pic9.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                     
+                      <b>“Don’t beat around the bush, my friend.”</b>
+                      <br>A pause.
+                      <b>“Oh, this is nice — you’re drunk.”</b>
+                     <br><br>
+                     Zeke took out a baseball bat out of nowhere. Almost lazily.
+                     <br><br>
+                     <b>“Guess it’s time to attract the Dark Child.”</b>
+                     <br><br>
+                     Without hesitation,he firstly hit knocked the air out of 
+                     Caleb slamming the bat on his stomach like he was hitting
+                     the wall. The second sent him to the ground. Zeke didn’t 
+                     rush. He didn’t rage. Each strike was measured — meant to 
+                     hurt, not to end. Pain as instruction.
+                     <br><br>
+                     <b>*To enlighten his grief.*</b>
+                     <br><br>
+                     Caleb coughed blood, sobbing, trying to crawl away. Zeke 
+                     stopped only when Caleb started  crying.
+                     <br><br>
+                     <b>“The hardest choices demands the strongest will.”</b>
+                     <br><br>
+                     He looked past Caleb — toward the firelight flickering far 
+                     away, where laughter still existed.
+                     <br><br>
+                     <b>“I pity you… so I’ll take them all down with you.”</b>
+                     <br><br>
+                     <b>*This is one of those times where I sincerely go to them
+                     and beat the hell out of their bodies and stripped the girls
+                     and raped them.*</b>
+                     <br><br>
+                     The thought lingered. Zeke was already having plans as he 
+                     was adapting with the changes of his original plan.
+                     <br><br>
+                     He wiped the bat clean against Caleb's jacket, lifted the 
+                     wine bottle, and turned back toward the sound of music and 
+                     shallow happiness.
+                     <br><br>
+                     ---
+                     <br><br>
+                     Meanwhile — at the clearing
+                     <br><br>
+                     Liam kicked off his sneakers, letting the sand squish 
+                     between his toes. Stacy leaned back on her elbows beside 
+                     him, grinning.
+                     <br><br>
+                     <b>“Bet you can’t skip a rock more than five times,”</b>
+                     Liam teased, tossing a flat stone across the water. It 
+                     skipped once, twice… then sank.
+                     <br><br>
+                     <b>“Ha! Beginner’s luck,”</b> Stacy shot back, nudging him 
+                     playfully.
+                     <br><br>
+                     From a little ways off, Ethan and Maya were sprawled on a 
+                     blanket, marshmallows roasting over a tiny fire.
+                     <br><br>
+                     <b>“Honestly, Liam, you’re lucky you’re cute,”</b> Maya 
+                     said, flicking a marshmallow at him. <b>“Otherwise, you’d 
+                     be food for the fish.”</b>
+                     <br><br>
+
+              </div>
+         </main>
+         <main class ="background-images-holder" >
+
+              <img src ="2pic5.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                     
+         
+                             
+                     <b>“Excuse me,”</b> Liam said, pretending to clutch his 
+                     heart, <b>“I am way more than just cute. I’m, like, peak 
+                     snack energy.”</b>
+                     <br><br>
+                     Ethan laughed, leaning closer to Maya.<b> “Peak snack? More 
+                     like premium fries,”</b> he said with a wink.
+                     <br><br>
+                     The four of them dissolved into giggles, the night full of
+                     their laughter and the soft lapping of water. Stacy rolled 
+                     onto her side, her hair brushing the sand, and stared at 
+                     the dark treeline across the lake.
+                     <br><br>
+                     Then she froze.
+                     <br><br>
+                     A rustle. Just beyond the glow of the fire, a bush shivered 
+                     violently.
+                     <br><br>
+                     <b>“…Did you guys hear that?”</b> Stacy whispered, her 
+                     playful smile fading. She sat up, eyes wide.<b> “There’s… 
+                     something there.”</b>
+                     <br><br>
+                     Liam sat up, brushing sand off his jeans.<b> “Chill, it’s 
+                     probably a raccoon or—”</b>
+                     <br><br>
+                     But the bush shook again, louder this time, leaves scratching
+                     like nails against each other.
+                     <br><br>
+                     Maya leaned forward, squinting.<b> “Uh… yeah, I don’t think 
+                     that’s normal, Stace.”</b>
+                     <br><br>
+                     Ethan smirked nervously.<b> “Maybe it’s just… nature being 
+                     extra creepy tonight?”</b>
+                     <br><br>
+                     Stacy grabbed Liam’s arm.<b> “Nope. I’m not imagining this. 
+                     There’s something in the bushes!”</b>
+                     <br><br>
+                     The rustling paused. Silence stretched. Then, with a sudden
+                     <b>*crash*,</b> a figure burst out of the dark.
+                     <br><br>
+                     <b>"BOO!"</b>
+                     <br><br>
+                     They all yelped. Ethan fell backward on the blanket. Liam 
+                     scrambled to his feet. Maya shrieked—half in terror, half
+                     in laughter.
+                     <br><br>
+                     The figure stepped into the moonlight. It was Zeke, 
+                     grinning wide, arms raised like he’d just won the ultimate
+                     scare.
+                     <br><br>
+                     <b>“You should’ve seen your faces!”</b> Zeke laughed, hair
+                     mussed and eyes sparkling in the firelight.
+                     <br><br>
+                     Stacy’s mouth dropped open, then she groaned, burying her 
+                     face in her hands.<b> “You asshole! You gave me a heart attack!”</b>
+                     <br><br>
+                     Liam laughed,<b> “Dude, not funny… actually, maybe a little
+                     funny.”</b>
+                     <br><br>
+                     Maya shook her head, giggling. <b>“Peak energy”</b>
+                     <br><br>
+                     Ethan joined in, still on the ground, <b>“10/10 scare, 
+                     would almost pee again.”</b>
+
+                 </p>
+              </div>
+         </main>
+         <main class ="background-images-holder" >
+
+              <img src ="2pic11.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                     
+                     
+                     <b>“Just passing by, I couldn't help myself but be jealous of
+                     your lovely time,” </b>said Zeke, smiling as he scanned 
+                     the group, swirling his wine.
+                     <br><br>
+                     <b>“Oh, I see y’all are having these simple beers—I kinda 
+                     hate these, they don’t hit hard,” </b>he added, settling 
+                     down near the fire.
+                     <br><br>
+                     Liam blinked, mouth slightly open. <b>“Uh… wait. ‘Don’t hit
+                     hard’? Bruh, what does that even mean?”</b>
+                     <br><br>
+                     Stacy elbowed Liam, whispering with a smirk,<b> “I think he
+                     means it’s weak, like, soft vibes. He’s classy wine energy
+                     or something.”</b>
+                     <br><br>
+                     Maya leaned back on her hands, laughing. <b>“Soft vibes?
+                     Big mood. He’s out here flexing his palate.”</b>
+                     <br><br>
+                     Ethan raised an eyebrow, trying to hide a grin. <b>
+                     “Okay, but also… lowkey savage? Like, he’s judging our beer
+                     choices in front of us. This dude’s confident.”</b>
+                     <br><br>
+                     Zeke took a slow sip, eyes flicking over them.
+                     <br><br>
+                     Stacy tilted her head, teasingly. <b>“So basically… we’re 
+                     peasants drinking soda water while you’re over there being
+                     Mr. Fancy?”</b>
+                     <br><br>
+                     Liam snorted.<b> “Bro, you’re wild. But I lowkey respect 
+                     it. Someone gotta educate us.”</b>
+                     <br><br>
+                     Maya grinned at Ethan.<b> “Imagine him judging us like this 
+                     at every picnic.”</b>
+                     <br><br>
+                     Ethan shrugged, grinning back. <b>“Honestly? I’d pay to 
+                     watch that. Peak entertainment.”</b>
+                     <br><br>
+                     Zeke leaned back, swirling the wine with a lazy smile, 
+                     like he owned the moment. <b>“Chill ,if you don't mind me 
+                     and 2 of you guys can just go get some bottles of wine in
+                     my car ,I got like 10 of them”</b>
+                 </p>
+              </div>
+         </main>
+         <main class ="background-images-holder" >
+
+              <img src ="2pic10.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                      
+                     Liam pushed himself to his feet first. <b>“I’ll go,”</b> 
+                     he said casually, like they were just heading to grab snacks
+                     from a fridge and not walking into pitch-dark woods.
+                     <br><br>
+                     Stacy stood immediately.<b> “Yeah, obviously I’m going too,” 
+                     </b>she said, already brushing sand off her shorts.<b>
+                     “I’m not letting you disappear into the forest with a 
+                     random wine guy.”</b>
+                     <br><br>
+                     Liam grinned.<b> “See? Protective queen.”</b>
+                     <br><br>
+                     They followed Zeke as he turned toward the trees, the 
+                     firelight shrinking behind them with every step. 
+                     The woods swallowed sound fast—the laughter from the lake
+                     fading into nothing but crickets and the faint rustle of
+                     leaves.
+                     <br><br>
+                     The air felt colder here. Thicker. The path wasn’t really
+                     a path at all—just dirt, roots, and shadows pretending to 
+                     be solid ground. Stacy stayed close to Liam, her fingers
+                     brushing his hand, not holding it yet, just <b>*ready*.</b>
+                     <br><br>
+                     <b>“So,”</b> Liam said, breaking the silence, voice a 
+                     little louder than usual,<b> “you just… keep ten bottles
+                     of wine in your car?”</b>
+                     <br><br>
+                     Zeke chuckled softly as he walked ahead of them. <b>
+                     “Yeah. I travel a lot. Helps pass the time.”</b>
+                     <br><br>
+                     Stacy raised an eyebrow. <b>“That’s either really cool… or
+                     really concerning.”</b>
+                     <br><br>
+                     Liam laughed. <b>“Facts. Like, what kind of wine guy are 
+                     you? Red? White? ‘I drink this because it’s expensive’ energy?”</b>
+                     <br><br>
+                     The woods grew darker the farther they went. Moonlight
+                     barely slipped through the branches, turning everything 
+                     silver and distorted. Every snap of a twig made Stacy’s
+                     shoulders tense, even though she told herself it was stupid.
+                     <br><br>
+                     <b>“You come out here often?”</b> she asked, half-curious, 
+                     half-checking.
+                     <br><br>
+                     Zeke glanced back at them, his smile easy, unreadable.<b>
+                     “More than you’d think.”</b>
+                     <br><br>
+                     Liam nodded slowly. <b>“Okay, forest regular. Respect.”</b>
+                     He leaned closer to Stacy, lowering his voice. <b>
+                     “Lowkey feels like we’re in a horror movie though.”</b>
+                     <br><br>
+                     She smirked, but her eyes kept scanning the trees. 
+                     <b>“Stop. Don’t say that. I already hate how quiet it is.”</b>
+                     <br><br>
+                     Zeke slowed near a thick tree, the bark dark and rough, 
+                     shadows pooling around its roots.
+                     <br><br>
+                     <b>“Oh, I forgot to say—I think I saw someone behind, over
+                     there,” </b>Zeke said, pointing casually into the woods.
+                     <br><br>
+                     Liam and Stacy turned at the same time.
+                     <br><br>
+                     Nothing. Just trees. Darkness. Empty air.
+                     <br><br>
+                     The impact came before either of them could react.
+                     <br><br>
+                     A blunt, sickening <b>*thud*</b> slammed into the backs of
+                     their heads. Liam went down hard, the breath knocked clean
+                     out of him as he hit the ground. Stacy collapsed beside him,
+                     vision exploding into white sparks, her ears ringing violently.
+                     Neither was unconscious—just stunned, helpless, the world
+                     tilting sideways.
+                     <br><br>
+                     <b>“In these kinds of moments, you need to call for help,”</b>
+                     Zeke said calmly.
+                     <br><br>
+                     Stacy’s hands shook as she clawed her phone out of her 
+                     pocket, fingers slippery, panic flooding her chest. She 
+                     hit Ethan’s name, barely able to see the screen.
+                     <br><br>
+                     <b>“Aww, yes—call your other friends so y’all can die 
+                     together. Fun!” </b>Zeke said, his voice light, almost 
+                     delighted.
+                 </p>
+              </div>
+         </main>
+         <main class ="background-images-holder" >
+
+              <img src ="black.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                      
+                      Liam groaned, trying to push himself up, but his arms 
+                      gave out. His head felt heavy, wrong. Stacy turned her
+                      face slightly—and froze.
+                     <br><br>
+                     A body lay just a few feet away, half-hidden in shadow.
+                     <br><br>
+                     Caleb.
+                     <br><br>
+                     Her scream ripped out of her before she could stop it—raw, 
+                     broken. She tried to crawl back, her leg screaming in pain
+                     as she moved.
+                     <br><br>
+                     <b>“Haha, you thought you were gonna go running somewhere,
+                     huh?”</b> Zeke said, smiling.
+                     <br><br>
+                     Pain exploded through Stacy’s leg as she collapsed again, 
+                     blood darkening the dirt beneath her. She sobbed, dragging
+                     herself closer to Liam, who reached for her weakly, his face 
+                     pale with terror.
+                     <br><br>
+                     Footsteps. Rushed. Panicked.
+                     <br><br>
+                     <b>“Stacy?”</b> Ethan’s voice cracked through the trees. <b>“Liam?!”</b>
+                     <br><br>
+                     Ethan and Maya burst into the clearing—and stopped dead.
+                     <br><br>
+                     <b>“Oh my god—” </b>Maya whispered, her hand flying to her
+                     mouth.
+                     <br><br>
+                     Ethan dropped to his knees beside them. <b>“What the hell 
+                     happened? What did he do to you?”</b> His voice shook as he
+                     grabbed Liam’s shoulders, hands trembling.
+                     <br><br>
+                     Liam tried to speak, but all that came out was a broken
+                     breath. Stacy clutched Maya’s wrist, eyes wide, tears 
+                     streaking her face.
+                     <br><br>
+                     <b>“Run,”</b> she whispered. <b>“Please—”</b>
+                     <br><br>
+                     Maya looked up, fear crashing into her all at once,
+                     the trap snapping shut as the woods closed in around them.
+                     <br><br>
+                     And Zeke watched them all.
+                     <br><br>
+                     Smiling.
+                     <br><br>
+                     They were all down now.
+                     <br><br>
+                     Not dead — just broken enough to understand fear properly.
+                     <br><br>
+                     Blood darkened sleeves and soaked into leaves. Breath came
+                     uneven, shallow, fogging the cold air. No one screamed 
+                     anymore. Screaming took energy. Hope did too.
+                     <br><br>
+                     The woods had gone quiet.
+                     <br><br>
+                     Not<b> peaceful</b> quiet —
+                     the kind where even insects seem to hold their breath.
+                     <br><br>
+                     Somewhere deeper in the trees, Zeke disappeared into shadow,
+                     folding himself into the dark like he belonged there.
+                     He watched. He waited. This wasn’t his moment.
+                     <br><br>
+                     This was <b>its.</b>
+                     <br><br>
+                     At first, nothing happened.
+                     <br><br>
+                     That was the worst part.
+                     <br><br>
+                     A pressure settled in their chests — subtle, invasive. 
+                     Like standing too close to a power line. Fingers trembled. 
+                     Teeth chattered without cold. One of the girls laughed
+                     softly, uncontrollably, then clamped her hand over her
+                     mouth, eyes wide in horror at herself.
+                     <br><br>
+                     <b>“Do you feel that?”</b> someone whispered.
+                     <br><br>
+                     No one answered.
+                     <br><br>
+                     The air grew heavy, thick — as if the forest itself had
+                     begun to breathe inward.
+                     <br><br>
+                     They didn’t see it at first.
+                     <br><br>
+                     They felt it.
+                     <br><br>
+                     A crawling awareness along the spine. The certainty of 
+                     being observed by something that didn’t blink. Didn’t 
+                     judge. Didn’t care.
+                     <br><br>
+                     Then the shape detached itself from the dark.
+                     <br><br>
+                     It moved low to the ground, hunched — wrong in proportion. 
+                     Not fully upright, not fully animal. Its surface wasn’t fur,
+                     not skin either — more like shadow tangled into texture,
+                     as if darkness had learned how to clump.
+                     <br><br>
+                     It's eyes were the first clear thing.
+                     <br><br>
+                     Too bright.
+                     <br><br>
+                     Not glowing with rage — glowing with attention.
+                     <br><br>
+                     They reflected the group back at themselves, warped and 
+                     trembling.
+                     <br><br>
+                     No footsteps. No sound of approach. It was simply… there.
+                     <br><br>
+                     The Dark Child did not rush.
+                     Did not roar.
+                     <br><br>
+                     It tilted its head slightly, curious.
+                     <br><br>
+                     The fear deepened.
+                     <br><br>
+                     Hands began to shake harder. Muscles locked. One of the 
+                     guys tried to crawl backward and couldn’t — his body
+                     refused the command, like fear had unplugged him from himself.
+                     <br><br>
+                     Their thoughts fragmented.
+                     <br><br>
+                     <b>*Something’s wrong.*<br>
+                     *Don’t move.*<br>
+                     *Why can’t I breathe right?*<br>
+                     *Is this real?*<br>
+                     </b>
+                     <br><br>
+                     The anomaly fed quietly.
+                     <br><br>
+                     Not on blood.<br>
+                     Not yet.
+                     <br><br>
+                     It drank the space between heartbeats. The hesitation. The 
+                     disbelief. The raw, unfiltered realization of helplessness.
+                     <br><br>
+                     One girl started crying — silent, tears cutting lines
+                     through dirt on her face. Another stared at the thing without 
+                     blinking, pupils blown wide, whispering <b>“no” </b>over
+                     and over like a broken loop.
+                     <br><br>
+                     The Dark Child leaned forward slightly.
+                     <br><br>
+                     Closer.
+                     <br><br>
+                     Its long arms brushed the ground, fingers almost touching
+                     the earth, as if tasting the fear through vibration alone.
+                     <br><br>
+                     Somewhere in the trees, unseen, Zeke smiled faintly.
+                     <br><br>
+                     Not in joy.
+                     <br><br>
+                     In recognition.
+                     <br><br>
+                     This was the moment he’d been waiting for —
+                     the instant before collapse, before instinct gave way, 
+                     before people stopped pretending they were safe.
+                     <br><br>
+                     The Dark Child had arrived.
+                     <br><br>
+                     And the forest knew it was time to feed.
+                     <br><br>
+                     <b>*they say the dark child doesn't see humans as threats
+                     because it believes we don't see it*</b>
+                     <br><br>
+                     Said Zeke as he moved through the trees, his boots brushing
+                     wet leaves without urgency, without fear. He walked the way
+                     a man walks through a room he owns.
+                     <br><br>
+                     Around him, the group lay scattered across the forest floor
+                     — breathing, barely. Their fear still lingered in the air 
+                     like smoke after a fire, and the Dark Child drank it slowly,
+                     patiently, the way something eternal eats.
+                     <br><br>
+                     The anomaly crouched low, its form pulsing faintly, darkness
+                     thickening and thinning as if it were inhaling emotion itself.
+                     Its eyes stayed fixed on the bodies — not hunting, not 
+                     rushing — simply <b>feeding.</b>
+                     <br><br>
+                     <b>*I am not a threat to it - I figured it's only seen by 
+                     humans gifted with specific skills such as myself*</b>
+                     <br><br>
+                     Zeke stepped out of the shadow.
+                     <br><br>
+                     Nothing happened.
+                     <br><br>
+                     No reaction. No flinch.
+                     <br><br>
+                     The Dark Child did not acknowledge him — because to it,
+                     Zeke was absence. A blind spot in reality. A thing outside
+                     its pattern of fear.
+                     <br><br>
+                     He kept walking.
+                     <br><br>
+                     Each step brought him closer to something that should have 
+                     triggered instinct, terror, survival — but Zeke felt none
+                     of it. Only focus. Calculation.
+                     <br><br>
+                     The air around the anomaly felt wrong. Heavy. Pressurized.
+                     Like standing too close to something that bends the rules
+                     quietly.
+                     <br><br>
+                 </p>
+              </div>
+         </main>
+         <main class ="background-images-holder" >
+
+              <img src ="black.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                      
+                     <br><br>
+                     Zeke stopped an arm’s length away.
+                     <br><br>
+                     The Dark Child shifted slightly, its body folding inward, 
+                     dark energy oozing off it like condensation. For a brief 
+                     second, its eyes flicked toward him — not in alarm, not 
+                     in recognition — but in vague confusion.
+                     <br><br>
+                     Then it looked away.
+                     <br><br>
+                     Dismissed him.
+                     <br><br>
+                     Zeke smiled thinly.
+                     <br><br>
+                     In one smooth motion, he produced the syringe.
+                     <br><br>
+                     It was large. Industrial. Filled with a thick, lightless 
+                     fluid that seemed to swallow what little moonlight touched
+                     it.
+                     <br><br>
+                     He plunged it forward.
+                     <br><br>
+                     The needle sank into the Dark Child’s mass with resistance 
+                     — not flesh, not bone — more like piercing through congealed
+                     shadow. The anomaly convulsed violently, its limbs jerking,
+                     its entire form rippling as if reality itself rejected what 
+                     was being injected into it.
+                     <br><br>
+                     It did not scream.
+                     <br><br>
+                     It could not.
+                     <br><br>
+                     Its eyes widened instead — brighter, frantic — finally 
+                     <b>seeing</b> Zeke, not as a man, but as <b>an error</b>.
+                     <br><br>
+                     The ground beneath them trembled.
+                     <br><br>
+                     Darkness spilled outward in waves, choking the air, pressing
+                     down on the forest. Leaves lifted. Branches creaked. The 
+                     bodies on the ground shuddered as if the fear inside them 
+                     was being ripped away too fast.
+                     <br><br>
+                     The Dark Child thrashed, clawing at nothing, collapsing 
+                     inward on itself as the substance spread through its form.
+                     <br><br>
+                     Zeke didn’t let go.
+                     <br><br>
+                     He went down with it, knee hitting the earth, hand locked
+                     around the syringe, teeth clenched — not in panic, not in 
+                     effort — but in satisfaction he refused to acknowledge.
+                     <br><br>
+                     They hit the ground together.
+                     <br><br>
+                     The anomaly writhed once more… then stilled.
+                     <br><br>
+                     The forest exhaled.
+                     <br><br>
+                     Silence returned — heavier than before.
+                     <br><br>
+                     Zeke remained crouched over it for a moment, breathing
+                     evenly, watching the darkness settle like ash. The Dark
+                     Child lay inert, eyes dimmed but not closed — as if even 
+                     subdued, it refused to fully leave.
+                     <br><br>
+                     Relentless.
+                     <br><br>
+                     That was the word.
+                     <br><br>
+                     Zeke stood, wiped his hand against his coat, and looked 
+                     back toward the broken group on the forest floor — alive,
+                     traumatized, emptied.
+                     <br><br>
+                     The hunt wasn’t over.
+                     <br><br>
+                     It had only moved to its next phase.
+                     <br><br>
+                     Amanda pushed through the brush, branches snapping softly
+                     beneath her boots.
+                     <br><br>
+                     The smell hit first — iron, damp earth, something old and 
+                     wrong. Then the shapes resolved in the dark.
+                     <br><br>
+                     Bodies.
+                     <br><br>
+                     Not dead — she could hear breathing, shallow and uneven — 
+                     but broken, sprawled like discarded thoughts across the
+                     forest floor. And between them… <b><i>it</i></b>.
+                     <br><br>
+                     A thing crouched wrong against the earth, hair matted and 
+                     thick, swallowing moonlight, its limbs folded inward like
+                     it had collapsed from exhaustion rather than injury. Its
+                     eyes were dim now, unfocused, but still there.
+                     <br><br>
+                     Amanda staggered back a step, hand flying to her mouth.
+                     <br><br>
+                     Zeke straightened slowly beside it, calm as ever, as if 
+                     he’d just finished a chore.
+                     <br><br>
+                     <b>“you came just in time to help me out with this Dark 
+                     child of mine”</b>
+                     <br><br>
+                     He flicked the syringe toward her without looking.
+                     <br><br>
+                     Instinct caught it before her mind could protest. The
+                     weight of it made her stomach drop.
+                     <br><br>
+                     Her voice came out shaky, breathless.<b>
+                     “Zeke… what the hell is this?”</b> She looked at the
+                     syringe, then at the thing on the ground. <b>“What did you do?”</b>
+                     <br><br>
+                     <b>“Chill you are already involved”</b>
+                     <br><br>
+                     Before she could move, Zeke raised his phone. The flash
+                     cut through the dark like a blade.
+                     <br><br>
+                     <b>“see - what a beautiful picture”</b>
+                     <br><br>
+                     Amanda froze.
+                     <br><br>
+                     The implication settled in — slow, suffocating. Her
+                     fingerprints. Her face. The syringe in her hand. Whatever 
+                     this was, she was now <b><i>part of it</i></b>.
+                     <br><br>
+                     Her voice dropped to a whisper.<b> “You’re insane.”</b>
+                     <br><br>
+                     Zeke smiled — not wide, not cruel — just knowing.
+                     <br><br>
+                     <b>“now help me out - carry this thing”</b>
+                     <br><br>
+                     He bent down and grabbed the Dark Child by its legs.
+                     The hair shifted under his grip, reacting like it was 
+                     still aware, still listening.
+                     <br><br>
+                     Amanda stared.
+                     <br><br>
+                     Up close, it was worse. The hair wasn’t just hair — 
+                     it moved in slow, nervous ripples, like it remembered 
+                     fear even while unconscious. No mouth. No face. Just eyes 
+                     that refused to fully close.
+                     <br><br>
+                     <b>“What… is it?”</b> she breathed.<b> “Is it— alive?”</b>
+                     <br><br>
+                     Zeke didn’t answer.
+                     <br><br>
+                     He only smiled again.
+                     <br><br>
+                     Her hands trembled as she crouched, grabbing the other end, 
+                     flinching when the hair brushed her wrist. Cold seeped
+                     into her skin immediately, a hollow chill that felt like
+                     standing too close to someone else’s grief.
+                     <br><br>
+                     They moved through the woods in silence.
+                     <br><br>
+                     The forest seemed to lean inward as they passed, branches
+                     creaking softly, shadows stretching and recoiling as if
+                     they recognized the thing being carried. Amanda’s breath
+                     fogged in the air despite the season.
+                     <br><br>
+                     Then Zeke slowed.
+                     <br><br>
+                     He tilted his head slightly.
+                     <br><br>
+                     Someone was there.
+                     <br><br>
+                     Not close — but not far either.
+                     <br><br>
+                     A girl sat beneath a tree, knees pulled to her chest, 
+                     hair falling forward as she stared at the ground. She 
+                     hadn’t noticed them. She was still. Too still. Like someone
+                     waiting for a thought to finish breaking them.
+                     <br><br>
+                     Moonlight caught her profile for a brief second.
+                     <br><br>
+                     Zeke stopped walking.
+                     <br><br>
+                     The Dark Child dragged slightly against the ground as his 
+                     grip loosened.
+                     <br><br>
+                     His eyes stayed on the girl.
+                     <br><br>
+                     Interest sparked — quiet, precise. Not hunger. Not desire.
+                     <br><br>
+                     Recognition.
+                     <br><br>
+                     Amanda followed his gaze and swallowed. <b>“Zeke… we should go.”</b>
+                     <br><br>
+                     He didn’t respond.
+                     <br><br>
+                     The girl shifted, hugging herself tighter, unaware she was
+                     being observed. The night seemed to fold around her, 
+                     protective and predatory all at once.
+                     <br><br>
+                     Zeke’s smile faded into something sharper.
+
+                 </p>
+              </div>
+         </main>
+         <main class ="background-images-holder" >
+
+              <img src ="black2.png" id ="novel-pic"/>
+              
+              <div id ="storypage2">
+                 <p id ="page-1-storyline" style ="color:white">      
+                      
+                            
+                            
+                <br><br>
+                Something thoughtful.
+                <br><br>
+                Then, without a word, he resumed walking.
+                <br><br>
+                The woods swallowed them again — but the image of the girl lingered in his mind, etched deeper than the bodies, deeper than the Dark Child.
+
+
+                 </p>
+              </div>
+                               
+<div id="options">
+     <img class ="options-icon" src ="menu.png"/>
+</div>
+
+<div id="menu">
+  <div class="option">
+     <a class ="options-link" href ="#">
+         <div class ="option-box-style">
+             <div id ="option-icon-circle">
+                 <img class ="option-icon" src ="home (1).png"/>
+             </div>
+             <div id ="option-detail-box">
+                 <p id ="option-detail">
+                     Home Map
+                 </p>
+             </div>	
+         </div>
+     </a>
+  </div>
+  <div class="option">
+     <a class ="options-link" href ="#">
+         <div class ="option-box-style">
+             <div id ="option-icon-circle" style ="padding:0.3rem">
+                 <img class ="option-icon" src ="map (1).png"/>
+             </div>
+             <div id ="option-detail-box">
+                 <p id ="option-detail">
+                     City Map
+                 </p>
+             </div>	
+         </div>
+     </a>
+  </div>
+  <div class="option">
+     <a class ="options-link" href ="Ravenport-characters-Amanda.html">
+         <div class ="option-box-style">
+             <div id ="option-icon-circle">
+                 <img class ="option-icon" src ="anonymous (1).png"/>
+             </div>
+             <div id ="option-detail-box">
+                 <p id ="option-detail">
+                     Characters
+                 </p>
+             </div>	
+         </div>
+     </a>
+  </div>
+<div class="option">
+     <a class ="options-link" href ="Ravenport-wherewereyou.html">
+         <div class ="option-box-style">
+             <div id ="option-icon-circle">
+                 <img class ="option-icon" src ="chapter (1).png"/>
+             </div>
+             <div id ="option-detail-box">
+                 <p id ="option-detail">
+                     Chapters
+                 </p>
+             </div>	
+         </div>
+     </a>
+</div>
+</div>
+
+
+         </main>
+         <footer>
+         <footer>
+              <img src ="footer3.png" id ="footer-pic"/> 
+ <div class="nav-buttons">
+<a href="Ravenport-chapter1.html" class="btn">Previous</a>
+
+
+  <a href="Ravenport-chapter3.html" class="btn">Next</a>
+
+</div>
+              <div id ="footer-info" style ="bottom:5%">
+              <p style ="color:white"><b>
+                 Do you know yourself?
+                <br><br>
+                 Have you ever sat down and wondered how much of your true self you actually know?
+                <br><br>
+                 I look around and see so many people who do not know themselves,
+                 yet a stranger could learn so much about them with just a few questions.
+                <br><br>
+                 Doesn't that scare you?
+                <br><br>
+                 To walk through life believing you know what you love,
+                 what you hate,
+                 what you believe... only to discover that much of it was never truly yours.
+                <br><br>
+                 How much do those closest to you know about you,
+                 compared to what you think you know about yourself?
+                <br><br>
+                 We wander through life believing we understand the world,
+                 yet remain strangers to the person within.
+                <br><br>
+                 What is your purpose?
+                <br><br>
+                 What is your reason for living?
+                <br><br>
+                 Why are you even alive?
+                <br><br>
+                 Where do you come from?<br>
+                 Surely the world is more than a coincidence born from an 
+                 explosion in the void.
+                <br><br>
+                 Perhaps we all carry a destiny.
+                <br><br>
+                 Speak it with belief.<br>
+                 Speak it with faith.<br>
+                 And perhaps it shall become real.
+                 <br><br>
+                 — Dave
+              </b></p>
+              </div>
+         </footer>
+
+<script>
+
+
+const optionsBtn = document.getElementById('options');
+  const menu = document.getElementById('menu');
+
+  optionsBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+  
+  document.getElementById("previous").addEventListener("click", function () {
+    window.location.href = "#";
+  });
+  
+  
+  document.getElementById("next").addEventListener("click", function () {
+    window.location.href = "#";
+  });
+
+
+function openPopup() {
+    document.getElementById("overlay").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("overlay").style.display = "none";
+}
+  
+  function openPopup2() {
+    document.getElementById("overlay2").style.display = "flex";
+}
+
+function closePopup2() {
+    document.getElementById("overlay2").style.display = "none";
+}
+  
+</script>
+</body>
+</html>
