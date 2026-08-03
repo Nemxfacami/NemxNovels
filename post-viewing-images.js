@@ -7,6 +7,7 @@ const viewer = document.getElementById("imageViewer");
 document.querySelectorAll(".post-image").forEach(img => {
     img.addEventListener("click", () => {
         viewerImg.src = img.src;
+        viewer.style.justifyContent ="flex-start";
         viewer.style.display = "flex";
     });
 });
@@ -15,6 +16,7 @@ document.querySelectorAll(".post-image").forEach(img => {
 document.querySelectorAll(".post-image-article").forEach(img => {
     img.addEventListener("click", () => {
         viewerImg.src = img.src;
+        viewer.style.justifyContent ="flex-start";
         viewer.style.display = "flex";
     });
 });
