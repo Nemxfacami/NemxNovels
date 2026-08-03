@@ -30,7 +30,7 @@
     border-radius: 50%;
     background: #9D2F78;
     position: fixed;
-    border-radius:0.1rem solid white;
+    border:0.1rem solid white;
     z-index: 12000;
     bottom: 10%;
     left: 5%;
