@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nemxnovels.site/sitemap.xml

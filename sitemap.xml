@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset  
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>  
+    <loc>https://nemxnovels.site/</loc>  
+    <lastmod>2026-08-04</lastmod>  
+    <changefreq>daily</changefreq>  
+    <priority>1.0</priority>  
+</url>  
+
+<url>  <loc>https://nemxnovels.site/aboutnn.html</loc>  
+    <lastmod>2026-08-04</lastmod>  
+    <changefreq>monthly</changefreq>  
+    <priority>0.8</priority>  
+</url>
+
+
+<url>       <loc>https://nemxnovels.site/news-page.html</loc>
+<lastmod>2026-08-04</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>       <loc>https://nemxnovels.site/landing-havenfall-blog.html</loc>
+<lastmod>2026-08-04</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>       <loc>https://nemxnovels.site/videos-page-angel.html</loc>
+<lastmod>2026-08-04</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>       <loc>https://nemxnovels.site/videos-page-haven.html</loc>
+<lastmod>2026-08-04</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>       <loc>https://nemxnovels.site/videos-page-raven.html</loc>
+<lastmod>2026-08-04</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>       <loc>https://nemxnovels.site/landing-angel-notes-blog.html</loc>
+<lastmod>2026-08-04</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>     <loc>https://nemxnovels.site/profilepage.html</loc>
+<lastmod>2026-08-04</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url> <loc>https://nemxnovels.site/stories-page.html</loc>  
+    <lastmod>2026-08-04</lastmod>  
+    <changefreq>weekly</changefreq>  
+    <priority>0.9</priority>  
+</url>  
+
+<url>     <loc>https://nemxnovels.site/ravenport/original-story/</loc>  
+    <lastmod>2026-08-04</lastmod>  
+    <changefreq>monthly</changefreq>  
+    <priority>0.8</priority>  
+</url>
+
+<url>    <loc>https://nemxnovels.site/ravenport/BewitchingGirl/</loc>
+<lastmod>2026-08-04</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url> <loc>https://nemxnovels.site/havenfall/original-story/</loc>  
+    <lastmod>2026-08-04</lastmod>  
+    <changefreq>monthly</changefreq>  
+    <priority>0.8</priority>  
+</url>
+
+<url>       <loc>https://nemxnovels.site/havenfall/AngelsNotes/</loc>
+<lastmod>2026-08-04</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+
+</urlset>
