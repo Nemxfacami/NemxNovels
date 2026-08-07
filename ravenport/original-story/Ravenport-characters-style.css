@@ -12,7 +12,9 @@
       body{background:black;margin:0rem;}
       
       header#character-page-header{
-          width:100%;
+           width:100%;
+          margin:0 auto;
+          max-width:370px;
           background:none;
       }
       
@@ -53,6 +55,9 @@
       
      main.character-details-main{
           padding:1rem;
+           width:100%;
+          margin:0 auto;
+          max-width:370px;
      }
      
       p#character-name-detail{
