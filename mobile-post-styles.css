@@ -104,11 +104,13 @@
         }
 
         div#mobile-post-header-profile-container{
-            width:100%;
-            aspect-ratio:1 / 1;
-            background:none;
-            border-radius: 50%;
-            overflow:hidden;
+height:100%;
+    width:auto;
+    aspect-ratio:1 / 1;
+    background:none;
+    border-radius:50%;
+    overflow:hidden;
+    flex:0 0 auto;
         }
 
         img.mobile-post-header-profile-image{
@@ -239,9 +241,11 @@
 
         div#mobile-post-header-profile-container-quote{
             width:100%;
-            height:100%;
+       
+                aspect-ratio:1 / 1;
             background:none;
             border-radius: 50%;
+                overflow:hidden;
         }
 
         div#mobile-post-header-profile-name-quote{
