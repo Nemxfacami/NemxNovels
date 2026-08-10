@@ -99,27 +99,24 @@
             width:30%;
             height:100%;
             background:none;
-            padding:0.4rem 0.8rem 0 0.3rem;
-            box-sizing:border-box;
-                 display:flex;
-    align-items:flex-start;
+            padding:0.4rem;
+            box-sizing:border-box;  
+            display:flex;
+            align-items:center;
         }
 
         div#mobile-post-header-profile-container{
 
-    width:clamp(2rem, 8vw, 3.5rem);
-    height:clamp(2rem, 8vw, 3.5rem);
-
+ 
+    width:50%;
+    aspect-ratio:1 / 1;
     border-radius:50%;
     overflow:hidden;
     flex-shrink:0;
+                
 }
                 
-    background:none;
-    border-radius:50%;
-    overflow:hidden;
-    flex-shrink:0;
-        }
+  
 
         img.mobile-post-header-profile-image{
             width:100%;
