@@ -99,16 +99,24 @@
             height:100%;
             background:none;
             padding:0.4rem 0.8rem 0 0.3rem;
+            box-sizing:border-box;
         }
 
         div#post-header-profile-container{
             width:100%;
-            height:100%;
+            aspect-ratio:1 / 1;
             background:none;
             border-radius: 50%;
+            overflow:hidden;
         }
 
-        img.post-header-profile-image{border-radius: 50%;object-fit: cover;}
+        img.post-header-profile-image{
+                width:100%;
+                height:100%;
+                border-radius: 50%;
+                object-fit: cover;
+                display:block;
+        }
 
         div#post-header-profile-name{
             font-weight:bold;
@@ -256,6 +264,7 @@
             width:30%;
             height:100%;
             background:none;
+            box-sizing:border-box;
             padding:0.4rem 1.5rem 0 0.3rem;
         }
 
