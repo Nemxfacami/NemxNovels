@@ -106,9 +106,15 @@
         }
 
         div#mobile-post-header-profile-container{
-height:100%;
-    width:auto;
-    aspect-ratio:1 / 1;
+
+    width:clamp(2rem, 8vw, 3.5rem);
+    height:clamp(2rem, 8vw, 3.5rem);
+
+    border-radius:50%;
+    overflow:hidden;
+    flex-shrink:0;
+}
+                
     background:none;
     border-radius:50%;
     overflow:hidden;
