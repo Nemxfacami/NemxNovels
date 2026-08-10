@@ -110,7 +110,7 @@
     flex-grow:0;
         }
 
-        div#mobile-post-header-profile-container{
+     /*   div#mobile-post-header-profile-container{
  width:clamp(2rem, 12vw, 4rem);
     height:clamp(2rem, 12vw, 4rem);
 
@@ -122,7 +122,7 @@
     background:red;
 }
                 
-  
+  */
 
         img.mobile-post-header-profile-image{
             width:100%;
@@ -250,7 +250,8 @@
             object-fit: cover;
         }
 
-        div#mobile-post-header-profile-container-quote{
+        div#mobile-post-header-profile-container-quote,
+        div#mobile-post-header-profile-container{
             width:100%;
        
                 aspect-ratio:1 / 1;
@@ -260,10 +261,11 @@
         }
 
         div#mobile-post-header-profile-name-quote{
+            height:100%;
             font-weight:bold;
             font-size:1rem;
-            display:grid;
-            place-items: center;
+            display:flex;
+            align-items: center;
             padding-left:none;
         }
 
