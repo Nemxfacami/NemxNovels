@@ -92,7 +92,8 @@
             position: absolute;
             z-index:3;
             display:flex;
-            padding:0.5rem 0.5rem 0 0.5rem;
+            align-items:center;    
+            padding:0.5rem;
         }
 
         section.mobile-post-header-profile-section{
