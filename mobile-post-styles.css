@@ -101,6 +101,8 @@
             background:none;
             padding:0.4rem 0.8rem 0 0.3rem;
             box-sizing:border-box;
+                 display:flex;
+    align-items:flex-start;
         }
 
         div#mobile-post-header-profile-container{
@@ -110,7 +112,7 @@ height:100%;
     background:none;
     border-radius:50%;
     overflow:hidden;
-    flex:0 0 auto;
+    flex-shrink:0;
         }
 
         img.mobile-post-header-profile-image{
