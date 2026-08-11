@@ -151,13 +151,27 @@
       }
       
       section.mobile-aside-profile-picture{
-          width:19%;
-          height:100%;
-          background:none;
-          padding:0.2rem 0.2rem 0.2rem 0.2rem;
+           width:19%;
+    height:100%;
+    background:none;
+    padding:0.2rem;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    container-type:size;
       }
       
-      img.mobile-aside-profile{border-radius:50%}
+      img.mobile-aside-profile{
+                width:70cqw;
+           height:70cqw;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    flex:none; 
+      }
       
       section.mobile-aside-profile-details{
           width:61%;
@@ -178,12 +192,26 @@
           font-size:0.9rem;
       }
       
-      section.mobile-aside-profile-icon{
-          width:20%;
-          height:100%;
-          background:none;
-          padding:0.5rem;
-      }
+    section.mobile-aside-profile-icon{
+    width:20%;
+    height:100%;
+    background:none;
+    padding:0.5rem;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    container-type:size;
+}
+
+section.mobile-aside-profile-icon img{
+    width:70cqw;
+    height:70cqw;
+
+    object-fit:contain;
+    flex:none;
+}
       
       /* Sidebar starts hidden */
 aside.mobile-asidenav-section{
