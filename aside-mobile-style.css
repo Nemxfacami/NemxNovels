@@ -30,20 +30,66 @@
           padding:0 0.5rem 0 0.5rem;
           margin-bottom:1rem;
       }
-      
-      div#mobile-asidenav-icon img{
+
+
+
+          /* SIDEBAR HEADER LOGO */
+div#mobile-asidenav-icon{
+    width:55%;
+    height:100%;
+    padding:0.5rem 0 0.5rem 0;
+    display:flex;
+    align-items:center;
+}
+
+div#mobile-asidenav-icon img{
     width:auto;
     height:100%;
+    max-width:100%;
     object-fit:contain;
+    flex:none;
+}
+
+
+/* SIDEBAR EXIT ARROW */
+div#mobile-asidenav-exit{
+    width:20%;
+    height:100%;
+    background:none;
+    padding:0.8rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 div#mobile-asidenav-exit img{
-    width:100%;
-    height:100%;
+    width:1.5rem;
+    height:1.5rem;
     object-fit:contain;
-          padding:1rem;
+    flex:none;
 }
-      
+
+
+/* NAVIGATION ICONS */
+div#mobile-asidenav-page-icon{
+    width:20%;
+    height:100%;
+    background:none;
+    padding:0.5rem;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+div#mobile-asidenav-page-icon img{
+    width:2rem;
+    height:2rem;
+    object-fit:contain;
+    flex:none;
+}
+   
+
       main.mobile-asidenav-body{
           width:100%;
           height:92%;
@@ -68,24 +114,7 @@ div#mobile-asidenav-exit img{
           display:flex;
       }
       
-      div#mobile-asidenav-page-icon{
-width:20%;
-    height:100%;
-    background:none;
-    padding:0.7rem 0.9rem;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-      }
-
-          div#mobile-asidenav-page-icon img{
-    width:70%;
-    height:70%;
-    object-fit:contain;
-    flex:none;
-}
-      
+   
       div#mobile-asidenav-page-name{
           width:60%;
           height:100%;
