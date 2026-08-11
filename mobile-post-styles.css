@@ -96,41 +96,68 @@
             padding:0.5rem;
         }
 
-        section.mobile-post-header-profile-section{
-      width:30%;
-    height:100%;
-    padding:0.4rem 0.8rem 0 0.3rem;
-    box-sizing:border-box;
+    
+section.mobile-post-header-profile-section{
+    width:100px !important;
+    height:100px !important;
+    padding:0 !important;
+    box-sizing:border-box !important;
 
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
-
-    flex-shrink:0;
-    flex-grow:0;
-        }
-
-     /*   div#mobile-post-header-profile-container{
- width:clamp(2rem, 12vw, 4rem);
-    height:clamp(2rem, 12vw, 4rem);
-
-    flex:0 0 auto;
-
-    border-radius:50%;
-    overflow:hidden;
-
-    background:red;
+    display:block !important;
+    flex:none !important;
 }
-                
-  */
 
-        img.mobile-post-header-profile-image{
-            width:100%;
+div#mobile-post-header-profile-container{
+    width:100px !important;
+    height:100px !important;
+
+    padding:0 !important;
+    margin:0 !important;
+
+    box-sizing:border-box !important;
+
+    display:block !important;
+    position:relative !important;
+
+    border-radius:50% !important;
+    overflow:hidden !important;
+
+    background:red !important;
+
+    transform:none !important;
+}
+
+img.mobile-post-header-profile-image{
+    width:100px !important;
+    height:100px !important;
+
+    padding:0 !important;
+    margin:0 !important;
+
+    box-sizing:border-box !important;
+
+    display:block !important;
+    position:static !important;
+
+    object-fit:cover !important;
+
+    border-radius:50% !important;
+
+    transform:none !important;
+}
+
+
+
+   div#mobile-post-header-profile-name-quote{
             height:100%;
-            border-radius:50%;
-            object-fit:cover;
-            display:block;
+            font-weight:bold;
+            font-size:1rem;
+            display:flex;
+            align-items: center;
+            padding-left:none;
         }
+
+
 
         div#mobile-post-header-profile-name{
             font-weight:bold;
@@ -250,25 +277,7 @@
             object-fit: cover;
         }
 
-        div#mobile-post-header-profile-container-quote,
-        div#mobile-post-header-profile-container{
-            width:100%;
-       
-                aspect-ratio:1 / 1;
-            background:none;
-            border-radius: 50%;
-                overflow:hidden;
-        }
-
-        div#mobile-post-header-profile-name-quote{
-            height:100%;
-            font-weight:bold;
-            font-size:1rem;
-            display:flex;
-            align-items: center;
-            padding-left:none;
-        }
-
+     
          section.mobile-feed-post-quote{
             width:100%;
             height:25rem;
