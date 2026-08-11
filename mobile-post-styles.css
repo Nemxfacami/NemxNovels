@@ -111,7 +111,8 @@
     flex:0 0 30%;
 }
 
-div#mobile-post-header-profile-container{
+div#mobile-post-header-profile-container,
+div#mobile-post-header-profile-container-quote{
     width:20cqw;
     height:20cqw;
 
@@ -278,11 +279,15 @@ img.mobile-post-header-profile-image{
         }
 
          section.mobile-post-header-profile-section-quote{
-            width:30%;
-            height:100%;
-            background:none;
-            padding:0.4rem 1.5rem 0 0.3rem;
-            box-sizing:border-box;     
+ width:30%;
+    height:100%;
+    padding:0.4rem;
+    box-sizing:border-box;
+
+    display:flex;
+    align-items:center;
+
+    flex:0 0 30%;
         }
 
          section.mobile-post-view-article-section-confidential{
