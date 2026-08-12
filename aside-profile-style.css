@@ -63,7 +63,18 @@
       background:none;
       padding:0.4rem;
       margin-right:0.5rem;
+      display:flex;
+    align-items:center;
+    justify-content:center;
     }
+
+
+div#sidenav-link-icon img{
+    width:2rem;
+    height:2rem;
+    object-fit:contain;
+    flex:none;
+}
 
     select.sidenav-link-selector{
       width:60%;
