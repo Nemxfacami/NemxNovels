@@ -42,13 +42,7 @@ aside.asidenav-section{display:none}
          align-items:center;
       }
 
-   div#asidenav-icon img{
-    width:auto;
-    height:100%;
-    max-width:100%;
-    object-fit:contain;
-    flex:none;
-}
+ 
 
       div#asidenav-exit{
           width:20%;
