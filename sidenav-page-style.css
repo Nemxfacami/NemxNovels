@@ -38,14 +38,35 @@ aside.asidenav-section{display:none}
           width:45%;
           height:100%;
           padding:0.3rem 0 0.3rem 0;
+         display:flex;
+         align-items:center;
       }
-      
+
+   div#asidenav-icon img{
+    width:auto;
+    height:100%;
+    max-width:100%;
+    object-fit:contain;
+    flex:none;
+}
+
       div#asidenav-exit{
           width:20%;
           height:100%;
           background:none;
           padding:0.7rem 1.1rem 0.7rem 1.1rem;
+          display:flex;
+    align-items:center;
+    justify-content:center;
       }
+
+   
+div#asidenav-exit img{
+    width:2rem;
+    height:2rem;
+    object-fit:contain;
+    flex:none;
+}
       
       main.asidenav-body{
           width:100%;
@@ -75,9 +96,19 @@ aside.asidenav-section{display:none}
           width:20%;
           height:100%;
           background:none;
-          padding:0.5rem 1rem 0.5rem 1rem;
+          padding:0.5rem;
+         display:flex;
+    align-items:center;
+    justify-content:center;
       }
-      
+
+   div#asidenav-page-icon img{
+    width:2rem;
+    height:2rem;
+    object-fit:contain;
+    flex:none;
+}
+   
       div#asidenav-page-name{
           width:60%;
           height:100%;
