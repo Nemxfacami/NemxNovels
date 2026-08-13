@@ -85,10 +85,7 @@
           text-decoration: 0.1rem solid underline black;
     }
 
-    p#article-header-title{
-          font-size:2.2rem;
-          color:white;
-    }
+  
 
     div.article-header-bottom{
       width:100%;
@@ -272,10 +269,15 @@
           text-decoration: 0.1rem solid underline black;
     }
 
+      
     p#article-header-title{
-          font-size:2.2rem;
-          color:white;
+           color:white;
+           font-size: clamp(2rem, 3.5vw, 2.2rem);
+           line-height: 1.1;
+          overflow-wrap: break-word;
     }
+
+
 
     div.article-header-bottom{
       width:100%;
@@ -444,11 +446,15 @@
           text-decoration: 0.1rem solid underline black;
     }
 
-    p#mobile-article-header-title{
-          font-size:1.8rem;
-          color:white;
-    }
 
+      
+    p#mobile-article-header-title{ 
+      font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+    line-height: 1.1;
+          color:white;
+          overflow-wrap: break-word;
+    }
+      
     div.mobile-article-header-bottom{
       width:100%;
       height:12.5%;
