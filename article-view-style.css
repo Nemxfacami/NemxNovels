@@ -211,6 +211,14 @@
        justify-content: space-between;
     }
 
+       p#article-header-title{
+           color:white;
+           font-size: clamp(2rem, 3.5vw, 2.2rem);
+           line-height: 1.1;
+          overflow-wrap: break-word;
+    }
+
+      
     div#article-profile{
       width:3rem;
       height:3rem;
@@ -270,7 +278,9 @@
     }
 
       
-    p#article-header-title{
+   
+
+        p#article-header-title{
            color:white;
            font-size: clamp(2rem, 3.5vw, 2.2rem);
            line-height: 1.1;
