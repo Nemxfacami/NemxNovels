@@ -1,139 +1,79 @@
-from pathlib import Path
+import os
 import re
-import shutil
 
-ROOT = Path(".")
+ROOT = os.path.dirname(os.path.abspath(__file__))
 
-SOMEONE_WHO_STAYS = '''
-             <div id ="mobile-book-cover">
-                  <a href ="ravenport/someonewhostays/">
-                 <img class ="mobile-book-cover" src ="someonewhostays-cover.webp"/>
-                  </a>
-             </div>
-'''
 
-DAGGER_OF_LIGHT = '''
-             <div id ="mobile-book-cover">
-                  <a href ="havenfall/daggeroflight/">
-                 <img class ="mobile-book-cover" src ="daggeroflight-cover.webp"/>
-                  </a>
-             </div>
-'''
-
-html_files = list(ROOT.rglob("*.html"))
-
-print("=" * 60)
-print(f"Root folder: {ROOT.resolve()}")
-print(f"HTML files found: {len(html_files)}")
-print("=" * 60)
-
-changed = 0
-lists_found = 0
-
-for html_file in html_files:
-
-    if ".git" in html_file.parts:
-        continue
-
+def process_html_file(filepath):
     try:
-        content = html_file.read_text(encoding="utf-8")
+        with open(filepath, "r", encoding="utf-8") as f:
+            content = f.read()
     except Exception as e:
-        print(f"[ERROR] {html_file}: {e}")
-        continue
+        print(f"[ERROR] {filepath}: {e}")
+        return
 
-    # --------------------------------------------------------
-    # Find ALL mobile-header-book-list opening tags
-    # Allows:
-    #
-    # class="..."
-    # class ="..."
-    # class= "..."
-    # class = "..."
-    # --------------------------------------------------------
+    original = content
 
-    pattern = re.compile(
-        r'<section\s+class\s*=\s*["\']mobile-header-book-list["\'][^>]*>',
-        re.IGNORECASE
+    # --------------------------------------------------
+    # Mobile side navigation book count
+    # <div id="mobile-asidenav-books-number">
+    #     <p id="mobile-asidenav-books-number">5</p>
+    # </div>
+    # --------------------------------------------------
+
+    content = re.sub(
+        r'(<div\s+id\s*=\s*["\']mobile-asidenav-books-number["\'][^>]*>'
+        r'\s*<p\s+id\s*=\s*["\']mobile-asidenav-books-number["\'][^>]*>)'
+        r'\s*5\s*'
+        r'(</p>)',
+        r'\g<1>9\g<2>',
+        content,
+        flags=re.IGNORECASE
     )
 
-    matches = list(pattern.finditer(content))
+    # --------------------------------------------------
+    # Number of books
+    # <div class="number-of-books">
+    #     <div id="number-of-books">5</div>
+    # </div>
+    # --------------------------------------------------
 
-    if not matches:
-        continue
+    content = re.sub(
+        r'(<div\s+class\s*=\s*["\']number-of-books["\'][^>]*>'
+        r'\s*<div\s+id\s*=\s*["\']number-of-books["\'][^>]*>)'
+        r'\s*5\s*'
+        r'(</div>)',
+        r'\g<1>9\g<2>',
+        content,
+        flags=re.IGNORECASE
+    )
 
-    lists_found += len(matches)
+    if content == original:
+        return
 
-    print(f"\nFOUND: {html_file}")
-    print(f"  Mobile book lists: {len(matches)}")
+    try:
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(content)
 
-    # Work backwards so inserting text doesn't mess up
-    # the positions of the other matches.
-    for match in reversed(matches):
+        print(f"[UPDATED] {filepath}")
 
-        opening_end = match.end()
+    except Exception as e:
+        print(f"[ERROR] Writing {filepath}: {e}")
 
-        # Find closing section
-        closing = content.find("</section>", opening_end)
 
-        if closing == -1:
-            print("  [WARNING] No closing </section> found.")
-            continue
+def scan_directory():
+    print(f"Scanning: {ROOT}\n")
 
-        section_content = content[opening_end:closing]
+    for root, dirs, files in os.walk(ROOT):
 
-        has_someone = "someonewhostays-cover.webp" in section_content
-        has_dagger = "daggeroflight-cover.webp" in section_content
+        # Don't scan Git's internal files
+        dirs[:] = [d for d in dirs if d != ".git"]
 
-        additions = ""
+        for filename in files:
+            if filename.lower().endswith((".html", ".htm")):
+                process_html_file(os.path.join(root, filename))
 
-        if not has_someone:
-            additions += SOMEONE_WHO_STAYS
 
-        if not has_dagger:
-            additions += DAGGER_OF_LIGHT
-
-        if not additions:
-            print("  Both books already exist.")
-            continue
-
-        # ----------------------------------------------------
-        # Create backup once
-        # ----------------------------------------------------
-
-        backup = html_file.with_suffix(".html.bak")
-
-        if not backup.exists():
-            shutil.copy2(html_file, backup)
-
-        # ----------------------------------------------------
-        # Insert books before </section>
-        # ----------------------------------------------------
-
-        content = (
-            content[:closing]
-            + additions
-            + content[closing:]
-        )
-
-        changed += 1
-
-        if not has_someone:
-            print("  + Someone Who Stays")
-
-        if not has_dagger:
-            print("  + Dagger of Light")
-
-    html_file.write_text(content, encoding="utf-8")
-
-print("\n" + "=" * 60)
-print("DONE")
-print("=" * 60)
-
-print(f"HTML files found:       {len(html_files)}")
-print(f"Book lists found:       {lists_found}")
-print(f"Sections modified:      {changed}")
-
-if changed == 0:
-    print("\nNothing needed to be changed.")
-
-input("\nPress Enter to exit...")
+if __name__ == "__main__":
+    scan_directory()
+    print("\nDone.")
