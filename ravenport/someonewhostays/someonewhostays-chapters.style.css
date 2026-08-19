@@ -9,12 +9,19 @@
       a{text-decoration:none}
       
       body{background:black;margin:0rem;}
-      p{
-          font-family: "Copperplate Gothic", "Garamond", "Times New Roman", serif;
-           font-size:4cqw;
-         line-height:2rem;
-         word-spacing:5px;
-        }
+       p {
+    font-family: "Copperplate Gothic", "Garamond", "Times New Roman", serif;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    word-spacing: 5px;
+}
+
+/* Phone */
+@media (max-width: 480px) {
+    p {
+        font-size: 4cqw;
+    }
+}
       main.background-images-holder{
              width:100%;
           margin:0 auto;
