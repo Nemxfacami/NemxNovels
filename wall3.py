@@ -1,26 +1,26 @@
 import os
 
-# Start scanning from the folder where this script is located
 site_folder = os.path.dirname(os.path.abspath(__file__))
 
-old_name = "wall3.png"
-new_name = "wall3.webp"
+replacements = {
+    "ravenport-cover.png": "ravenport-cover.webp",
+    "havenfall-cover.png": "havenfall-cover.webp"
+}
 
 changed_files = 0
 changed_references = 0
 
 for root, dirs, files in os.walk(site_folder):
 
-    # Skip common folders that shouldn't be modified
-    dirs[:] = [d for d in dirs if d not in {
-        ".git",
-        ".github",
-        "node_modules"
-    }]
+    # Don't scan Git or dependency folders
+    dirs[:] = [
+        d for d in dirs
+        if d not in {".git", ".github", "node_modules"}
+    ]
 
     for filename in files:
 
-        # Only scan files that can contain website code
+        # Website/code files only
         if not filename.lower().endswith((
             ".html",
             ".htm",
@@ -38,26 +38,32 @@ for root, dirs, files in os.walk(site_folder):
             with open(filepath, "r", encoding="utf-8") as file:
                 content = file.read()
 
-            # Replace every wall3.png reference
-            count = content.count(old_name)
+            original_content = content
+            file_replacements = 0
 
-            if count > 0:
-                new_content = content.replace(old_name, new_name)
+            for old_name, new_name in replacements.items():
+                count = content.count(old_name)
+
+                if count > 0:
+                    content = content.replace(old_name, new_name)
+                    file_replacements += count
+
+            if content != original_content:
 
                 with open(filepath, "w", encoding="utf-8") as file:
-                    file.write(new_content)
+                    file.write(content)
 
                 changed_files += 1
-                changed_references += count
+                changed_references += file_replacements
 
                 print(f"Updated: {filepath}")
-                print(f"  Replaced {count} reference(s)")
+                print(f"  Replaced: {file_replacements} reference(s)")
 
         except UnicodeDecodeError:
             print(f"Skipped (not UTF-8): {filepath}")
 
-print("\n================================")
+print("\n==============================")
 print("DONE")
-print("================================")
+print("==============================")
 print(f"Files changed: {changed_files}")
 print(f"References replaced: {changed_references}")
