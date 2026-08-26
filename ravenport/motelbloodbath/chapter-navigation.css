@@ -1,0 +1,25 @@
+.nav-buttons{
+  display: flex;
+  gap: 20px;
+  position:absolute;
+  top:1rem;width:100%;
+  padding:0 1rem 0 1rem;
+}
+
+.btn{
+  flex: 1;
+  text-align: center;
+  padding: 18px;
+  background: #2D3A42;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  /* blue tap highlight on mobile */
+  -webkit-tap-highlight-color: rgba(0,0,255,0.4);
+}
+
+.btn:active{
+  background:#2D3A42;
+}
