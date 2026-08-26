@@ -20,7 +20,7 @@ p {
 /* Phone */
 @media (max-width: 480px) {
     p {
-        font-size: 4cqw;
+        font-size: 0.9rem;
     }
 }
       main.background-images-holder{
