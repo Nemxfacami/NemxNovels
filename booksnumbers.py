@@ -3,7 +3,7 @@ import re
 
 folder = "."
 
-NEW_NUMBER = "5"
+NEW_NUMBER = "10"
 
 for filename in os.listdir(folder):
 
