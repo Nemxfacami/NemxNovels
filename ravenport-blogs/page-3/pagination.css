@@ -1,82 +1,172 @@
-
+/* =========================================================
+   PAGINATION
+   ========================================================= */
 
 .pagination-container {
-    background-color:none;
+    width: 100%;
+    box-sizing: border-box;
     padding: 12px;
-    border-radius: 20px;
-   
+    display: flex;
+    justify-content: center;
 }
 
 /* Pagination List */
+
 .pagination {
     display: flex;
+    align-items: stretch;
+    justify-content: center;
     list-style: none;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
     border: 1px solid #2a2a2a;
     border-radius: 14px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
-/* Links and Spans */
+/* Links and Dots */
+
 .pagination a.pagination-link,
 .pagination span.dots {
     display: flex;
     align-items: center;
     justify-content: center;
+
     min-width: 61px;
     height: 50px;
+
     padding: 0 18px;
+
+    box-sizing: border-box;
+
     text-decoration: none;
+
     color: #8b8b8b;
     background-color: #111;
+
     border-right: 1px solid #2a2a2a;
+
     transition: all 0.2s ease;
+
     font-size: 18px;
     font-weight: 500;
+
+    white-space: nowrap;
 }
 
-/* Previous/Next Buttons */
-.page-nav-btn {
+/* Previous / Next */
+
+.pagination .page-nav-btn {
     min-width: 120px;
-    color: #ffffff !important;
+    color: #ffffff;
     font-weight: 600;
     font-size: 0.9rem;
 }
 
 /* Active Page */
+
 .pagination a.activepage {
     color: #ffffff;
     background-color: #171717;
     font-weight: 700;
 }
 
-/* Hover Effects */
+/* Hover */
+
 .pagination a.pagination-link:hover:not(.activepage) {
     background-color: #1f1f1f;
     color: #ffffff;
 }
 
 /* Dots */
+
 .pagination .dots {
     cursor: default;
 }
 
-/* Remove border from last item */
+/* Remove border from final item */
+
 .pagination li:last-child a.pagination-link {
     border-right: none;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
     .pagination a.pagination-link,
     .pagination span.dots {
-        min-width: 42px;
-        height: 44px;
-        font-size: 14px;
-        padding: 0 12px;
+        min-width: 50px;
+        height: 46px;
+        padding: 0 14px;
+        font-size: 16px;
     }
 
-    .page-nav-btn {
-        min-width: 90px;
-        font-size:0.9rem;
+    .pagination .page-nav-btn {
+        min-width: 100px;
+        font-size: 0.85rem;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .pagination-container {
+        padding: 10px 6px;
+    }
+
+    .pagination {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pagination a.pagination-link,
+    .pagination span.dots {
+        min-width: 0;
+        width: auto;
+        height: 42px;
+
+        padding: 0 10px;
+
+        font-size: 14px;
+    }
+
+    .pagination .page-nav-btn {
+        min-width: 0;
+        padding: 0 12px;
+        font-size: 0.75rem;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .pagination-container {
+        padding: 8px 3px;
+    }
+
+    .pagination a.pagination-link,
+    .pagination span.dots {
+        height: 40px;
+        padding: 0 7px;
+        font-size: 13px;
+    }
+
+    .pagination .page-nav-btn {
+        padding: 0 8px;
+        font-size: 0.7rem;
     }
 }
