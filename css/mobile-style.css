@@ -1,0 +1,176 @@
+           @media (max-width:480px){
+
+     *{
+          margin:0rem;
+          padding:0rem;
+          user-select:none;
+          box-sizing:border-box;
+      }
+      
+      img{width:100%;height:100%;margin:0rem;display: block;}
+      a{text-decoration:none}
+      
+      body{background:rgb(24, 24 ,24);margin:0rem;display:block;padding:0rem;}
+
+      
+      section.mobile-intro-header{
+        width:100%;
+        height:55px;
+        background:#000;
+        position: relative;
+        top:0%;
+        z-index:1000;
+        display:flex;
+        justify-content: space-between;
+      }
+
+      div#mobile-nn-logo{
+        height:100%;
+        background:none;
+        padding:0.2rem 0.2rem 0.2rem 0;
+      }
+
+
+      
+      header.mobile-nn-header{
+        position: relative;
+        height: auto ;
+        margin-top:none;
+        z-index:100;
+      }
+
+     
+      div.mobile-hero-bg{
+        margin-top:none;
+        position: absolute;
+      
+    
+      }
+
+
+           section.mobile-nemx-logo{
+        width:100%;
+        height:26%;
+        background:none;
+        position: absolute;
+        top:20%;
+        padding-top:1rem;
+        display: flex;
+        
+        justify-content: center;
+      }
+
+
+      @font-face{
+         font-family: 'SigmarOneLocal';
+         src: url('SigmarOne.ttf')
+         format('truetype');
+
+      }
+      
+           p#mobile-nemx-logo{
+        -webkit-text-stroke: 2px black;
+        color:white;
+        font-family: 'SigmarOneLocal';
+        font-size: clamp(2.5em, 10.8vw, 10.8rem);
+      }
+      
+      nav.mobile-navigation-bar{
+          width:100%;
+          height:8%;
+          background:none;
+          position:absolute;
+          top:1%;
+          padding:0 1.2rem 0 0.7rem;
+          display:flex;
+          justify-content:space-between;
+      }
+      
+      div.mobile-browser-navigation-container{
+          width:3.5rem;
+          height:3.5rem;
+          position:fixed;
+          bottom:10%;
+          left:3%;
+          z-index:10;
+      }
+      
+      div#mobile-navigation-icon,
+      div#mobile-browser-navigation-icon{
+          border-radius:50%;
+          position:sticky;
+          bottom:0%;
+          height:100%;
+          padding:0rem;
+          
+          background: rgba(255, 255, 255, 0.2); /* semi-transparent layer */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      
+      div#mobile-profile-container,a.mobile-profile-container{
+          height:100%;
+          background:none;
+          display:flex;
+          justify-content:flex-end;
+      }
+      
+      img.mobile-profile-pic{border-radius:50%}
+      
+      
+      section.mobile-header-book-list{
+          width:100%;
+          height:50%;
+          background:none;
+          position:absolute;
+          bottom:0%;
+          display:flex;
+          padding:1rem;
+          overflow:scroll;
+      }
+      
+      div#mobile-book-cover{
+          min-width:45%;
+          height:70%;
+          background:none;
+          margin-right:2rem;
+          border-radius:1rem;
+      }
+      
+      img.mobile-book-cover{border-radius:1rem}
+      
+         main.mobile-main-content-feed{
+      width:100%;
+      background:none;
+      border:none;
+      padding:2rem 1rem 2rem 1rem;
+      overflow-y: scroll;
+    }
+
+
+        section.mobile-post-header-profile-section{
+            width:30%;
+            height:100%;
+            background:none;
+            padding:0.4rem 0.4rem 0 0.3rem;
+        }
+
+        div#mobile-post-header-profile-container{
+            width:100%;
+            height:100%;
+            background:none;
+            border-radius: 50%;
+        }
+
+        img.mobile-post-header-profile-image{border-radius: 50%;object-fit: cover;}
+
+         section.mobile-post-header-profile-section-quote{
+            width:30%;
+            height:100%;
+            background:none;
+            padding:0.4rem 1rem 0 0.3rem;
+        }
+     }
+     
