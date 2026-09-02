@@ -6,6 +6,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 12px;
+
     display: flex;
     justify-content: center;
 }
@@ -13,13 +14,14 @@
 .pagination {
     display: flex;
     align-items: stretch;
-    justify-content: center;
 
     list-style: none;
+
     margin: 0;
     padding: 0;
 
-    max-width: 100%;
+    width: 100%;
+    max-width: 900px;
 
     border: 1px solid #2a2a2a;
     border-radius: 14px;
@@ -30,21 +32,32 @@
 
 
 /* =========================================================
-   LINKS AND DOTS
+   PAGINATION ITEMS
+   ========================================================= */
+
+.pagination li {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   LINKS + DOTS
    ========================================================= */
 
 .pagination a.pagination-link,
 .pagination span.dots {
+
+    width: 100%;
+    height: 50px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
-    min-width: 61px;
-    height: 50px;
-
-    padding: 0 18px;
-
     box-sizing: border-box;
+
+    padding: 0 10px;
 
     text-decoration: none;
 
@@ -53,12 +66,12 @@
 
     border-right: 1px solid #2a2a2a;
 
-    transition: all 0.2s ease;
-
     font-size: 18px;
     font-weight: 500;
 
     white-space: nowrap;
+
+    transition: all 0.2s ease;
 }
 
 
@@ -67,7 +80,8 @@
    ========================================================= */
 
 .pagination .page-nav-btn {
-    min-width: 120px;
+
+    width: 100%;
 
     color: #ffffff;
 
@@ -81,7 +95,9 @@
    ========================================================= */
 
 .pagination a.activepage {
+
     color: #ffffff;
+
     background-color: #171717;
 
     font-weight: 700;
@@ -93,6 +109,7 @@
    ========================================================= */
 
 .pagination a.pagination-link:hover:not(.activepage) {
+
     background-color: #1f1f1f;
     color: #ffffff;
 }
@@ -101,8 +118,6 @@
 /* =========================================================
    DOTS
    ========================================================= */
-
-/* Hidden on large screens */
 
 .pagination-dots {
     display: none;
@@ -124,26 +139,25 @@
 
 /* =========================================================
    TABLET
-   601px - 900px
    ========================================================= */
 
 @media (max-width: 900px) {
 
+    .pagination-container {
+        padding: 10px;
+    }
+
     .pagination a.pagination-link,
     .pagination span.dots {
 
-        min-width: 50px;
         height: 46px;
 
-        padding: 0 14px;
+        padding: 0 8px;
 
         font-size: 16px;
     }
 
     .pagination .page-nav-btn {
-
-        min-width: 100px;
-
         font-size: 0.85rem;
     }
 }
@@ -159,33 +173,29 @@
 @media (max-width: 600px) {
 
     .pagination-container {
-        padding: 10px 6px;
+        padding: 8px 4px;
     }
 
     .pagination {
+
         width: 100%;
-        max-width: 100%;
+
+        max-width: none;
     }
 
     .pagination a.pagination-link,
     .pagination span.dots {
 
-        min-width: 0;
+        height: 44px;
 
-        height: 42px;
-
-        padding: 0 10px;
+        padding: 0 5px;
 
         font-size: 14px;
     }
 
     .pagination .page-nav-btn {
 
-        min-width: 0;
-
-        padding: 0 12px;
-
-        font-size: 0.75rem;
+        font-size: 0.72rem;
     }
 
 
@@ -214,24 +224,22 @@
 @media (max-width: 400px) {
 
     .pagination-container {
-        padding: 8px 3px;
+        padding: 6px 2px;
     }
 
     .pagination a.pagination-link,
     .pagination span.dots {
 
-        height: 40px;
+        height: 42px;
 
-        padding: 0 7px;
+        padding: 0 3px;
 
         font-size: 13px;
     }
 
     .pagination .page-nav-btn {
 
-        padding: 0 8px;
-
-        font-size: 0.7rem;
+        font-size: 0.68rem;
     }
 
 
