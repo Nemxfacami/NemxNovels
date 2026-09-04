@@ -220,7 +220,7 @@ def main():
     parser.add_argument("--dir", default=".", help="Directory to scan (default: current directory)")
     parser.add_argument("--recursive", action="store_true", help="Also scan subdirectories")
     parser.add_argument("--apply", action="store_true", help="Write changes to disk (default: dry run)")
-    parser.add_argument("--base-url", default="https://nemxnovels.site/",
+    parser.add_argument("--base-url", default="https://nemxnovels.site/ravenport-blogs/page-3/",
                          help="Site base URL for absolute og:image URLs")
     parser.add_argument("--no-backup", action="store_true", help="Skip creating .bak backups")
     args = parser.parse_args()
