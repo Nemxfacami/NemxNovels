@@ -1,11 +1,15 @@
 
-        section.mobile-feed-post{
-            width:100%;
-            height:30rem;
-            background: white;
-            border-radius:2rem;
-            position:relative;
-            margin-bottom:5rem;
+        section.mobile-feed-post,
+        section.mobile-feed-post-quote{
+           width:100%;
+    height:30rem;
+    background:white;
+    border-radius:2rem;
+    position:relative;
+    margin-bottom:5rem;
+
+    display:grid;
+    grid-template-rows:12% auto 1fr;
         }
 
 
@@ -84,108 +88,134 @@
 
 
         /* POST CONTENT STYLES HERE */
-
-        section.mobile-post-header{
-            width:60%;
-            height:12%;
-            background:none;
-            position: absolute;
-            z-index:3;
-            display:flex;
-            align-items:center;    
-            padding:0.5rem;
-
-              container-type:size;  
-        }
-
-
-  section.mobile-post-header-profile-section{
-    width:30%;
+section.mobile-post-header{
+    width:60%;
     height:100%;
+    background:none;
+
+    position:relative;
+
+    z-index:3;
+
+    display:flex;
+    align-items:center;
+
+    padding:0.5rem;
+    box-sizing:border-box;
+}
+             
+
+
+  section.mobile-post-header-profile-section,
+ section.mobile-post-header-profile-container-quote{
+    width:auto;
+    height:100%;
+
     padding:0.4rem;
     box-sizing:border-box;
 
     display:flex;
     align-items:center;
 
-    flex:0 0 30%;
+    flex:0 0 auto;
 }
 
 div#mobile-post-header-profile-container,
 div#mobile-post-header-profile-container-quote{
-    width:20cqw;
-    height:20cqw;
+    width:2.5rem;
+    height:2.5rem;
 
-    min-width:20cqw;
-    min-height:20cqw;
-    max-width:20cqw;
-    max-height:20cqw;
+    min-width:2.5rem;
+    min-height:2.5rem;
+
+    max-width:2.5rem;
+    max-height:2.5rem;
 
     border-radius:50%;
     overflow:hidden;
 
     flex:none;
 
-    background:red;
+    background:none;
 }
+div#mobile-post-header-profile-name,
+div#mobile-post-header-profile-name-quote{
+    height:100%;
 
+    font-weight:bold;
+    font-size:1.1rem;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+    padding:0;
+    margin:0;
+
+    white-space:nowrap;
+}
+  
 img.mobile-post-header-profile-image{
     width:100%;
     height:100%;
     display:block;
     object-fit:cover;
     border-radius:50%;
-} 
-    
-  
-
-   div#mobile-post-header-profile-name-quote{
-            height:100%;
-            font-weight:bold;
-            font-size:1rem;
-            display:flex;
-            align-items: center;
-            padding-left:none;
-        }
+}
 
 
 
-        div#mobile-post-header-profile-name{
-            font-weight:bold;
-            font-size:1rem;
-            display:grid;
-            place-items: center;
-            padding-left:0.2rem;
-        }
+      
 
-        section.mobile-caption-section{
-            width:100%;
-            height:20%;
-            background:none;
-            position: absolute;
-            top:12%;
-            padding:1rem 0.7rem 0 0.7rem;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        section.mobile-post-image-section{
-            width:100%;
-            height:68%;
-            background:none;
-            border-bottom-left-radius:2rem;
-            border-bottom-right-radius:2rem;
-            position: absolute;
-            top:32%;
-
-        }
-
-        img.mobile-post-image{
-            border-bottom-left-radius:2rem;
-            border-bottom-right-radius:2rem;
-            object-fit: cover;
-        }
         
+        section.mobile-caption-section{
+    width:100%;
+    height:auto;
 
+    background:none;
+
+    position:relative;
+    top:auto;
+
+    box-sizing:border-box;
+
+    padding:1rem 0.7rem 0.7rem;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    overflow-wrap:break-word;
+}
+
+
+
+
+section.mobile-post-image-section{
+    width:100%;
+    height:auto;
+
+    min-height:0;
+
+    background:none;
+
+    position:relative;
+    top:auto;
+
+    overflow:hidden;
+
+    border-bottom-left-radius:2rem;
+    border-bottom-right-radius:2rem;
+}
+        
+img.mobile-post-image{
+    width:100%;
+    height:100%;
+    display:block;
+
+    object-fit:cover;
+
+    border-bottom-left-radius:2rem;
+    border-bottom-right-radius:2rem;
+}
 
 
         .mobile-viewer{
@@ -269,27 +299,7 @@ img.mobile-post-header-profile-image{
         }
 
      
-         section.mobile-feed-post-quote{
-            width:100%;
-            height:25rem;
-            background:white;
-            border-radius:2rem;
-            position:relative;
-            margin-bottom:6rem;
-        }
-
-         section.mobile-post-header-profile-section-quote{
- width:30%;
-    height:100%;
-    padding:0.4rem;
-    box-sizing:border-box;
-
-    display:flex;
-    align-items:center;
-
-    flex:0 0 30%;
-        }
-
+       
          section.mobile-post-view-article-section-confidential{
             width:100%; 
             height:15%;
