@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+     <meta charset ="UTF-8">
+     <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+     <link rel ="stylesheet" type ="text/css" href ="aside-profile-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="profile-book-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="article-view-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="pc-mobile-manager.css">
+
+     <!-- MOBILE LINKS -->
+     <link rel ="stylesheet" type ="text/css" href ="aside-mobile-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-nemxstyle.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-post-styles.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-pagination.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-article-view-style.css">
+
+     <title>The Crime Scenes That Never Happened | NemxNovels — Blogs</title>
+
+<!-- NEMXNOVELS ARTICLE META START (auto-generated — do not hand-edit) -->
+<meta property="og:title" content="The Crime Scenes That Never Happened | NemxNovels">
+<meta property="og:description" content="A Gossips from Blogs — &quot;The Crime Scenes That Never Happened&quot; (Havenfall Gossips). Read it on NemxNovels.">
+<meta property="og:image" content="https://nemxnovels.site/havenfall-blogs/page-2/fakecrime.webp">
+<meta property="og:type" content="article">
+<!-- NEMXNOVELS ARTICLE META END -->
+</head>
+<body>
+
+
+
+    <main class ="pc-html">
+
+
+  <main class ="nemx-main-section">
+
+
+
+
+      <aside class ="side-navigation">
+             <div class ="sidenav-header">
+                <img src ="bluelogo.png"/>
+             </div>
+
+             <section class ="sidenav-links-section">
+
+                 <section class ="sidenav-link-container" id ="sidenav-link-container-active">
+
+                    <div id ="sidenav-link-icon">
+                        <img src ="blog.png"/>
+                    </div>
+                    <select class ="sidenav-link-selector"   onchange="window.location.href=this.value">
+                        <option value ="#">Blogs</option>
+                        <option value ="index.html">Ravenport Blog </option>
+                        <option value ="landing-havenfall-blog.html">Havenfall Blog </option>
+                        <option value ="#">Dothmodon Blog </option>
+                    </select>
+                    <span class="arrow">▼</span>
+                 </section>   
+
+
+                  <section class ="sidenav-link-container" style ="color:white">
+
+                    <div id ="sidenav-link-icon">
+                        <img src ="newspaper-folderwhite.png"/>
+                    </div>
+                   <a class ="sidenav-link-normal" href ="news-page.html">
+                        <section class ="sidenav-link-normal" style ="color:white">
+                            News
+                        </section>
+                    </a>
+                 </section>   
+
+
+                  <section class ="sidenav-link-container" style ="color:white">
+
+                    <div id ="sidenav-link-icon">
+                        <img src ="videosblak.png"/>
+                    </div>
+                    <select class ="sidenav-link-selector"   onchange="window.location.href=this.value" style ="color:white;background: rgb(24,24,24);">
+                        <option value ="#">Videos </option>
+                        <option value ="videos-page-raven.html">Ravenport Videos </option>
+                        <option value ="videos-page-haven.html">Havenfall Videos </option>
+                        <option value ="#">Dothmodon Videos </option>
+                    </select>
+                    <span class="arrow">▼</span>
+                 </section>  
+                 
+                 <section class ="links-options-without-section">
+                    <section class ="sidenav-no-options-link-container" style ="color:white">
+
+                    <div id ="sidenav-link-iconno-options">
+                        <img class ="no-options-icons" src ="fairy-talewhite.png"/>
+                    </div>
+                    
+                  <a href ="stories-page.html" id ="link-no-options-section">
+                    <div class ="link-no-options-section">
+                        <p id ="sidenav-no-options-link">
+                       Stories
+                        </p>
+                    </div>
+                    </a>
+                 
+
+                    <div class ="number-of-books">
+                        <div id ="number-of-books">10</div>
+                    </div>
+
+                 </section>  
+
+
+                 <section class ="sidenav-no-options-link-container" style ="color:white">
+
+                    <div id ="sidenav-link-iconno-options">
+                        <img class ="no-options-icons" src ="aboutwhite.png"/>
+                    </div>
+                    
+                    <a href ="aboutnn.html" id ="link-no-options-section">
+                    <div id ="link-no-options-section">
+                        <p id ="sidenav-no-options-link">
+                            About NemxNovels
+                        </p>
+                    </div>
+                    </a>
+                 </section>  
+
+                 <section class ="aside-profile-area">
+                    <a href ="profilepage.html">
+                    <div class ="aside-profile-area-bar">
+                        <div id ="aside-profile-container">
+                            <div class ="aside-profile-container">
+                                <img src ="eye1.jpg"  id ="aside-profile-picture"/>
+                            </div>
+                        </div>
+                        <div id ="aside-profile-info">
+                           <p id ="aside-profile-name-title">ENTITY DESIGNATION</p>
+                           <p id ="aside-profile-name">Archive Wanderer</p>
+                        </div>
+                        <div id ="aside-profile-icon">
+                            <img src ="anonymous-white.png"/>
+                        </div>
+                    </div>
+                    </a>
+                 </section>
+
+                 </section>
+
+             </section>
+
+             
+          </aside>
+
+
+
+
+
+
+
+
+
+
+
+ <main class ="article-page-section" tabindex="0">
+          <section class ="article-go-back-section">
+            <a href="page2.html">
+            <div id ="article-back">
+                <img src ="left-arrow.png" loading="lazy"/>
+            </div>
+            </a>
+
+            <div id ="article-profile">
+                <img class ="article-profile" src ="eye1.jpg" loading="lazy"/>
+            </div>
+            </section>
+            <section class ="article-header">
+                <div id ="article-header-link">
+                   <a href ="profilepage.html" class ="article-header-link">Gossips</a>
+               </div>
+                <div class ="article-header-title">
+                    <p id ="article-header-subtitle">BLOGS</p>
+                     <p id ="article-header-title">THE CRIME SCENES THAT NEVER HAPPENED</p>
+                </div>
+                <div class ="article-header-bottom">
+             Havenfall Gossips
+         </div>
+          </section>
+          
+
+          <section class ="article-image-section">
+            <img class ="article-image" src ="fakecrime.webp" loading="lazy"/>
+          </section>
+
+          <code class ="share">Share:</code>
+          <section class ="share-these-sites">
+            <a href ="#" class ="share-social-media">
+               <div id ="share-social-media">
+                  
+               </div>
+            </a>
+
+             <a href ="ravenport/original-story/" class ="share-social-media">
+               <div id ="share-social-media">
+                  
+               </div>
+            </a>
+          </section>
+
+
+          <article class ="article-text">
+
+<div id ="text-middled">
+    <p id ="text-middled">Sending Havenfall Into Panic </p>
+</div>
+
+
+
+
+Havenfall has become increasingly uneasy over a series of disturbing "crime scenes" appearing around the city.<br><br>
+The scenes look convincing.<br><br>
+Police tape.<br><br>
+Blood-like stains.<br><br>
+Abandoned belongings.<br><br>
+Broken glass.<br><br>
+Sometimes even handwritten messages left behind.<br><br>
+Residents discover them and immediately assume the worst.<br><br>
+But according to information now circulating among local authorities, some of these scenes may have been completely fabricated.<br><br>
+And behind them may be a group of men who aren't interested in hurting anyone.<br><br>
+They're interested in <b>making money from fear.</b><br><br>
+
+<b>The Perfect Crime That Never Happened</b><br><br>
+The group allegedly chooses a location late at night.<br><br>
+An alley.<br><br>
+An abandoned building.<br><br>
+A parking area.<br><br>
+Somewhere people will discover the scene the following morning.<br><br>
+They arrange everything carefully.<br><br>
+A discarded shoe here.<br><br>
+A damaged object there.<br><br>
+A suspicious-looking stain on the ground.<br><br>
+Then they leave.<br><br>
+By morning, someone discovers it.<br><br>
+A photograph appears online.<br><br>
+People begin sharing it.<br><br>
+Rumors spread.<br><br>
+<b>"Someone was murdered here."</b><br><br>
+<b>"There was an attack last night."</b><br><br>
+<b>"Havenfall isn't safe anymore."</b><br><br>
+Except there was no victim.<br><br>
+No attack.<br><br>
+No crime.<br><br>
+Only a carefully constructed performance.<br><br>
+
+<b>Fear Has a Price</b><br><br>
+So why would anyone do this?<br><br>
+Money.<br><br>
+The group allegedly uses the panic they create to manipulate frightened residents.<br><br>
+In some cases, people are reportedly contacted and offered "protection" or information about supposedly dangerous areas.<br><br>
+In other cases, fabricated warnings are used to encourage people to pay for security services or other forms of protection.<br><br>
+The details vary.<br><br>
+The objective doesn't.<br><br>
+<b>Create fear. Then profit from it.</b><br><br>
+It's an old idea wearing a new costume.<br><br>
+People are more willing to spend money when they believe something terrible is about to happen.<br><br>
+
+<b>The Internet Makes It Worse</b><br><br>
+The criminals don't need thousands of people to see their fake scenes.<br><br>
+They only need a few.<br><br>
+Someone takes a picture.<br><br>
+Someone else posts it.<br><br>
+Another person shares it to a neighborhood group.<br><br>
+Within hours, the story has grown.<br><br>
+By the time someone asks whether the incident actually happened, the rumor has already travelled across Havenfall.<br><br>
+And every person who shares the image becomes an accidental part of the operation.<br><br>
+The strangest part?<br><br>
+The criminals don't have to convince everyone.<br><br>
+They only need enough people to become frightened.<br><br>
+
+<b>Citizens Are Becoming Suspicious</b><br><br>
+The repeated incidents have created another problem.<br><br>
+People are beginning to distrust genuine crime scenes.<br><br>
+If someone discovers something suspicious, they may hesitate.<br><br>
+<b>"Is this real?"</b><br><br>
+<b>"Is someone trying to scare us again?"</b><br><br>
+That uncertainty can be dangerous.<br><br>
+A fabricated crime scene isn't harmless simply because nobody was physically attacked.<br><br>
+It consumes emergency resources.<br><br>
+It creates unnecessary panic.<br><br>
+It can send people running into danger.<br><br>
+And most importantly, it can make citizens less likely to trust legitimate warnings.<br><br>
+
+<b>A City Trained to Panic</b><br><br>
+There is something particularly disturbing about the psychology behind the scheme.<br><br>
+The group understands that people don't need certainty to become afraid.<br><br>
+They only need a possibility.<br><br>
+A dark alley.<br><br>
+A broken window.<br><br>
+A little blood on the pavement.<br><br>
+A story saying something terrible happened nearby.<br><br>
+The human mind fills in the rest.<br><br>
+And once fear takes control, rational thinking becomes much harder.<br><br>
+That is exactly what the scammers are counting on.<br><br>
+
+<b>The Warning</b><br><br>
+Residents are being urged not to investigate suspicious scenes themselves or immediately spread unverified claims online.<br><br>
+A disturbing photograph isn't proof.<br><br>
+A rumor isn't evidence.<br><br>
+And a frightening story doesn't automatically mean a crime occurred.<br><br>
+The safest response is simple:<br><br>
+<b>Report suspicious situations to the appropriate authorities and let them determine what actually happened.</b><br><br>
+Because in Havenfall, the most frightening thing about these scenes may not be what appears to have happened there.<br><br>
+It may be the fact that <b>nothing happened at all.</b><br><br>
+Someone simply wanted you to believe that it did.<br><br>
+And they were hoping your fear would put money in their hands.<br><br>
+
+
+</article>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <aside class ="aside-profile-books-section">
+                  
+<div class="profile-book-container">
+    <div class="profile-book-title">BOOKS</div>
+    <div class =""></div>
+    <div class="profile-books-slider">
+        <!-- Group 1 -->
+        <div class="profile-books-group">
+            <div class="profile-book-box">
+                <a href ="ravenport/original-story/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="ravenport-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+            <div class="profile-book-box">
+                <a href ="havenfall/original-story/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="havenfall-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+        </div>
+
+        <!-- Group 2 -->
+        <div class="profile-books-group">
+            <div class="profile-book-box">
+                <a href ="havenfall/AngelsNotes/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="angelsnotes-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+            <div class="profile-book-box">
+                <a href ="ravenport/bewitchinggirl/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="bewitchinggirl.webp" loading="lazy"/>
+                </a>
+            </div>
+        </div>
+
+        <!-- Group 3 -->
+        <div class="profile-books-group">
+            <div class="profile-book-box">
+                <a href ="ravenport/raphaasylum/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="raphaasylum-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+            <div class="profile-book-box">
+                <a href ="ravenport/behindthecurse/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="behindthecurse-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="profile-book-controls">
+        <button id="profile-book-up">
+            <img src ="up.png" loading="lazy"/>
+        </button>
+        <button id="profile-book-down">
+            <img src ="down.png" loading="lazy"/>
+        </button>
+    </div>
+    <div class ="profile-book-info">
+         Read More of Our Stories
+    </div>
+</div>        
+        </aside>
+
+
+        </main>
+
+    </main>
+
+
+
+
+
+    <!-- END OF THE PC CODE -->
+
+
+
+
+
+
+    <!---  START OF THE MOBILE CODE -->
+
+
+    <main class ="mobile-html">
+
+            <aside class ="mobile-asidenav-section">
+        <header class ="mobile-asidenav-header">
+            <div id ="mobile-asidenav-icon">
+                 <img src ="bluelogo2.png" loading="lazy"/>
+            </div>
+            
+            <div id ="mobile-asidenav-exit">
+                 <img src ="right-arrow-white.png" loading="lazy"/>
+            </div>
+        </header>
+        <main class ="mobile-asidenav-body">
+        <section class ="mobile-asidenav-content">
+             <section class ="mobile-asidenav-container" style ="background:dodgerblue;">
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="blog.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text">
+                         Blogs
+                     </p>
+                 </div>
+                 <div id ="mobile-asidenav-page-select">
+                    ▼
+                 </div>
+             </section>
+            
+        </section>
+        
+        
+         <section class ="mobile-asidenav-selectors-container-section">
+             <section class ="mobile-asidenav-selectors-container">
+                 <a href="page2.html" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages" style ="background:white;color:black;font-weight:bold">
+                     Ravenport Blog
+                 </div>
+                 </a>
+                 
+                 <a href ="landing-havenfall-blog.html" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Havenfall Blog
+                 </div>
+                 </a>
+                 
+                 <a href ="#" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Dothmodon Blog
+                 </div>
+                 </a>
+             </section>
+        </section>
+        
+
+
+        <section class ="mobile-asidenav-content">
+             <a href ="news-page.html">
+             <section class ="mobile-asidenav-container" >
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="newspaper-folderwhite.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text" style ="color:white">
+                         News
+                     </p>
+                 </div>
+
+             </section>
+             </a>
+        </section>
+        
+        
+        <br>
+        <section class ="mobile-asidenav-content">
+             <section class ="mobile-asidenav-container">
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="videosblak.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text" style ="color:white">
+                         Videos
+                     </p>
+                 </div>
+                 <div id ="mobile-asidenav-page-select" style ="color:white">
+                    ▼
+                 </div>
+             </section>
+            
+        </section>
+        
+        <section class ="mobile-asidenav-selectors-container-section">
+             <section class ="mobile-asidenav-selectors-container">
+                 <a href ="videos-page-raven.html" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Ravenport Videos
+                 </div>
+                 </a>
+                 
+                 <a href ="videos-page-haven.html" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Havenfall Videos
+                 </div>
+                 </a>
+                 
+                 <a href ="#" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Dothmodon Videos
+                 </div>
+                 </a>
+             </section>
+        </section>
+        
+        
+        <section class ="mobile-asidenav-content">
+             <a href ="stories-page.html">
+             <section class ="mobile-asidenav-container">
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="fairy-talewhite.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text" style ="color:white">
+                         Stories
+                     </p>
+                 </div>
+                 <div id ="mobile-asidenav-page-select">
+                    <div id ="mobile-asidenav-books-number">
+                         <p id ="mobile-asidenav-books-number">10</p>
+                    </div>
+                 </div>
+             </section>
+             </a>
+        </section>
+
+        <section class ="mobile-asidenav-content">
+             <a href ="aboutnn.html">
+             <section class ="mobile-asidenav-container">
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="aboutwhite.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text" style ="color:white">
+                         About NemxNovels
+                     </p>
+                 </div>
+
+             </section>
+            </a>
+        </section>
+        <br><br>
+        <section class ="mobile-aside-profile">
+        <a href ="profilepage.html">
+        <section class ="mobile-aside-profile-section"> 
+             <section class ="mobile-aside-profile-picture">
+                 <img class ="mobile-aside-profile" src ="eye1.jpg" loading="lazy"/>
+             </section>
+             <section class ="mobile-aside-profile-details">
+               <p id ="mobile-aside-profile-entity">
+                     ENTITY DESIGNATION
+               </p>
+               <p id ="mobile-aside-profile-title">
+                     Archive Wanderer
+               </p>
+             </section>
+             <section class ="mobile-aside-profile-icon">
+                 <img src ="anonymous-white.png"/>
+             </section>
+        </section>
+        </a>
+        </section>
+        
+        </main>
+     </aside>
+
+
+<!-- HEADER --->
+    <section class ="mobile-intro-header">
+        <div id ="mobile-nn-logo">
+            <img src ="nn-logo.png"/>
+        </div>
+
+     </section>
+     <header class ="mobile-nn-header">
+            <img class ="mobile-hero" src ="wall3.webp" loading="lazy"/>
+
+     
+        <!-- maybe -->
+
+        <section class ="mobile-nemx-logo">
+           <p id ="mobile-nemx-logo">NEMXNOVELS</p>
+        </section>
+        
+        <nav class ="mobile-navigation-bar">
+               <div id ="mobile-navigation-icon">
+                     <img src ="hamburger.png" loading="lazy"/>
+               </div>
+            
+             
+             <a href ="profilepage.html" class ="mobile-profile-container">
+                <div id ="mobile-profile-container">
+                     <img class ="mobile-profile-pic" src ="eye1.jpg"/>
+                </div>
+             </a>
+        </nav>
+        
+        <section class ="mobile-header-book-list">
+             <div id ="mobile-book-cover">
+    <a href ="ravenport/original-story/">
+        <img class ="mobile-book-cover" src ="ravenport-cover.webp"/>
+    </a>
+</div>
+             <div id ="mobile-book-cover">
+    <a href ="havenfall/original-story/">
+        <img class ="mobile-book-cover" src ="havenfall-cover.webp"/>
+    </a>
+</div>
+             <div id ="mobile-book-cover">
+    <a href ="havenfall/AngelsNotes/">
+        <img class ="mobile-book-cover" src ="angelsnotes-cover.webp"/>
+    </a>
+</div>
+             <div id ="mobile-book-cover">
+    <a href ="ravenport/bewitchinggirl/">
+        <img class ="mobile-book-cover" src ="bewitchinggirl.webp"/>
+    </a>
+</div>
+             
+                <div id ="mobile-book-cover">
+             <a href ="ravenport/raphaasylum/">
+             <img class ="mobile-book-cover" src ="raphaasylum-cover.webp"/>
+             </a>
+        </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="ravenport/someonewhostays/">
+                 <img class ="mobile-book-cover" src ="someonewhostays-cover.webp"/>
+                  </a>
+             </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="havenfall/daggeroflight/">
+                 <img class ="mobile-book-cover" src ="daggeroflight-cover.webp"/>
+                  </a>
+             </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="ravenport/behindthecurse/">
+                 <img class ="mobile-book-cover" src ="behindthecurse-cover.webp"/>
+                  </a>
+             </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="ravenport/back&forth/">
+                 <img class ="mobile-book-cover" src ="backnforth-cover.webp"/>
+                  </a>
+             </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="ravenport/motelbloodbath/">
+                 <img class ="mobile-book-cover" src ="motelbloodbath-cover.webp"/>
+                  </a>
+             </div>
+</section>
+     </header>
+
+             <div class ="mobile-browser-navigation-container">
+               <div id ="mobile-browser-navigation-icon">
+                     <img src ="hamburger.png" loading="lazy"/>
+               </div>
+             </div>
+             
+             
+             
+                       <!-- Content FEED --> 
+
+
+
+
+ <main class ="mobile-article-page-section">
+          <section class ="mobile-article-go-back-section">
+            <a href="page2.html">
+            <div id ="mobile-article-back">
+                <img src ="left-arrow.png" loading="lazy"/>
+            </div>
+            </a>
+
+            <div id ="mobile-article-profile">
+                <img class ="mobile-article-profile" src ="eye1.jpg" loading="lazy"/>
+            </div>
+            </section>
+            <section class ="mobile-article-header">
+                <div id ="mobile-article-header-link">
+                   <a href ="#" class ="mobile-article-header-link">Gossips</a>
+               </div>
+                <div class ="mobile-article-header-title">
+                    <p id ="mobile-article-header-subtitle">BLOGS</p>
+                     <p id ="mobile-article-header-title">THE CRIME SCENES THAT NEVER HAPPENED</p>
+                </div>
+                <div class ="mobile-article-header-bottom">
+               Havenfall Gossips
+            </div>
+          </section>
+
+          <section class ="mobile-article-image-section">
+            <img class ="mobile-article-image" src ="fakecrime.webp" loading="lazy"/>
+          </section>
+
+          <code class ="mobile-share">Share:</code>
+          <section class ="mobile-share-these-sites">
+            <a href ="#" class ="mobile-share-social-media">
+               <div id ="mobile-share-social-media">
+                  
+               </div>
+            </a>
+
+             <a href ="#" class ="mobile-share-social-media">
+               <div id ="mobile-share-social-media">
+                  
+               </div>
+            </a>
+          </section>
+
+
+          <article class ="mobile-article-text">
+
+<div id ="text-middled">
+    <p id ="text-middled">Sending Havenfall Into Panic </p>
+</div>
+
+Havenfall has become increasingly uneasy over a series of disturbing "crime scenes" appearing around the city.<br><br>
+The scenes look convincing.<br><br>
+Police tape.<br><br>
+Blood-like stains.<br><br>
+Abandoned belongings.<br><br>
+Broken glass.<br><br>
+Sometimes even handwritten messages left behind.<br><br>
+Residents discover them and immediately assume the worst.<br><br>
+But according to information now circulating among local authorities, some of these scenes may have been completely fabricated.<br><br>
+And behind them may be a group of men who aren't interested in hurting anyone.<br><br>
+They're interested in <b>making money from fear.</b><br><br>
+
+<b>The Perfect Crime That Never Happened</b><br><br>
+The group allegedly chooses a location late at night.<br><br>
+An alley.<br><br>
+An abandoned building.<br><br>
+A parking area.<br><br>
+Somewhere people will discover the scene the following morning.<br><br>
+They arrange everything carefully.<br><br>
+A discarded shoe here.<br><br>
+A damaged object there.<br><br>
+A suspicious-looking stain on the ground.<br><br>
+Then they leave.<br><br>
+By morning, someone discovers it.<br><br>
+A photograph appears online.<br><br>
+People begin sharing it.<br><br>
+Rumors spread.<br><br>
+<b>"Someone was murdered here."</b><br><br>
+<b>"There was an attack last night."</b><br><br>
+<b>"Havenfall isn't safe anymore."</b><br><br>
+Except there was no victim.<br><br>
+No attack.<br><br>
+No crime.<br><br>
+Only a carefully constructed performance.<br><br>
+
+<b>Fear Has a Price</b><br><br>
+So why would anyone do this?<br><br>
+Money.<br><br>
+The group allegedly uses the panic they create to manipulate frightened residents.<br><br>
+In some cases, people are reportedly contacted and offered "protection" or information about supposedly dangerous areas.<br><br>
+In other cases, fabricated warnings are used to encourage people to pay for security services or other forms of protection.<br><br>
+The details vary.<br><br>
+The objective doesn't.<br><br>
+<b>Create fear. Then profit from it.</b><br><br>
+It's an old idea wearing a new costume.<br><br>
+People are more willing to spend money when they believe something terrible is about to happen.<br><br>
+
+<b>The Internet Makes It Worse</b><br><br>
+The criminals don't need thousands of people to see their fake scenes.<br><br>
+They only need a few.<br><br>
+Someone takes a picture.<br><br>
+Someone else posts it.<br><br>
+Another person shares it to a neighborhood group.<br><br>
+Within hours, the story has grown.<br><br>
+By the time someone asks whether the incident actually happened, the rumor has already travelled across Havenfall.<br><br>
+And every person who shares the image becomes an accidental part of the operation.<br><br>
+The strangest part?<br><br>
+The criminals don't have to convince everyone.<br><br>
+They only need enough people to become frightened.<br><br>
+
+<b>Citizens Are Becoming Suspicious</b><br><br>
+The repeated incidents have created another problem.<br><br>
+People are beginning to distrust genuine crime scenes.<br><br>
+If someone discovers something suspicious, they may hesitate.<br><br>
+<b>"Is this real?"</b><br><br>
+<b>"Is someone trying to scare us again?"</b><br><br>
+That uncertainty can be dangerous.<br><br>
+A fabricated crime scene isn't harmless simply because nobody was physically attacked.<br><br>
+It consumes emergency resources.<br><br>
+It creates unnecessary panic.<br><br>
+It can send people running into danger.<br><br>
+And most importantly, it can make citizens less likely to trust legitimate warnings.<br><br>
+
+<b>A City Trained to Panic</b><br><br>
+There is something particularly disturbing about the psychology behind the scheme.<br><br>
+The group understands that people don't need certainty to become afraid.<br><br>
+They only need a possibility.<br><br>
+A dark alley.<br><br>
+A broken window.<br><br>
+A little blood on the pavement.<br><br>
+A story saying something terrible happened nearby.<br><br>
+The human mind fills in the rest.<br><br>
+And once fear takes control, rational thinking becomes much harder.<br><br>
+That is exactly what the scammers are counting on.<br><br>
+
+<b>The Warning</b><br><br>
+Residents are being urged not to investigate suspicious scenes themselves or immediately spread unverified claims online.<br><br>
+A disturbing photograph isn't proof.<br><br>
+A rumor isn't evidence.<br><br>
+And a frightening story doesn't automatically mean a crime occurred.<br><br>
+The safest response is simple:<br><br>
+<b>Report suspicious situations to the appropriate authorities and let them determine what actually happened.</b><br><br>
+Because in Havenfall, the most frightening thing about these scenes may not be what appears to have happened there.<br><br>
+It may be the fact that <b>nothing happened at all.</b><br><br>
+Someone simply wanted you to believe that it did.<br><br>
+And they were hoping your fear would put money in their hands.<br><br>
+
+
+</article>
+        </main>
+
+  
+
+    </main>
+
+
+<script src="book-scrolling-script.js"></script>
+<script src ="mobile-sidenav.js"></script>
+
+</body>
+</html>
+ ` 

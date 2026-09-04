@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+     <meta charset ="UTF-8">
+     <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+     <link rel ="stylesheet" type ="text/css" href ="aside-profile-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="profile-book-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="article-view-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="pc-mobile-manager.css">
+
+     <!-- MOBILE LINKS -->
+     <link rel ="stylesheet" type ="text/css" href ="aside-mobile-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-nemxstyle.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-post-styles.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-pagination.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-article-view-style.css">
+
+     <title>The “Boss” Era: When Everyone In Ravenport Became A Boss | NemxNovels — Blogs</title>
+
+<!-- NEMXNOVELS ARTICLE META START (auto-generated — do not hand-edit) -->
+<meta property="og:title" content="The “Boss” Era: When Everyone In Ravenport Became A Boss | NemxNovels">
+<meta property="og:description" content="A Blog from Blogs — &quot;The “Boss” Era: When Everyone In Ravenport Became A Boss&quot; (Ravenport Trends). Read it on NemxNovels.">
+<meta property="og:image" content="https://nemxnovels.site/ravenport-blogs/page-2/boss.webp">
+<meta property="og:type" content="article">
+<!-- NEMXNOVELS ARTICLE META END -->
+</head>
+<body>
+
+
+
+    <main class ="pc-html">
+
+
+  <main class ="nemx-main-section">
+
+
+
+
+      <aside class ="side-navigation">
+             <div class ="sidenav-header">
+                <img src ="bluelogo.png"/>
+             </div>
+
+             <section class ="sidenav-links-section">
+
+                 <section class ="sidenav-link-container" id ="sidenav-link-container-active">
+
+                    <div id ="sidenav-link-icon">
+                        <img src ="blog.png"/>
+                    </div>
+                    <select class ="sidenav-link-selector"   onchange="window.location.href=this.value">
+                        <option value ="#">Blogs</option>
+                        <option value ="index.html">Ravenport Blog </option>
+                        <option value ="landing-havenfall-blog.html">Havenfall Blog </option>
+                        <option value ="#">Dothmodon Blog </option>
+                    </select>
+                    <span class="arrow">▼</span>
+                 </section>   
+
+
+                  <section class ="sidenav-link-container" style ="color:white">
+
+                    <div id ="sidenav-link-icon">
+                        <img src ="newspaper-folderwhite.png"/>
+                    </div>
+                   <a class ="sidenav-link-normal" href ="news-page.html">
+                        <section class ="sidenav-link-normal" style ="color:white">
+                            News
+                        </section>
+                    </a>
+                 </section>   
+
+
+                  <section class ="sidenav-link-container" style ="color:white">
+
+                    <div id ="sidenav-link-icon">
+                        <img src ="videosblak.png"/>
+                    </div>
+                    <select class ="sidenav-link-selector"   onchange="window.location.href=this.value" style ="color:white;background: rgb(24,24,24);">
+                        <option value ="#">Videos </option>
+                        <option value ="videos-page-raven.html">Ravenport Videos </option>
+                        <option value ="videos-page-haven.html">Havenfall Videos </option>
+                        <option value ="#">Dothmodon Videos </option>
+                    </select>
+                    <span class="arrow">▼</span>
+                 </section>  
+                 
+                 <section class ="links-options-without-section">
+                    <section class ="sidenav-no-options-link-container" style ="color:white">
+
+                    <div id ="sidenav-link-iconno-options">
+                        <img class ="no-options-icons" src ="fairy-talewhite.png"/>
+                    </div>
+                    
+                  <a href ="stories-page.html" id ="link-no-options-section">
+                    <div class ="link-no-options-section">
+                        <p id ="sidenav-no-options-link">
+                       Stories
+                        </p>
+                    </div>
+                    </a>
+                 
+
+                    <div class ="number-of-books">
+                        <div id ="number-of-books">10</div>
+                    </div>
+
+                 </section>  
+
+
+                 <section class ="sidenav-no-options-link-container" style ="color:white">
+
+                    <div id ="sidenav-link-iconno-options">
+                        <img class ="no-options-icons" src ="aboutwhite.png"/>
+                    </div>
+                    
+                    <a href ="aboutnn.html" id ="link-no-options-section">
+                    <div id ="link-no-options-section">
+                        <p id ="sidenav-no-options-link">
+                            About NemxNovels
+                        </p>
+                    </div>
+                    </a>
+                 </section>  
+
+                 <section class ="aside-profile-area">
+                    <a href ="profilepage.html">
+                    <div class ="aside-profile-area-bar">
+                        <div id ="aside-profile-container">
+                            <div class ="aside-profile-container">
+                                <img src ="eye1.jpg"  id ="aside-profile-picture"/>
+                            </div>
+                        </div>
+                        <div id ="aside-profile-info">
+                           <p id ="aside-profile-name-title">ENTITY DESIGNATION</p>
+                           <p id ="aside-profile-name">Archive Wanderer</p>
+                        </div>
+                        <div id ="aside-profile-icon">
+                            <img src ="anonymous-white.png"/>
+                        </div>
+                    </div>
+                    </a>
+                 </section>
+
+                 </section>
+
+             </section>
+
+             
+          </aside>
+
+
+
+
+
+
+
+
+
+
+
+ <main class ="article-page-section" tabindex="0">
+          <section class ="article-go-back-section">
+            <a href ="page2.html">
+            <div id ="article-back">
+                <img src ="left-arrow.png" loading="lazy"/>
+            </div>
+            </a>
+
+            <div id ="article-profile">
+                <img class ="article-profile" src ="eye1.jpg" loading="lazy"/>
+            </div>
+            </section>
+            <section class ="article-header">
+                <div id ="article-header-link">
+                   <a href ="profilepage.html" class ="article-header-link">Blog</a>
+               </div>
+                <div class ="article-header-title">
+                    <p id ="article-header-subtitle">BLOGS</p>
+                     <p id ="article-header-title">The “Boss” Era: When Everyone in Ravenport Became a Boss</p>
+                </div>
+                <div class ="article-header-bottom">
+                    RAVENPORT TRENDS
+                </div>
+          </section>
+
+          <section class ="article-image-section">
+            <img class ="article-image" src ="boss.webp" loading="lazy"/>
+          </section>
+
+          <code class ="share">Share:</code>
+          <section class ="share-these-sites">
+            <a href ="#" class ="share-social-media">
+               <div id ="share-social-media">
+                  
+               </div>
+            </a>
+
+             <a href ="ravenport/original-story/" class ="share-social-media">
+               <div id ="share-social-media">
+                  
+               </div>
+            </a>
+          </section>
+
+
+          <article class ="article-text">
+
+<div id ="text-middled">
+    <p id ="text-middled">Everyone was Boss.</p>
+</div>
+
+There was a time when nobody in Ravenport was just a person.<br><br>
+Everyone was Boss.<br><br>
+Nobody knows exactly who started it.<br><br>
+Maybe it was construction workers. Maybe it was mechanics. Maybe it was older students trying to sound cool.<br><br>
+But somehow, the word escaped into university life.<br><br>
+And once it did, there was no stopping it.<br><br>
+
+<b>"Boss, Pass Me That."</b><br><br>
+That was usually how it started.<br><br>
+<b>"Boss, pass me that pen."</b><br><br>
+<b>"Boss, what time is the lecture?"</b><br><br>
+<b>"Boss, you got the notes?"</b><br><br>
+<b>"Boss, are you coming?"</b><br><br>
+It didn't matter if the person you were talking to was your best friend, a stranger, or someone you'd met approximately thirty seconds ago.<br><br>
+They were Boss.<br><br>
+It became so normal that nobody even noticed how ridiculous it was anymore.<br><br>
+
+Even the Lecturers Got Promoted<br><br>
+Eventually, students started calling lecturers Boss.<br><br>
+Not officially, obviously.<br><br>
+Nobody was walking into a lecture hall and saying:<br><br>
+<b>"Good morning, Boss."</b><br><br>
+At least, not if they valued their grades.<br><br>
+But outside the classroom?<br><br>
+Absolutely.<br><br>
+<b>"Boss, did you see the assignment?"</b><br><br>
+<b>"Boss, are we writing today?"</b><br><br>
+<b>"Boss, can you explain question four?"</b><br><br>
+The strange thing was that some lecturers started calling students Boss too.<br><br>
+At that point, the entire university had effectively collapsed into one giant workplace where nobody knew who was actually in charge.<br><br>
+
+Then It Got Worse<br><br>
+The word started replacing almost every other form of address.<br><br>
+Friend?<br><br>
+Boss.<br><br>
+Classmate?<br><br>
+Boss.<br><br>
+Stranger?<br><br>
+Boss.<br><br>
+Security guard?<br><br>
+Boss.<br><br>
+Someone you had an argument with five minutes ago?<br><br>
+Still Boss.<br><br>
+Even people who clearly hated each other couldn't escape it.<br><br>
+<b>"Boss, move."</b><br><br>
+<b>"No, Boss."</b><br><br>
+<b>"Boss, I'm warning you."</b><br><br>
+<b>"Do what you want, Boss."</b><br><br>
+It was beautiful.<br><br>
+It was stupid.<br><br>
+And somehow, everyone understood it.<br><br>
+
+The Phrase That Went Too Far<br><br>
+Then came the jokes.<br><br>
+People started using <b>"Boss"</b> in situations where absolutely nobody should have been called Boss.<br><br>
+One of the most infamous examples became:<br><br>
+<b>"Boss, can I borrow your girlfriend?"</b><br><br>
+Nobody actually expected the answer to be yes.<br><br>
+It was simply the kind of question someone would ask their friend purely to see their reaction.<br><br>
+And if the friend got angry?<br><br>
+<b>"Relax, Boss."</b><br><br>
+That somehow made it worse.<br><br>
+
+Eventually, Everyone Got Tired of It<br><br>
+Like every embarrassing trend, it eventually disappeared.<br><br>
+People stopped deliberately calling each other Boss.<br><br>
+New students stopped understanding why older students laughed whenever someone used the word.<br><br>
+But every now and then, someone would still walk past a friend and casually say:<br><br>
+<b>"What's up, Boss?"</b><br><br>
+And for a brief moment, everyone remembers.<br><br>
+There was a time when Ravenport had no ordinary people.<br><br>
+There were only Bosses.<br><br>
+
+          </article>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <aside class ="aside-profile-books-section">
+                  
+<div class="profile-book-container">
+    <div class="profile-book-title">BOOKS</div>
+    <div class =""></div>
+    <div class="profile-books-slider">
+        <!-- Group 1 -->
+        <div class="profile-books-group">
+            <div class="profile-book-box">
+                <a href ="ravenport/original-story/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="ravenport-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+            <div class="profile-book-box">
+                <a href ="havenfall/original-story/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="havenfall-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+        </div>
+
+        <!-- Group 2 -->
+        <div class="profile-books-group">
+            <div class="profile-book-box">
+                <a href ="havenfall/AngelsNotes/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="angelsnotes-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+            <div class="profile-book-box">
+                <a href ="ravenport/bewitchinggirl/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="bewitchinggirl.webp" loading="lazy"/>
+                </a>
+            </div>
+        </div>
+
+        <!-- Group 3 -->
+        <div class="profile-books-group">
+            <div class="profile-book-box">
+                <a href ="ravenport/raphaasylum/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="raphaasylum-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+            <div class="profile-book-box">
+                <a href ="ravenport/behindthecurse/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="behindthecurse-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="profile-book-controls">
+        <button id="profile-book-up">
+            <img src ="up.png" loading="lazy"/>
+        </button>
+        <button id="profile-book-down">
+            <img src ="down.png" loading="lazy"/>
+        </button>
+    </div>
+    <div class ="profile-book-info">
+         Read More of Our Stories
+    </div>
+</div>        
+        </aside>
+
+
+        </main>
+
+    </main>
+
+
+
+
+
+    <!-- END OF THE PC CODE -->
+
+
+
+
+
+
+    <!---  START OF THE MOBILE CODE -->
+
+
+    <main class ="mobile-html">
+
+            <aside class ="mobile-asidenav-section">
+        <header class ="mobile-asidenav-header">
+            <div id ="mobile-asidenav-icon">
+                 <img src ="bluelogo2.png" loading="lazy"/>
+            </div>
+            
+            <div id ="mobile-asidenav-exit">
+                 <img src ="right-arrow-white.png" loading="lazy"/>
+            </div>
+        </header>
+        <main class ="mobile-asidenav-body">
+        <section class ="mobile-asidenav-content">
+             <section class ="mobile-asidenav-container" style ="background:dodgerblue;">
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="blog.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text">
+                         Blogs
+                     </p>
+                 </div>
+                 <div id ="mobile-asidenav-page-select">
+                    ▼
+                 </div>
+             </section>
+            
+        </section>
+        
+        
+         <section class ="mobile-asidenav-selectors-container-section">
+             <section class ="mobile-asidenav-selectors-container">
+                 <a href ="index.html" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages" style ="background:white;color:black;font-weight:bold">
+                     Ravenport Blog
+                 </div>
+                 </a>
+                 
+                 <a href ="landing-havenfall-blog.html" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Havenfall Blog
+                 </div>
+                 </a>
+                 
+                 <a href ="#" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Dothmodon Blog
+                 </div>
+                 </a>
+             </section>
+        </section>
+        
+
+
+        <section class ="mobile-asidenav-content">
+             <a href ="news-page.html">
+             <section class ="mobile-asidenav-container" >
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="newspaper-folderwhite.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text" style ="color:white">
+                         News
+                     </p>
+                 </div>
+
+             </section>
+             </a>
+        </section>
+        
+        
+        <br>
+        <section class ="mobile-asidenav-content">
+             <section class ="mobile-asidenav-container">
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="videosblak.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text" style ="color:white">
+                         Videos
+                     </p>
+                 </div>
+                 <div id ="mobile-asidenav-page-select" style ="color:white">
+                    ▼
+                 </div>
+             </section>
+            
+        </section>
+        
+        <section class ="mobile-asidenav-selectors-container-section">
+             <section class ="mobile-asidenav-selectors-container">
+                 <a href ="videos-page-raven.html" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Ravenport Videos
+                 </div>
+                 </a>
+                 
+                 <a href ="videos-page-haven.html" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Havenfall Videos
+                 </div>
+                 </a>
+                 
+                 <a href ="#" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Dothmodon Videos
+                 </div>
+                 </a>
+             </section>
+        </section>
+        
+        
+        <section class ="mobile-asidenav-content">
+             <a href ="stories-page.html">
+             <section class ="mobile-asidenav-container">
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="fairy-talewhite.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text" style ="color:white">
+                         Stories
+                     </p>
+                 </div>
+                 <div id ="mobile-asidenav-page-select">
+                    <div id ="mobile-asidenav-books-number">
+                         <p id ="mobile-asidenav-books-number">10</p>
+                    </div>
+                 </div>
+             </section>
+             </a>
+        </section>
+
+        <section class ="mobile-asidenav-content">
+             <a href ="aboutnn.html">
+             <section class ="mobile-asidenav-container">
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="aboutwhite.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text" style ="color:white">
+                         About NemxNovels
+                     </p>
+                 </div>
+
+             </section>
+            </a>
+        </section>
+        <br><br>
+        <section class ="mobile-aside-profile">
+        <a href ="profilepage.html">
+        <section class ="mobile-aside-profile-section"> 
+             <section class ="mobile-aside-profile-picture">
+                 <img class ="mobile-aside-profile" src ="eye1.jpg" loading="lazy"/>
+             </section>
+             <section class ="mobile-aside-profile-details">
+               <p id ="mobile-aside-profile-entity">
+                     ENTITY DESIGNATION
+               </p>
+               <p id ="mobile-aside-profile-title">
+                     Archive Wanderer
+               </p>
+             </section>
+             <section class ="mobile-aside-profile-icon">
+                 <img src ="anonymous-white.png"/>
+             </section>
+        </section>
+        </a>
+        </section>
+        
+        </main>
+     </aside>
+
+
+<!-- HEADER --->
+    <section class ="mobile-intro-header">
+        <div id ="mobile-nn-logo">
+            <img src ="nn-logo.png"/>
+        </div>
+
+     </section>
+     <header class ="mobile-nn-header">
+            <img class ="mobile-hero" src ="wall3.webp" loading="lazy"/>
+
+     
+        <!-- maybe -->
+
+        <section class ="mobile-nemx-logo">
+           <p id ="mobile-nemx-logo">NEMXNOVELS</p>
+        </section>
+        
+        <nav class ="mobile-navigation-bar">
+               <div id ="mobile-navigation-icon">
+                     <img src ="hamburger.png" loading="lazy"/>
+               </div>
+            
+             
+             <a href ="profilepage.html" class ="mobile-profile-container">
+                <div id ="mobile-profile-container">
+                     <img class ="mobile-profile-pic" src ="eye1.jpg"/>
+                </div>
+             </a>
+        </nav>
+        
+        <section class ="mobile-header-book-list">
+             <div id ="mobile-book-cover">
+    <a href ="ravenport/original-story/">
+        <img class ="mobile-book-cover" src ="ravenport-cover.webp"/>
+    </a>
+</div>
+             <div id ="mobile-book-cover">
+    <a href ="havenfall/original-story/">
+        <img class ="mobile-book-cover" src ="havenfall-cover.webp"/>
+    </a>
+</div>
+             <div id ="mobile-book-cover">
+    <a href ="havenfall/AngelsNotes/">
+        <img class ="mobile-book-cover" src ="angelsnotes-cover.webp"/>
+    </a>
+</div>
+             <div id ="mobile-book-cover">
+    <a href ="ravenport/bewitchinggirl/">
+        <img class ="mobile-book-cover" src ="bewitchinggirl.webp"/>
+    </a>
+</div>
+             
+                <div id ="mobile-book-cover">
+             <a href ="ravenport/raphaasylum/">
+             <img class ="mobile-book-cover" src ="raphaasylum-cover.webp"/>
+             </a>
+        </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="ravenport/someonewhostays/">
+                 <img class ="mobile-book-cover" src ="someonewhostays-cover.webp"/>
+                  </a>
+             </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="havenfall/daggeroflight/">
+                 <img class ="mobile-book-cover" src ="daggeroflight-cover.webp"/>
+                  </a>
+             </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="ravenport/behindthecurse/">
+                 <img class ="mobile-book-cover" src ="behindthecurse-cover.webp"/>
+                  </a>
+             </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="ravenport/back&forth/">
+                 <img class ="mobile-book-cover" src ="backnforth-cover.webp"/>
+                  </a>
+             </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="ravenport/motelbloodbath/">
+                 <img class ="mobile-book-cover" src ="motelbloodbath-cover.webp"/>
+                  </a>
+             </div>
+</section>
+     </header>
+
+             <div class ="mobile-browser-navigation-container">
+               <div id ="mobile-browser-navigation-icon">
+                     <img src ="hamburger.png" loading="lazy"/>
+               </div>
+             </div>
+             
+             
+             
+                       <!-- Content FEED --> 
+
+
+
+
+ <main class ="mobile-article-page-section">
+          <section class ="mobile-article-go-back-section">
+            <a href ="page2.html">
+            <div id ="mobile-article-back">
+                <img src ="left-arrow.png" loading="lazy"/>
+            </div>
+            </a>
+
+            <div id ="mobile-article-profile">
+                <img class ="mobile-article-profile" src ="eye1.jpg" loading="lazy"/>
+            </div>
+            </section>
+            <section class ="mobile-article-header">
+                <div id ="mobile-article-header-link">
+                   <a href ="#" class ="mobile-article-header-link">Blog</a>
+               </div>
+                <div class ="mobile-article-header-title">
+                    <p id ="mobile-article-header-subtitle">BLOGS</p>
+                     <p id ="mobile-article-header-title">The “Boss” Era: When Everyone in Ravenport Became a Boss</p>
+                </div>
+                <div class ="mobile-article-header-bottom">
+                    RAVENPORT TREND 
+                </div>
+          </section>
+
+          <section class ="mobile-article-image-section">
+            <img class ="mobile-article-image" src ="boss.webp" loading="lazy"/>
+          </section>
+
+          <code class ="mobile-share">Share:</code>
+          <section class ="mobile-share-these-sites">
+            <a href ="#" class ="mobile-share-social-media">
+               <div id ="mobile-share-social-media">
+                  
+               </div>
+            </a>
+
+             <a href ="#" class ="mobile-share-social-media">
+               <div id ="mobile-share-social-media">
+                  
+               </div>
+            </a>
+          </section>
+
+
+          <article class ="mobile-article-text">
+  
+<div id ="text-middled">
+    <p id ="text-middled">Everyone was Boss.</p>
+</div>
+
+There was a time when nobody in Ravenport was just a person.<br><br>
+Everyone was Boss.<br><br>
+Nobody knows exactly who started it.<br><br>
+Maybe it was construction workers. Maybe it was mechanics. Maybe it was older students trying to sound cool.<br><br>
+But somehow, the word escaped into university life.<br><br>
+And once it did, there was no stopping it.<br><br>
+
+<b>"Boss, Pass Me That."</b><br><br>
+That was usually how it started.<br><br>
+<b>"Boss, pass me that pen."</b><br><br>
+<b>"Boss, what time is the lecture?"</b><br><br>
+<b>"Boss, you got the notes?"</b><br><br>
+<b>"Boss, are you coming?"</b><br><br>
+It didn't matter if the person you were talking to was your best friend, a stranger, or someone you'd met approximately thirty seconds ago.<br><br>
+They were Boss.<br><br>
+It became so normal that nobody even noticed how ridiculous it was anymore.<br><br>
+
+Even the Lecturers Got Promoted<br><br>
+Eventually, students started calling lecturers Boss.<br><br>
+Not officially, obviously.<br><br>
+Nobody was walking into a lecture hall and saying:<br><br>
+<b>"Good morning, Boss."</b><br><br>
+At least, not if they valued their grades.<br><br>
+But outside the classroom?<br><br>
+Absolutely.<br><br>
+<b>"Boss, did you see the assignment?"</b><br><br>
+<b>"Boss, are we writing today?"</b><br><br>
+<b>"Boss, can you explain question four?"</b><br><br>
+The strange thing was that some lecturers started calling students Boss too.<br><br>
+At that point, the entire university had effectively collapsed into one giant workplace where nobody knew who was actually in charge.<br><br>
+
+Then It Got Worse<br><br>
+The word started replacing almost every other form of address.<br><br>
+Friend?<br><br>
+Boss.<br><br>
+Classmate?<br><br>
+Boss.<br><br>
+Stranger?<br><br>
+Boss.<br><br>
+Security guard?<br><br>
+Boss.<br><br>
+Someone you had an argument with five minutes ago?<br><br>
+Still Boss.<br><br>
+Even people who clearly hated each other couldn't escape it.<br><br>
+<b>"Boss, move."</b><br><br>
+<b>"No, Boss."</b><br><br>
+<b>"Boss, I'm warning you."</b><br><br>
+<b>"Do what you want, Boss."</b><br><br>
+It was beautiful.<br><br>
+It was stupid.<br><br>
+And somehow, everyone understood it.<br><br>
+
+The Phrase That Went Too Far<br><br>
+Then came the jokes.<br><br>
+People started using <b>"Boss"</b> in situations where absolutely nobody should have been called Boss.<br><br>
+One of the most infamous examples became:<br><br>
+<b>"Boss, can I borrow your girlfriend?"</b><br><br>
+Nobody actually expected the answer to be yes.<br><br>
+It was simply the kind of question someone would ask their friend purely to see their reaction.<br><br>
+And if the friend got angry?<br><br>
+<b>"Relax, Boss."</b><br><br>
+That somehow made it worse.<br><br>
+
+Eventually, Everyone Got Tired of It<br><br>
+Like every embarrassing trend, it eventually disappeared.<br><br>
+People stopped deliberately calling each other Boss.<br><br>
+New students stopped understanding why older students laughed whenever someone used the word.<br><br>
+But every now and then, someone would still walk past a friend and casually say:<br><br>
+<b>"What's up, Boss?"</b><br><br>
+And for a brief moment, everyone remembers.<br><br>
+There was a time when Ravenport had no ordinary people.<br><br>
+There were only Bosses.<br><br>
+
+          </article>
+        </main>
+
+  
+
+    </main>
+
+
+<script src="book-scrolling-script.js"></script>
+<script src ="mobile-sidenav.js"></script>
+
+</body>
+</html>
+ ` 

@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+     <meta charset ="UTF-8">
+     <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+     <link rel ="stylesheet" type ="text/css" href ="aside-profile-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="profile-book-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="article-view-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="pc-mobile-manager.css">
+
+     <!-- MOBILE LINKS -->
+     <link rel ="stylesheet" type ="text/css" href ="aside-mobile-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-nemxstyle.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-post-styles.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-pagination.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-style.css">
+     <link rel ="stylesheet" type ="text/css" href ="mobile-article-view-style.css">
+
+     <title>Nobody In Havenfall Stays Poor Forever Because, The Hole Provides. | NemxNovels — Investigative Article</title>
+
+<!-- NEMXNOVELS ARTICLE META START (auto-generated — do not hand-edit) -->
+<meta property="og:title" content="Nobody In Havenfall Stays Poor Forever Because, The Hole Provides. | NemxNovels">
+<meta property="og:description" content="A Report from Investigative Article — &quot;Nobody In Havenfall Stays Poor Forever Because, The Hole Provides.&quot; (By Daniel Mercer). Read it on NemxNovels.">
+<meta property="og:image" content="https://nemxnovels.site/harticle-4.webp">
+<meta property="og:type" content="article">
+<!-- NEMXNOVELS ARTICLE META END -->
+</head>
+<body>
+
+
+
+    <main class ="pc-html">
+
+
+  <main class ="nemx-main-section">
+
+
+
+
+      <aside class ="side-navigation">
+             <div class ="sidenav-header">
+                <img src ="bluelogo.png"/>
+             </div>
+
+             <section class ="sidenav-links-section">
+
+                 <section class ="sidenav-link-container" id ="sidenav-link-container-active">
+
+                    <div id ="sidenav-link-icon">
+                        <img src ="blog.png"/>
+                    </div>
+                    <select class ="sidenav-link-selector"  onchange="window.location.href=this.value"  >
+                        <option value ="#">Blogs</option>
+                        <option value ="index.html">Ravenport Blog </option>
+                        <option value ="landing-havenfall-blog.html">Havenfall Blog </option>
+                        <option value ="#">Dothmodon Blog </option>
+                    </select>
+                    <span class="arrow">▼</span>
+                 </section>   
+
+
+                  <section class ="sidenav-link-container" style ="color:white">
+
+                    <div id ="sidenav-link-icon">
+                        <img src ="newspaper-folderwhite.png"/>
+                    </div>
+                   <a class ="sidenav-link-normal" href ="news-page.html">
+                        <section class ="sidenav-link-normal" style ="color:white">
+                            News
+                        </section>
+                    </a>
+                 </section>   
+
+
+                  <section class ="sidenav-link-container" style ="color:white">
+
+                    <div id ="sidenav-link-icon">
+                        <img src ="videosblak.png"/>
+                    </div>
+                    <select class ="sidenav-link-selector"   onchange="window.location.href=this.value" style ="color:white;background: rgb(24,24,24);">
+                        <option value ="#">Videos </option>
+                        <option value ="videos-page-raven.html">Ravenport Videos </option>
+                        <option value ="videos-page-haven.html">Havenfall Videos </option>
+                        <option value ="#">Dothmodon Videos </option>
+                    </select>
+                    <span class="arrow">▼</span>
+                 </section>  
+                 
+                 <section class ="links-options-without-section">
+                    <section class ="sidenav-no-options-link-container" style ="color:white">
+
+                    <div id ="sidenav-link-iconno-options">
+                        <img class ="no-options-icons" src ="fairy-talewhite.png"/>
+                    </div>
+                    
+                  <a href ="stories-page.html" id ="link-no-options-section">
+                    <div class ="link-no-options-section">
+                        <p id ="sidenav-no-options-link">
+                       Stories
+                        </p>
+                    </div>
+                    </a>
+                 
+
+                    <div class ="number-of-books">
+                        <div id ="number-of-books">10</div>
+                    </div>
+
+                 </section>  
+
+
+                 <section class ="sidenav-no-options-link-container" style ="color:white">
+
+                    <div id ="sidenav-link-iconno-options">
+                        <img class ="no-options-icons" src ="aboutwhite.png"/>
+                    </div>
+                    
+                    <a href ="aboutnn.html" id ="link-no-options-section">
+                    <div id ="link-no-options-section">
+                        <p id ="sidenav-no-options-link">
+                            About NemxNovels
+                        </p>
+                    </div>
+                    </a>
+                 </section>  
+
+                 <section class ="aside-profile-area">
+                    <a href ="profilepage.html">
+                    <div class ="aside-profile-area-bar">
+                        <div id ="aside-profile-container">
+                            <div class ="aside-profile-container">
+                                <img src ="eye1.jpg"  id ="aside-profile-picture"/>
+                            </div>
+                        </div>
+                        <div id ="aside-profile-info">
+                           <p id ="aside-profile-name-title">ENTITY DESIGNATION</p>
+                           <p id ="aside-profile-name">Archive Wanderer</p>
+                        </div>
+                        <div id ="aside-profile-icon">
+                            <img src ="anonymous-white.png"/>
+                        </div>
+                    </div>
+                    </a>
+                 </section>
+
+                 </section>
+
+             </section>
+
+             
+          </aside>
+
+
+
+
+
+
+
+
+
+
+
+ <main class ="article-page-section"  tabindex="0">
+          <section class ="article-go-back-section">
+            <a href ="landing-havenfall-blog.html">
+            <div id ="article-back">
+                <img src ="left-arrow.png" loading="lazy"/>
+            </div>
+            </a>
+
+            <div id ="article-profile">
+                <img class ="article-profile" src ="eye1.jpg" loading="lazy"/>
+            </div>
+            </section>
+            <section class ="article-header">
+                <div id ="article-header-link">
+                   <a href ="profilepage.html" class ="article-header-link">Report</a>
+               </div>
+                <div class ="article-header-title">
+                    <p id ="article-header-subtitle">Investigative Article</p>
+                     <p id ="article-header-title">Nobody in Havenfall stays poor forever because, the Hole provides.</p>
+                </div>
+                <div class ="article-header-bottom">
+             By Daniel Mercer
+         </div>
+          </section>
+
+          <section class ="article-image-section">
+            <img class ="article-image" src ="harticle-4.webp" loading="lazy"/>
+          </section>
+
+          <code class ="share">Share:</code>
+          <section class ="share-these-sites">
+            <a href ="#" class ="share-social-media">
+               <div id ="share-social-media">
+                  
+               </div>
+            </a>
+
+             <a href ="ravenport/original-story/" class ="share-social-media">
+               <div id ="share-social-media">
+                  
+               </div>
+            </a>
+          </section>
+
+
+          <article class ="article-text">
+ 
+<div id ="text-middled">
+    <p id ="text-middled">The Strange Case of a Kingsmere House</p>
+</div>
+
+
+
+There is an old saying in Havenfall that most residents have heard at least once:
+<br><br>
+<b>   “The Hole provides when the time is right.”</b>
+<br><br>
+For some, it is nothing more than an expression. For others, it is an unquestionable fact of life.
+<br><br>
+Havenfall has no shortage of people who have struggled financially, lost their homes, or found
+themselves with nowhere to turn. Yet, strangely enough, the city has almost no permanent
+homeless population.
+<br><br>
+The reason, according to those who have experienced it, is the Hole.
+<br><br>
+Last Tuesday, I was given a story that sounded so ridiculous that I initially assumed I had
+misunderstood the details.
+<br><br>
+A man had been homeless for less than twenty-four hours.
+<br><br>
+By Wednesday morning, he owned a house in Kingsmere.
+<br><br>
+His name is Jonathan Vale, a forty-six-year-old Havenfall resident who had spent most of his adult
+life living with his wife. According to Jonathan, she was the only person he considered family.
+<br><br>
+That changed Monday evening.
+<br><br>
+<b>   “I came home and she told me to leave,”</b> Jonathan told me.<b>   
+     “There wasn't a conversation. There
+wasn't an argument. She just said she didn't want me there anymore.”</b>
+Jonathan left with the clothes he was wearing and a small bag containing his wallet and phone.
+<br><br>
+He had nowhere else to go.
+<br><br>
+<b>   “I remember sitting outside that night thinking, That's it. I had nobody to call.”</b>
+Jonathan spent the night beneath the awning of a closed shop.
+He says he woke shortly after sunrise to find a small envelope beside him.
+Inside was a single key.
+<br><br>
+There was also an address.
+<br><br>
+Kingsmere.
+<br><br>
+Jonathan assumed it was some kind of cruel joke.
+<br><br>
+<b>   “I didn't even know the address,” </b>he said. <b>   
+    “I thought somebody was messing with me.”</b>
+He went there anyway.
+<br><br>
+The house was real.
+<br><br>
+A two-story property with a small garden, functioning electricity, running water, furniture, food in
+the kitchen, and everything else one would expect from an occupied home.
+<br><br>
+Except nobody was occupying it.
+<br><br>
+There was no note explaining who owned the property.
+<br><br>
+No landlord.
+<br>
+No previous tenant.<br>
+No paperwork.<br>
+Only the key.<br><br>
+When I visited the house yesterday, Jonathan was already living there.
+<br><br>
+I asked him how he had obtained ownership of the property.
+<br><br>
+He looked at me for several seconds before answering.
+<br><br>
+<b>   “I didn't.”</b>
+<br><br>
+<b>   “Then who gave it to you?”</b>
+<br><br>
+Jonathan pointed toward the kitchen window.
+<br><br>
+<b>   “The Hole.”</b>
+<br><br>
+That answer is becoming increasingly common in Havenfall.
+<br><br>
+Over the past several years, I have spoken with residents who claim to have received food,
+money, medicine, clothing, tools, jobs, and even vehicles under similarly unexplained
+circumstances.
+<br><br>
+The circumstances surrounding each case are different.
+<br><br>
+The timing, however, is remarkably similar.
+<br><br>
+People receive what they need when they are at their lowest.
+<br><br>
+Not before.
+<br><br>
+Not necessarily when they ask.<br><br>
+When the time is right.<br><br>
+Jonathan's case may be one of the strangest yet.<br><br>
+A man loses his home on Monday.<br><br>
+A house appears on Tuesday.<br><br>
+By Wednesday, he is no longer homeless.<br><br>
+There is no government program responsible.<br><br>
+No charity has claimed responsibility.<br><br>
+No property company has acknowledged transferring the house.<br><br>
+And Jonathan insists he never asked the Hole for anything.<br><br>
+<b>   “I didn't even think about it,” </b>he said.<b>   
+     “I just wanted somewhere to sleep.”</b>
+<br><br>
+Before leaving, I asked Jonathan whether he believed the Hole had saved him.
+<br><br>
+He looked around his new home.
+<br><br>
+<b>   “I don't know if it saved me,”</b> he said.
+<br><br>
+Then he paused.<br><br>
+<b>   “But it knew I needed somewhere to go.”</b>
+<br><br>
+Perhaps that is what makes the Hole so difficult to understand.
+<br><br>
+It does not seem to answer prayers.
+<br><br>
+It does not seem to reward good people.
+<br><br>
+It does not appear to care about wealth, status, or reputation.
+<br><br>
+It simply waits.<br><br>
+And when the moment arrives, something appears.
+<br><br>
+For Jonathan Vale, that something was a house in Kingsmere.
+<br><br>
+For someone else, it may be something entirely different.
+<br><br>
+Perhaps that is why Havenfall has so few people sleeping on its streets.
+<br><br>
+Not because nobody falls.
+<br><br>
+But because, eventually—the Hole provides.
+<br><br>
+---------
+<br><br>
+<code style ='color:dodgerblue'>
+HAVENFALL CITY ARCHIVE<br>
+Filed under: Unexplained Phenomena / The Hole of Havenfall<br>
+Interview conducted by Daniel Mercer<br>
+</code>
+
+
+
+
+</article>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <aside class ="aside-profile-books-section">
+                  
+<div class="profile-book-container">
+    <div class="profile-book-title">BOOKS</div>
+    <div class =""></div>
+    <div class="profile-books-slider">
+        <!-- Group 1 -->
+        <div class="profile-books-group">
+            <div class="profile-book-box">
+                <a href ="ravenport/original-story/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="ravenport-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+            <div class="profile-book-box">
+                <a href ="havenfall/original-story/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="havenfall-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+        </div>
+
+        <!-- Group 2 -->
+        <div class="profile-books-group">
+            <div class="profile-book-box">
+                <a href ="havenfall/AngelsNotes/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="angelsnotes-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+            <div class="profile-book-box">
+                <a href ="ravenport/bewitchinggirl/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="bewitchinggirl.webp" loading="lazy"/>
+                </a>
+            </div>
+        </div>
+
+        <!-- Group 3 -->
+        <div class="profile-books-group">
+            <div class="profile-book-box">
+                <a href ="ravenport/raphaasylum/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="raphaasylum-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+            <div class="profile-book-box">
+                <a href ="ravenport/behindthecurse/" class ="profile-book-box">
+                    <img class ="aside-profile-book-covers" src ="behindthecurse-cover.webp" loading="lazy"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="profile-book-controls">
+        <button id="profile-book-up">
+            <img src ="up.png" loading="lazy"/>
+        </button>
+        <button id="profile-book-down">
+            <img src ="down.png" loading="lazy"/>
+        </button>
+    </div>
+    <div class ="profile-book-info">
+         Read More of Our Stories
+    </div>
+</div>        
+        </aside>
+
+
+        </main>
+
+    </main>
+
+
+
+
+
+    <!-- END OF THE PC CODE -->
+
+
+
+
+
+
+    <!---  START OF THE MOBILE CODE -->
+
+
+    <main class ="mobile-html">
+
+            <aside class ="mobile-asidenav-section">
+        <header class ="mobile-asidenav-header">
+            <div id ="mobile-asidenav-icon">
+                 <img src ="bluelogo2.png" loading="lazy"/>
+            </div>
+            
+            <div id ="mobile-asidenav-exit">
+                 <img src ="right-arrow-white.png" loading="lazy"/>
+            </div>
+        </header>
+        <main class ="mobile-asidenav-body">
+        <section class ="mobile-asidenav-content">
+             <section class ="mobile-asidenav-container" style ="background:dodgerblue;">
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="blog.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text">
+                         Blogs
+                     </p>
+                 </div>
+                 <div id ="mobile-asidenav-page-select">
+                    ▼
+                 </div>
+             </section>
+            
+        </section>
+        
+        
+         <section class ="mobile-asidenav-selectors-container-section">
+             <section class ="mobile-asidenav-selectors-container">
+                 <a href ="index.html" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages" style ="background:white;color:black;font-weight:bold">
+                     Ravenport Blog
+                 </div>
+                 </a>
+                 
+                 <a href ="landing-havenfall-blog.html" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Havenfall Blog
+                 </div>
+                 </a>
+                 
+                 <a href ="#" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Dothmodon Blog
+                 </div>
+                 </a>
+             </section>
+        </section>
+        
+
+
+        <section class ="mobile-asidenav-content">
+             <a href ="news-page.html">
+             <section class ="mobile-asidenav-container" >
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="newspaper-folderwhite.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text" style ="color:white">
+                         News
+                     </p>
+                 </div>
+
+             </section>
+             </a>
+        </section>
+        
+        
+        <br>
+        <section class ="mobile-asidenav-content">
+             <section class ="mobile-asidenav-container">
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="videosblak.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text" style ="color:white">
+                         Videos
+                     </p>
+                 </div>
+                 <div id ="mobile-asidenav-page-select" style ="color:white">
+                    ▼
+                 </div>
+             </section>
+            
+        </section>
+        
+        <section class ="mobile-asidenav-selectors-container-section">
+             <section class ="mobile-asidenav-selectors-container">
+                 <a href ="videos-page-raven.html" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Ravenport Videos
+                 </div>
+                 </a>
+                 
+                 <a href ="videos-page-haven.html" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Havenfall Videos
+                 </div>
+                 </a>
+                 
+                 <a href ="#" class ="mobile-asidenav-selector-pages">
+                 <div id ="mobile-asidenav-selector-pages">
+                     Dothmodon Videos
+                 </div>
+                 </a>
+             </section>
+        </section>
+        
+        
+        <section class ="mobile-asidenav-content">
+             <a href ="stories-page.html">
+             <section class ="mobile-asidenav-container">
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="fairy-talewhite.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text" style ="color:white">
+                         Stories
+                     </p>
+                 </div>
+                 <div id ="mobile-asidenav-page-select">
+                    <div id ="mobile-asidenav-books-number">
+                         <p id ="mobile-asidenav-books-number">10</p>
+                    </div>
+                 </div>
+             </section>
+             </a>
+        </section>
+
+        <section class ="mobile-asidenav-content">
+             <a href ="aboutnn.html">
+             <section class ="mobile-asidenav-container">
+                 <div id ="mobile-asidenav-page-icon">
+                     <img src ="aboutwhite.png"/>
+                 </div>
+                 <div id ="mobile-asidenav-page-name">
+                     <p id ="mobile-asidenav-page-text" style ="color:white">
+                         About NemxNovels
+                     </p>
+                 </div>
+
+             </section>
+            </a>
+        </section>
+        <br><br>
+        <section class ="mobile-aside-profile">
+        <a href ="profilepage.html">
+        <section class ="mobile-aside-profile-section"> 
+             <section class ="mobile-aside-profile-picture">
+                 <img class ="mobile-aside-profile" src ="eye1.jpg" loading="lazy"/>
+             </section>
+             <section class ="mobile-aside-profile-details">
+               <p id ="mobile-aside-profile-entity">
+                     ENTITY DESIGNATION
+               </p>
+               <p id ="mobile-aside-profile-title">
+                     Archive Wanderer
+               </p>
+             </section>
+             <section class ="mobile-aside-profile-icon">
+                 <img src ="anonymous-white.png"/>
+             </section>
+        </section>
+        </a>
+        </section>
+        
+        </main>
+     </aside>
+
+
+<!-- HEADER --->
+    <section class ="mobile-intro-header">
+        <div id ="mobile-nn-logo">
+            <img src ="nn-logo.png"/>
+        </div>
+
+     </section>
+     <header class ="mobile-nn-header">
+            <img class ="mobile-hero" src ="wall3.webp" loading="lazy"/>
+
+     
+        <!-- maybe -->
+
+        <section class ="mobile-nemx-logo">
+           <p id ="mobile-nemx-logo">NEMXNOVELS</p>
+        </section>
+        
+        <nav class ="mobile-navigation-bar">
+               <div id ="mobile-navigation-icon">
+                     <img src ="hamburger.png" loading="lazy"/>
+               </div>
+            
+             
+             <a href ="profilepage.html" class ="mobile-profile-container">
+                <div id ="mobile-profile-container">
+                     <img class ="mobile-profile-pic" src ="eye1.jpg"/>
+                </div>
+             </a>
+        </nav>
+        
+        <section class ="mobile-header-book-list">
+             <div id ="mobile-book-cover">
+    <a href ="ravenport/original-story/">
+        <img class ="mobile-book-cover" src ="ravenport-cover.webp"/>
+    </a>
+</div>
+             <div id ="mobile-book-cover">
+    <a href ="havenfall/original-story/">
+        <img class ="mobile-book-cover" src ="havenfall-cover.webp"/>
+    </a>
+</div>
+             <div id ="mobile-book-cover">
+    <a href ="havenfall/AngelsNotes/">
+        <img class ="mobile-book-cover" src ="angelsnotes-cover.webp"/>
+    </a>
+</div>
+             <div id ="mobile-book-cover">
+    <a href ="ravenport/bewitchinggirl/">
+        <img class ="mobile-book-cover" src ="bewitchinggirl.webp"/>
+    </a>
+</div>
+             
+                <div id ="mobile-book-cover">
+             <a href ="ravenport/raphaasylum/">
+             <img class ="mobile-book-cover" src ="raphaasylum-cover.webp"/>
+             </a>
+        </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="ravenport/someonewhostays/">
+                 <img class ="mobile-book-cover" src ="someonewhostays-cover.webp"/>
+                  </a>
+             </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="havenfall/daggeroflight/">
+                 <img class ="mobile-book-cover" src ="daggeroflight-cover.webp"/>
+                  </a>
+             </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="ravenport/behindthecurse/">
+                 <img class ="mobile-book-cover" src ="behindthecurse-cover.webp"/>
+                  </a>
+             </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="ravenport/back&forth/">
+                 <img class ="mobile-book-cover" src ="backnforth-cover.webp"/>
+                  </a>
+             </div>
+
+             <div id ="mobile-book-cover">
+                  <a href ="ravenport/motelbloodbath/">
+                 <img class ="mobile-book-cover" src ="motelbloodbath-cover.webp"/>
+                  </a>
+             </div>
+</section>
+     </header>
+
+             <div class ="mobile-browser-navigation-container">
+               <div id ="mobile-browser-navigation-icon">
+                     <img src ="hamburger.png" loading="lazy"/>
+               </div>
+             </div>
+             
+             
+             
+                       <!-- Content FEED --> 
+
+
+
+
+ <main class ="mobile-article-page-section">
+          <section class ="mobile-article-go-back-section">
+            <a href ="landing-havenfall-blog.html">
+            <div id ="mobile-article-back">
+                <img src ="left-arrow.png" loading="lazy"/>
+            </div>
+            </a>
+
+            <div id ="mobile-article-profile">
+                <img class ="mobile-article-profile" src ="eye1.jpg" loading="lazy"/>
+            </div>
+            </section>
+            <section class ="mobile-article-header">
+                <div id ="mobile-article-header-link">
+                   <a href ="#" class ="mobile-article-header-link">Report</a>
+               </div>
+                <div class ="mobile-article-header-title">
+                    <p id ="mobile-article-header-subtitle">Investigative Article</p>
+                     <p id ="mobile-article-header-title">Nobody in Havenfall stays poor forever because, the Hole provides.</p>
+                </div>
+                <div class ="mobile-article-header-bottom">
+               By Daniel Mercer
+            </div>
+          </section>
+
+          <section class ="mobile-article-image-section">
+            <img class ="mobile-article-image" src ="harticle-4.webp" loading="lazy"/>
+          </section>
+
+          <code class ="mobile-share">Share:</code>
+          <section class ="mobile-share-these-sites">
+            <a href ="#" class ="mobile-share-social-media">
+               <div id ="mobile-share-social-media">
+                  
+               </div>
+            </a>
+
+             <a href ="#" class ="mobile-share-social-media">
+               <div id ="mobile-share-social-media">
+                  
+               </div>
+            </a>
+          </section>
+
+
+          <article class ="mobile-article-text">
+
+
+             
+<div id ="text-middled">
+    <p id ="text-middled">The Strange Case of a Kingsmere House</p>
+</div>
+
+
+
+There is an old saying in Havenfall that most residents have heard at least once:
+<br><br>
+<b>   “The Hole provides when the time is right.”</b>
+<br><br>
+For some, it is nothing more than an expression. For others, it is an unquestionable fact of life.
+<br><br>
+Havenfall has no shortage of people who have struggled financially, lost their homes, or found
+themselves with nowhere to turn. Yet, strangely enough, the city has almost no permanent
+homeless population.
+<br><br>
+The reason, according to those who have experienced it, is the Hole.
+<br><br>
+Last Tuesday, I was given a story that sounded so ridiculous that I initially assumed I had
+misunderstood the details.
+<br><br>
+A man had been homeless for less than twenty-four hours.
+<br><br>
+By Wednesday morning, he owned a house in Kingsmere.
+<br><br>
+His name is Jonathan Vale, a forty-six-year-old Havenfall resident who had spent most of his adult
+life living with his wife. According to Jonathan, she was the only person he considered family.
+<br><br>
+That changed Monday evening.
+<br><br>
+<b>   “I came home and she told me to leave,”</b> Jonathan told me.<b>   
+     “There wasn't a conversation. There
+wasn't an argument. She just said she didn't want me there anymore.”</b>
+Jonathan left with the clothes he was wearing and a small bag containing his wallet and phone.
+<br><br>
+He had nowhere else to go.
+<br><br>
+<b>   “I remember sitting outside that night thinking, That's it. I had nobody to call.”</b>
+Jonathan spent the night beneath the awning of a closed shop.
+He says he woke shortly after sunrise to find a small envelope beside him.
+Inside was a single key.
+<br><br>
+There was also an address.
+<br><br>
+Kingsmere.
+<br><br>
+Jonathan assumed it was some kind of cruel joke.
+<br><br>
+<b>   “I didn't even know the address,” </b>he said. <b>   
+    “I thought somebody was messing with me.”</b>
+He went there anyway.
+<br><br>
+The house was real.
+<br><br>
+A two-story property with a small garden, functioning electricity, running water, furniture, food in
+the kitchen, and everything else one would expect from an occupied home.
+<br><br>
+Except nobody was occupying it.
+<br><br>
+There was no note explaining who owned the property.
+<br><br>
+No landlord.
+<br>
+No previous tenant.<br>
+No paperwork.<br>
+Only the key.<br><br>
+When I visited the house yesterday, Jonathan was already living there.
+<br><br>
+I asked him how he had obtained ownership of the property.
+<br><br>
+He looked at me for several seconds before answering.
+<br><br>
+<b>   “I didn't.”</b>
+<br><br>
+<b>   “Then who gave it to you?”</b>
+<br><br>
+Jonathan pointed toward the kitchen window.
+<br><br>
+<b>   “The Hole.”</b>
+<br><br>
+That answer is becoming increasingly common in Havenfall.
+<br><br>
+Over the past several years, I have spoken with residents who claim to have received food,
+money, medicine, clothing, tools, jobs, and even vehicles under similarly unexplained
+circumstances.
+<br><br>
+The circumstances surrounding each case are different.
+<br><br>
+The timing, however, is remarkably similar.
+<br><br>
+People receive what they need when they are at their lowest.
+<br><br>
+Not before.
+<br><br>
+Not necessarily when they ask.<br><br>
+When the time is right.<br><br>
+Jonathan's case may be one of the strangest yet.<br><br>
+A man loses his home on Monday.<br><br>
+A house appears on Tuesday.<br><br>
+By Wednesday, he is no longer homeless.<br><br>
+There is no government program responsible.<br><br>
+No charity has claimed responsibility.<br><br>
+No property company has acknowledged transferring the house.<br><br>
+And Jonathan insists he never asked the Hole for anything.<br><br>
+<b>   “I didn't even think about it,” </b>he said.<b>   
+     “I just wanted somewhere to sleep.”</b>
+<br><br>
+Before leaving, I asked Jonathan whether he believed the Hole had saved him.
+<br><br>
+He looked around his new home.
+<br><br>
+<b>   “I don't know if it saved me,”</b> he said.
+<br><br>
+Then he paused.<br><br>
+<b>   “But it knew I needed somewhere to go.”</b>
+<br><br>
+Perhaps that is what makes the Hole so difficult to understand.
+<br><br>
+It does not seem to answer prayers.
+<br><br>
+It does not seem to reward good people.
+<br><br>
+It does not appear to care about wealth, status, or reputation.
+<br><br>
+It simply waits.<br><br>
+And when the moment arrives, something appears.
+<br><br>
+For Jonathan Vale, that something was a house in Kingsmere.
+<br><br>
+For someone else, it may be something entirely different.
+<br><br>
+Perhaps that is why Havenfall has so few people sleeping on its streets.
+<br><br>
+Not because nobody falls.
+<br><br>
+But because, eventually—the Hole provides.
+<br><br>
+---------
+<br><br>
+<code style ='color:dodgerblue'>
+HAVENFALL CITY ARCHIVE<br>
+Filed under: Unexplained Phenomena / The Hole of Havenfall<br>
+Interview conducted by Daniel Mercer<br>
+</code>
+
+
+
+</article>
+        </main>
+
+  
+
+    </main>
+
+
+<script src="book-scrolling-script.js"></script>
+<script src ="mobile-sidenav.js"></script>
+
+</body>
+</html>
+ 
