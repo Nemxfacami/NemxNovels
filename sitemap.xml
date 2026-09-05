@@ -1,91 +1,804 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset  
-xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>  
-    <loc>https://nemxnovels.site/</loc>  
-    <lastmod>2026-08-04</lastmod>  
-    <changefreq>daily</changefreq>  
-    <priority>1.0</priority>  
-</url>  
+  <url>
+        <loc>https://nemxnovels.site</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
 
-<url>  <loc>https://nemxnovels.site/aboutnn.html</loc>  
-    <lastmod>2026-08-04</lastmod>  
-    <changefreq>monthly</changefreq>  
-    <priority>0.8</priority>  
-</url>
+  <url>
+        <loc>https://nemxnovels.site/</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
 
 
-<url>       <loc>https://nemxnovels.site/news-page.html</loc>
-<lastmod>2026-08-04</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
 
-<url>       <loc>https://nemxnovels.site/landing-havenfall-blog.html</loc>
-<lastmod>2026-08-04</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
+    <url>
+        <loc>https://nemxnovels.site/aboutnn.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
-<url>       <loc>https://nemxnovels.site/videos-page-angel.html</loc>
-<lastmod>2026-08-04</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
+    <url>
+        <loc>https://nemxnovels.site/article-1.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
-<url>       <loc>https://nemxnovels.site/videos-page-haven.html</loc>
-<lastmod>2026-08-04</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
+    <url>
+        <loc>https://nemxnovels.site/article-2.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
-<url>       <loc>https://nemxnovels.site/videos-page-raven.html</loc>
-<lastmod>2026-08-04</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
+    <url>
+        <loc>https://nemxnovels.site/article-3.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
-<url>       <loc>https://nemxnovels.site/landing-angel-notes-blog.html</loc>
-<lastmod>2026-08-04</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
+    <url>
+        <loc>https://nemxnovels.site/article-4.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
-<url>     <loc>https://nemxnovels.site/profilepage.html</loc>
-<lastmod>2026-08-04</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
+    <url>
+        <loc>https://nemxnovels.site/article-5.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
-<url> <loc>https://nemxnovels.site/stories-page.html</loc>  
-    <lastmod>2026-08-04</lastmod>  
-    <changefreq>weekly</changefreq>  
-    <priority>0.9</priority>  
-</url>  
+    <url>
+        <loc>https://nemxnovels.site/article-6.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
-<url>     <loc>https://nemxnovels.site/ravenport/original-story/</loc>  
-    <lastmod>2026-08-04</lastmod>  
-    <changefreq>monthly</changefreq>  
-    <priority>0.8</priority>  
-</url>
+    <url>
+        <loc>https://nemxnovels.site/article-7.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
-<url>    <loc>https://nemxnovels.site/ravenport/BewitchingGirl/</loc>
-<lastmod>2026-08-04</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
+    <url>
+        <loc>https://nemxnovels.site/harticle-1.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
-<url> <loc>https://nemxnovels.site/havenfall/original-story/</loc>  
-    <lastmod>2026-08-04</lastmod>  
-    <changefreq>monthly</changefreq>  
-    <priority>0.8</priority>  
-</url>
+    <url>
+        <loc>https://nemxnovels.site/harticle-2.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
-<url>       <loc>https://nemxnovels.site/havenfall/AngelsNotes/</loc>
-<lastmod>2026-08-04</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
+    <url>
+        <loc>https://nemxnovels.site/harticle-3.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/harticle-4.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/haven-news-page.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter2.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter3.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter4.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter5.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter6.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/AngelsNotes/index.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/daggeroflight/index.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/original-story/Havenfall-chapter2.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/original-story/Havenfall-chapter3.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/original-story/Havenfall-chapter4.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/original-story/Havenfall-chapter5.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/original-story/Havenfall-chapter6.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/original-story/Havenfall-chapter7.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/original-story/Havenfall-chapter8.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall/original-story/index.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-2/harticle-10.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-2/harticle-11.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-2/harticle-5.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-2/harticle-6.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-2/harticle-7.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-2/harticle-8.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-2/harticle-9.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-2/page2.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-3/harticle-12.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-3/harticle-13.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-3/harticle-14.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-3/harticle-15.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-3/harticle-16.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/havenfall-blogs/page-3/page3.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-1.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-10.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-11.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-12.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-13.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-14.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-15.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-2.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-3.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-4.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-5.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-6.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-7.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-8.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/hnews-9.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/index.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/landing-havenfall-blog.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-1.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-10.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-11.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-12.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-13.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-14.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-15.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-2.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-3.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-4.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-5.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-6.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-7.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-8.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-9.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/news-page.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/profilepage.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/back&amp;forth/index.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter2.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter3.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter4.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter5.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter6.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/behindthecurse/index.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/bewitchinggirl/index.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/motelbloodbath/accused-file-page.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/motelbloodbath/index.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/motelbloodbath/victim-file-page.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/original-story/Ravenport-chapter2.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/original-story/Ravenport-chapter3.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/original-story/Ravenport-chapter4.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/original-story/Ravenport-chapter5.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/original-story/Ravenport-chapter6.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/original-story/Ravenport-chapter7.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/original-story/Ravenport-chapter8.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/original-story/index.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/raphaasylum/index.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport/someonewhostays/index.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport-blogs/page-2/article-10.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport-blogs/page-2/article-11.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport-blogs/page-2/article-12.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport-blogs/page-2/article-13.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport-blogs/page-2/article-14.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport-blogs/page-2/article-8.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport-blogs/page-2/article-9.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport-blogs/page-2/page2.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport-blogs/page-3/article-15.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport-blogs/page-3/article-16.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport-blogs/page-3/article-17.html</loc>
+        <lastmod>2026-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/ravenport-blogs/page-3/page3.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/stories-page.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/videos-page-haven.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nemxnovels.site/videos-page-raven.html</loc>
+        <lastmod>2026-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
 </urlset>
