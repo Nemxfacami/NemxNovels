@@ -1,3 +1,4 @@
+
 from pathlib import Path
 import re
 import shutil
@@ -5,7 +6,7 @@ import html as html_module
 
 
 # ============================================================
-# NEMXNOVELS NEWS ARTICLE OG METADATA AUTO ADDER
+# NEMXNOVELS HNEWS ARTICLE OG METADATA AUTO ADDER
 # ============================================================
 
 DOMAIN = "https://nemxnovels.site"
@@ -29,8 +30,6 @@ def get_article_title(html):
         id ="..."
         id= "..."
         id = "..."
-
-    Also handles whitespace before the actual title.
     """
 
     pattern = (
@@ -52,7 +51,7 @@ def get_article_title(html):
 
     title = match.group(1)
 
-    # Remove any accidental HTML tags inside the title
+    # Remove accidental HTML tags
     title = re.sub(
         r'<[^>]+>',
         ' ',
@@ -80,27 +79,8 @@ def get_article_image(html):
     """
     Finds the <img> element whose class contains
     article-image.
-
-    This is intentionally flexible.
-
-    It handles things like:
-
-    <img class ="article-image" src ="news-silion.png">
-
-    <img class="article-image" src="news-silion.png" loading="lazy">
-
-    <img src="news-silion.png" class="article-image">
-
-    <img
-        class="article-image"
-        src="news-silion.png"
-        loading="lazy"
-    >
-
-    The original HTML is NEVER modified.
     """
 
-    # Find every img tag
     img_tags = re.findall(
         r'<img\b[^>]*>',
         html,
@@ -108,10 +88,6 @@ def get_article_image(html):
     )
 
     for img_tag in img_tags:
-
-        # ----------------------------------------------------
-        # Check whether this image has article-image class
-        # ----------------------------------------------------
 
         class_match = re.search(
             r'\bclass\s*=\s*["\']([^"\']*)["\']',
@@ -130,10 +106,6 @@ def get_article_image(html):
         ):
             continue
 
-        # ----------------------------------------------------
-        # Find src
-        # ----------------------------------------------------
-
         src_match = re.search(
             r'\bsrc\s*=\s*["\']([^"\']+)["\']',
             img_tag,
@@ -145,21 +117,14 @@ def get_article_image(html):
 
         image_path = src_match.group(1).strip()
 
-        # ----------------------------------------------------
         # Already a full URL
-        # ----------------------------------------------------
-
         if image_path.startswith("http://"):
             return image_path
 
         if image_path.startswith("https://"):
             return image_path
 
-        # ----------------------------------------------------
         # Local image
-        # ----------------------------------------------------
-
-        # Remove ./ or leading /
         image_path = image_path.lstrip("./")
 
         return f"{DOMAIN}/{image_path}"
@@ -201,28 +166,19 @@ def get_article_description(html):
 
     article_text = match.group(1)
 
-    # --------------------------------------------------------
     # Remove HTML tags
-    # --------------------------------------------------------
-
     article_text = re.sub(
         r'<[^>]+>',
         ' ',
         article_text
     )
 
-    # --------------------------------------------------------
     # Decode HTML entities
-    # --------------------------------------------------------
-
     article_text = html_module.unescape(
         article_text
     )
 
-    # --------------------------------------------------------
     # Clean whitespace
-    # --------------------------------------------------------
-
     article_text = re.sub(
         r'\s+',
         ' ',
@@ -232,10 +188,7 @@ def get_article_description(html):
     if not article_text:
         return None
 
-    # --------------------------------------------------------
     # Remove repeated article title if present
-    # --------------------------------------------------------
-
     title = get_article_title(html)
 
     if title:
@@ -249,10 +202,7 @@ def get_article_description(html):
     if not article_text:
         return None
 
-    # --------------------------------------------------------
     # Limit description length
-    # --------------------------------------------------------
-
     max_length = 155
 
     if len(article_text) > max_length:
@@ -331,7 +281,7 @@ def create_metadata(html_file, html):
     )
 
     # --------------------------------------------------------
-    # NEWS ARTICLES LIVE AT ROOT
+    # HNEWS ARTICLES LIVE AT ROOT
     # --------------------------------------------------------
 
     og_url = f"{DOMAIN}/{html_file.name}"
@@ -358,7 +308,7 @@ def create_metadata(html_file, html):
 
 
 # ============================================================
-# PROCESS ONE NEWS ARTICLE
+# PROCESS ONE HNEWS ARTICLE
 # ============================================================
 
 def process_file(html_file):
@@ -372,7 +322,6 @@ def process_file(html_file):
     # --------------------------------------------------------
 
     try:
-
         html = html_file.read_text(
             encoding="utf-8"
         )
@@ -443,29 +392,26 @@ def process_file(html_file):
     # --------------------------------------------------------
 
     title = get_article_title(html)
-
     image_url = get_article_image(html)
-
     description = get_article_description(html)
-
     og_url = f"{DOMAIN}/{html_file.name}"
 
     print()
     print("Extracted metadata:")
-
     print()
+
     print("Title:")
     print(f"  {title}")
-
     print()
+
     print("Image:")
     print(f"  {image_url}")
-
     print()
+
     print("Description:")
     print(f"  {description}")
-
     print()
+
     print("OG URL:")
     print(f"  {og_url}")
 
@@ -563,7 +509,7 @@ def process_file(html_file):
 def main():
 
     print("=" * 60)
-    print("NEMXNOVELS NEWS OG METADATA AUTO ADDER")
+    print("NEMXNOVELS HNEWS OG METADATA AUTO ADDER")
     print("=" * 60)
 
     print()
@@ -571,30 +517,31 @@ def main():
     print(SCRIPT_FOLDER)
 
     # --------------------------------------------------------
-    # Find ONLY news-*.html
+    # Find ONLY hnews-*.html
     # --------------------------------------------------------
 
-    news_files = sorted(
-        SCRIPT_FOLDER.glob("news-*.html")
+    hnews_files = sorted(
+        SCRIPT_FOLDER.glob("hnews-*.html")
     )
 
     # --------------------------------------------------------
     # Strictly allow only:
     #
-    # news-1.html
-    # news-2.html
-    # news-15.html
+    # hnews-1.html
+    # hnews-2.html
+    # hnews-15.html
     #
     # This automatically excludes:
     #
-    # news-page.html
+    # hnews-page.html
+    # hnews-test.html
     # --------------------------------------------------------
 
-    news_files = [
+    hnews_files = [
         file
-        for file in news_files
+        for file in hnews_files
         if re.match(
-            r"^news-\d+\.html$",
+            r"^hnews-\d+\.html$",
             file.name,
             re.IGNORECASE
         )
@@ -604,23 +551,23 @@ def main():
     # Nothing found
     # --------------------------------------------------------
 
-    if not news_files:
+    if not hnews_files:
 
         print()
-        print("No news-X.html files found.")
+        print("No hnews-X.html files found.")
 
         return
 
     print()
     print(
-        f"Found {len(news_files)} news article(s)."
+        f"Found {len(hnews_files)} hnews article(s)."
     )
 
     # --------------------------------------------------------
-    # Process all news articles
+    # Process all HNEWS articles
     # --------------------------------------------------------
 
-    for html_file in news_files:
+    for html_file in hnews_files:
 
         process_file(
             html_file
