@@ -1426,6 +1426,24 @@ She continued walking.
          </div>
      </a>
 </div>
+
+
+
+  <div class="option">
+     <a class="options-link" href="#" onclick="sharePage(); return false;">
+         <div class="option-box-style">
+             <div id="option-icon-circle">
+                 <img class="option-icon" src="share.png" loading="lazy"/>
+             </div>
+
+             <div id="option-detail-box">
+                 <p id="option-detail">
+                     Share
+                 </p>
+             </div>
+         </div>
+     </a>
+  </div>
 </div>
 
 

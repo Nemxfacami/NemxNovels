@@ -1818,6 +1818,25 @@ function sharePage() {
     }
 }
 
+
+
+// Per-page scroll position
+const scrollPositionKey = "scroll-position-" + window.location.pathname;
+
+window.addEventListener("scroll", function () {
+    localStorage.setItem(scrollPositionKey, window.scrollY);
+});
+
+window.addEventListener("load", function () {
+
+    const savedPosition = localStorage.getItem(scrollPositionKey);
+
+    if (savedPosition !== null) {
+        window.scrollTo(0, parseInt(savedPosition, 10));
+    }
+
+});
+
 </script>
 </body>
 </html>
