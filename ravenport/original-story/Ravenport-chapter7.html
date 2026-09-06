@@ -1079,6 +1079,24 @@ a.popup-link ,a.popup-link2{
          </div>
      </a>
   </div>
+
+
+
+  <div class="option">
+     <a class="options-link" href="#" onclick="sharePage(); return false;">
+         <div class="option-box-style">
+             <div id="option-icon-circle">
+                 <img class="option-icon" src="share.png" loading="lazy"/>
+             </div>
+
+             <div id="option-detail-box">
+                 <p id="option-detail">
+                     Share
+                 </p>
+             </div>
+         </div>
+     </a>
+  </div>
 </div>
 
 
@@ -1135,6 +1153,36 @@ function closePopup2() {
     document.getElementById("overlay2").style.display = "none";
 }
   
+
+
+function sharePage() {
+
+    const shareData = {
+        title: document.title,
+        text: "Read this on NemxNovels",
+        url: window.location.href
+    };
+
+    if (navigator.share) {
+
+        navigator.share(shareData)
+            .catch((error) => {
+                console.log("Sharing cancelled:", error);
+            });
+
+    } else {
+
+        navigator.clipboard.writeText(window.location.href)
+            .then(() => {
+                alert("Link copied!");
+            })
+            .catch(() => {
+                alert("Unable to copy the link.");
+            });
+
+    }
+}
+
 </script>
 </body>
 </html>
