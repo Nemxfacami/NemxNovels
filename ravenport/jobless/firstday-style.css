@@ -1,0 +1,275 @@
+:root {
+    --blue-deep: #1a3f7a;
+    --blue-mid: #2557a7;
+    --blue-line: #dbe4f3;
+    --ink: #1c2430;
+    --ink-soft: #4a5568;
+    --border-grey: #d7dbe1;
+    --bg: #eef1f6;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 16px;
+    color: var(--ink);
+  }
+
+  .app-frame {
+    width: 100%;
+    max-width: 420px;
+    height: min(720px, calc(100vh - 64px));
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(20, 40, 80, 0.18);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scroll-area {
+    flex: 1;
+    overflow-y: auto;
+    padding: 28px 20px 32px;
+  }
+
+  .story p {
+    font-size: 15px;
+    line-height: 1.65;
+    margin: 0 0 14px;
+    color: var(--ink);
+  }
+
+  .story p.blank-line {
+    margin: 0 0 22px;
+  }
+
+  /* ---- Choice blocks reuse the same bordered-option look from the assessment page ---- */
+  .choice-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0 26px;
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    border: 1px solid var(--border-grey);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .option:hover {
+    border-color: #b7c2d1;
+    background: #f8fafc;
+  }
+
+  .option input[type="radio"] {
+    display: none;
+  }
+
+  .radio-dot {
+    flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #b6bfcc;
+    position: relative;
+  }
+
+  .option input[type="radio"]:checked + .radio-dot {
+    border-color: var(--blue-mid);
+  }
+
+  .option input[type="radio"]:checked + .radio-dot::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    background: var(--blue-mid);
+  }
+
+  .option-text {
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--ink);
+  }
+
+  /* ---- Reveal text: only used for the "role" choice ---- */
+  .reveal-box {
+    display: none;
+    background: var(--blue-line);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: -12px 0 26px;
+  }
+
+  .reveal-box.visible {
+    display: block;
+  }
+
+  .reveal-box p {
+    font-size: 14.5px;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--blue-deep);
+    margin: 0 0 8px;
+  }
+
+  .reveal-box p:last-child {
+    margin-bottom: 0;
+  }
+
+  .validation-message {
+    background: #fdecec;
+    border: 1px solid #f3b7b7;
+    color: #a12626;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+  }
+
+  /* ---- Press-Me button: centered square icon button with a caption ---- */
+  .next-btn-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .next-btn {
+    width: 84px;
+    height: 84px;
+    border: none;
+    border-radius: 18px;
+    background: var(--blue-mid);
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .next-btn:hover {
+    background: var(--blue-deep);
+  }
+
+  .next-btn-logo {
+    width: 55%;
+    height: 55%;
+    object-fit: contain;
+  }
+
+  .next-btn-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0;
+  }
+
+   /* ---- Top bar: logo only, no progress/timer per spec ---- */
+  .topbar {
+    padding: 18px 20px;
+    border-bottom: 1px solid #eceff3;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-placeholder {
+    width: clamp(110px, 32vw, 170px);
+    aspect-ratio: 1000 / 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  
+  /* ---- Circle + status heading ---- */
+  .status-circle {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 3px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .logo-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  
+  .status-circle svg {
+    width: 36px;
+    height: 36px;
+    stroke: var(--blue-mid);
+  }
+
+  .status-heading {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 28px;
+    text-align: center;
+  }
+
+  /* ---- Reuses the same box treatment as an answer option on the question page ---- */
+  .message-box {
+    width: 100%;
+    border: 1px solid var(--border-grey);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .congrats-line {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 6px;
+    color: var(--ink);
+  }
+
+  .selected-line {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 18px;
+    color: var(--ink);
+  }
+
+  @media (max-width: 380px) {
+    body { padding: 0; }
+    .app-frame { height: 100vh; border-radius: 0; box-shadow: none; }
+    .scroll-area { padding: 24px 18px 24px; }
+  }

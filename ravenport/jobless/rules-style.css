@@ -1,0 +1,187 @@
+ :root {
+    --blue-deep: #1a3f7a;
+    --blue-mid: #2557a7;
+    --blue-line: #dbe4f3;
+    --ink: #1c2430;
+    --ink-soft: #4a5568;
+    --border-grey: #d7dbe1;
+    --bg: #eef1f6;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 16px;
+    color: var(--ink);
+  }
+
+  .app-frame {
+    width: 100%;
+    max-width: 420px;
+    height: min(720px, calc(100vh - 64px));
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(20, 40, 80, 0.18);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scroll-area {
+    flex: 1;
+    overflow-y: auto;
+    padding: 40px 24px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ---- Circle + status heading ---- */
+  .status-circle {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 3px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .logo-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .status-circle svg {
+    width: 36px;
+    height: 36px;
+    stroke: var(--blue-mid);
+  }
+
+  .status-heading {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 28px;
+    text-align: center;
+  }
+
+  /* ---- Reuses the same box treatment as an answer option on the question page ---- */
+  .message-box {
+    width: 100%;
+    border: 1px solid var(--border-grey);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .congrats-line {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 6px;
+    color: var(--ink);
+  }
+
+  .selected-line {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 18px;
+    color: var(--ink);
+  }
+
+  .divider {
+    border: none;
+    border-bottom: 1px solid #eceff3;
+    margin: 0 0 18px;
+  }
+
+  .sentence-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .sentence-list p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+
+  /* ---- Same blue used for Continue on the question page ---- */
+  .proceed-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: var(--blue-mid);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 24px;
+    flex-shrink: 0;
+  }
+
+  .proceed-btn:hover {
+    background: var(--blue-deep);
+  }
+
+  /* ---- Small-screen tweaks ---- */
+  @media (max-width: 380px) {
+    body {
+      padding: 0;
+    }
+
+    .app-frame {
+      height: 100vh;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .scroll-area {
+      padding: 32px 18px 24px;
+    }
+  }
+
+  
+  /* ---- Top bar: logo only, no progress/timer per spec ---- */
+  .topbar {
+    padding: 18px 20px;
+    border-bottom: 1px solid #eceff3;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-placeholder {
+    width: clamp(110px, 32vw, 170px);
+    aspect-ratio: 1000 / 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .logo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
