@@ -1,0 +1,1784 @@
+====================================================================================================
+NEMXNOVELS — CANONICAL VS FILEPATH AUDIT
+====================================================================================================
+
+Project root: /mnt/c/Users/SCUZZY TECH/gitcodes/nemxnovels
+HTML files scanned: 180
+Sitemap URLs found: 177
+
+----------------------------------------------------------------------------------------------------
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Correct canonicals       : 177
+Missing canonicals       : 3
+Wrong canonicals         : 0
+og:url mismatches        : 23
+Expected URLs missing from sitemap : 3
+Sitemap URLs without matching HTML filepath : 0
+Duplicate canonical URLs : 0
+File errors              : 0
+
+====================================================================================================
+FULL FILEPATH / CANONICAL / SITEMAP COMPARISON
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/
+FILEPATH:          index.html
+EXPECTED:          https://nemxnovels.site/
+ACTUAL CANONICAL:  https://nemxnovels.site/
+og:url:            https://nemxnovels.site/
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/aboutnn.html
+FILEPATH:          aboutnn.html
+EXPECTED:          https://nemxnovels.site/aboutnn.html
+ACTUAL CANONICAL:  https://nemxnovels.site/aboutnn.html
+og:url:            https://nemxnovels.site/aboutnn.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/archive-1.html
+FILEPATH:          archive-1.html
+EXPECTED:          https://nemxnovels.site/archive-1.html
+ACTUAL CANONICAL:  https://nemxnovels.site/archive-1.html
+og:url:            https://nemxnovels.site/archive-1.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/article-1.html
+FILEPATH:          article-1.html
+EXPECTED:          https://nemxnovels.site/article-1.html
+ACTUAL CANONICAL:  https://nemxnovels.site/article-1.html
+og:url:            https://nemxnovels.site/article-1.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/article-2.html
+FILEPATH:          article-2.html
+EXPECTED:          https://nemxnovels.site/article-2.html
+ACTUAL CANONICAL:  https://nemxnovels.site/article-2.html
+og:url:            https://nemxnovels.site/article-2.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/article-3.html
+FILEPATH:          article-3.html
+EXPECTED:          https://nemxnovels.site/article-3.html
+ACTUAL CANONICAL:  https://nemxnovels.site/article-3.html
+og:url:            https://nemxnovels.site/article-3.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/article-4.html
+FILEPATH:          article-4.html
+EXPECTED:          https://nemxnovels.site/article-4.html
+ACTUAL CANONICAL:  https://nemxnovels.site/article-4.html
+og:url:            https://nemxnovels.site/article-4.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/article-5.html
+FILEPATH:          article-5.html
+EXPECTED:          https://nemxnovels.site/article-5.html
+ACTUAL CANONICAL:  https://nemxnovels.site/article-5.html
+og:url:            https://nemxnovels.site/article-5.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/article-6.html
+FILEPATH:          article-6.html
+EXPECTED:          https://nemxnovels.site/article-6.html
+ACTUAL CANONICAL:  https://nemxnovels.site/article-6.html
+og:url:            https://nemxnovels.site/article-6.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/article-7.html
+FILEPATH:          article-7.html
+EXPECTED:          https://nemxnovels.site/article-7.html
+ACTUAL CANONICAL:  https://nemxnovels.site/article-7.html
+og:url:            https://nemxnovels.site/article-7.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/google03160ec8bf44f4c4.html
+FILEPATH:          google03160ec8bf44f4c4.html
+EXPECTED:          https://nemxnovels.site/google03160ec8bf44f4c4.html
+ACTUAL CANONICAL:  [MISSING]
+og:url:            [MISSING]
+CANONICAL STATUS:  MISSING CANONICAL
+og:url STATUS:     MISSING
+SITEMAP STATUS:    NOT IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/harticle-1.html
+FILEPATH:          harticle-1.html
+EXPECTED:          https://nemxnovels.site/harticle-1.html
+ACTUAL CANONICAL:  https://nemxnovels.site/harticle-1.html
+og:url:            https://nemxnovels.site/harticle-1.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/harticle-2.html
+FILEPATH:          harticle-2.html
+EXPECTED:          https://nemxnovels.site/harticle-2.html
+ACTUAL CANONICAL:  https://nemxnovels.site/harticle-2.html
+og:url:            https://nemxnovels.site/harticle-2.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/harticle-3.html
+FILEPATH:          harticle-3.html
+EXPECTED:          https://nemxnovels.site/harticle-3.html
+ACTUAL CANONICAL:  https://nemxnovels.site/harticle-3.html
+og:url:            https://nemxnovels.site/harticle-3.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/harticle-4.html
+FILEPATH:          harticle-4.html
+EXPECTED:          https://nemxnovels.site/harticle-4.html
+ACTUAL CANONICAL:  https://nemxnovels.site/harticle-4.html
+og:url:            https://nemxnovels.site/harticle-4.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/haven-news-page.html
+FILEPATH:          haven-news-page.html
+EXPECTED:          https://nemxnovels.site/haven-news-page.html
+ACTUAL CANONICAL:  https://nemxnovels.site/haven-news-page.html
+og:url:            https://nemxnovels.site/haven-news-page.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-2/harticle-10.html
+FILEPATH:          havenfall-blogs/page-2/harticle-10.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-2/harticle-10.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-2/harticle-10.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-2/harticle-10.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-2/harticle-11.html
+FILEPATH:          havenfall-blogs/page-2/harticle-11.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-2/harticle-11.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-2/harticle-11.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-2/harticle-11.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-2/harticle-5.html
+FILEPATH:          havenfall-blogs/page-2/harticle-5.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-2/harticle-5.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-2/harticle-5.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-2/harticle-5.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-2/harticle-6.html
+FILEPATH:          havenfall-blogs/page-2/harticle-6.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-2/harticle-6.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-2/harticle-6.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-2/harticle-6.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-2/harticle-7.html
+FILEPATH:          havenfall-blogs/page-2/harticle-7.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-2/harticle-7.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-2/harticle-7.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-2/harticle-7.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-2/harticle-8.html
+FILEPATH:          havenfall-blogs/page-2/harticle-8.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-2/harticle-8.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-2/harticle-8.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-2/harticle-8.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-2/harticle-9.html
+FILEPATH:          havenfall-blogs/page-2/harticle-9.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-2/harticle-9.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-2/harticle-9.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-2/harticle-9.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-2/page2.html
+FILEPATH:          havenfall-blogs/page-2/page2.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-2/page2.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-2/page2.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-2/page2.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-3/harticle-12.html
+FILEPATH:          havenfall-blogs/page-3/harticle-12.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-3/harticle-12.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-3/harticle-12.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-3/harticle-12.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-3/harticle-13.html
+FILEPATH:          havenfall-blogs/page-3/harticle-13.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-3/harticle-13.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-3/harticle-13.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-3/harticle-13.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-3/harticle-14.html
+FILEPATH:          havenfall-blogs/page-3/harticle-14.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-3/harticle-14.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-3/harticle-14.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-3/harticle-14.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-3/harticle-15.html
+FILEPATH:          havenfall-blogs/page-3/harticle-15.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-3/harticle-15.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-3/harticle-15.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-3/harticle-15.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-3/harticle-16.html
+FILEPATH:          havenfall-blogs/page-3/harticle-16.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-3/harticle-16.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-3/harticle-16.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-3/harticle-16.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall-blogs/page-3/page3.html
+FILEPATH:          havenfall-blogs/page-3/page3.html
+EXPECTED:          https://nemxnovels.site/havenfall-blogs/page-3/page3.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall-blogs/page-3/page3.html
+og:url:            https://nemxnovels.site/havenfall-blogs/page-3/page3.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/AngelsNotes/
+FILEPATH:          havenfall/AngelsNotes/index.html
+EXPECTED:          https://nemxnovels.site/havenfall/AngelsNotes/
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/AngelsNotes/
+og:url:            https://nemxnovels.site/havenfall/AngelsNotes/
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter2.html
+FILEPATH:          havenfall/AngelsNotes/AngelsNotes-chapter2.html
+EXPECTED:          https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter2.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter2.html
+og:url:            https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter2.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter3.html
+FILEPATH:          havenfall/AngelsNotes/AngelsNotes-chapter3.html
+EXPECTED:          https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter3.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter3.html
+og:url:            https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter3.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter4.html
+FILEPATH:          havenfall/AngelsNotes/AngelsNotes-chapter4.html
+EXPECTED:          https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter4.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter4.html
+og:url:            https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter4.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter5.html
+FILEPATH:          havenfall/AngelsNotes/AngelsNotes-chapter5.html
+EXPECTED:          https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter5.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter5.html
+og:url:            https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter5.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter6.html
+FILEPATH:          havenfall/AngelsNotes/AngelsNotes-chapter6.html
+EXPECTED:          https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter6.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter6.html
+og:url:            https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-chapter6.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-wherewereyou.html
+FILEPATH:          havenfall/AngelsNotes/AngelsNotes-wherewereyou.html
+EXPECTED:          https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-wherewereyou.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-wherewereyou.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/daggeroflight/
+FILEPATH:          havenfall/daggeroflight/index.html
+EXPECTED:          https://nemxnovels.site/havenfall/daggeroflight/
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/daggeroflight/
+og:url:            https://nemxnovels.site/havenfall/daggeroflight/
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/original-story/
+FILEPATH:          havenfall/original-story/index.html
+EXPECTED:          https://nemxnovels.site/havenfall/original-story/
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/original-story/
+og:url:            https://nemxnovels.site/havenfall/original-story/
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/original-story/Havenfall-chapter2.html
+FILEPATH:          havenfall/original-story/Havenfall-chapter2.html
+EXPECTED:          https://nemxnovels.site/havenfall/original-story/Havenfall-chapter2.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/original-story/Havenfall-chapter2.html
+og:url:            https://nemxnovels.site/havenfall/original-story/Havenfall-chapter2.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/original-story/Havenfall-chapter3.html
+FILEPATH:          havenfall/original-story/Havenfall-chapter3.html
+EXPECTED:          https://nemxnovels.site/havenfall/original-story/Havenfall-chapter3.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/original-story/Havenfall-chapter3.html
+og:url:            https://nemxnovels.site/havenfall/original-story/Havenfall-chapter3.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/original-story/Havenfall-chapter4.html
+FILEPATH:          havenfall/original-story/Havenfall-chapter4.html
+EXPECTED:          https://nemxnovels.site/havenfall/original-story/Havenfall-chapter4.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/original-story/Havenfall-chapter4.html
+og:url:            https://nemxnovels.site/havenfall/original-story/Havenfall-chapter4.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/original-story/Havenfall-chapter5.html
+FILEPATH:          havenfall/original-story/Havenfall-chapter5.html
+EXPECTED:          https://nemxnovels.site/havenfall/original-story/Havenfall-chapter5.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/original-story/Havenfall-chapter5.html
+og:url:            https://nemxnovels.site/havenfall/original-story/Havenfall-chapter5.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/original-story/Havenfall-chapter6.html
+FILEPATH:          havenfall/original-story/Havenfall-chapter6.html
+EXPECTED:          https://nemxnovels.site/havenfall/original-story/Havenfall-chapter6.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/original-story/Havenfall-chapter6.html
+og:url:            https://nemxnovels.site/havenfall/original-story/Havenfall-chapter6.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/original-story/Havenfall-chapter7.html
+FILEPATH:          havenfall/original-story/Havenfall-chapter7.html
+EXPECTED:          https://nemxnovels.site/havenfall/original-story/Havenfall-chapter7.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/original-story/Havenfall-chapter7.html
+og:url:            https://nemxnovels.site/havenfall/original-story/Havenfall-chapter7.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/original-story/Havenfall-chapter8.html
+FILEPATH:          havenfall/original-story/Havenfall-chapter8.html
+EXPECTED:          https://nemxnovels.site/havenfall/original-story/Havenfall-chapter8.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/original-story/Havenfall-chapter8.html
+og:url:            https://nemxnovels.site/havenfall/original-story/Havenfall-chapter8.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/original-story/Havenfall-wherewereyou.html
+FILEPATH:          havenfall/original-story/Havenfall-wherewereyou.html
+EXPECTED:          https://nemxnovels.site/havenfall/original-story/Havenfall-wherewereyou.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/original-story/Havenfall-wherewereyou.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-1.html
+FILEPATH:          hnews-1.html
+EXPECTED:          https://nemxnovels.site/hnews-1.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-1.html
+og:url:            https://nemxnovels.site/hnews-1.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-10.html
+FILEPATH:          hnews-10.html
+EXPECTED:          https://nemxnovels.site/hnews-10.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-10.html
+og:url:            https://nemxnovels.site/hnews-10.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-11.html
+FILEPATH:          hnews-11.html
+EXPECTED:          https://nemxnovels.site/hnews-11.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-11.html
+og:url:            https://nemxnovels.site/hnews-11.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-12.html
+FILEPATH:          hnews-12.html
+EXPECTED:          https://nemxnovels.site/hnews-12.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-12.html
+og:url:            https://nemxnovels.site/hnews-12.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-13.html
+FILEPATH:          hnews-13.html
+EXPECTED:          https://nemxnovels.site/hnews-13.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-13.html
+og:url:            https://nemxnovels.site/hnews-13.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-14.html
+FILEPATH:          hnews-14.html
+EXPECTED:          https://nemxnovels.site/hnews-14.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-14.html
+og:url:            https://nemxnovels.site/hnews-14.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-15.html
+FILEPATH:          hnews-15.html
+EXPECTED:          https://nemxnovels.site/hnews-15.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-15.html
+og:url:            https://nemxnovels.site/hnews-15.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-2.html
+FILEPATH:          hnews-2.html
+EXPECTED:          https://nemxnovels.site/hnews-2.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-2.html
+og:url:            https://nemxnovels.site/hnews-2.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-3.html
+FILEPATH:          hnews-3.html
+EXPECTED:          https://nemxnovels.site/hnews-3.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-3.html
+og:url:            https://nemxnovels.site/hnews-3.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-4.html
+FILEPATH:          hnews-4.html
+EXPECTED:          https://nemxnovels.site/hnews-4.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-4.html
+og:url:            https://nemxnovels.site/hnews-4.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-5.html
+FILEPATH:          hnews-5.html
+EXPECTED:          https://nemxnovels.site/hnews-5.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-5.html
+og:url:            https://nemxnovels.site/hnews-5.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-6.html
+FILEPATH:          hnews-6.html
+EXPECTED:          https://nemxnovels.site/hnews-6.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-6.html
+og:url:            https://nemxnovels.site/hnews-6.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-7.html
+FILEPATH:          hnews-7.html
+EXPECTED:          https://nemxnovels.site/hnews-7.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-7.html
+og:url:            https://nemxnovels.site/hnews-7.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-8.html
+FILEPATH:          hnews-8.html
+EXPECTED:          https://nemxnovels.site/hnews-8.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-8.html
+og:url:            https://nemxnovels.site/hnews-8.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/hnews-9.html
+FILEPATH:          hnews-9.html
+EXPECTED:          https://nemxnovels.site/hnews-9.html
+ACTUAL CANONICAL:  https://nemxnovels.site/hnews-9.html
+og:url:            https://nemxnovels.site/hnews-9.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/landing-angel-notes-blog.html
+FILEPATH:          landing-angel-notes-blog.html
+EXPECTED:          https://nemxnovels.site/landing-angel-notes-blog.html
+ACTUAL CANONICAL:  https://nemxnovels.site/landing-angel-notes-blog.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/landing-havenfall-blog.html
+FILEPATH:          landing-havenfall-blog.html
+EXPECTED:          https://nemxnovels.site/landing-havenfall-blog.html
+ACTUAL CANONICAL:  https://nemxnovels.site/landing-havenfall-blog.html
+og:url:            https://nemxnovels.site/landing-havenfall-blog.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-1.html
+FILEPATH:          news-1.html
+EXPECTED:          https://nemxnovels.site/news-1.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-1.html
+og:url:            https://nemxnovels.site/news-1.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-10.html
+FILEPATH:          news-10.html
+EXPECTED:          https://nemxnovels.site/news-10.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-10.html
+og:url:            https://nemxnovels.site/news-10.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-11.html
+FILEPATH:          news-11.html
+EXPECTED:          https://nemxnovels.site/news-11.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-11.html
+og:url:            https://nemxnovels.site/news-11.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-12.html
+FILEPATH:          news-12.html
+EXPECTED:          https://nemxnovels.site/news-12.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-12.html
+og:url:            https://nemxnovels.site/news-12.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-13.html
+FILEPATH:          news-13.html
+EXPECTED:          https://nemxnovels.site/news-13.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-13.html
+og:url:            https://nemxnovels.site/news-13.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-14.html
+FILEPATH:          news-14.html
+EXPECTED:          https://nemxnovels.site/news-14.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-14.html
+og:url:            https://nemxnovels.site/news-14.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-15.html
+FILEPATH:          news-15.html
+EXPECTED:          https://nemxnovels.site/news-15.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-15.html
+og:url:            https://nemxnovels.site/news-15.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-2.html
+FILEPATH:          news-2.html
+EXPECTED:          https://nemxnovels.site/news-2.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-2.html
+og:url:            https://nemxnovels.site/news-2.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-3.html
+FILEPATH:          news-3.html
+EXPECTED:          https://nemxnovels.site/news-3.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-3.html
+og:url:            https://nemxnovels.site/news-3.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-4.html
+FILEPATH:          news-4.html
+EXPECTED:          https://nemxnovels.site/news-4.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-4.html
+og:url:            https://nemxnovels.site/news-4.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-5.html
+FILEPATH:          news-5.html
+EXPECTED:          https://nemxnovels.site/news-5.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-5.html
+og:url:            https://nemxnovels.site/news-5.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-6.html
+FILEPATH:          news-6.html
+EXPECTED:          https://nemxnovels.site/news-6.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-6.html
+og:url:            https://nemxnovels.site/news-6.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-7.html
+FILEPATH:          news-7.html
+EXPECTED:          https://nemxnovels.site/news-7.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-7.html
+og:url:            https://nemxnovels.site/news-7.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-8.html
+FILEPATH:          news-8.html
+EXPECTED:          https://nemxnovels.site/news-8.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-8.html
+og:url:            https://nemxnovels.site/news-8.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-9.html
+FILEPATH:          news-9.html
+EXPECTED:          https://nemxnovels.site/news-9.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-9.html
+og:url:            https://nemxnovels.site/news-9.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news-page.html
+FILEPATH:          news-page.html
+EXPECTED:          https://nemxnovels.site/news-page.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news-page.html
+og:url:            https://nemxnovels.site/news-page.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/haven-news-page-2.html
+FILEPATH:          news/haven-news-page-2.html
+EXPECTED:          https://nemxnovels.site/news/haven-news-page-2.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/haven-news-page-2.html
+og:url:            https://nemxnovels.site/news/haven-news-page-2.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-16.html
+FILEPATH:          news/hnews-16.html
+EXPECTED:          https://nemxnovels.site/news/hnews-16.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-16.html
+og:url:            https://nemxnovels.site/news/hnews-16.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-17.html
+FILEPATH:          news/hnews-17.html
+EXPECTED:          https://nemxnovels.site/news/hnews-17.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-17.html
+og:url:            https://nemxnovels.site/news/hnews-17.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-18.html
+FILEPATH:          news/hnews-18.html
+EXPECTED:          https://nemxnovels.site/news/hnews-18.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-18.html
+og:url:            https://nemxnovels.site/news/hnews-18.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-19.html
+FILEPATH:          news/hnews-19.html
+EXPECTED:          https://nemxnovels.site/news/hnews-19.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-19.html
+og:url:            https://nemxnovels.site/news/hnews-19.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-20.html
+FILEPATH:          news/hnews-20.html
+EXPECTED:          https://nemxnovels.site/news/hnews-20.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-20.html
+og:url:            https://nemxnovels.site/news/hnews-20.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-21.html
+FILEPATH:          news/hnews-21.html
+EXPECTED:          https://nemxnovels.site/news/hnews-21.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-21.html
+og:url:            https://nemxnovels.site/news/hnews-21.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-22.html
+FILEPATH:          news/hnews-22.html
+EXPECTED:          https://nemxnovels.site/news/hnews-22.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-22.html
+og:url:            https://nemxnovels.site/news/hnews-22.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-23.html
+FILEPATH:          news/hnews-23.html
+EXPECTED:          https://nemxnovels.site/news/hnews-23.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-23.html
+og:url:            https://nemxnovels.site/news/hnews-23.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-24.html
+FILEPATH:          news/hnews-24.html
+EXPECTED:          https://nemxnovels.site/news/hnews-24.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-24.html
+og:url:            https://nemxnovels.site/news/hnews-24.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-25.html
+FILEPATH:          news/hnews-25.html
+EXPECTED:          https://nemxnovels.site/news/hnews-25.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-25.html
+og:url:            https://nemxnovels.site/news/hnews-25.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-26.html
+FILEPATH:          news/hnews-26.html
+EXPECTED:          https://nemxnovels.site/news/hnews-26.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-26.html
+og:url:            https://nemxnovels.site/news/hnews-26.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-27.html
+FILEPATH:          news/hnews-27.html
+EXPECTED:          https://nemxnovels.site/news/hnews-27.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-27.html
+og:url:            https://nemxnovels.site/news/hnews-27.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-28.html
+FILEPATH:          news/hnews-28.html
+EXPECTED:          https://nemxnovels.site/news/hnews-28.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-28.html
+og:url:            https://nemxnovels.site/news/hnews-28.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-29.html
+FILEPATH:          news/hnews-29.html
+EXPECTED:          https://nemxnovels.site/news/hnews-29.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-29.html
+og:url:            https://nemxnovels.site/news/hnews-29.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/hnews-30.html
+FILEPATH:          news/hnews-30.html
+EXPECTED:          https://nemxnovels.site/news/hnews-30.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/hnews-30.html
+og:url:            https://nemxnovels.site/news/hnews-30.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-16.html
+FILEPATH:          news/news-16.html
+EXPECTED:          https://nemxnovels.site/news/news-16.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-16.html
+og:url:            https://nemxnovels.site/news/news-16.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-17.html
+FILEPATH:          news/news-17.html
+EXPECTED:          https://nemxnovels.site/news/news-17.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-17.html
+og:url:            https://nemxnovels.site/news/news-17.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-18.html
+FILEPATH:          news/news-18.html
+EXPECTED:          https://nemxnovels.site/news/news-18.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-18.html
+og:url:            https://nemxnovels.site/news/news-18.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-19.html
+FILEPATH:          news/news-19.html
+EXPECTED:          https://nemxnovels.site/news/news-19.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-19.html
+og:url:            https://nemxnovels.site/news/news-19.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-20.html
+FILEPATH:          news/news-20.html
+EXPECTED:          https://nemxnovels.site/news/news-20.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-20.html
+og:url:            https://nemxnovels.site/news/news-20.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-21.html
+FILEPATH:          news/news-21.html
+EXPECTED:          https://nemxnovels.site/news/news-21.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-21.html
+og:url:            https://nemxnovels.site/news/news-21.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-22.html
+FILEPATH:          news/news-22.html
+EXPECTED:          https://nemxnovels.site/news/news-22.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-22.html
+og:url:            https://nemxnovels.site/news/news-22.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-23.html
+FILEPATH:          news/news-23.html
+EXPECTED:          https://nemxnovels.site/news/news-23.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-23.html
+og:url:            https://nemxnovels.site/news/news-23.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-24.html
+FILEPATH:          news/news-24.html
+EXPECTED:          https://nemxnovels.site/news/news-24.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-24.html
+og:url:            https://nemxnovels.site/news/news-24.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-25.html
+FILEPATH:          news/news-25.html
+EXPECTED:          https://nemxnovels.site/news/news-25.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-25.html
+og:url:            https://nemxnovels.site/news/news-25.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-26.html
+FILEPATH:          news/news-26.html
+EXPECTED:          https://nemxnovels.site/news/news-26.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-26.html
+og:url:            https://nemxnovels.site/news/news-26.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-27.html
+FILEPATH:          news/news-27.html
+EXPECTED:          https://nemxnovels.site/news/news-27.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-27.html
+og:url:            https://nemxnovels.site/news/news-27.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-28.html
+FILEPATH:          news/news-28.html
+EXPECTED:          https://nemxnovels.site/news/news-28.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-28.html
+og:url:            https://nemxnovels.site/news/news-28.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-29.html
+FILEPATH:          news/news-29.html
+EXPECTED:          https://nemxnovels.site/news/news-29.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-29.html
+og:url:            https://nemxnovels.site/news/news-29.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-30.html
+FILEPATH:          news/news-30.html
+EXPECTED:          https://nemxnovels.site/news/news-30.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-30.html
+og:url:            https://nemxnovels.site/news/news-30.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/news/news-page-2.html
+FILEPATH:          news/news-page-2.html
+EXPECTED:          https://nemxnovels.site/news/news-page-2.html
+ACTUAL CANONICAL:  https://nemxnovels.site/news/news-page-2.html
+og:url:            https://nemxnovels.site/news/news-page-2.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/profilepage.html
+FILEPATH:          profilepage.html
+EXPECTED:          https://nemxnovels.site/profilepage.html
+ACTUAL CANONICAL:  https://nemxnovels.site/profilepage.html
+og:url:            https://nemxnovels.site/profilepage.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-2/article-10.html
+FILEPATH:          ravenport-blogs/page-2/article-10.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-2/article-10.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-2/article-10.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-2/article-10.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-2/article-11.html
+FILEPATH:          ravenport-blogs/page-2/article-11.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-2/article-11.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-2/article-11.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-2/article-11.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-2/article-12.html
+FILEPATH:          ravenport-blogs/page-2/article-12.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-2/article-12.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-2/article-12.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-2/article-12.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-2/article-13.html
+FILEPATH:          ravenport-blogs/page-2/article-13.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-2/article-13.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-2/article-13.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-2/article-13.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-2/article-14.html
+FILEPATH:          ravenport-blogs/page-2/article-14.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-2/article-14.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-2/article-14.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-2/article-14.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-2/article-8.html
+FILEPATH:          ravenport-blogs/page-2/article-8.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-2/article-8.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-2/article-8.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-2/article-8.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-2/article-9.html
+FILEPATH:          ravenport-blogs/page-2/article-9.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-2/article-9.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-2/article-9.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-2/article-9.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-2/page2.html
+FILEPATH:          ravenport-blogs/page-2/page2.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-2/page2.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-2/page2.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-2/page2.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-3/article-15.html
+FILEPATH:          ravenport-blogs/page-3/article-15.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-3/article-15.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-3/article-15.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-3/article-15.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-3/article-16.html
+FILEPATH:          ravenport-blogs/page-3/article-16.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-3/article-16.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-3/article-16.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-3/article-16.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-3/article-17.html
+FILEPATH:          ravenport-blogs/page-3/article-17.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-3/article-17.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-3/article-17.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-3/article-17.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-3/article-18.html
+FILEPATH:          ravenport-blogs/page-3/article-18.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-3/article-18.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-3/article-18.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-3/article-18.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-3/article-19.html
+FILEPATH:          ravenport-blogs/page-3/article-19.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-3/article-19.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-3/article-19.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-3/article-19.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport-blogs/page-3/page3.html
+FILEPATH:          ravenport-blogs/page-3/page3.html
+EXPECTED:          https://nemxnovels.site/ravenport-blogs/page-3/page3.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport-blogs/page-3/page3.html
+og:url:            https://nemxnovels.site/ravenport-blogs/page-3/page3.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/back&forth/
+FILEPATH:          ravenport/back&forth/index.html
+EXPECTED:          https://nemxnovels.site/ravenport/back&forth/
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/back&forth/
+og:url:            https://nemxnovels.site/ravenport/back&forth/
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/back&forth/back&forth.html
+FILEPATH:          ravenport/back&forth/back&forth.html
+EXPECTED:          https://nemxnovels.site/ravenport/back&forth/back&forth.html
+ACTUAL CANONICAL:  [MISSING]
+og:url:            [MISSING]
+CANONICAL STATUS:  MISSING CANONICAL
+og:url STATUS:     MISSING
+SITEMAP STATUS:    NOT IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/behindthecurse/
+FILEPATH:          ravenport/behindthecurse/index.html
+EXPECTED:          https://nemxnovels.site/ravenport/behindthecurse/
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/
+og:url:            https://nemxnovels.site/ravenport/behindthecurse/
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter10.html
+FILEPATH:          ravenport/behindthecurse/behindthecurse-chapter10.html
+EXPECTED:          https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter10.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter10.html
+og:url:            https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter10.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter2.html
+FILEPATH:          ravenport/behindthecurse/behindthecurse-chapter2.html
+EXPECTED:          https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter2.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter2.html
+og:url:            https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter2.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter3.html
+FILEPATH:          ravenport/behindthecurse/behindthecurse-chapter3.html
+EXPECTED:          https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter3.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter3.html
+og:url:            https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter3.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter4.html
+FILEPATH:          ravenport/behindthecurse/behindthecurse-chapter4.html
+EXPECTED:          https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter4.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter4.html
+og:url:            https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter4.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter5.html
+FILEPATH:          ravenport/behindthecurse/behindthecurse-chapter5.html
+EXPECTED:          https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter5.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter5.html
+og:url:            https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter5.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter6.html
+FILEPATH:          ravenport/behindthecurse/behindthecurse-chapter6.html
+EXPECTED:          https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter6.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter6.html
+og:url:            https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter6.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter7.html
+FILEPATH:          ravenport/behindthecurse/behindthecurse-chapter7.html
+EXPECTED:          https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter7.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter7.html
+og:url:            https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter7.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter8.html
+FILEPATH:          ravenport/behindthecurse/behindthecurse-chapter8.html
+EXPECTED:          https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter8.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter8.html
+og:url:            https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter8.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter9.html
+FILEPATH:          ravenport/behindthecurse/behindthecurse-chapter9.html
+EXPECTED:          https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter9.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter9.html
+og:url:            https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-chapter9.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-wherewereyou.html
+FILEPATH:          ravenport/behindthecurse/behindthecurse-wherewereyou.html
+EXPECTED:          https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-wherewereyou.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-wherewereyou.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/bewitchinggirl/
+FILEPATH:          ravenport/bewitchinggirl/index.html
+EXPECTED:          https://nemxnovels.site/ravenport/bewitchinggirl/
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/bewitchinggirl/
+og:url:            https://nemxnovels.site/ravenport/bewitchinggirl/
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/jobless/
+FILEPATH:          ravenport/jobless/index.html
+EXPECTED:          https://nemxnovels.site/ravenport/jobless/
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/jobless/
+og:url:            https://nemxnovels.site/ravenport/jobless/
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/jobless/firstday.html
+FILEPATH:          ravenport/jobless/firstday.html
+EXPECTED:          https://nemxnovels.site/ravenport/jobless/firstday.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/jobless/firstday.html
+og:url:            https://nemxnovels.site/ravenport/jobless/firstday.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/jobless/rules.html
+FILEPATH:          ravenport/jobless/rules.html
+EXPECTED:          https://nemxnovels.site/ravenport/jobless/rules.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/jobless/rules.html
+og:url:            https://nemxnovels.site/ravenport/jobless/rules.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/motelbloodbath/
+FILEPATH:          ravenport/motelbloodbath/index.html
+EXPECTED:          https://nemxnovels.site/ravenport/motelbloodbath/
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/motelbloodbath/
+og:url:            https://nemxnovels.site/ravenport/motelbloodbath/
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/motelbloodbath/accused-file-page.html
+FILEPATH:          ravenport/motelbloodbath/accused-file-page.html
+EXPECTED:          https://nemxnovels.site/ravenport/motelbloodbath/accused-file-page.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/motelbloodbath/accused-file-page.html
+og:url:            https://nemxnovels.site/ravenport/motelbloodbath/accused-file-page.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/motelbloodbath/victim-file-page.html
+FILEPATH:          ravenport/motelbloodbath/victim-file-page.html
+EXPECTED:          https://nemxnovels.site/ravenport/motelbloodbath/victim-file-page.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/motelbloodbath/victim-file-page.html
+og:url:            https://nemxnovels.site/ravenport/motelbloodbath/victim-file-page.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/
+FILEPATH:          ravenport/original-story/index.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/
+og:url:            https://nemxnovels.site/ravenport/original-story/
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/caleb.html
+FILEPATH:          ravenport/original-story/caleb.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/caleb.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/caleb.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Earthquake.html
+FILEPATH:          ravenport/original-story/Earthquake.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Earthquake.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Earthquake.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Great.html
+FILEPATH:          ravenport/original-story/Great.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Great.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Great.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/house.html
+FILEPATH:          ravenport/original-story/house.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/house.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/house.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-chapter2.html
+FILEPATH:          ravenport/original-story/Ravenport-chapter2.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-chapter2.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-chapter2.html
+og:url:            https://nemxnovels.site/ravenport/original-story/Ravenport-chapter2.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-chapter3.html
+FILEPATH:          ravenport/original-story/Ravenport-chapter3.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-chapter3.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-chapter3.html
+og:url:            https://nemxnovels.site/ravenport/original-story/Ravenport-chapter3.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-chapter4.html
+FILEPATH:          ravenport/original-story/Ravenport-chapter4.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-chapter4.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-chapter4.html
+og:url:            https://nemxnovels.site/ravenport/original-story/Ravenport-chapter4.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-chapter5.html
+FILEPATH:          ravenport/original-story/Ravenport-chapter5.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-chapter5.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-chapter5.html
+og:url:            https://nemxnovels.site/ravenport/original-story/Ravenport-chapter5.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-chapter6.html
+FILEPATH:          ravenport/original-story/Ravenport-chapter6.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-chapter6.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-chapter6.html
+og:url:            https://nemxnovels.site/ravenport/original-story/Ravenport-chapter6.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-chapter7.html
+FILEPATH:          ravenport/original-story/Ravenport-chapter7.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-chapter7.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-chapter7.html
+og:url:            https://nemxnovels.site/ravenport/original-story/Ravenport-chapter7.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-chapter8.html
+FILEPATH:          ravenport/original-story/Ravenport-chapter8.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-chapter8.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-chapter8.html
+og:url:            https://nemxnovels.site/ravenport/original-story/Ravenport-chapter8.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-character-Darkkid.html
+FILEPATH:          ravenport/original-story/Ravenport-character-Darkkid.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-character-Darkkid.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Darkkid.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-character-Lethe.html
+FILEPATH:          ravenport/original-story/Ravenport-character-Lethe.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-character-Lethe.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Lethe.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-character-Lucien.html
+FILEPATH:          ravenport/original-story/Ravenport-character-Lucien.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-character-Lucien.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Lucien.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-character-Mycroft.html
+FILEPATH:          ravenport/original-story/Ravenport-character-Mycroft.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-character-Mycroft.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Mycroft.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-character-Sam.html
+FILEPATH:          ravenport/original-story/Ravenport-character-Sam.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-character-Sam.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Sam.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-characters-Amanda.html
+FILEPATH:          ravenport/original-story/Ravenport-characters-Amanda.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-characters-Amanda.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-characters-Amanda.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-characters-Zeke.html
+FILEPATH:          ravenport/original-story/Ravenport-characters-Zeke.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-characters-Zeke.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-characters-Zeke.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-wherewereyou.html
+FILEPATH:          ravenport/original-story/Ravenport-wherewereyou.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Ravenport-wherewereyou.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-wherewereyou.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/rexona.html
+FILEPATH:          ravenport/original-story/rexona.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/rexona.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/rexona.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/RVPnews.html
+FILEPATH:          ravenport/original-story/RVPnews.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/RVPnews.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/RVPnews.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/samanthapictures.html
+FILEPATH:          ravenport/original-story/samanthapictures.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/samanthapictures.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/samanthapictures.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Wakeup.html
+FILEPATH:          ravenport/original-story/Wakeup.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Wakeup.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Wakeup.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Zahor.html
+FILEPATH:          ravenport/original-story/Zahor.html
+EXPECTED:          https://nemxnovels.site/ravenport/original-story/Zahor.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Zahor.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/raphaasylum/
+FILEPATH:          ravenport/raphaasylum/index.html
+EXPECTED:          https://nemxnovels.site/ravenport/raphaasylum/
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/raphaasylum/
+og:url:            https://nemxnovels.site/ravenport/raphaasylum/
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/raphaasylum/RaphaAsylum-wherewereyou.html
+FILEPATH:          ravenport/raphaasylum/RaphaAsylum-wherewereyou.html
+EXPECTED:          https://nemxnovels.site/ravenport/raphaasylum/RaphaAsylum-wherewereyou.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/raphaasylum/RaphaAsylum-wherewereyou.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/someonewhostays/
+FILEPATH:          ravenport/someonewhostays/index.html
+EXPECTED:          https://nemxnovels.site/ravenport/someonewhostays/
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/someonewhostays/
+og:url:            https://nemxnovels.site/ravenport/someonewhostays/
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/someonewhostays/rosario_story(1).html
+FILEPATH:          ravenport/someonewhostays/rosario_story(1).html
+EXPECTED:          https://nemxnovels.site/ravenport/someonewhostays/rosario_story(1).html
+ACTUAL CANONICAL:  [MISSING]
+og:url:            [MISSING]
+CANONICAL STATUS:  MISSING CANONICAL
+og:url STATUS:     MISSING
+SITEMAP STATUS:    NOT IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/stories-page.html
+FILEPATH:          stories-page.html
+EXPECTED:          https://nemxnovels.site/stories-page.html
+ACTUAL CANONICAL:  https://nemxnovels.site/stories-page.html
+og:url:            https://nemxnovels.site/stories-page.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/videos-page-angel.html
+FILEPATH:          videos-page-angel.html
+EXPECTED:          https://nemxnovels.site/videos-page-angel.html
+ACTUAL CANONICAL:  https://nemxnovels.site/videos-page-angel.html
+og:url:            [MISSING]
+CANONICAL STATUS:  OK
+og:url STATUS:     MISMATCH
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/videos-page-haven.html
+FILEPATH:          videos-page-haven.html
+EXPECTED:          https://nemxnovels.site/videos-page-haven.html
+ACTUAL CANONICAL:  https://nemxnovels.site/videos-page-haven.html
+og:url:            https://nemxnovels.site/videos-page-haven.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/videos-page-raven.html
+FILEPATH:          videos-page-raven.html
+EXPECTED:          https://nemxnovels.site/videos-page-raven.html
+ACTUAL CANONICAL:  https://nemxnovels.site/videos-page-raven.html
+og:url:            https://nemxnovels.site/videos-page-raven.html
+CANONICAL STATUS:  OK
+og:url STATUS:     OK
+SITEMAP STATUS:    IN SITEMAP
+
+
+====================================================================================================
+PROBLEMS — MISSING CANONICALS
+====================================================================================================
+google03160ec8bf44f4c4.html
+ravenport/back&forth/back&forth.html
+ravenport/someonewhostays/rosario_story(1).html
+
+====================================================================================================
+PROBLEMS — WRONG CANONICALS
+====================================================================================================
+NONE
+
+====================================================================================================
+PROBLEMS — og:url MISMATCHES
+====================================================================================================
+
+FILE:       havenfall/AngelsNotes/AngelsNotes-wherewereyou.html
+CANONICAL:  https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-wherewereyou.html
+og:url:     [MISSING]
+
+FILE:       havenfall/original-story/Havenfall-wherewereyou.html
+CANONICAL:  https://nemxnovels.site/havenfall/original-story/Havenfall-wherewereyou.html
+og:url:     [MISSING]
+
+FILE:       landing-angel-notes-blog.html
+CANONICAL:  https://nemxnovels.site/landing-angel-notes-blog.html
+og:url:     [MISSING]
+
+FILE:       ravenport/behindthecurse/behindthecurse-wherewereyou.html
+CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-wherewereyou.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/caleb.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/caleb.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/Earthquake.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/Earthquake.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/Great.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/Great.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/house.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/house.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/Ravenport-character-Darkkid.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Darkkid.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/Ravenport-character-Lethe.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Lethe.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/Ravenport-character-Lucien.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Lucien.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/Ravenport-character-Mycroft.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Mycroft.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/Ravenport-character-Sam.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Sam.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/Ravenport-characters-Amanda.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-characters-Amanda.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/Ravenport-characters-Zeke.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-characters-Zeke.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/Ravenport-wherewereyou.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-wherewereyou.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/rexona.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/rexona.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/RVPnews.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/RVPnews.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/samanthapictures.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/samanthapictures.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/Wakeup.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/Wakeup.html
+og:url:     [MISSING]
+
+FILE:       ravenport/original-story/Zahor.html
+CANONICAL:  https://nemxnovels.site/ravenport/original-story/Zahor.html
+og:url:     [MISSING]
+
+FILE:       ravenport/raphaasylum/RaphaAsylum-wherewereyou.html
+CANONICAL:  https://nemxnovels.site/ravenport/raphaasylum/RaphaAsylum-wherewereyou.html
+og:url:     [MISSING]
+
+FILE:       videos-page-angel.html
+CANONICAL:  https://nemxnovels.site/videos-page-angel.html
+og:url:     [MISSING]
+
+====================================================================================================
+PROBLEMS — EXPECTED CANONICAL NOT IN SITEMAP
+====================================================================================================
+https://nemxnovels.site/google03160ec8bf44f4c4.html
+https://nemxnovels.site/ravenport/back&forth/back&forth.html
+https://nemxnovels.site/ravenport/someonewhostays/rosario_story(1).html
+
+====================================================================================================
+PROBLEMS — SITEMAP URL WITHOUT MATCHING HTML FILEPATH
+====================================================================================================
+NONE
+
+====================================================================================================
+PROBLEMS — DUPLICATE CANONICAL URLS
+====================================================================================================
+NONE
+
+====================================================================================================
+FILE ERRORS
+====================================================================================================
+NONE
+
+
+====================================================================================================
+FINAL AUDIT VERDICT
+====================================================================================================
+
+ATTENTION — differences were found. Review the sections above.
+
+====================================================================================================

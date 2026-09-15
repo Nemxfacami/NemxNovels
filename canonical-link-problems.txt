@@ -1,0 +1,269 @@
+====================================================================================================
+NEMXNOVELS — CANONICAL LINK PROBLEMS
+====================================================================================================
+
+Problematic entries: 26
+
+Only entries where the important URLs do not match are shown.
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/google03160ec8bf44f4c4.html
+FILEPATH:          google03160ec8bf44f4c4.html
+ACTUAL CANONICAL:  [MISSING]
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs CANONICAL mismatch
+  - URL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-wherewereyou.html
+FILEPATH:          havenfall/AngelsNotes/AngelsNotes-wherewereyou.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/AngelsNotes/AngelsNotes-wherewereyou.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/havenfall/original-story/Havenfall-wherewereyou.html
+FILEPATH:          havenfall/original-story/Havenfall-wherewereyou.html
+ACTUAL CANONICAL:  https://nemxnovels.site/havenfall/original-story/Havenfall-wherewereyou.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/landing-angel-notes-blog.html
+FILEPATH:          landing-angel-notes-blog.html
+ACTUAL CANONICAL:  https://nemxnovels.site/landing-angel-notes-blog.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/back&forth/back&forth.html
+FILEPATH:          ravenport/back&forth/back&forth.html
+ACTUAL CANONICAL:  [MISSING]
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs CANONICAL mismatch
+  - URL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-wherewereyou.html
+FILEPATH:          ravenport/behindthecurse/behindthecurse-wherewereyou.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/behindthecurse/behindthecurse-wherewereyou.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/caleb.html
+FILEPATH:          ravenport/original-story/caleb.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/caleb.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Earthquake.html
+FILEPATH:          ravenport/original-story/Earthquake.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Earthquake.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Great.html
+FILEPATH:          ravenport/original-story/Great.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Great.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/house.html
+FILEPATH:          ravenport/original-story/house.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/house.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-character-Darkkid.html
+FILEPATH:          ravenport/original-story/Ravenport-character-Darkkid.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Darkkid.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-character-Lethe.html
+FILEPATH:          ravenport/original-story/Ravenport-character-Lethe.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Lethe.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-character-Lucien.html
+FILEPATH:          ravenport/original-story/Ravenport-character-Lucien.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Lucien.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-character-Mycroft.html
+FILEPATH:          ravenport/original-story/Ravenport-character-Mycroft.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Mycroft.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-character-Sam.html
+FILEPATH:          ravenport/original-story/Ravenport-character-Sam.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-character-Sam.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-characters-Amanda.html
+FILEPATH:          ravenport/original-story/Ravenport-characters-Amanda.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-characters-Amanda.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-characters-Zeke.html
+FILEPATH:          ravenport/original-story/Ravenport-characters-Zeke.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-characters-Zeke.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Ravenport-wherewereyou.html
+FILEPATH:          ravenport/original-story/Ravenport-wherewereyou.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Ravenport-wherewereyou.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/rexona.html
+FILEPATH:          ravenport/original-story/rexona.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/rexona.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/RVPnews.html
+FILEPATH:          ravenport/original-story/RVPnews.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/RVPnews.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/samanthapictures.html
+FILEPATH:          ravenport/original-story/samanthapictures.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/samanthapictures.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Wakeup.html
+FILEPATH:          ravenport/original-story/Wakeup.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Wakeup.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/original-story/Zahor.html
+FILEPATH:          ravenport/original-story/Zahor.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/original-story/Zahor.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/raphaasylum/RaphaAsylum-wherewereyou.html
+FILEPATH:          ravenport/raphaasylum/RaphaAsylum-wherewereyou.html
+ACTUAL CANONICAL:  https://nemxnovels.site/ravenport/raphaasylum/RaphaAsylum-wherewereyou.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/ravenport/someonewhostays/rosario_story(1).html
+FILEPATH:          ravenport/someonewhostays/rosario_story(1).html
+ACTUAL CANONICAL:  [MISSING]
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs CANONICAL mismatch
+  - URL vs og:url mismatch — og:url is missing
+
+----------------------------------------------------------------------------------------------------
+URL:              https://nemxnovels.site/videos-page-angel.html
+FILEPATH:          videos-page-angel.html
+ACTUAL CANONICAL:  https://nemxnovels.site/videos-page-angel.html
+og:url:            [MISSING]
+
+PROBLEMS:
+  - URL vs og:url mismatch — og:url is missing
+  - CANONICAL vs og:url mismatch — og:url is missing
+
+====================================================================================================
