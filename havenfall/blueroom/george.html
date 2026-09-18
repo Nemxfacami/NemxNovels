@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Blue Chatroom — A fictional messaging experience from NemxNovels. Explore conversations and the people behind the messages.">
+
+<meta name="author" content="NemxNovels">
+
+<meta name="keywords" content="NemxNovels, Blue Chatroom, fictional chat, messaging, interactive story, digital story, chatroom">
+<link rel="icon" type="image/png" href="favicon.png">
+
+<meta property="og:image" content="https://nemxnovels.site/havenfall/blueroom/nemxnovels-blueroom-og.webp">
+<meta property="og:title" content="NemxNovels — Blue Chatroom">
+<meta property="og:description" content="A fictional messaging experience where conversations reveal more than they seem. Explore the conversation behind Blue Chatroom.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NemxNovels">
+<meta property="og:url" content="https://nemxnovels.site/havenfall/blueroom/george.html">
+
+<meta name="robots" content="noindex, nofollow">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messenger Chat - George Pots</title>
+<style>
+  :root{
+    --bg:#0b0b0c;
+    --header-bg:#131314;
+    --incoming:#3a3b3c;
+    --outgoing:#0b84fe;
+    --text:#e9e9ea;
+    --muted:#9a9a9d;
+    --divider:#8a8a8d;
+    --quote-bg:#2a2a2b;
+    --green:#31d158;
+  }
+
+  *{box-sizing:border-box;}
+
+  html,body{
+    margin:0;
+    height:100%;
+    background:var(--bg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- Phone frame ---------- */
+  #phone{
+    max-width:420px;
+    margin:0 auto;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:var(--bg);
+    position:relative;
+    overflow:hidden;
+  }
+
+  /* ---------- Header ---------- */
+  .chat-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:10px 14px;
+    background:var(--header-bg);
+    flex-shrink:0;
+  }
+
+  .back-arrow{
+    background:none;
+    border:none;
+    color:var(--text);
+    font-size:22px;
+    line-height:1;
+    cursor:pointer;
+    padding:4px;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .header-identity{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    flex:1;
+    min-width:0;
+  }
+
+  .avatar{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#8a3a5b,#3a3b3c);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+    font-weight:600;
+    color:#fff;
+    flex-shrink:0;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+  }
+
+  .avatar .status-dot{
+    position:absolute;
+    bottom:-1px;
+    right:-1px;
+    width:11px;
+    height:11px;
+    border-radius:50%;
+    background:var(--green);
+    border:2px solid var(--header-bg);
+  }
+
+  .header-text{
+    min-width:0;
+  }
+
+  .header-name{
+    font-size:16px;
+    font-weight:600;
+    color:var(--text);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  .header-status{
+    font-size:12.5px;
+    color:var(--muted);
+  }
+
+  .header-icons{
+    display:flex;
+    gap:18px;
+    align-items:center;
+    flex-shrink:0;
+    pointer-events:none;
+  }
+
+  .header-icons img{
+    width:22px;
+    height:22px;
+    display:block;
+  }
+
+  /* ---------- Message list ---------- */
+  .chat-body{
+    flex:1;
+    overflow-y:auto;
+    padding:14px 12px 10px;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .chat-body::-webkit-scrollbar{
+    width:0;
+    height:0;
+  }
+
+  .time-divider{
+    text-align:center;
+    color:var(--divider);
+    font-size:12.5px;
+    margin:18px 0 10px;
+  }
+
+  .msg-group{
+    display:flex;
+    margin-bottom:10px;
+    margin-top:10px;
+    max-width:100%;
+  }
+
+  .msg-group.in{
+    justify-content:flex-start;
+  }
+
+  .msg-group.out{
+    justify-content:flex-end;
+  }
+
+  .group-inner{
+    display:flex;
+    align-items:flex-end;
+    gap:6px;
+    max-width:78%;
+  }
+
+  .msg-group.out .group-inner{
+    flex-direction:row-reverse;
+  }
+
+  .group-avatar{
+    width:26px;
+    height:26px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#8a3a5b,#3a3b3c);
+    flex-shrink:0;
+    visibility:hidden;
+    overflow:hidden;
+  }
+
+  .group-avatar.show{
+    visibility:visible;
+  }
+
+  .group-avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+  }
+
+  .bubbles-col{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+
+  .msg-group.out .bubbles-col{
+    align-items:flex-end;
+  }
+
+  .msg-group.in .bubbles-col{
+    align-items:flex-start;
+  }
+
+  .bubble{
+    padding:8px 13px;
+    border-radius:18px;
+    font-size:15px;
+    line-height:1.32;
+    max-width:100%;
+    word-wrap:break-word;
+    white-space:pre-wrap;
+  }
+
+  .in .bubble{
+    background:var(--incoming);
+    color:var(--text);
+    border-bottom-left-radius:5px;
+  }
+
+  .out .bubble{
+    background:var(--outgoing);
+    color:#fff;
+    border-bottom-right-radius:5px;
+  }
+
+  .bubbles-col .bubble:not(:first-child).in-followup{
+    border-top-left-radius:18px;
+  }
+
+  .bubbles-col .bubble:not(:first-child).out-followup{
+    border-top-right-radius:18px;
+  }
+
+  /* ---------- Input bar ---------- */
+  .chat-input-bar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:8px 12px;
+    background:var(--bg);
+    flex-shrink:0;
+  }
+
+  .input-icon{
+    width:26px;
+    height:26px;
+    flex-shrink:0;
+    opacity:.9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--outgoing);
+    pointer-events:none;
+  }
+
+  .input-icon img{
+    width:24px;
+    height:24px;
+    display:block;
+  }
+
+  .message-field{
+    flex:1;
+    background:#242426;
+    border-radius:20px;
+    padding:9px 16px;
+    color:var(--muted);
+    font-size:15px;
+    user-select:none;
+  }
+
+  .heart-icon{
+    width:24px;
+    height:24px;
+    flex-shrink:0;
+    color:#ff3b30;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+</style>
+</head>
+
+<body>
+
+<div id="phone">
+
+  <div class="chat-header">
+
+    <a class="back-arrow"
+       id="backArrow"
+       href="kim-chat.html"
+       aria-label="Back">‹</a>
+
+    <div class="header-identity" id="headerIdentity">
+
+      <div class="avatar">
+        <img src="george.jpg" alt="George Pots">
+        
+      </div>
+
+      <div class="header-text">
+        <div class="header-name">George Pots</div>
+        <div class="header-status">2hrs ago</div>
+      </div>
+
+    </div>
+
+    <div class="header-icons">
+      <img src="call.png" alt="">
+      <img src="videocall.png" alt="">
+      <img src="settings.png" alt="">
+    </div>
+
+  </div>
+
+
+  <div class="chat-body" id="chatBody"></div>
+
+
+  <div class="chat-input-bar">
+
+    <div class="input-icon" title="attach image (decorative)">
+      <img src="sendimages.png" alt="">
+    </div>
+
+    <div class="input-icon" title="voice (decorative)">
+      <img src="voicenote.png" alt="">
+    </div>
+
+    <div class="message-field">Message</div>
+
+    <div class="heart-icon" title="quick react (decorative)">❤️</div>
+
+  </div>
+
+</div>
+
+
+<script>
+/* ============================================================
+   MESSAGE DATA
+
+   Kim = outgoing / blue
+   George Pots = incoming / gray
+   ============================================================ */
+
+const messages = [
+
+  {
+    sender:'george',
+    bubbles:[
+      "Have you told Ashley yet,Babe?"
+    ]
+  },
+
+  {
+    sender:'kim',
+    bubbles:[
+      "I remember telling you not to call me that !!",
+      "and yah ,I did tell Ashley ",
+      "She will be coming "
+    ]
+  },
+
+  {
+    sender:'george',
+    bubbles:[
+      "Good cause i think Luka his got his eye on her "
+    ]
+  },
+
+  {
+    sender:'kim',
+    bubbles:[
+      "Hope he should fuck off ",
+      "and don't forget my bush "
+    ]
+  },
+
+  {
+    sender:'george',
+    bubbles:[
+      "I dont remember anything abouy buuushh ,Kim"
+    ]
+  },
+
+  {
+    sender:'kim',
+    bubbles:[
+      "Me coming to your place meets i get to have free bush,its either there's bush or there's no kim"
+    ]
+  },
+
+  {
+    sender:'george',
+    bubbles:[
+      "ALright babe"
+    ]
+  },
+
+  {
+    sender:'kim',
+    bubbles:[
+      "STOP THAT!!😒😒😒"
+    ]
+  },
+
+  {
+    sender:'george',
+    bubbles:[
+      "Okay okay sorry ,Kim ",
+      "i forgot to tell ,the party is clean just bush only not liquor "
+    ]
+  },
+
+  {
+    sender:'kim',
+    bubbles:[
+      "I don't mind"
+    ]
+  },
+
+  {
+    sender:'george',
+    bubbles:[
+      "So what are you up to?"
+    ]
+  },
+
+  {
+    sender:'kim',
+    bubbles:[
+      "I'm going offline,texting annoys me"
+    ]
+  },
+
+  {
+    sender:'george',
+    bubbles:[
+      "You're basically saying I'm annoying you"
+    ]
+  },
+
+  {
+    sender:'kim',
+    bubbles:[
+      "Maybe",
+      "Bye"
+    ]
+  }
+
+];
+
+
+/* ============================================================
+   RENDERER
+   ============================================================ */
+
+const chatBody = document.getElementById('chatBody');
+
+
+function renderGroup(group, isLast){
+
+  const dir = group.sender === 'kim' ? 'out' : 'in';
+
+  const wrap = document.createElement('div');
+  wrap.className = `msg-group ${dir}`;
+
+  const inner = document.createElement('div');
+  inner.className = 'group-inner';
+
+
+  /* ---------- Avatar ---------- */
+
+  const avatar = document.createElement('div');
+
+  avatar.className =
+    'group-avatar' +
+    (dir === 'in' ? ' show' : '');
+
+  if(dir === 'in'){
+
+    avatar.innerHTML =
+      '<img src="george.jpg" alt="George Pots">';
+
+  }
+
+
+  /* ---------- Bubble column ---------- */
+
+  const col = document.createElement('div');
+  col.className = 'bubbles-col';
+
+
+  group.bubbles.forEach((text) => {
+
+    const b = document.createElement('div');
+
+    b.className =
+      `bubble ${
+        dir === 'in'
+        ? 'in-followup'
+        : 'out-followup'
+      }`;
+
+    b.textContent = text;
+
+    col.appendChild(b);
+
+  });
+
+
+  /* ---------- Build group ---------- */
+
+  if(dir === 'in'){
+    inner.appendChild(avatar);
+  }else{
+    inner.appendChild(document.createElement('div'));
+  }
+
+  inner.appendChild(col);
+
+  wrap.appendChild(inner);
+
+  chatBody.appendChild(wrap);
+
+
+  /* ---------- Seen indicator ---------- */
+
+  if(isLast){
+
+    const seenRow = document.createElement('div');
+
+    seenRow.className = 'seen-row';
+
+    seenRow.innerHTML =
+      '<span class="seen-check">✓</span>';
+
+    /*
+      Add the styling directly so the indicator
+      remains compatible with the original layout.
+    */
+
+    seenRow.style.display = 'flex';
+    seenRow.style.justifyContent = 'flex-end';
+    seenRow.style.margin = '2px 4px 0 0';
+
+    const check = seenRow.querySelector('.seen-check');
+
+    check.style.display = 'inline-flex';
+    check.style.width = '14px';
+    check.style.height = '14px';
+    check.style.borderRadius = '50%';
+    check.style.background = 'var(--outgoing)';
+    check.style.color = '#fff';
+    check.style.fontSize = '9px';
+    check.style.alignItems = 'center';
+    check.style.justifyContent = 'center';
+    check.style.border = '1.5px solid var(--bg)';
+
+    chatBody.appendChild(seenRow);
+
+  }
+
+}
+
+
+/* ---------- Render all messages ---------- */
+
+messages.forEach((g, i) => {
+
+  renderGroup(
+    g,
+    i === messages.length - 1
+  );
+
+});
+
+
+/* ---------- Start at latest message ---------- */
+
+chatBody.scrollTop = chatBody.scrollHeight;
+
+
+/* ---------- Header hook ---------- */
+
+document
+  .getElementById('headerIdentity')
+  .addEventListener('click', () => {
+
+    console.log(
+      'George Pots profile pressed'
+    );
+
+  });
+
+</script>
+
+</body>
+</html>

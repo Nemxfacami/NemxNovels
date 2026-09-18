@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Blue Chatroom — A fictional messaging experience from NemxNovels. Explore contacts, conversations, and the people behind the messages.">
+
+<meta name="author" content="NemxNovels">
+
+<meta name="keywords" content="NemxNovels, Blue Chatroom, fictional chat, messaging, interactive story, digital story, chatroom">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:image" content="https://nemxnovels.site/havenfall/blueroom/nemxnovels-blueroom-og.webp">
+
+<meta property="og:title" content="NemxNovels — Blue Chatroom">
+<meta property="og:description" content="A fictional messaging experience where conversations reveal more than they seem. Explore the contacts behind Blue Chatroom.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NemxNovels">
+<meta property="og:url" content="https://nemxnovels.site/havenfall/blueroom/ashley-chat.html">
+
+<meta name="robots" content="noindex, nofollow">
+<title> Ashley Morgan Messages | Blue Chatroom</title>
+<style>
+
+  /* Hide horizontal scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/old Edge */
+}
+
+  :root{
+    --bg:#18191A;
+    --bg-elevated:#242526;
+    --text:#E4E6EB;
+    --text-secondary:#B0B3B8;
+    --divider:#3A3B3C;
+    --badge-red:#F02849;
+    --active-green:#31A24C;
+    --accent-blue:dodgerblue;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  body{background:var(--bg);color:var(--text);}
+  .phone{max-width:420px;margin:0 auto;min-height:100vh;position:relative;padding-bottom:100px;}
+
+  /* Top navigation: home, friends, chat, notifications, reels */
+  .top-nav{display:flex;align-items:center;justify-content:space-around;padding:12px 10px;border-bottom:1px solid var(--divider);}
+  .nav-icon{position:relative;width:32px;height:32px;}
+  .nav-icon img{width:100%;height:100%;object-fit:contain;display:block;}
+  .nav-badge{position:absolute;top:-6px;right:-10px;background:var(--badge-red);color:#fff;font-size:11px;font-weight:700;border-radius:10px;padding:1px 5px;line-height:14px;min-width:16px;text-align:center;}
+
+  /* Title bar */
+  .title-bar{display:flex;align-items:center;justify-content:space-between;padding:14px 16px 8px;}
+  .title-bar h1{font-size:28px;font-weight:800;}
+  .settings-btn{width:32px;height:32px;}
+  .settings-btn img{width:100%;height:100%;object-fit:contain;display:block;}
+
+  /* Active-profile row (no notes, no story ring) */
+  .profile-row{display:flex;gap:18px;padding:8px 16px 18px;overflow-x:auto;}
+  .profile-item{display:flex;flex-direction:column;align-items:center;gap:6px;flex-shrink:0;}
+  .avatar-wrap{position:relative;width:56px;height:56px;}
+  .avatar-wrap img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;}
+  .status-dot{position:absolute;bottom:0;right:0;width:14px;height:14px;background:var(--active-green);border:2px solid var(--bg);border-radius:50%;}
+  .profile-item span{font-size:12px;color:var(--text-secondary);max-width:64px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+  /* Chat list */
+  .chat-list{display:flex;flex-direction:column;}
+  .chat-row{display:flex;align-items:center;gap:12px;padding:10px 16px;text-decoration:none;color:inherit;}
+  .chat-row:active,.chat-row:hover{background:var(--bg-elevated);}
+  .chat-avatar{width:56px;height:56px;flex-shrink:0;}
+  .chat-avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;}
+  .chat-info{flex:1;min-width:0;}
+  .chat-name{font-size:15px;font-weight:600;}
+  .chat-preview{font-size:14px;color:var(--text-secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+  /* Add button (Meta AI bubble above it removed) */
+  .add-btn{position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:var(--accent-blue);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.4);text-decoration:none;}
+  .add-btn img.third{width:26px;height:26px;}
+  
+  footer.footer{
+    width:100%;
+    height: auto;
+    padding:0.5rem;
+    color:white;
+    margin-top:3rem;
+  }
+</style>
+</head>
+<body>
+<div class="phone">
+
+  <nav class="top-nav">
+    <div class="nav-icon">
+      <img src="home.png" alt="Home">
+      <span class="nav-badge">12</span>
+    </div>
+    <div class="nav-icon">
+      <img src="friends.png" alt="Friends">
+      <span class="nav-badge">15+</span>
+    </div>
+    <div class="nav-icon">
+      <img src="chat.png" alt="Chat">
+    </div>
+    <div class="nav-icon">
+      <img src="notify.png" alt="Notifications">
+      <span class="nav-badge">9+</span>
+    </div>
+    <div class="nav-icon">
+      <img src="reels.png" alt="Reels">
+    </div>
+  </nav>
+
+  <div class="title-bar">
+    <h1>Messages</h1>
+    <div class="settings-btn">
+      <img src="settings.png" alt="Settings">
+    </div>
+  </div>
+
+  <div class="profile-row">
+    <div class="profile-item">
+      <div class="avatar-wrap">
+        <img src="nate.webp" alt="nate">
+        <span class="status-dot"></span>
+      </div>
+      <span>Nathan</span>
+    </div>
+    <div class="profile-item">
+      <div class="avatar-wrap">
+        <img src="kim.webp" alt="kim">
+        
+      </div>
+      <span>Kim</span>
+    </div>
+    <div class="profile-item">
+      <div class="avatar-wrap">
+        <img src="david.webp" alt="david">
+       
+      </div>
+      <span>David</span>
+    </div>
+    <div class="profile-item">
+      <div class="avatar-wrap">
+        <img src="lorenzo.webp" alt="lorenzo">
+        <span class="status-dot"></span>
+      </div>
+      <span>Lorenzo</span>
+    </div>
+    <div class="profile-item">
+      <div class="avatar-wrap">
+        <img src="roger.webp" alt="roger">
+       
+      </div>
+      <span>Roger</span>
+    </div>
+    <div class="profile-item">
+      <div class="avatar-wrap">
+        <img src="lance.webp" alt="lance">
+       
+      </div>
+      <span>Lance</span>
+    </div>
+  </div>
+
+  <div class="chat-list">
+    <a class="chat-row" href="ivan.html">
+      <div class="chat-avatar"><img src="ivan.webp" alt="ivan"></div>
+      <div class="chat-info">
+        <div class="chat-name">Ivan Stones</div>
+        <div class="chat-preview">Ivan: Greetings</div>
+      </div>
+    </a>
+
+    <a class="chat-row" href="titus.html">
+      <div class="chat-avatar"><img src="titus.webp" alt="titus"></div>
+      <div class="chat-info">
+        <div class="chat-name">Titus Hammer</div>
+        <div class="chat-preview">Titus: Hey,girl</div>
+      </div>
+    </a>
+
+    <a class="chat-row" href="nate-ashley.html">
+      <div class="chat-avatar"><img src="nate.webp" alt="nate"></div>
+      <div class="chat-info">
+        <div class="chat-name">Nathan Rollin</div>
+        <div class="chat-preview">Nathan: wow well at leastt this would be a lovely creepy birthday</div>
+      </div>
+    </a>
+
+     <a class="chat-row" href="kim-ashley.html">
+      <div class="chat-avatar"><img src="kim.webp" alt="kim"></div>
+      <div class="chat-info">
+        <div class="chat-name">Kim Steggie</div>
+        <div class="chat-preview">Kim: Nate is cheating on you</div>
+      </div>
+    </a>
+
+    <a class="chat-row" href="lance.html">
+      <div class="chat-avatar"><img src="lance.webp" alt="lance"></div>
+      <div class="chat-info">
+        <div class="chat-name">Lance Lans</div>
+        <div class="chat-preview">Lance: oh hey! haha how've you been lol</div>
+      </div>
+    </a>
+
+    <a class="chat-row" href="lorenzo.html">
+      <div class="chat-avatar"><img src="lorenzo.webp" alt="lorenzo"></div>
+      <div class="chat-info">
+        <div class="chat-name">Lorenzo Moretti</div>
+        <div class="chat-preview">Lorenzo: You seem like a bitch ,a suck up one</div>
+      </div>
+    </a>
+
+    <a class="chat-row" href="stan.html">
+      <div class="chat-avatar"><img src="stan.webp" alt="stan"></div>
+      <div class="chat-info">
+        <div class="chat-name">Stan James</div>
+        <div class="chat-preview">Stan: It's going well since I'm in the presence of a adorable girl </div>
+      </div>
+    </a>
+    <a class="chat-row" href="murphy.html">
+      <div class="chat-avatar"><img src="murphy.webp" alt="murphy"></div>
+      <div class="chat-info">
+        <div class="chat-name">Murphy Passes</div>
+        <div class="chat-preview">Murphy: It's going well since I'm in the presence of a adorable girl </div>
+      </div>
+    </a>
+
+  
+
+     <a class="chat-row" href="vlad.html">
+      <div class="chat-avatar"><img src="vlad.webp" alt= "vlad"></div>
+      <div class="chat-info">
+        <div class="chat-name">Vlad Ardmore</div>
+        <div class="chat-preview">Vlad: I have been looking for you ,beautiful</div>
+      </div>
+    </a>
+
+   
+
+    <a class="chat-row" href="mohan.html">
+      <div class="chat-avatar"><img src="mohan.webp" alt="mohan"></div>
+      <div class="chat-info">
+        <div class="chat-name">Mohan Moham</div>
+        <div class="chat-preview">Mohan: 📷 Photo</div>
+      </div>
+    </a>
+
+    
+    <a class="chat-row" href="matt.html">
+      <div class="chat-avatar"><img src="matt.webp" alt="matt"></div>
+      <div class="chat-info">
+        <div class="chat-name">Matt Gucci</div>
+        <div class="chat-preview">Matt: Hyyy</div>
+      </div>
+    </a>
+
+    
+    <a class="chat-row" href="milo.html">
+      <div class="chat-avatar"><img src="milo.webp" alt="milo"></div>
+      <div class="chat-info">
+        <div class="chat-name">Milo Cabron</div>
+        <div class="chat-preview">Brea: 📷 Photo</div>
+      </div>
+    </a>
+
+    
+     <a class="chat-row" href="roger.html">
+      <div class="chat-avatar"><img src="roger.webp" alt= "roger"></div>
+      <div class="chat-info">
+        <div class="chat-name">Roger Sonson</div>
+        <div class="chat-preview">Roger: Take care and hpe one day you grow to be a woman about love and finding a good man.</div>
+      </div>
+    </a>
+    
+    
+    <a class="chat-row" href="steven.html">
+      <div class="chat-avatar"><img src="steven.webp" alt="steven"></div>
+      <div class="chat-info">
+        <div class="chat-name">Steven Cries</div>
+        <div class="chat-preview">Steven: 📷 Photo</div>
+      </div>
+    </a>
+
+    
+   
+    <a class="chat-row" href="david.html">
+      <div class="chat-avatar"><img src="david.webp" alt="david"></div>
+      <div class="chat-info">
+        <div class="chat-name">David Jagur</div>
+        <div class="chat-preview">You: Bye</div>
+      </div>
+    </a>
+
+ 
+<footer class="footer">
+  <b>Third-Party Asset Notice</b>
+  <p id ="third">
+    Some visual assets used in this project are third-party materials and are 
+    not owned by NemxNovels. Press The Bottom Right Corner Dodgerblue Button  
+  </p>
+</footer>
+
+  <a class="add-btn" href="third-party-document.html" aria-label="New message">
+   <img class="third" src ="third-party.png">
+  </a>
+
+</div>
+</body>
+</html>

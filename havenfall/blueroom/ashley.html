@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messenger Chat - Ashley Morgan</title>
+<style>
+  :root{
+    --bg:#0b0b0c;
+    --header-bg:#131314;
+    --incoming:#3a3b3c;
+    --outgoing:#0b84fe;
+    --text:#e9e9ea;
+    --muted:#9a9a9d;
+    --divider:#8a8a8d;
+    --quote-bg:#2a2a2b;
+    --green:#31d158;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    height:100%;
+    background:var(--bg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+  }
+  #phone{
+    max-width:420px;
+    margin:0 auto;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:var(--bg);
+    position:relative;
+    overflow:hidden;
+  }
+  .chat-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:10px 14px;
+    background:var(--header-bg);
+    flex-shrink:0;
+  }
+  .back-arrow{
+    background:none;
+    border:none;
+    color:var(--text);
+    font-size:22px;
+    line-height:1;
+    cursor:pointer;
+    padding:4px;
+  }
+  .header-identity{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    flex:1;
+    min-width:0;
+  }
+  .avatar{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#5b5f97,#3a3b3c);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+    font-weight:600;
+    color:#fff;
+    flex-shrink:0;
+    position:relative;
+    overflow:hidden;
+  }
+  .avatar .status-dot{
+    position:absolute;
+    bottom:-1px;
+    right:-1px;
+    width:11px;
+    height:11px;
+    border-radius:50%;
+    background:var(--green);
+    border:2px solid var(--header-bg);
+  }
+  .header-text{min-width:0;}
+  .header-name{
+    font-size:16px;
+    font-weight:600;
+    color:var(--text);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .header-status{
+    font-size:12.5px;
+    color:var(--muted);
+  }
+  .header-icons{
+    display:flex;
+    gap:18px;
+    align-items:center;
+    flex-shrink:0;
+    pointer-events:none;
+  }
+  .header-icons img{
+    width:22px;
+    height:22px;
+    display:block;
+  }
+  .chat-body{
+    flex:1;
+    overflow-y:auto;
+    padding:14px 12px 10px;
+    display:flex;
+    flex-direction:column;
+  }
+  .chat-body::-webkit-scrollbar{width:0;height:0;}
+  .time-divider{
+    text-align:center;
+    color:var(--divider);
+    font-size:12.5px;
+    margin:18px 0 10px;
+  }
+  .msg-group{
+    display:flex;
+    margin-bottom:10px;
+    margin-top:10px;
+    max-width:100%;
+  }
+  .msg-group.in{ justify-content:flex-start; }
+  .msg-group.out{ justify-content:flex-end; }
+  .group-inner{
+    display:flex;
+    align-items:flex-end;
+    gap:6px;
+    max-width:78%;
+  }
+  .msg-group.out .group-inner{ flex-direction:row-reverse; }
+  .group-avatar{
+    width:26px;
+    height:26px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#5b5f97,#3a3b3c);
+    flex-shrink:0;
+    visibility:hidden;
+  }
+  .group-avatar.show{ visibility:visible; }
+  .bubbles-col{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+  .msg-group.out .bubbles-col{ align-items:flex-end; }
+  .msg-group.in .bubbles-col{ align-items:flex-start; }
+  .bubble{
+    padding:8px 13px;
+    border-radius:18px;
+    font-size:15px;
+    line-height:1.32;
+    max-width:100%;
+    word-wrap:break-word;
+    white-space:pre-wrap;
+  }
+  .in .bubble{
+    background:var(--incoming);
+    color:var(--text);
+    border-bottom-left-radius:5px;
+  }
+  .out .bubble{
+    background:var(--outgoing);
+    color:#fff;
+    border-bottom-right-radius:5px;
+  }
+  .bubbles-col .bubble:not(:first-child).in-followup{ border-top-left-radius:18px; }
+  .bubbles-col .bubble:not(:first-child).out-followup{ border-top-right-radius:18px; }
+  .reply-ref{
+    display:flex;
+    align-items:center;
+    gap:4px;
+    font-size:12px;
+    color:var(--muted);
+    margin:0 0 2px 4px;
+  }
+  .msg-group.out .reply-ref{ justify-content:flex-end; margin:0 4px 2px 0; }
+  .reply-ref .arrow{ transform:scaleX(-1); }
+  .quoted-bubble{
+    background:var(--quote-bg);
+    color:var(--muted);
+    padding:7px 13px;
+    border-radius:16px;
+    font-size:13.5px;
+    max-width:100%;
+    margin-bottom:-8px;
+    position:relative;
+    z-index:0;
+  }
+  .out .quoted-bubble{ align-self:flex-end; }
+  .img-msg{
+    position:relative;
+    width:210px;
+    border-radius:16px;
+    overflow:hidden;
+    cursor:pointer;
+    background:#1c1c1e;
+  }
+  .img-msg .img-placeholder{
+    width:100%;
+    aspect-ratio:3/4;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--muted);
+    font-size:13px;
+    text-align:center;
+    padding:10px;
+    background:
+      repeating-linear-gradient(45deg,#232325,#232325 10px,#1c1c1e 10px,#1c1c1e 20px);
+  }
+  .img-msg .forward-icon{
+    position:absolute;
+    left:-34px;
+    top:50%;
+    transform:translateY(-50%);
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:rgba(60,60,62,.9);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--text);
+    font-size:14px;
+    opacity:0;
+    transition:opacity .15s, left .15s;
+  }
+  .img-msg:hover .forward-icon{ opacity:1; left:-40px; }
+  .img-msg .seen-check{
+    position:absolute;
+    bottom:6px;
+    right:6px;
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:var(--outgoing);
+    color:#fff;
+    font-size:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1.5px solid var(--bg);
+  }
+  .bubble .seen-check{
+    display:inline-flex;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:var(--outgoing);
+    color:#fff;
+    font-size:9px;
+    align-items:center;
+    justify-content:center;
+    margin-left:6px;
+    vertical-align:middle;
+    border:1.5px solid var(--bg);
+  }
+  .seen-row{
+    display:flex;
+    justify-content:flex-end;
+    margin:2px 4px 0 0;
+  }
+  .seen-row .seen-check{ position:static; }
+  .chat-input-bar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:8px 12px;
+    background:var(--bg);
+    flex-shrink:0;
+  }
+  .input-icon{
+    width:26px;
+    height:26px;
+    flex-shrink:0;
+    opacity:.9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--outgoing);
+    pointer-events:none;
+  }
+  .input-icon img{
+    width:24px;
+    height:24px;
+    display:block;
+  }
+  .message-field{
+    flex:1;
+    background:#242426;
+    border-radius:20px;
+    padding:9px 16px;
+    color:var(--muted);
+    font-size:15px;
+    user-select:none;
+  }
+  .heart-icon{
+    width:24px;
+    height:24px;
+    flex-shrink:0;
+    color:#ff3b30;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+   a{text-decoration:none}
+</style>
+</head>
+<body>
+
+<div id="phone">
+  <div class="chat-header">
+    <button class="back-arrow" id="backArrow" aria-label="Back">‹</button>
+    <div class="header-identity" id="headerIdentity">
+      <div class="avatar">A<span class="status-dot"></span></div>
+      <a href ="ashley-chat.html">
+      <div class="header-text">
+        <div class="header-name">Ashley Morgan</div>
+        <div class="header-status">Active now</div>
+      </div>
+    </a>
+    </div>
+    <div class="header-icons">
+      <img src="call.png" alt="">
+      <img src="videocall.png" alt="">
+      <img src="settings.png" alt="">
+    </div>
+  </div>
+
+  <div class="chat-body" id="chatBody"></div>
+
+  <div class="chat-input-bar">
+    <div class="input-icon" title="attach image (decorative)"><img src="sendimages.png" alt=""></div>
+    <div class="input-icon" title="voice (decorative)"><img src="voicenote.png" alt=""></div>
+    <div class="message-field">Message</div>
+    <div class="heart-icon" title="quick react (decorative)">❤️</div>
+  </div>
+</div>
+</div>
+
+<script>
+const messages = [
+  {sender:'ashley', bubbles:["Heeey Nathan!! ❤️😂","There you areee. What took you so long? 😭","I'm just sitting here watching cartoons again lol. You know me. 😭","What are you doing?"]},
+  {sender:'nathan', bubbles:["i have been busy drawing ,tryna enjoy my day","seems you have been rotting in the couch waiting for me"]},
+  {sender:'ashley', bubbles:["EXCUSE ME 😭😭 I have NOT been rotting!!","But you were drawing?? What were you drawing? 👀"]},
+  {sender:'nathan', bubbles:["well you wouldnt believe it ,i have been drawing a man eating","how are ya brat"]},
+  {sender:'ashley', bubbles:["A man eating? 😭 That's what you've been busy drawing all this time?","I'm good, brat. 🙄❤️ Better now that you're here though.","What was he eating? Don't tell me you spent hours drawing a guy eating something completely ordinary. 😂"]},
+  {sender:'nathan', image:{src:"eating.webp", caption:"see ,isnt he beautiful ?"}},
+  {sender:'ashley', bubbles:["😭 Nathan...","Beautiful is NOT the word I would've used. 😂","He's literally eating another person!!","But... I don't know, there's something about the drawing that I actually like. The red looks really pretty."]},
+  {sender:'nathan', bubbles:["yeah it is"]},
+  {sender:'ashley', bubbles:["Why does he look so calm while doing that though? 😭","What were you thinking when you drew him?"]},
+  {sender:'nathan', bubbles:["i was hungry ,and probably thinking about eating something nice","have you ever been in relationship"]},
+  {sender:'ashley', bubbles:["😭 You were hungry?? Nathan, that's such a weird thing to draw when you're hungry.","And relationship... hmm.","Like, properly in a relationship?","Not really, no. I've liked people before though. Why? 👀"]},
+  {sender:'nathan', bubbles:["yeah like a properly in a relationship ,boyfriend and girlfriend","im just curious ,you seem very innocent ,i like it"]},
+  {sender:'ashley', bubbles:["Ohhh, okay. 😂 Yeah, properly.","No, I've never had a boyfriend before.","And... you like that I'm innocent?"]},
+  {sender:'nathan', bubbles:["yeah i really do like innocent makes me know you are trustworthy"]},
+  {sender:'ashley', bubbles:["That's kinda sweet. ❤️","I don't think I'm that innocent though. 😭"]},
+  {sender:'nathan', bubbles:["well you cant change my opinion little one"]},
+  {sender:'ashley', bubbles:["What about you? Have you actually been in a relationship before?"]},
+  {sender:'nathan', bubbles:["i have been in a relationship ,just didnt end well ,she left me"]},
+  {sender:'ashley', bubbles:["Oh...","I'm sorry, Nathan. :(","She just... left you?"]},
+  {sender:'nathan', bubbles:["well its a really long story maybe i will tell you one day","but if you were in a relationship,how would you like your first date to be like ?"]},
+  {sender:'ashley', bubbles:["Hmmmm... my first date? 🥺","I'd want it to be something simple, I think."]},
+  {sender:'nathan', bubbles:["simple,like how ?"]},
+  {sender:'ashley', bubbles:["Maybe we go somewhere nice to eat first, then walk around somewhere after. And... maybe he takes me somewhere quiet where we can just sit and talk for a while.","I don't think I'd want anything too fancy.","Actually... I'd really like going to the movies. 😂❤️","And then we'd get something sweet afterward."]},
+  {sender:'nathan', bubbles:["seems you have a very easy going first date in your mind huh"]},
+  {sender:'ashley', bubbles:["I think I'd care more about who I'm with than where we go.","Like... if I really liked him, I could probably have fun anywhere."]},
+  {sender:'nathan', bubbles:["i understand what you mean ,you really know what you want"]},
+  {sender:'ashley', bubbles:["What about you ? 👀"]},
+  {sender:'nathan', bubbles:["i would want to take out to a place that is bautiful and not so crowded so i can hear what she is talking about","a place where we can get lovely food to eat then after that take a long walk ,while eating ice cream togother","then when it gets dark ,it would be even better if we get a spot that gives us a wonderful view of the stars and the city lights"]},
+  {sender:'ashley', bubbles:["Wait... that's actually really pretty. 🥺","I like the part about it not being crowded. I'd want to actually talk too... especially if it's someone I really like.","And ice cream while walking sounds nice. 😂"]},
+  {sender:'nathan', bubbles:["yeah i love that part too as long as we dont get hit by a car"]},
+  {sender:'ashley', bubbles:["I think I'd remember a date like that for a really long time."]},
+  {sender:'nathan', bubbles:["i would always take my girlfriend to many lovely date just to show her how much i love her"]},
+  {sender:'ashley', bubbles:["Awww... 🥺","You really are a romantic, aren't you?"]},
+  {sender:'nathan', bubbles:["you could say"]},
+  {sender:'ashley', bubbles:["I think I'd like that. Not even because of the dates themselves... just knowing someone actually wants to make little memories with me.","I'd probably take pictures of everything too. 😂 Even the food."]},
+  {sender:'nathan', bubbles:["seems you love spending time with food"]},
+  {sender:'ashley', bubbles:["...You make it sound really nice, Nathan.❤️","i will be back my mom is here"]},
+  {sender:'nathan', bubbles:["oh alright then byee"]},
+
+  {sender:'ashley', divider:"1 hour later", bubbles:["Heeyy 😂 I'm back.","Sorry, my mom kept me busy for longer than I thought.","What were you doing while I was gone? 👀"]},
+  {sender:'nathan', bubbles:["😂 i was wondering it you were still alive ,ashley👀"]},
+  {sender:'ashley', bubbles:["😂 I'm aliveee, silly.","You missed me that much already? 👀"]},
+  {sender:'nathan', bubbles:["well who wouldnt miss such a lovely person like you , 👀"]},
+  {sender:'ashley', bubbles:["Awww... Nathan. 🥺❤️","You're making me blush now.","You really know how to say things like that, don't you? 👀","aww you are blushing","I think I like talking to you more than I probably should. 😂"]},
+  {sender:'nathan', bubbles:["and i like it you ,as they say if its more than it probably should that means its right for you"]},
+  {sender:'ashley', bubbles:["You're just... easy to talk to.","Don't get too proud though. 🙄❤️"]},
+  {sender:'nathan', bubbles:["wow didnt knwo you knew how to roll your eyes ,explains why you are oozing with cuteness huh"]},
+  {sender:'ashley', bubbles:["😂 Shut uppp.","I can roll my eyes!"]},
+  {sender:'nathan', bubbles:["cute,do you ever get lonely ?"]},
+  {sender:'ashley', bubbles:["Hmm... sometimes.","Especially when Kim is busy and I don't really have anyone else to talk to."]},
+  {sender:'nathan', bubbles:["oh seeems you really like being with kim huh"]},
+  {sender:'ashley', bubbles:["Yeah she is my only friend.","But... yeah, sometimes I wish someone would just stay and talk to me.","Why? Do you get lonely too?"]},
+  {sender:'nathan', bubbles:["yeah i do get lonely a lot actually but thats normal","but it seems i have someone to keep me company these days"]},
+  {sender:'ashley', bubbles:["Oh? 👀 Someone to keep you company these days?"]},
+  {sender:'nathan', bubbles:["yeahhhh someone"]},
+  {sender:'ashley', bubbles:["I wonder who that could be. 😂❤️ You make it sound like you're trying to hint at something without actually saying it."]},
+  {sender:'nathan', bubbles:["yeah what if i was,im sure you already know who im talking about ,dont you ,brat"]},
+  {sender:'ashley', bubbles:["Hehe... maybe I do. 👀❤️"]},
+  {sender:'nathan', bubbles:["haha 👀"]},
+  {sender:'ashley', bubbles:["But I wanna hear you say it. 😂 Don't make me guess everything, brat. Who are you talking about?"]},
+  {sender:'nathan', bubbles:["dont worry this connnection between us already said enough about what we are tlaking about"]},
+  {sender:'ashley', bubbles:["...Yeah. 🥺❤️ I think I know what you mean."]},
+  {sender:'nathan', bubbles:["yeah you definitely do"]},
+  {sender:'ashley', bubbles:["It's kinda funny, isn't it? We haven't even known each other that long, but somehow talking to you feels... different. Like I don't have to try so hard to keep the conversation going."]},
+  {sender:'nathan', bubbles:["that just means we vibe with each other ,like how good attracts good and evil attracts evil"]},
+  {sender:'ashley', bubbles:["But... maybe you're right. We do kinda vibe with each other. I don't know what it is exactly, I just know I like talking to you. ❤️","So what now? Are we just gonna keep dancing around it forever? 😂"]},
+  {sender:'nathan', bubbles:["nah i dont like dancing my feet hurt already"]},
+  {sender:'ashley', bubbles:["😭 That is NOT what I meant and you know it."]},
+  {sender:'nathan', bubbles:["i know i know ,im just messing with you"]},
+  {sender:'ashley', bubbles:["Mhm. 🙄❤️ So?"]},
+  {sender:'nathan', bubbles:["so what"]},
+  {sender:'ashley', bubbles:["Nathannn. 😭 You know what."]},
+  {sender:'nathan', bubbles:["i think i do actually,but i want you to say it first"]},
+  {sender:'ashley', bubbles:["Say what. 😭"]},
+  {sender:'nathan', bubbles:["whatever it is you keep hinting at,go on"]},
+  {sender:'ashley', bubbles:["Ugh, fine. I like you, okay? A lot actually."]},
+  {sender:'nathan', bubbles:["i know"]},
+  {sender:'ashley', bubbles:["😭 NATHAN."]},
+  {sender:'nathan', bubbles:["what,im not gonna pretend i didnt already know"]},
+  {sender:'ashley', bubbles:["You're insufferable."]},
+  {sender:'nathan', bubbles:["youre still here talking to me though"]},
+  {sender:'ashley', bubbles:["...Yeah. I am."]},
+  {sender:'nathan', bubbles:["thats what i thought"]},
+  {sender:'ashley', bubbles:["So are you gonna say it back or just sit there being smug about it"]},
+  {sender:'nathan', bubbles:["i already told you i like you ashley,remember"]},
+  {sender:'ashley', bubbles:["That was ages ago. 😭 Say it again."]},
+  {sender:'nathan', bubbles:["i like you ashley ,there,twice now"]},
+  {sender:'ashley', bubbles:["Good. 🥺❤️"]},
+  {sender:'nathan', bubbles:["so that makes you mine now,doesnt it"]},
+  {sender:'ashley', bubbles:["Wait— does it? 👀 Just like that?"]},
+  {sender:'nathan', bubbles:["yeah just like that,unless you got a problem with it"]},
+  {sender:'ashley', bubbles:["No problem here. 😂","Mine too then, I guess."]},
+  {sender:'nathan', bubbles:["good girl"]},
+  {sender:'ashley', bubbles:["🥺❤️ Stop that.","stop what,youre blushing arent you"]},
+  {sender:'nathan', bubbles:["i am,little one"]},
+  {sender:'ashley', bubbles:["Shut up. 😭 Maybe."]},
+  {sender:'nathan', bubbles:["thats what i thought,youre mine now ashley,get used to it"]},
+  {sender:'ashley', bubbles:["Get used to it? 😂 That's so bossy."]},
+  {sender:'nathan', bubbles:["im not bossy im just right"]},
+  {sender:'ashley', bubbles:["Sure you are.","This feels kinda unreal honestly. A few weeks ago you were just some guy sending me weird drawings of men eating people."]},
+  {sender:'nathan', bubbles:["and now im your weird guy officially"]},
+  {sender:'ashley', bubbles:["Biggest upgrade of my life. 😭❤️"]},
+  {sender:'nathan', bubbles:["as it should be"]},
+  {sender:'ashley', bubbles:["I'm telling Kim right now, she's gonna lose it. 😂"]},
+  {sender:'nathan', bubbles:["tell her i said hi"]},
+  {sender:'ashley', bubbles:["Absolutely not, she'll never let either of us live it down."]},
+  {sender:'nathan', bubbles:["fair enough"]},
+  {sender:'ashley', bubbles:["So what are you up to for the rest of today?"]},
+  {sender:'nathan', bubbles:["not much,was gonna relax but my mom just texted me,she needs me to go buy her something","ill be back later ok"]},
+  {sender:'ashley', bubbles:["Okay! 🥺 Don't take too long."]},
+  {sender:'nathan', bubbles:["ill try not to,bye ashley"]},
+  {sender:'ashley', bubbles:["Bye Nathan. ❤️ Be safe out there."]},
+  {sender:'nathan', bubbles:["i always am"]},
+];
+
+const chatBody = document.getElementById('chatBody');
+
+function renderGroup(group, isLast){
+  const dir = group.sender === 'nathan' ? 'out' : 'in';
+
+  if(group.divider){
+    const div = document.createElement('div');
+    div.className = 'time-divider';
+    div.textContent = group.divider;
+    chatBody.appendChild(div);
+  }
+
+  const wrap = document.createElement('div');
+  wrap.className = `msg-group ${dir}`;
+
+  const inner = document.createElement('div');
+  inner.className = 'group-inner';
+
+  const avatar = document.createElement('div');
+  avatar.className = 'group-avatar' + (dir === 'in' ? ' show' : '');
+
+  const col = document.createElement('div');
+  col.className = 'bubbles-col';
+
+  if(group.replyTo){
+    const ref = document.createElement('div');
+    ref.className = 'reply-ref';
+    ref.innerHTML = `<span class="arrow">↩</span> ${group.replyTo.sender === 'nathan' ? 'Nathan' : 'Ashley'} replied to ${dir === 'out' ? 'Ashley' : 'Nathan'}`;
+    col.appendChild(ref);
+    const q = document.createElement('div');
+    q.className = 'quoted-bubble';
+    q.textContent = group.replyTo.snippet;
+    col.appendChild(q);
+  }
+
+  if(group.image){
+    const imgMsg = document.createElement('div');
+    imgMsg.className = 'img-msg';
+    imgMsg.innerHTML = `
+      <div class="forward-icon">➜</div>
+     <img src="${group.image.src}" alt="" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block;">
+      ${isLast ? '<div class="seen-check">✓</div>' : ''}
+    `;
+    col.appendChild(imgMsg);
+    if(group.image.caption){
+      const cap = document.createElement('div');
+      cap.className = `bubble ${dir}-followup`;
+      cap.textContent = group.image.caption;
+      col.appendChild(cap);
+    }
+  } else {
+    group.bubbles.forEach((text) => {
+      const b = document.createElement('div');
+      b.className = `bubble ${dir === 'in' ? 'in-followup' : 'out-followup'}`;
+      b.textContent = text;
+      col.appendChild(b);
+    });
+  }
+
+  inner.appendChild(dir === 'in' ? avatar : document.createElement('div'));
+  inner.appendChild(col);
+  wrap.appendChild(inner);
+  chatBody.appendChild(wrap);
+
+  if(isLast && !group.image){
+    const seenRow = document.createElement('div');
+    seenRow.className = 'seen-row';
+    seenRow.innerHTML = '<span class="seen-check">✓</span>';
+    chatBody.appendChild(seenRow);
+  }
+}
+
+messages.forEach((g, i) => renderGroup(g, i === messages.length - 1));
+chatBody.scrollTop = chatBody.scrollHeight;
+
+/* ---------- Functional hooks ---------- */
+document.getElementById('backArrow').addEventListener('click', () => {
+  window.location.href = 'index.html';
+});
+document.getElementById('headerIdentity').addEventListener('click', () => {
+  window.location.href = 'ashley-profile.html';
+});
+</script>
+
+</body>
+</html>

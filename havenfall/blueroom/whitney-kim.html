@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="description" content="Blue Chatroom — A fictional messaging experience from NemxNovels. Explore contacts, conversations, and the people behind the messages.">
+
+    <meta name="author" content="NemxNovels">
+
+    <meta name="keywords" content="NemxNovels, Blue Chatroom, fictional chat, messaging, interactive story, digital story, chatroom">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <meta property="og:image" content="https://nemxnovels.site/havenfall/blueroom/nemxnovels-blueroom-og.webp">
+    <meta property="og:title" content="NemxNovels — Blue Chatroom">
+    <meta property="og:description" content="A fictional messaging experience where conversations reveal more than they seem. Explore the contacts behind Blue Chatroom.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NemxNovels">
+    <meta property="og:url" content="https://nemxnovels.site/havenfall/blueroom/whitney.html">
+
+    <meta name="robots" content="noindex, nofollow">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NemxNovels — Whitney</title>
+
+<style>
+  :root{
+    --bg:#0b0b0c;
+    --header-bg:#131314;
+    --incoming:#3a3b3c;
+    --outgoing:#0b84fe;
+    --text:#e9e9ea;
+    --muted:#9a9a9d;
+    --divider:#8a8a8d;
+    --quote-bg:#2a2a2b;
+    --green:#31d158;
+  }
+
+  *{
+    box-sizing:border-box;
+  }
+
+  body{
+    margin:0;
+    background:#000;
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+
+  #phone{
+    width:100%;
+    max-width:420px;
+    height:100vh;
+    margin:0 auto;
+    background:var(--bg);
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+  }
+
+  .header{
+    height:64px;
+    min-height:64px;
+    background:var(--header-bg);
+    display:flex;
+    align-items:center;
+    padding:0 12px;
+    border-bottom:1px solid #202022;
+  }
+
+  .back{
+    font-size:29px;
+    margin-right:9px;
+    cursor:pointer;
+    line-height:1;
+  }
+
+  .avatar{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-right:10px;
+  }
+
+  .header-info{
+    flex:1;
+    min-width:0;
+  }
+
+  .name{
+    font-size:16px;
+    font-weight:600;
+  }
+
+  .status{
+    color:var(--muted);
+    font-size:12px;
+    margin-top:2px;
+  }
+
+  .header-icons{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+
+  .header-icons img{
+    width:22px;
+    height:22px;
+    object-fit:contain;
+  }
+
+  #chatBody{
+    flex:1;
+    overflow-y:auto;
+    padding:12px 10px 18px;
+    scrollbar-width:none;
+  }
+
+  #chatBody::-webkit-scrollbar{
+    display:none;
+  }
+
+  .time-divider{
+    text-align:center;
+    color:var(--muted);
+    font-size:12px;
+    margin:10px 0 14px;
+  }
+
+  .group{
+    display:flex;
+    width:100%;
+    margin-bottom:4px;
+  }
+
+  .group.in{
+    justify-content:flex-start;
+  }
+
+  .group.out{
+    justify-content:flex-end;
+  }
+
+  .group-content{
+    display:flex;
+    align-items:flex-end;
+    max-width:78%;
+  }
+
+  .group.out .group-content{
+    flex-direction:row-reverse;
+  }
+
+  .group-avatar,
+  .avatar-spacer{
+    width:26px;
+    height:26px;
+    flex:0 0 26px;
+    margin:0 6px;
+  }
+
+  .group-avatar{
+    border-radius:50%;
+    object-fit:cover;
+  }
+
+  .avatar-spacer{
+    visibility:hidden;
+  }
+
+  .messages{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+
+  .bubble{
+    color:var(--text);
+    font-size:15px;
+    line-height:1.32;
+    padding:8px 13px;
+    border-radius:18px;
+    word-wrap:break-word;
+    white-space:pre-wrap;
+  }
+
+  .bubble.in{
+    background:var(--incoming);
+    border-bottom-left-radius:5px;
+  }
+
+  .bubble.out{
+    background:var(--outgoing);
+    border-bottom-right-radius:5px;
+  }
+
+  .seen{
+    color:#8fc9ff;
+    font-size:11px;
+    text-align:right;
+    margin-top:2px;
+    padding-right:4px;
+  }
+
+  .input-bar{
+    min-height:58px;
+    background:var(--header-bg);
+    border-top:1px solid #202022;
+    display:flex;
+    align-items:center;
+    padding:8px 10px;
+    gap:9px;
+  }
+
+  .input-icon{
+    width:25px;
+    height:25px;
+    object-fit:contain;
+    flex:0 0 25px;
+  }
+
+  .message-input{
+    flex:1;
+    height:38px;
+    border-radius:20px;
+    background:#29292b;
+    border:1px solid #3a3a3c;
+    color:var(--text);
+    display:flex;
+    align-items:center;
+    padding:0 14px;
+    font-size:14px;
+  }
+
+  .message-input span{
+    color:var(--muted);
+  }
+
+  .heart{
+    font-size:25px;
+    line-height:1;
+  }
+</style>
+</head>
+
+<body>
+
+<div id="phone">
+
+  <div class="header">
+    <div class="back" onclick="window.location.href='kim-chat.html'">‹</div>
+
+    <img src="whitney.jpg" alt="Whitney" class="avatar">
+
+    <div class="header-info">
+      <div class="name">Whitney</div>
+      <div class="status">Active now</div>
+    </div>
+
+    <div class="header-icons">
+      <img src="call.png" alt="Call">
+      <img src="videocall.png" alt="Video call">
+      <img src="settings.png" alt="Settings">
+    </div>
+  </div>
+
+  <div id="chatBody"></div>
+
+  <div class="input-bar">
+    <img src="sendimages.png" alt="Images" class="input-icon">
+    <img src="voicenote.png" alt="Voice note" class="input-icon">
+
+    <div class="message-input">
+      <span>Message</span>
+    </div>
+
+    <div class="heart">♡</div>
+  </div>
+
+</div>
+
+<script>
+const messages = [
+  {
+    time: "16 Sep at 01:45",
+    sender: "kim",
+    text: "Heyy Whitney"
+  },
+  {
+    sender: "kim",
+    text: "Do you perhaps know Nathan Rollin?"
+  }
+];
+
+const chatBody = document.getElementById("chatBody");
+
+function renderGroup(group, isLast){
+  const groupEl = document.createElement("div");
+  groupEl.className = `group ${group.sender === "kim" ? "out" : "in"}`;
+
+  const content = document.createElement("div");
+  content.className = "group-content";
+
+  if(group.sender === "kim"){
+    const spacer = document.createElement("div");
+    spacer.className = "avatar-spacer";
+    content.appendChild(spacer);
+  }else{
+    const avatar = document.createElement("img");
+    avatar.className = "group-avatar";
+    avatar.src = "whitney.jpg";
+    avatar.alt = "Whitney";
+    content.appendChild(avatar);
+  }
+
+  const messagesEl = document.createElement("div");
+  messagesEl.className = "messages";
+
+  const bubble = document.createElement("div");
+  bubble.className = `bubble ${group.sender === "kim" ? "out" : "in"}`;
+  bubble.textContent = group.text;
+
+  messagesEl.appendChild(bubble);
+
+  if(isLast){
+    const seen = document.createElement("div");
+    seen.className = "seen";
+    seen.textContent = "✓";
+    messagesEl.appendChild(seen);
+  }
+
+  content.appendChild(messagesEl);
+  groupEl.appendChild(content);
+  chatBody.appendChild(groupEl);
+}
+
+messages.forEach((message, index) => {
+  if(message.time){
+    const divider = document.createElement("div");
+    divider.className = "time-divider";
+    divider.textContent = message.time;
+    chatBody.appendChild(divider);
+  }
+
+  renderGroup(message, index === messages.length - 1);
+});
+
+chatBody.scrollTop = chatBody.scrollHeight;
+</script>
+
+</body>
+</html>

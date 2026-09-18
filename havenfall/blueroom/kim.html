@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Blue Chatroom — A fictional messaging experience from NemxNovels. Explore conversations and the people behind the messages.">
+
+<meta name="author" content="NemxNovels">
+
+<meta name="keywords" content="NemxNovels, Blue Chatroom, fictional chat, messaging, interactive story, digital story, chatroom">
+<link rel="icon" type="image/png" href="favicon.png">
+
+<meta property="og:image" content="https://nemxnovels.site/havenfall/blueroom/nemxnovels-blueroom-og.webp">
+<meta property="og:title" content="NemxNovels — Blue Chatroom">
+<meta property="og:description" content="A fictional messaging experience where conversations reveal more than they seem. Explore the conversation behind Blue Chatroom.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NemxNovels">
+<meta property="og:url" content="https://nemxnovels.site/havenfall/blueroom/kim.html">
+
+<meta name="robots" content="noindex, nofollow">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messenger Chat - Kim Steggie</title>
+<style>
+  :root{
+    --bg:#0b0b0c;
+    --header-bg:#131314;
+    --incoming:#3a3b3c;
+    --outgoing:#0b84fe;
+    --text:#e9e9ea;
+    --muted:#9a9a9d;
+    --divider:#8a8a8d;
+    --quote-bg:#2a2a2b;
+    --green:#31d158;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    height:100%;
+    background:var(--bg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- Phone frame ---------- */
+  #phone{
+    max-width:420px;
+    margin:0 auto;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:var(--bg);
+    position:relative;
+    overflow:hidden;
+  }
+
+  /* ---------- Header ---------- */
+  .chat-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:10px 14px;
+    background:var(--header-bg);
+    flex-shrink:0;
+  }
+  .back-arrow{
+    background:none;
+    border:none;
+    color:var(--text);
+    font-size:22px;
+    line-height:1;
+    cursor:pointer;
+    padding:4px;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .header-identity{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    flex:1;
+    min-width:0;
+  }
+  .avatar{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#8a3a5b,#3a3b3c);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+    font-weight:600;
+    color:#fff;
+    flex-shrink:0;
+    position:relative;
+    overflow:hidden;
+  }
+  .avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+  }
+  .avatar .status-dot{
+    position:absolute;
+    bottom:-1px;
+    right:-1px;
+    width:11px;
+    height:11px;
+    border-radius:50%;
+    background:var(--green);
+    border:2px solid var(--header-bg);
+  }
+  .header-text{min-width:0;}
+  .header-name{
+    font-size:16px;
+    font-weight:600;
+    color:var(--text);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .header-status{
+    font-size:12.5px;
+    color:var(--muted);
+  }
+  .header-icons{
+    display:flex;
+    gap:18px;
+    align-items:center;
+    flex-shrink:0;
+    pointer-events:none;
+  }
+  .header-icons img{
+    width:22px;
+    height:22px;
+    display:block;
+  }
+
+  /* ---------- Message list ---------- */
+  .chat-body{
+    flex:1;
+    overflow-y:auto;
+    padding:14px 12px 10px;
+    display:flex;
+    flex-direction:column;
+  }
+  .chat-body::-webkit-scrollbar{width:0;height:0;}
+
+  .time-divider{
+    text-align:center;
+    color:var(--divider);
+    font-size:12.5px;
+    margin:18px 0 10px;
+  }
+
+  .msg-group{
+    display:flex;
+    margin-bottom:10px;
+    margin-top:10px;
+    max-width:100%;
+  }
+  .msg-group.in{ justify-content:flex-start; }
+  .msg-group.out{ justify-content:flex-end; }
+
+  .group-inner{
+    display:flex;
+    align-items:flex-end;
+    gap:6px;
+    max-width:78%;
+  }
+  .msg-group.out .group-inner{ flex-direction:row-reverse; }
+
+  .group-avatar{
+    width:26px;
+    height:26px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#8a3a5b,#3a3b3c);
+    flex-shrink:0;
+    visibility:hidden;
+    overflow:hidden;
+  }
+  .group-avatar.show{ visibility:visible; }
+  .group-avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+  }
+
+  .bubbles-col{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+  .msg-group.out .bubbles-col{ align-items:flex-end; }
+  .msg-group.in .bubbles-col{ align-items:flex-start; }
+
+  .bubble{
+    padding:8px 13px;
+    border-radius:18px;
+    font-size:15px;
+    line-height:1.32;
+    max-width:100%;
+    word-wrap:break-word;
+    white-space:pre-wrap;
+  }
+  .in .bubble{
+    background:var(--incoming);
+    color:var(--text);
+    border-bottom-left-radius:5px;
+  }
+  .out .bubble{
+    background:var(--outgoing);
+    color:#fff;
+    border-bottom-right-radius:5px;
+  }
+  .bubbles-col .bubble:not(:first-child).in-followup{ border-top-left-radius:18px; }
+  .bubbles-col .bubble:not(:first-child).out-followup{ border-top-right-radius:18px; }
+
+  /* ---------- Reply quote ---------- */
+  .reply-ref{
+    display:flex;
+    align-items:center;
+    gap:4px;
+    font-size:12px;
+    color:var(--muted);
+    margin:0 0 2px 4px;
+  }
+  .msg-group.out .reply-ref{ justify-content:flex-end; margin:0 4px 2px 0; }
+  .reply-ref .arrow{ transform:scaleX(-1); }
+  .quoted-bubble{
+    background:var(--quote-bg);
+    color:var(--muted);
+    padding:7px 13px;
+    border-radius:16px;
+    font-size:13.5px;
+    max-width:100%;
+    margin-bottom:-8px;
+    position:relative;
+    z-index:0;
+  }
+  .out .quoted-bubble{ align-self:flex-end; }
+
+  /* ---------- Image message ---------- */
+  .img-msg{
+    position:relative;
+    width:210px;
+    border-radius:16px;
+    overflow:hidden;
+    cursor:pointer;
+    background:#1c1c1e;
+  }
+  .img-msg .img-placeholder{
+    width:100%;
+    aspect-ratio:3/4;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--muted);
+    font-size:13px;
+    text-align:center;
+    padding:10px;
+    background:
+      repeating-linear-gradient(45deg,#232325,#232325 10px,#1c1c1e 10px,#1c1c1e 20px);
+  }
+  .img-msg .forward-icon{
+    position:absolute;
+    left:-34px;
+    top:50%;
+    transform:translateY(-50%);
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:rgba(60,60,62,.9);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--text);
+    font-size:14px;
+    opacity:0;
+    transition:opacity .15s, left .15s;
+  }
+  .img-msg:hover .forward-icon{ opacity:1; left:-40px; }
+  .img-msg .seen-check{
+    position:absolute;
+    bottom:6px;
+    right:6px;
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:var(--outgoing);
+    color:#fff;
+    font-size:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1.5px solid var(--bg);
+  }
+  .bubble .seen-check{
+    display:inline-flex;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:var(--outgoing);
+    color:#fff;
+    font-size:9px;
+    align-items:center;
+    justify-content:center;
+    margin-left:6px;
+    vertical-align:middle;
+    border:1.5px solid var(--bg);
+  }
+  .seen-row{
+    display:flex;
+    justify-content:flex-end;
+    margin:2px 4px 0 0;
+  }
+  .seen-row .seen-check{ position:static; }
+
+  /* ---------- Input bar ---------- */
+  .chat-input-bar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:8px 12px;
+    background:var(--bg);
+    flex-shrink:0;
+  }
+  .input-icon{
+    width:26px;
+    height:26px;
+    flex-shrink:0;
+    opacity:.9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--outgoing);
+    pointer-events:none;
+  }
+  .input-icon img{
+    width:24px;
+    height:24px;
+    display:block;
+  }
+  .message-field{
+    flex:1;
+    background:#242426;
+    border-radius:20px;
+    padding:9px 16px;
+    color:var(--muted);
+    font-size:15px;
+    user-select:none;
+  }
+  .heart-icon{
+    width:24px;
+    height:24px;
+    flex-shrink:0;
+    color:#ff3b30;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  a{text-decoration:none}
+</style>
+</head>
+<body>
+
+<div id="phone">
+  <div class="chat-header">
+    <a class="back-arrow" id="backArrow" href="index.html" aria-label="Back">‹</a>
+    <div class="header-identity" id="headerIdentity">
+      <div class="avatar"><img src="kim.webp" alt="Kim Steggie"><span class="status-dot"></span></div>
+     <a href ="kim-chat.html">
+      <div class="header-text">
+        <div class="header-name">Kim Steggie</div>
+        <div class="header-status">Active now</div>
+      </div>
+    </a>
+    </div>
+    <div class="header-icons">
+      <img src="call.png" alt="">
+      <img src="videocall.png" alt="">
+      <img src="settings.png" alt="">
+    </div>
+  </div>
+
+  <div class="chat-body" id="chatBody"></div>
+
+  <div class="chat-input-bar">
+    <div class="input-icon" title="attach image (decorative)"><img src="sendimages.png" alt=""></div>
+    <div class="input-icon" title="voice (decorative)"><img src="voicenote.png" alt=""></div>
+    <div class="message-field">Message</div>
+    <div class="heart-icon" title="quick react (decorative)">❤️</div>
+  </div>
+</div>
+</div>
+
+<script>
+/* ============================================================
+   MESSAGE DATA
+   sender: 'nathan' (outgoing / blue) or 'kim' (incoming / gray)
+   Incoming group avatars now use kim.webp too — see renderGroup below.
+   ============================================================ */
+const messages = [
+  {sender:'nathan', bubbles:["eh nah it wasnt just stuff","whats up"]},
+  {sender:'kim', bubbles:["🙄🙄your stupid ass"]},
+  {sender:'nathan', bubbles:["wow babes","you are pissed huh"]},
+  {sender:'kim', bubbles:["ahaha he called me babe","im going to show ash this"]},
+  {sender:'nathan', bubbles:["threatening me again with you sorry schemes"]},
+  {sender:'kim', bubbles:["u insult me"]},
+  {sender:'nathan', bubbles:["i didnt😌","so why are you pissed"]},
+  {sender:'kim', bubbles:["we are not doing this ,today nate"]},
+  {sender:'nathan', bubbles:["dont play hard to get with me ,baby kim","you already enough dicks up your ass doesnt mean i want you"]},
+  {sender:'kim', bubbles:["u dont have to say that,you only have to leave ashley that's all","if you cant i will tell her you said you love me"]},
+  {sender:'nathan', bubbles:["that's why i like you","you plot andplay games ,its sweet - makes horny but i dont want to give you a third baby"]},
+  {sender:'kim', bubbles:["Leave my baby out of this"]},
+  {sender:'nathan', bubbles:["cant believe you are 16 and have 2 kids ,you should be at school probably reading a book instead of trying to fuck up my relationship with ashley"]},
+  {sender:'kim', bubbles:["and you should be leaving ashley alone ,she is mine"]},
+  {sender:'nathan', bubbles:["that sounds like you are being obsessive lesbian"]},
+  {sender:'kim', bubbles:["😒😒😒"]},
+  {sender:'nathan', bubbles:["aww being adorable ,i cant really stay here chatting with the enemy ,you might use my words against me"]},
+  {sender:'kim', bubbles:["I already have enough to use against you"]},
+  {sender:'nathan', bubbles:["good job hand jober ,might as welll get a certicate as a pole sucker ,baby kim - just dont fuck with me"]},
+];
+
+/* ============================================================
+   RENDERER
+   ============================================================ */
+const chatBody = document.getElementById('chatBody');
+
+function renderGroup(group, isLast){
+  const dir = group.sender === 'nathan' ? 'out' : 'in';
+
+  if(group.divider){
+    const div = document.createElement('div');
+    div.className = 'time-divider';
+    div.textContent = group.divider;
+    chatBody.appendChild(div);
+  }
+
+  const wrap = document.createElement('div');
+  wrap.className = `msg-group ${dir}`;
+
+  const inner = document.createElement('div');
+  inner.className = 'group-inner';
+
+  const avatar = document.createElement('div');
+  avatar.className = 'group-avatar' + (dir === 'in' ? ' show' : '');
+  if(dir === 'in'){
+    avatar.innerHTML = '<img src="kim.webp" alt="Kim">';
+  }
+
+  const col = document.createElement('div');
+  col.className = 'bubbles-col';
+
+  if(group.replyTo){
+    const ref = document.createElement('div');
+    ref.className = 'reply-ref';
+    ref.innerHTML = `<span class="arrow">↩</span> ${group.replyTo.sender === 'nathan' ? 'Nathan' : 'Kim'} replied to ${dir === 'out' ? 'Kim' : 'Nathan'}`;
+    col.appendChild(ref);
+    const q = document.createElement('div');
+    q.className = 'quoted-bubble';
+    q.textContent = group.replyTo.snippet;
+    col.appendChild(q);
+  }
+
+  if(group.image){
+    const imgMsg = document.createElement('div');
+    imgMsg.className = 'img-msg';
+    imgMsg.innerHTML = `
+      <div class="forward-icon">➜</div>
+      <div class="img-placeholder">[ image — swap for real artwork ]</div>
+      ${isLast ? '<div class="seen-check">✓</div>' : ''}
+    `;
+    col.appendChild(imgMsg);
+    if(group.image.caption){
+      const cap = document.createElement('div');
+      cap.className = `bubble ${dir}-followup`;
+      cap.textContent = group.image.caption;
+      col.appendChild(cap);
+    }
+  } else {
+    group.bubbles.forEach((text) => {
+      const b = document.createElement('div');
+      b.className = `bubble ${dir === 'in' ? 'in-followup' : 'out-followup'}`;
+      b.textContent = text;
+      col.appendChild(b);
+    });
+  }
+
+  inner.appendChild(dir === 'in' ? avatar : document.createElement('div'));
+  inner.appendChild(col);
+  wrap.appendChild(inner);
+  chatBody.appendChild(wrap);
+
+  if(isLast && !group.image){
+    const seenRow = document.createElement('div');
+    seenRow.className = 'seen-row';
+    seenRow.innerHTML = '<span class="seen-check">✓</span>';
+    chatBody.appendChild(seenRow);
+  }
+}
+
+messages.forEach((g, i) => renderGroup(g, i === messages.length - 1));
+chatBody.scrollTop = chatBody.scrollHeight;
+
+/* ---------- Functional hooks ---------- */
+document.getElementById('headerIdentity').addEventListener('click', () => {
+  console.log('profile/name pressed — wire this to e.g. a character profile page');
+});
+</script>
+
+</body>
+</html>

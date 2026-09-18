@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="description" content="Blue Chatroom — A fictional messaging experience from NemxNovels. Explore contacts, conversations, and the people behind the messages.">
+
+    <meta name="author" content="NemxNovels">
+
+    <meta name="keywords" content="NemxNovels, Blue Chatroom, fictional chat, messaging, interactive story, digital story, chatroom">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <meta property="og:image" content="https://nemxnovels.site/havenfall/blueroom/nemxnovels-blueroom-og.webp">
+    <meta property="og:title" content="NemxNovels — Blue Chatroom">
+    <meta property="og:description" content="A fictional messaging experience where conversations reveal more than they seem. Explore the contacts behind Blue Chatroom.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NemxNovels">
+    <meta property="og:url" content="https://nemxnovels.site/havenfall/blueroom/david.html">
+
+    <meta name="robots" content="noindex, nofollow">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messenger Chat - David Jagur</title>
+
+<style>
+  :root{
+    --bg:#0b0b0c;
+    --header-bg:#131314;
+    --incoming:#3a3b3c;
+    --outgoing:#0b84fe;
+    --text:#e9e9ea;
+    --muted:#9a9a9d;
+    --divider:#8a8a8d;
+    --quote-bg:#2a2a2b;
+    --green:#31d158;
+  }
+
+  *{
+    box-sizing:border-box;
+  }
+
+  html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--text);
+  }
+
+  #phone{
+    width:100%;
+    max-width:420px;
+    height:100vh;
+    margin:0 auto;
+    background:var(--bg);
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+  }
+
+  .header{
+    height:64px;
+    min-height:64px;
+    background:var(--header-bg);
+    display:flex;
+    align-items:center;
+    padding:0 12px;
+    border-bottom:1px solid #242426;
+  }
+
+  .back{
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+  }
+
+  .back svg{
+    width:24px;
+    height:24px;
+    fill:none;
+    stroke:#fff;
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .header-avatar{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-right:10px;
+  }
+
+  .header-info{
+    flex:1;
+    min-width:0;
+  }
+
+  .header-name{
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+  }
+
+  .header-status{
+    color:var(--muted);
+    font-size:12px;
+    margin-top:2px;
+  }
+
+  .header-actions{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+
+  .header-actions img{
+    width:21px;
+    height:21px;
+    object-fit:contain;
+    cursor:pointer;
+  }
+
+  .chat{
+    flex:1;
+    overflow-y:auto;
+    padding:14px 12px 18px;
+    scrollbar-width:none;
+  }
+
+  .chat::-webkit-scrollbar{
+    display:none;
+  }
+
+  .time-divider{
+    text-align:center;
+    color:var(--divider);
+    font-size:11px;
+    margin:8px 0 14px;
+  }
+
+  .group{
+    display:flex;
+    align-items:flex-end;
+    margin:3px 0;
+    max-width:100%;
+    margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+  .group.in{
+    justify-content:flex-start;
+  }
+
+  .group.out{
+    justify-content:flex-end;
+  }
+
+  .group-avatar{
+    width:26px;
+    height:26px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-right:7px;
+    flex-shrink:0;
+  }
+
+  .bubble-stack{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+    max-width:78%;
+  }
+
+  .bubble{
+    padding:8px 13px;
+    font-size:15px;
+    line-height:1.32;
+    word-wrap:break-word;
+    white-space:pre-wrap;
+  }
+
+  .in .bubble{
+    background:var(--incoming);
+    border-radius:18px 18px 18px 5px;
+    color:var(--text);
+  }
+
+  .out .bubble{
+    background:var(--outgoing);
+    border-radius:18px 18px 5px 18px;
+    color:#fff;
+  }
+
+  .seen{
+    text-align:right;
+    color:var(--muted);
+    font-size:10px;
+    margin:4px 4px 0 0;
+  }
+
+  .input-bar{
+    min-height:62px;
+    background:var(--header-bg);
+    border-top:1px solid #242426;
+    display:flex;
+    align-items:center;
+    padding:8px 10px;
+    gap:8px;
+  }
+
+  .input-icon{
+    width:25px;
+    height:25px;
+    object-fit:contain;
+    cursor:pointer;
+    flex-shrink:0;
+  }
+
+  .message-input{
+    flex:1;
+    height:40px;
+    border-radius:20px;
+    background:#252527;
+    border:1px solid #333336;
+    color:var(--text);
+    padding:0 15px;
+    outline:none;
+    font-size:14px;
+  }
+
+  .message-input::placeholder{
+    color:#88888c;
+  }
+
+  .heart{
+    font-size:23px;
+    line-height:1;
+    cursor:pointer;
+    margin-left:2px;
+  }
+
+  /* ---------- Redacted image message ---------- */
+.redacted-img-msg{
+  position:relative;
+  width:210px;
+  aspect-ratio:3/4;
+  border-radius:16px;
+  overflow:hidden;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+.redacted-img-msg .redacted-label{
+  color:#000;
+  font-size:14px;
+  font-weight:600;
+  text-align:center;
+  letter-spacing:.1px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="phone">
+
+  <div class="header">
+
+    <div class="back" onclick="location.href='ashley-chat.html'">
+      <svg viewBox="0 0 24 24">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </div>
+
+    <img class="header-avatar" src="david.webp" alt="david">
+
+    <div class="header-info">
+      <a class="header-name" href="#">David Jagur</a>
+      <div class="header-status">1 week ago</div>
+    </div>
+
+    <div class="header-actions">
+      <img src="call.png" alt="Call">
+      <img src="videocall.png" alt="Video call">
+      <img src="settings.png" alt="Settings">
+    </div>
+
+  </div>
+
+  <div class="chat" id="chat"></div>
+
+  <div class="input-bar">
+    <img class="input-icon" src="sendimages.png" alt="Images">
+    <img class="input-icon" src="voicenote.png" alt="Voice note">
+
+    <input
+      class="message-input"
+      type="text"
+      placeholder="Message"
+    >
+
+    <div class="heart">❤️</div>
+  </div>
+
+</div>
+
+<script>
+
+/* ============================================================
+   MESSAGE DATA
+
+   Ashley = outgoing / blue
+   David = incoming / gray
+
+   Nudity images are represented by white redacted
+   containers. No actual nude image is loaded.
+   ============================================================ */
+
+const messages = [
+
+  {divider:"Aug 01 at 19:24"},
+
+  {
+    sender:"david",
+    bubbles:[
+      "Did you get my present ?"
+    ]
+  },
+
+  {divider:"Aug 01 at 22:01"},
+
+  {
+    sender:"ashley",
+    bubbles:[
+      "Yes I did ,Daddy.",
+      "Thank you alot,I will wear it next time."
+    ]
+  },
+
+  {
+    sender:"david",
+    bubbles:[
+      "I want you to wear it now"
+    ]
+  },
+
+  {
+    sender:"ashley",
+    bubbles:[
+      "But I'm with my mom ,right now maybe later."
+    ]
+  },
+
+  {
+    sender:"david",
+    bubbles:[
+      "I said you  should wear it now ,i wanna see how you look in it "
+    ]
+  },
+
+  {
+    sender:"ashley",
+    bubbles:[
+      "Alright,give me a minute."
+    ]
+  },
+
+  {
+    sender:"david",
+    bubbles:[
+      "Good girl"
+    ]
+  },
+
+  {divider:"Aug 01 at 23:54"},
+
+  {sender:"ashley", redactedImage:true},
+  {sender:"ashley", redactedImage:true},
+  {sender:"ashley", redactedImage:true},
+
+  {
+    sender:"david",
+    bubbles:[
+      "Ahhh Good girl,now spread your legs so how i can see how that hole is looking now "
+    ]
+  },
+
+  {sender:"ashley", redactedImage:true},
+
+  {
+    sender:"david",
+    bubbles:[
+      "Cant help but want to screw you up tomorrow",
+      "Spread it wide open now "
+    ]
+  },
+
+  {sender:"ashley", redactedImage:true},
+
+  {
+    sender:"david",
+    bubbles:[
+      "You're going well,now i want you to make a video "
+    ]
+  },
+
+  {divider:"Aug 01 at 00:34"},
+
+  {
+    sender:"david",
+    bubbles:[
+      "Are you still there,my sweet heart?"
+    ]
+  },
+
+  {divider:"Aug 04 at 15:55"},
+
+  {
+    sender:"david",
+    bubbles:[
+      "Why didn't you come with Kim today?"
+    ]
+  },
+
+  {divider:"Aug 04 at 17:35"},
+
+  {
+    sender:"david",
+    bubbles:[
+      "Kim told me you don't like taking doing is raw?,are you really sure about that? my love"
+    ]
+  },
+
+  {divider:"Aug 04 at 20:56"},
+
+  {
+    sender:"david",
+    bubbles:[
+      "I miss that tight pussy of yours,you should come tomorrow",
+      "Are you ignoring me? ,cause i know i gave you money to buy data"
+    ]
+  },
+
+  {divider:"Aug 04 at 23:24"},
+
+  {
+    sender:"david",
+    bubbles:[
+      "You know you will regret ignoring me right ?",
+      "I will wear your pussy like a condom,my love"
+    ]
+  },
+
+  {divider:"Aug 04 at 00:23 "},
+
+  {
+    sender:"david",
+    bubbles:[
+      "I can see you ar online so you are ignoring me,well we will see later today "
+    ]
+  },
+
+  {divider:"Aug 04 at 05:23"},
+
+  {
+    sender:"ashley",
+    bubbles:[
+      "I wasnt ignoring you,I was busy.",
+      "Sorry.",
+      "I'm very sorry Daddy.",
+      "Forgive me ,I didn't mean to ignore you"
+    ]
+  },
+
+  {divider:"Aug 04 at 06:56"},
+
+  {
+    sender:"ashley",
+    bubbles:[
+      "Byeee,I'm going to school."
+    ]
+  },
+
+  {divider:"Aug 07 at 08:01"},
+
+  {
+    sender:"david",
+    bubbles:[
+      "Morning ,my sweetheart"
+    ]
+  },
+
+  {divider:"Aug 08 at 11:34"},
+
+  {
+    sender:"david",
+    bubbles:[
+      "Morning"
+    ]
+  },
+
+  {divider:"Aug 08 at 20:34"},
+
+  {
+    sender:"ashley",
+    bubbles:[
+      "Heyyy,How was your day?",
+      "I'm sorry for the late reply.",
+      "I was studying and had to do my homework."
+    ]
+  },
+
+  {
+    sender:"david",
+    bubbles:[
+      "I'm horny"
+    ]
+  },
+
+  {
+    sender:"ashley",
+    bubbles:[
+      "Oh,Sorry."
+    ]
+  },
+
+  {
+    sender:"david",
+    bubbles:[
+      "You can be sorry by showing me those nice boobs"
+    ]
+  },
+
+  {sender:"ashley", redactedImage:true},
+  {sender:"ashley", redactedImage:true},
+  {sender:"ashley", redactedImage:true},
+
+  {
+    sender:"david",
+    bubbles:[
+      "wow 3 ,you are learning quick,you should send me the videos we made yesterday ",
+      "i really love how you were twitching when i shoved that vibrator ",
+      "we should do that more often ,tomorrow come wearing a short skirt with no panties"
+    ]
+  },
+
+  {divider:"Aug 15 at 07:44"},
+
+  {
+    sender:"ashley",
+    bubbles:[
+      "I don't wanna do this anymore. I can't ,it's hurting me a lot and I don't want to be",
+      "pregnant again an take pills .",
+      "I'm sorry but I don't like this ,it was all kim's idea.",
+      "I'm leaving"
+    ]
+  },
+
+  {
+    sender:"david",
+    bubbles:[
+      "Oh no you can't leave,i have videos and pictures of us ,if you leave i will tell your",
+      "mom and even your father ",
+      "They will also know about how you got pregnant twice"
+    ]
+  },
+
+  {
+    sender:"ashley",
+    bubbles:[
+      "I don't care anymore",
+      "DO WHAT YOU WANT!!!"
+    ]
+  },
+
+  {
+    sender:"david",
+    bubbles:[
+      "Don't be like that,sweetheart",
+      "Couples fight and face problems",
+      "if you wanna stop using vibrators ,we will stop using them"
+    ]
+  }
+
+];
+
+
+/* ============================================================
+   CHAT RENDERER
+   ============================================================ */
+
+const chat = document.getElementById("chat");
+
+
+messages.forEach((message) => {
+
+  /* ---------- Time divider ---------- */
+
+  if(message.divider){
+
+    const divider = document.createElement("div");
+
+    divider.className = "time-divider";
+
+    divider.textContent = message.divider;
+
+    chat.appendChild(divider);
+
+    return;
+  }
+
+
+  /* ---------- Message direction ---------- */
+
+  const direction =
+    message.sender === "ashley"
+      ? "out"
+      : "in";
+
+
+  /* ---------- Message group ---------- */
+
+  const group = document.createElement("div");
+
+  group.className = `group ${direction}`;
+
+
+  /* ---------- David avatar ---------- */
+
+  if(direction === "in"){
+
+    const avatar = document.createElement("img");
+
+    avatar.className = "group-avatar";
+
+    avatar.src = "david.webp";
+
+    avatar.alt = "David Jagur";
+
+    group.appendChild(avatar);
+
+  }
+
+
+  /* ---------- Message stack ---------- */
+
+  const stack = document.createElement("div");
+
+  stack.className = "bubble-stack";
+
+
+  /* ---------- Redacted image ---------- */
+
+  if(message.redactedImage){
+
+    const redacted = document.createElement("div");
+
+    redacted.className = "redacted-img-msg";
+
+    redacted.innerHTML = `
+      <div class="redacted-label">Nudity</div>
+    `;
+
+    stack.appendChild(redacted);
+
+  }
+
+
+  /* ---------- Text messages ---------- */
+
+  if(message.bubbles){
+
+    message.bubbles.forEach((text) => {
+
+      const bubble = document.createElement("div");
+
+      bubble.className = "bubble";
+
+      /*
+        Preserve the dialogue exactly.
+      */
+      bubble.textContent = text;
+
+      stack.appendChild(bubble);
+
+    });
+
+  }
+
+
+  group.appendChild(stack);
+
+  chat.appendChild(group);
+
+});
+
+
+/* ---------- Scroll to newest message ---------- */
+
+chat.scrollTop = chat.scrollHeight;
+
+</script>
+</body>
+</html>
