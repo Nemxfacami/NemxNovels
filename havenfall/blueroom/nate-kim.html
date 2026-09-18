@@ -595,7 +595,8 @@ function renderGroup(group, isLast){
       ${isLast ? '<div class="seen-check">✓</div>' : ''}
     `;
 
-    imgMsg.addEventListener('click', () => {.classList.add('open');
+    imgMsg.addEventListener('click', () => {
+      imgMsg.classList.add('open');
     });
 
     col.appendChild(imgMsg);
@@ -672,16 +673,16 @@ messages.forEach((g, i) =>
   )
 );
 
-chatBody.scrollTop =
-  chatBody.scrollHeight;.addEventListener('click', function(){
-    this.classList.remove('open');
-  });
+chatBody.scrollTop = chatBody.scrollHeight;
+  
+
 
 /* ---------- Functional hooks ---------- */
 
 document.getElementById('headerIdentity')
-  .addEventListener('click', () => {
-    console.log(
+        .addEventListener('click', () => {
+    
+          console.log(
       'profile/name pressed — wire this to e.g. a character profile page'
     );
   });
