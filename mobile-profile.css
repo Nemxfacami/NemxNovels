@@ -83,6 +83,13 @@
         border-top:0.1rem solid white;
         padding:0.5rem;
         border-bottom: 0.1rem solid white;
+         /* center the square both ways */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    /* lets children measure this box with cqw / cqh */
+    container-type:size;
     }
 
     
@@ -108,11 +115,19 @@
     }
 
     div#mobile-profile-info-aside-image{
-        width:100%;
-        height:100%;
-        background:none;
-        border:0.1rem solid white;
+        /* always square: the smaller of the aside's width and height */
+    width:min(100cqw, 100cqh);
+    height:min(100cqw, 100cqh);
+    background:none;
+    border:0.1rem solid white;
+    flex-shrink:0;
     }
+
+    div#mobile-profile-info-aside-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
 
     section.mobile-profile-description{
         width:100%;
@@ -149,5 +164,15 @@
 
 
     
+}
+
+
+@media (max-width:280px), (max-height:420px){
+    section.mobile-profile-info-aside{
+        display:none;
+    }
+    section.mobile-profile-info-section{
+        width:100%;
+    }
 }
 
