@@ -1,0 +1,408 @@
+/* ==========================================================
+   OCCULT ARCANA — item page
+   Same look as the cases: dark card, red-tinted gradient,
+   serif titles, typewriter labels.
+   ========================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { margin: 0; background: #0c0c0f; }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+}
+
+/* ---------- Back button ---------- */
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  margin: clamp(16px, 4vw, 28px) clamp(16px, 4vw, 48px) 0;
+  padding: 0.55em 1.2em 0.5em;
+  background: rgba(10, 10, 12, 0.9);
+  border: 2px solid #3a3e47;
+  color: #ecdfc8;
+  font-family: "Courier Prime", "Courier New", monospace;
+  font-weight: 700;
+  font-size: clamp(12px, 3vw, 14px);
+  letter-spacing: 0.22em;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.back:hover,
+.back:focus-visible {
+  border-color: #ff3b2a;
+  color: #ff3b2a;
+  outline: none;
+}
+
+/* ---------- Page background (slightly red gradient) ---------- */
+.item-page {
+  flex: 1;
+  padding: clamp(20px, 5vw, 64px) clamp(16px, 4vw, 48px) clamp(40px, 7vw, 96px);
+  background:
+    radial-gradient(70% 38% at 100% 100%, rgba(140, 18, 18, 0.32), transparent 70%),
+    radial-gradient(60% 30% at 0% 62%,  rgba(110, 14, 14, 0.22), transparent 70%),
+    radial-gradient(60% 26% at 100% 12%, rgba(100, 12, 12, 0.16), transparent 70%),
+    linear-gradient(180deg, #0c0c0f 0%, #120a0c 55%, #1a0b0c 100%);
+}
+
+/* ---------- Card ---------- */
+.item {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #1b1d22;
+  border: 1px solid #2c2f36;
+  box-shadow: 0 0 40px rgba(150, 22, 16, 0.18);
+}
+
+/* Image + item number (top-left) */
+.item__media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: #0d0d10;
+  overflow: hidden;
+}
+.item__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item__num {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 7px 12px 6px;
+  background: rgba(10, 10, 12, 0.88);
+  color: #efe6d4;
+  font-family: "Courier Prime", "Courier New", monospace;
+  font-weight: 700;
+  font-size: clamp(11px, 2.8vw, 14px);
+  letter-spacing: 0.22em;
+  line-height: 1;
+}
+
+/* ---------- Info ---------- */
+.item__body {
+  padding: clamp(20px, 5.5vw, 40px);
+}
+
+.item__title {
+  margin: 0 0 14px;
+  font-family: "Noto Serif", Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(26px, 7.4vw, 44px);
+  line-height: 1.12;
+  color: #f1ece1;
+}
+
+.item__price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 0 clamp(18px, 4vw, 28px);
+  font-family: "Noto Serif", Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(28px, 7.6vw, 40px);
+  line-height: 1;
+  color: #ff5a48;
+}
+.item__price small {
+  font-family: "Courier Prime", "Courier New", monospace;
+  font-weight: 700;
+  font-size: clamp(11px, 2.8vw, 13px);
+  letter-spacing: 0.3em;
+  color: #7d838f;
+}
+
+/* Detail grid: category / availability / item id / condition */
+.item__facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin: 0;
+  border-top: 1px dashed #3a3e47;
+}
+.fact {
+  padding: 16px 0;
+  border-bottom: 1px dashed #3a3e47;
+}
+.fact:nth-child(odd) { padding-right: 12px; }
+.fact:nth-child(even) { padding-left: 12px; }
+
+.fact dt, .item__label {
+  margin: 0 0 7px;
+  font-family: "Courier Prime", "Courier New", monospace;
+  font-size: clamp(10px, 2.6vw, 12px);
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: #6f7581;
+}
+.fact dd {
+  margin: 0;
+  font-family: "Roboto", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: clamp(15px, 4vw, 18px);
+  color: #ecdfc8;
+}
+.fact dd.mono {
+  font-family: "Courier Prime", "Courier New", monospace;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* Availability states */
+.avail { display: inline-flex; align-items: center; gap: 9px; }
+.avail::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+}
+.avail--in-stock    { color: #7fd18b; }
+.avail--limited     { color: #e8b04a; }
+.avail--unknown     { color: #8b93a1; }
+.avail--unavailable { color: #ff3b2a; }
+
+/* Origin paragraph */
+.item__origin { padding-top: clamp(18px, 4vw, 26px); }
+.item__origin p {
+  margin: 0;
+  font-family: "Roboto", system-ui, sans-serif;
+  font-size: clamp(15px, 4vw, 18px);
+  line-height: 1.65;
+  color: #9aa1ad;
+}
+.item__origin b { font-weight: 700; color: #ecdfc8; }
+
+/* Not found */
+.item-missing {
+  max-width: 600px;
+  margin: 12vh auto;
+  padding: 28px;
+  text-align: center;
+  background: #1b1d22;
+  border: 1px solid #2c2f36;
+  font-family: "Courier Prime", "Courier New", monospace;
+  letter-spacing: 0.18em;
+  color: #ff3b2a;
+}
+
+/* ---------- Desktop: image left, details right ---------- */
+@media (min-width: 900px) {
+  .item { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); }
+  .item__media { aspect-ratio: auto; min-height: 100%; }
+  .item__num { top: 16px; left: 16px; }
+  .fact dd { font-size: 17px; }
+}
+
+/* ---------- Footer ---------- */
+#footer {
+  padding: 22px clamp(16px, 4vw, 48px) max(22px, env(safe-area-inset-bottom));
+  background: #0a0506;
+  border-top: 1px solid #2a1214;
+  color: #7d838f;
+  font-family: "Roboto", system-ui, sans-serif;
+  font-size: clamp(11px, 2.9vw, 13px);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ---------- Purchase button ---------- */
+.item__buy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: clamp(18px, 4vw, 26px);
+  padding: 0.85em 1.8em 0.78em;
+  width: 100%;
+  background: #ff3b2a;
+  border: 2px solid #ff3b2a;
+  color: #0a0a0c;
+  font-family: "Courier Prime", "Courier New", monospace;
+  font-weight: 700;
+  font-size: clamp(14px, 3.6vw, 16px);
+  letter-spacing: 0.26em;
+  text-indent: 0.26em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+.item__buy:hover,
+.item__buy:focus-visible {
+  background: transparent;
+  color: #ff3b2a;
+  outline: none;
+}
+.item__buy:active { transform: scale(0.98); }
+
+@media (min-width: 480px) {
+  .item__buy { width: auto; min-width: 220px; }
+}
+
+/* ---------- Purchase-blocked dialog ---------- */
+.veil {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(6, 4, 5, 0.82);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.veil.is-open { opacity: 1; pointer-events: auto; }
+
+.veil__box {
+  position: relative;
+  width: min(94vw, 440px);
+  padding: clamp(26px, 6vw, 38px) clamp(22px, 6vw, 34px) clamp(24px, 5vw, 30px);
+  background: #1b1d22;
+  border: 1px solid #3a3e47;
+  box-shadow: 0 0 0 1px rgba(255, 59, 42, 0.25), 0 0 60px rgba(150, 22, 16, 0.35);
+  transform: translateY(10px) scale(0.98);
+  transition: transform 0.25s ease;
+  text-align: center;
+}
+.veil.is-open .veil__box { transform: translateY(0) scale(1); }
+
+.veil__mark {
+  margin: 0 auto 16px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ff3b2a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Serif", Georgia, serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ff3b2a;
+}
+
+.veil__text {
+  position: relative;
+  isolation: isolate;
+  margin: 0 0 22px;
+  font-family: "Noto Serif", Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(18px, 5vw, 23px);
+  line-height: 1.35;
+  color: #f1ece1;
+}
+.veil__text::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(var(--gx, 0%), var(--gy, 0%));
+  clip-path: var(--gclip, none);
+}
+.veil__text.is-glitching::before { opacity: 1; }
+
+.veil__close {
+  padding: 0.6em 1.6em 0.54em;
+  background: transparent;
+  border: 2px solid #3a3e47;
+  color: #ecdfc8;
+  font-family: "Courier Prime", "Courier New", monospace;
+  font-weight: 700;
+  font-size: clamp(12px, 3vw, 14px);
+  letter-spacing: 0.24em;
+  text-indent: 0.24em;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.veil__close:hover,
+.veil__close:focus-visible {
+  border-color: #ff3b2a;
+  color: #ff3b2a;
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .veil, .veil__box, .item__buy { transition: none; }
+}
+
+
+/* ---------- Image-reveal veil (Wakeep Pills only) ---------- */
+.img-veil {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(6, 4, 5, 0.88);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.img-veil.is-open { opacity: 1; pointer-events: auto; }
+
+.img-veil__box {
+  position: relative;
+  max-width: min(92vw, 520px);
+  max-height: 84vh;
+  transform: scale(0.97);
+  transition: transform 0.25s ease;
+}
+.img-veil.is-open .img-veil__box { transform: scale(1); }
+
+.img-veil__box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 84vh;
+  object-fit: contain;
+  border: 1px solid #3a3e47;
+  box-shadow: 0 0 0 1px rgba(255, 59, 42, 0.25), 0 0 60px rgba(150, 22, 16, 0.35);
+}
+
+.img-veil__close {
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1b1d22;
+  border: 2px solid #ff3b2a;
+  border-radius: 50%;
+  color: #ff3b2a;
+  font-family: "Courier Prime", "Courier New", monospace;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.img-veil__close:hover,
+.img-veil__close:focus-visible {
+  background: #ff3b2a;
+  color: #0a0a0c;
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .img-veil, .img-veil__box { transition: none; }
+}

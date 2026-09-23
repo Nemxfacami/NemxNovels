@@ -1,0 +1,214 @@
+/* ==========================================================
+   OCCULT ARCANA — hero
+   Everything that has to line up with the character in the
+   background (title, circles) is positioned in "stage" units:
+   it follows the background image exactly like background-size:
+   cover does, so it stays glued to the character on any screen.
+
+   Tuning knobs (per breakpoint, all fractions of the image):
+   --head   where the top of the hair sits (0 = top, 1 = bottom)
+   --sym-y  vertical centre of the two circles
+   --dx     distance of circle centre from the middle
+   --sym-d  circle diameter
+   ========================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { margin: 0; height: 100%; background: #9d9d9b; }
+
+/* ---------- Hero / stage ---------- */
+.hero {
+  --H: 100vh;
+  --ratio: 0.5573;                  /* mobile image 720 x 1292 */
+  --head: 0.44;
+  --sym-y: 0.645;
+  --dx: 0.343;
+  --sym-d: 0.27;
+
+  --sw: max(100vw, calc(var(--H) * var(--ratio)));   /* rendered image width  */
+  --sh: max(var(--H), calc(100vw / var(--ratio)));   /* rendered image height */
+  /* MOBILE positions: plain fractions of the screen, so you can move
+     things freely while you re-edit the background image. */
+  --title-y: calc(var(--H) * 0.20);   /* vertical centre of the title  (0 = top, 1 = bottom) */
+  --sym-cy:  calc(var(--H) * 0.476);  /* vertical centre of the circles */
+  --d:   31vw;                        /* circle diameter */
+  --off: 35.6vw;                      /* circle centre distance from the middle of the screen */
+
+  position: relative;
+  width: 100%;
+  height: var(--H);
+  overflow: hidden;
+  background: #9d9d9b url("arcana-mobile1.webp") center / cover no-repeat;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+@supports (height: 100svh) { .hero { --H: 100svh; } }
+
+@media (min-width: 768px) {
+  .hero {
+    --ratio: 1.6;                   /* pc image 1920 x 1200 */
+    --head: 0.29;
+    --sym-y: 0.553;
+    --dx: 0.309;
+    --sym-d: 0.198;
+    /* PC positions stay glued to the character in the PC background */
+    --title-y: calc(var(--H) / 2 + (var(--head) - 0.5) * var(--sh) - 0.012 * var(--sh));
+    --sym-cy: calc(var(--H) / 2 + (var(--sym-y) - 0.5) * var(--sh));
+    --d: min(calc(var(--sym-d) * var(--sw)), 30vw);
+    --off: min(calc(var(--dx) * var(--sw)), calc(50vw - var(--d) / 2 - 1.5vw));
+    background-image: url("arcana-pc.webp");
+  }
+}
+
+/* ---------- Brand (top-left) ---------- */
+.brand {
+  position: absolute;
+  z-index: 5;
+  top: max(12px, env(safe-area-inset-top));
+  left: max(14px, env(safe-area-inset-left));
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 2.6vw, 30px);
+  text-decoration: none;
+  color: #000;
+}
+
+.brand__logo {
+  display: block;
+  flex: none;
+  width: clamp(38px, 9vw, 64px);
+  aspect-ratio: 1 / 1;
+}
+.brand__logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brand__name {
+  font-weight: 700;
+  font-size: clamp(16px, 4.4vw, 22px);
+  letter-spacing: 0.01em;
+  line-height: 1;
+  color: #000;                      /* mobile: plain bold black */
+}
+
+@media (min-width: 768px) {
+  .brand { top: clamp(14px, 1.6vw, 34px); left: clamp(18px, 1.6vw, 34px); }
+  .brand__logo { width: clamp(46px, 3.4vw, 68px); }
+  .brand__name {
+    display:none;
+  }
+}
+
+/* ---------- Title + glitch ghost ---------- */
+.title {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: var(--title-y);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  isolation: isolate;               /* keeps the ghost behind the real text */
+  white-space: nowrap;
+  font-family: "Bowlby One", Impact, "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 9.2vw;
+  line-height: 1;
+  letter-spacing: 0.005em;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .title {
+    transform: translate(-50%, -100%);
+    font-size: min(7.9vw, 16svh);
+  }
+}
+
+/* The ghost: a white copy that sits BEHIND the black text, so the real
+   title is never covered or made harder to read. */
+.title::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  color: #fff;
+  -webkit-text-stroke: 0.045em #000;   /* thin black rim keeps white legible on the grey paper */
+  paint-order: stroke fill;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(var(--gx, 0%), var(--gy, 0%));
+  clip-path: var(--gclip, none);
+}
+.title.is-glitching::before { opacity: 1; }
+
+/* ---------- Alchemy symbols ---------- */
+.sym {
+  position: absolute;
+  z-index: 2;
+  width: var(--d);
+  aspect-ratio: 1 / 1;
+  top: var(--sym-cy);
+  pointer-events: none;
+}
+.sym--left  { left: calc(50% - var(--off)); transform: translate(-50%, -50%); }
+.sym--right { left: calc(50% + var(--off)); transform: translate(-50%, -50%); }
+
+.sym svg { display: block; width: 100%; height: 100%; overflow: visible; }
+
+.sym__ring { fill: none; stroke: #000; stroke-width: 3.4; }
+.sym__tri  { fill: none; stroke: #000; stroke-width: 2.4; stroke-linejoin: miter; }
+.sym__bar  { stroke: #000; stroke-width: 2.4; stroke-linecap: butt; }
+
+.sym__rot {
+  transform-box: view-box;
+  transform-origin: 50% 50%;
+  transition: transform 0.9s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.sym__bar { transition: opacity 0.35s ease 0.3s; }
+.sym.is-flipped .sym__bar { opacity: 0; transition-delay: 0s; }
+
+/* ---------- Welcome card ---------- */
+.card {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  bottom: max(10px, env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  width: min(92vw, 520px);
+  padding: 12px 14px 13px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #555;
+}
+.card__title {
+  margin: 0 0 6px;
+  font-weight: 900;
+  font-size: clamp(14px, 4vw, 18px);
+  line-height: 1.15;
+  color: #fff;
+}
+.card__text {
+  margin: 0;
+  font-size: clamp(11px, 3vw, 13px);
+  line-height: 1.4;
+  color: #d6d6d6;
+}
+
+@media (min-width: 768px) {
+  .card {
+    left: clamp(18px, 2.5vw, 48px);
+    bottom: clamp(18px, 3.5vh, 44px);
+    transform: none;
+    width: clamp(280px, 28vw, 440px);
+    padding: 16px 18px 18px;
+  }
+  .card__title { font-size: clamp(16px, 1.4vw, 24px); margin-bottom: 8px; }
+  .card__text  { font-size: clamp(12px, 0.95vw, 15px); line-height: 1.5; }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .sym__rot, .sym__bar { transition-duration: 0.01s; transition-delay: 0s; }
+}

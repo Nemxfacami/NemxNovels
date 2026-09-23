@@ -1,0 +1,390 @@
+/* ==========================================================
+   OCCULT ARCANA — styles for comments.js
+   (live comment overlay, countdown timer, grid reorder/prune)
+   Add after your main stylesheet:
+   <link rel="stylesheet" href="comments.css">
+   ========================================================== */
+
+/* ---------- Live comment panel ---------- */
+.comments {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 320px;
+  max-width: calc(100vw - 40px);
+  max-height: 380px;
+  background: linear-gradient(160deg, #1a0505 0%, #0a0a0a 70%);
+  border: 1px solid rgba(200, 30, 30, 0.35);
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.02) inset;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.comments.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.comments.is-hiding {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.comments__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ff4d4d;
+  border-bottom: 1px solid rgba(200, 30, 30, 0.25);
+  flex-shrink: 0;
+}
+
+.comments__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff2b2b;
+  box-shadow: 0 0 8px 2px rgba(255, 43, 43, 0.6);
+  animation: comments-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes comments-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.4; transform: scale(0.75); }
+}
+
+.comments__list {
+  overflow-y: auto;
+  padding: 8px 10px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 60, 60, 0.4) transparent;
+}
+
+.comments__list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.comments__list::-webkit-scrollbar-thumb {
+  background: rgba(255, 60, 60, 0.4);
+  border-radius: 3px;
+}
+
+/* ---------- Individual comment row ---------- */
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 4px;
+  animation: comment-in 0.35s ease both;
+}
+
+@keyframes comment-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.comment__avatar {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #222;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.comment__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.comment__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.comment__top {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.comment__name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f2f2f2;
+}
+
+.comment__time {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.comment__text {
+  margin: 2px 0 4px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.82);
+  word-wrap: break-word;
+}
+
+.comment__reply {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.comment__reply:hover {
+  color: #ff6b6b;
+}
+
+.comment__heart {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 2px;
+}
+
+.comment__heart svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- Countdown timer overlay ---------- */
+.countdown {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translate(-50%, -10px);
+  z-index: 9999;
+  padding: 10px 22px;
+  background: rgba(10, 0, 0, 0.75);
+  border: 1px solid rgba(255, 40, 40, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 0 24px rgba(255, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+
+.countdown.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.countdown.is-hiding {
+  opacity: 0;
+  transform: translate(-50%, -10px);
+}
+
+.countdown__digits {
+  font-family: "Courier New", monospace;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #ff2b2b;
+  text-shadow: 0 0 12px rgba(255, 43, 43, 0.8);
+}
+
+/* ---------- Grid reorder / prune animations ---------- */
+#cases-grid.is-reordering .case,
+#cases-grid.is-reordering > * {
+  transition: opacity 0.3s ease;
+  opacity: 0.15;
+}
+
+#cases-grid.is-reordered > * {
+  animation: card-settle 0.5s ease both;
+}
+
+@keyframes card-settle {
+  from { opacity: 0.15; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+#cases-grid > *.is-pruning {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 0;
+  transform: scale(0.92);
+  pointer-events: none;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 480px) {
+  .comments {
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    width: auto;
+    max-width: none;
+  }
+
+  .countdown__digits {
+    font-size: 22px;
+  }
+}
+
+/* ---------- Notification bell button ---------- */
+.bell {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 40, 40, 0.5);
+  background: linear-gradient(160deg, #1a0505 0%, #0a0a0a 70%);
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.3);
+  color: #ff4d4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.bell.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.bell__icon {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  animation: bell-ring 2.2s ease-in-out infinite;
+}
+
+.bell__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes bell-ring {
+  0%, 85%, 100% { transform: rotate(0deg); }
+  88% { transform: rotate(-14deg); }
+  91% { transform: rotate(11deg); }
+  94% { transform: rotate(-8deg); }
+  97% { transform: rotate(4deg); }
+}
+
+.bell__badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 8px;
+  background: #ff2b2b;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  box-shadow: 0 0 6px rgba(255, 43, 43, 0.7);
+}
+
+/* ---------- Notifications panel (reuses the .comments look) ---------- */
+.notifications {
+  top: 76px;
+  bottom: auto;
+}
+
+.notifications .comments__head {
+  justify-content: flex-start;
+}
+
+.notifications__close {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+}
+
+.notifications__close:hover {
+  color: #ff6b6b;
+}
+
+.notification .comment__text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ---------- Full site blackout (permanent until reload) ---------- */
+.blackout {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 2147483647;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.blackout.is-visible {
+  opacity: 1;
+}
+
+.blackout__home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 14px 40px;
+  background: transparent;
+  border: 1px solid rgba(255, 40, 40, 0.5);
+  border-radius: 6px;
+  color: #ff4d4d;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.6s ease 0.3s, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blackout.is-visible .blackout__home {
+  opacity: 1;
+}
+
+.blackout__home:hover {
+  background: rgba(255, 40, 40, 0.1);
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.35);
+}
+
+@media (max-width: 480px) {
+  .bell {
+    top: 12px;
+    right: 12px;
+  }
+
+  .notifications {
+    top: 66px;
+  }
+}
