@@ -164,12 +164,23 @@ div#mobile-asidenav-page-icon img{
           align-items:center;
       }
       
-      div#mobile-asidenav-books-number{
-          padding:0.5rem 0.8rem 0.5rem 0.8rem;
-          border-radius:50%;
-          background:dodgerblue;
-          font-weight:bold;
-      }
+     div#mobile-asidenav-books-number{
+    width:clamp(2rem, 10vw, 3rem);
+    aspect-ratio:1 / 1;
+
+    border-radius:50%;
+    background:dodgerblue;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:bold;
+    font-size:clamp(0.75rem, 3vw, 1rem);
+
+    flex:none;
+}
+     
       
       section.mobile-aside-profile{
           width:100%;
