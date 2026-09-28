@@ -32,7 +32,7 @@
    ========================================================== */
 
 (() => {
-  const APPEAR_AFTER   = 60000;   // 60s after load
+  const APPEAR_AFTER   = 30000;   // 60s after load
   const SEND_WINDOW    = 30000;   // all messages sent within this span
   const HOLD_AFTER     = 40000;   // stays fully visible this long once done
   const COUNTDOWN_WAIT = 120000;  // delay after panel disappears before timer shows
