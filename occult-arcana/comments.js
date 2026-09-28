@@ -2,10 +2,10 @@
    OCCULT ARCANA — live comment overlay + countdown + reorder + prune
                    + notify countdown + bell + notification + blackout
    Timeline (from page load):
-     60s   → comment panel appears, empty
+     30s   → comment panel appears, empty
      +30s  → the full script has sent itself, one message at a time
      +40s  → panel fades out and is removed
-     +120s → (measured from panel removal) a red countdown timer
+     +60s → (measured from panel removal) a red countdown timer
              floats over the page, showing 07:00, counts down to
              06:30, then disappears.
      right after countdown disappears → the item grid flips: last
@@ -32,10 +32,10 @@
    ========================================================== */
 
 (() => {
-  const APPEAR_AFTER   = 30000;   // 60s after load
+  const APPEAR_AFTER   = 30000;   // 30s after load
   const SEND_WINDOW    = 30000;   // all messages sent within this span
   const HOLD_AFTER     = 40000;   // stays fully visible this long once done
-  const COUNTDOWN_WAIT = 120000;  // delay after panel disappears before timer shows
+  const COUNTDOWN_WAIT = 60000;  // delay after panel disappears before timer shows
   const COUNTDOWN_FROM = 420;     // 07:00 in seconds
   const COUNTDOWN_TO   = 390;     // 06:30 in seconds
   const PRUNE_WAIT     = 30000;   // delay after the grid flip before pruning
