@@ -73,7 +73,7 @@
       }
 
       div.active-link{
-        background:dodgerblue;
+        background:dodgernone;
         border-bottom-left-radius:20px ;
         border-bottom-right-radius:20px ;
       }
@@ -273,7 +273,7 @@ div#timeline-dots-images-1{
 div#timeline-dots-images-2{
   width:25%;
   height: 25%;
-  background:red;
+  background:none;
   position: absolute;
   top:25%;
   left:20%;
@@ -283,7 +283,7 @@ div#timeline-dots-images-2{
 div#timeline-dots-images-3{
   width:30%;
   height: 30%;
-  background:red;
+  background:none;
   position: absolute;
   bottom:2%;
   left:15%;
@@ -294,7 +294,7 @@ div#timeline-dots-images-3{
 div#timeline-dots-images-4{
   width:30%;
   height: 30%;
-  background:red;
+  background:none;
   position: absolute;
   top:10%;
   right:10%;
@@ -304,7 +304,7 @@ div#timeline-dots-images-4{
 div#timeline-dots-images-5{
   width:30%;
   height: 30%;
-  background:red;
+  background:none;
   position: absolute;
   bottom:19%;
   right:5%;
@@ -314,7 +314,7 @@ div#timeline-dots-images-5{
 div#timeline-dots-images-6{
   width:25%;
   height: 25%;
-  background:blue;
+  background:none;
   position: absolute;
   bottom:3%;
   right:20%;
