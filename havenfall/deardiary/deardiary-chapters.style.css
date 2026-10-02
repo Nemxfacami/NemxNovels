@@ -24,6 +24,23 @@
           background:black
       }
 
+      #entry-indicator {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 12000;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-family: "Caveat", cursive;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.3rem 1.2rem;
+    border-radius: 2rem;
+    pointer-events: none;   /* taps and scrolling pass through it */
+    user-select: none;
+    white-space: nowrap;
+}
 
 footer{
           width:100%;
