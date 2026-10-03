@@ -34,7 +34,7 @@
           width:3rem;
           height:100%;
           border-radius:50%;
-          background:#9D2F78;
+          background:lightgrey;
           padding:0.5rem;
           -webkit-tap-highlight-color: transparent;
 
@@ -152,11 +152,12 @@
       
       section.character-details{
           width:100%;
-          height:auto;
-          background:#9D2F78;
+          height:100%;
+          background:lightgrey;
           border-radius:1rem ;
           margin-top:3rem;
           padding:1rem;
+          margin-bottom:1rem;
       }
       
       section.title-details{
@@ -168,23 +169,23 @@
       p#title-details{
           font-size:1.3rem;
           font-weight:bold;
-          color:white;
+          color:black;
       }
       
       div#title-details-line{
           width:30%;
           height:0.2rem;
-          background:white;
+          background:black;
           margin:0.3rem 0 1rem 0;
       }
       
       p#basic-details{
-          color:white;
+          color:black;
           font-size:1.1rem;
       }
       
       p#subtitle{
-          color:white;
+          color:black;
           font-size:1.1rem;
           font-weight:bold;
           margin-bottom:1rem;
@@ -196,11 +197,11 @@
       }
       
       li,a{
-          color:white;
+          color:black;
           margin-bottom:0.5rem;
       }
       
       p#backstory{
-          color:white;
+          color:black;
           word-spacing:3px;
       }
