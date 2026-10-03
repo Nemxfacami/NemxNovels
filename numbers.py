@@ -2,7 +2,7 @@ import os
 import re
 
 # New number of books
-NEW_NUMBER = "13"
+NEW_NUMBER = "15"
 
 # Patterns for the different book-count structures
 patterns = [
