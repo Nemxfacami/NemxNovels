@@ -1336,9 +1336,6 @@ const optionsBtn = document.getElementById('options');
   });
   */
   
-  document.getElementById("next").addEventListener("click", function () {
-    window.location.href = "#";
-  });
 
 
 function openPopup1() {
@@ -1370,7 +1367,7 @@ function closePopup3() {
 function sharePage() {
 
     const shareData = {
-        title: "Behind the Curse - Chapter 1 :Life in University",
+        title: document.title,
         text: "Read this on NemxNovels",
         url: window.location.href
     };
