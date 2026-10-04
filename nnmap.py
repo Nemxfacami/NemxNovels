@@ -9,7 +9,7 @@ from html.parser import HTMLParser
 # ============================================================
 
 ROOT_FOLDER = "."
-OUTPUT_FILE = "nemxnovels_link_map.txt"
+OUTPUT_FILE = "nemxnovels_link_map2.txt"
 
 
 # ============================================================
