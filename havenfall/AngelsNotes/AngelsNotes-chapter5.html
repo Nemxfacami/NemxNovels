@@ -804,7 +804,6 @@ const optionsBtn = document.getElementById('options');
   */
   
 
-
 function openPopup1() {
     document.getElementById("overlay").style.display = "flex";
 }
@@ -828,7 +827,6 @@ function openPopup3() {
 function closePopup3() {
     document.getElementById("overlay3").style.display = "none";
 }
-
 
 function sharePage() {
 
@@ -858,25 +856,67 @@ function sharePage() {
     }
 }
 
+/* SCROLL-RESTORE START */
+(function () {
+    var key = "scroll-position-" + window.location.pathname;
 
-
-// Per-page scroll position
-const scrollPositionKey = "scroll-position-" + window.location.pathname;
-
-window.addEventListener("scroll", function () {
-    localStorage.setItem(scrollPositionKey, window.scrollY);
-});
-
-window.addEventListener("load", function () {
-
-    const savedPosition = localStorage.getItem(scrollPositionKey);
-
-    if (savedPosition !== null) {
-        window.scrollTo(0, parseInt(savedPosition, 10));
+    if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
     }
 
-});
+    // Clicking Previous/Next means "fresh chapter": don't restore there
+    document.addEventListener("click", function (e) {
+        var link = e.target.closest ? e.target.closest(".nav-buttons a") : null;
+        if (!link) return;
+        if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+        if (link.pathname === window.location.pathname) return; // href="#" placeholders
+        try {
+            sessionStorage.setItem("scroll-skip", link.pathname + "|" + Date.now());
+        } catch (err) {}
+    });
 
+    // Save (throttled, plus once when leaving the page)
+    var timer;
+    function save() {
+        try { localStorage.setItem(key, window.scrollY); } catch (err) {}
+    }
+    window.addEventListener("scroll", function () {
+        clearTimeout(timer);
+        timer = setTimeout(save, 150);
+    });
+    window.addEventListener("pagehide", save);
+
+    // Restore
+    function restore() {
+        try {
+            var skip = (sessionStorage.getItem("scroll-skip") || "").split("|");
+            sessionStorage.removeItem("scroll-skip");
+            if (skip[0] === window.location.pathname && Date.now() - Number(skip[1]) < 15000) {
+                localStorage.removeItem(key);
+                window.scrollTo(0, 0);
+                return;
+            }
+        } catch (err) {}
+
+        var saved = null;
+        try { saved = localStorage.getItem(key); } catch (err) {}
+        if (saved === null) return;
+
+        var target = parseInt(saved, 10);
+        var tries = 0;
+        var t = setInterval(function () {
+            window.scrollTo(0, target);
+            tries++;
+            if (Math.abs(window.scrollY - target) < 5 || tries > 20) {
+                clearInterval(t);
+            }
+        }, 100);
+    }
+
+    if (document.readyState === "complete") restore();
+    else window.addEventListener("load", restore);
+})();
+/* SCROLL-RESTORE END */
 </script>
 </body>
 </html>
