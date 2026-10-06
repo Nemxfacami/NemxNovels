@@ -227,7 +227,187 @@
       origin: 'Wearing them causes the wearer\'s <b>body to transform into Eleanor\'s body</b>. It you find another Eleanor you better kill her before she kills you. We do take refunds. ',
     },
 
+{
+  id: 'OA-0492',
+  name: 'Unknown Love Tattoo',
+  price: 890,
+  category: 'Artifact',
+  availability: 'Limited',
+  condition: 'New',
+  image: 'OA-0492.webp',
+  origin: 'The <i>Unknown Love Tattoo</i> is an anomalous tattoo attributed exclusively to <b>Dan Donalds</b>, a tattooist whose whereabouts are unknown. Unlike ordinary tattoos, the mark cannot be purchased as a physical item. Upon purchase, Donalds will locate the buyer personally and apply the tattoo himself. Once applied, the tattoo causes any person the wearer specifically asks Donalds to mark with it to develop an immediate and permanent romantic attachment to the wearer. The affected individual remains completely devoted to the wearer and appears to remain under their influence indefinitely. The tattoo cannot be removed through conventional means. If the affected person loses the limb on which the tattoo was placed, the mark will subsequently appear on another part of their body. More concerningly, death does not appear to terminate the effect. Individuals who die while affected by the tattoo reportedly remain in love with the wearer even after death, with several accounts claiming that the attachment persists in the form of a <i>spiritual presence</i>. Donalds is known to possess numerous other anomalous tattoos, although <i>Unknown Love Tattoo</i> is reportedly the only one he currently offers for sale due to its comparatively mild consequences and lack of <b>severe physical side effects</b>.'
+},
+{
+  id: 'OA-0493',
+  name: '3 Wishes Jinn',
+  price: 1250,
+  category: 'Relic',
+  availability: 'Available',
+  condition: 'Unknown',
+  image: 'OA-0493.webp',
+  origin: 'The <i>3 Wishes Jinn</i> is believed to be an ancient entity imprisoned within a concealed cavern somewhere in the <b>Dothmodon Wild Desert</b>. The circumstances surrounding his imprisonment, as well as the identity of those responsible, remain unknown. Unlike most entities listed within Occult Arcana, the Jinn is not transported to the buyer. Instead, upon purchase, the buyer is reportedly <i>magically transported directly into the cave</i> where the Jinn remains imprisoned. Once there, the Jinn will grant the visitor <b>three wishes</b>. The nature and limitations of these wishes have never been fully documented, as no reliable account exists detailing what happens after all three wishes have been granted. Buyers are advised to consider their wording carefully.'
+},
+{
+  id: 'OA-0494',
+  name: 'Diogenes',
+  price: 'After the Job',
+  category: 'Assassin',
+  availability: 'Available',
+  condition: 'Unknown',
+  image: 'OA-0494.webp',
+  origin: '<i>Diogenes</i> is a well-known assassin whose reputation extends far beyond the living world. For the right price, he will <b>take care of anyone</b> the buyer names, regardless of where that individual may be found—even in <i>Hell</i>. His methods, identity, and means of crossing between realms remain unknown. Diogenes is also capable of carrying out contracts against beings residing in <b>Heaven</b>, although such assignments come with an unusual condition. Following a successful contract in Heaven, Diogenes requires <b>ten months to recover his holiness</b> before he is willing to accept another heavenly assignment. His fee is never stated in advance. Buyers are informed that the <i>price is determined after the job</i>.'
+},
+{
+  id: 'OA-0495',
+  name: 'Love Potion',
+  price: 12000,
+  category: 'Potion',
+  availability: 'In Stock',
+  condition: 'New',
+  image: 'OA-0495.webp',
+  origin: 'The <i>Love Potion</i> is a proprietary product manufactured by the <b>Sosadium Company</b> in <b>Havenfall</b>. Only a single drop is required to produce its intended effect. Whoever consumes the potion will develop genuine romantic feelings toward the person who administered it, although the effect does not cause <i>obsession</i> when used in the recommended quantity. Administering more than a single drop may produce significantly stronger and less predictable results. The potion may also be diluted in any other liquid without reducing its effectiveness; a diluted serving containing the equivalent of <b>one drop</b> produces the same outcome as a single undiluted drop. <b>Warning:</b> The potion must only be administered orally. Do not pour or apply it directly onto the skin, as the effects of dermal exposure remain undocumented.'
+},
+{
+  id: 'OA-0496',
+  name: 'Necklace of Cylus',
+  price: 11000,
+  category: 'Relic',
+  availability: 'Unavailable',
+  condition: 'Used',
+  image: 'OA-0496.webp',
+  origin: 'The <i>Necklace of Cylus</i> is an anomalous necklace capable of compelling another person to carry out <b>any task specified by its wearer</b>. Once the command has been completed, the affected individual immediately returns to their normal state and appears to have no lasting awareness of the influence exerted upon them. The artifact is subject to one particularly dangerous limitation: if the commanded task is <i>physically or otherwise impossible for the individual to accomplish</i>, the person will die rather than resist the command. For this reason, all instructions must be achievable within a period of <b>one month or less</b>. The precise origin of the necklace and the identity of <b>Cylus</b> remain unknown.'
+},
+{
+  id: 'OA-0497',
+  name: 'Invitation Card',
+  price: 3000,
+  category: 'Artifact',
+  availability: 'Limited',
+  condition: 'Unknown',
+  image: 'OA-0497.webp',
+  origin: 'The <i>Invitation Card</i> was discovered deep within a forest during an <b>anaconda hunting expedition</b> conducted by <b>Rodrigo Marinez</b>. The circumstances surrounding its presence in the forest remain unexplained, and no information regarding its intended recipient or purpose has been recovered. It remains uncertain whether the card possesses any supernatural properties at all. Despite this, its existence has attracted the attention of numerous <i>wizards and occult practitioners</i>, many of whom are reportedly interested in acquiring one for themselves. Rodrigo, however, has repeatedly expressed his desire to <b>never have the card in his possession</b>, although the reason for this reluctance remains undisclosed.'
+},
 
+{
+  id: 'OA-0498',
+  name: 'Second Heart',
+  price: 7000,
+  category: 'Relic',
+  availability: 'Limited',
+  condition: 'New',
+  image: 'OA-0498.webp',
+  origin: 'The <i>Second Heart</i> was reportedly recovered from an <b>Anunnaki</b> specimen believed to have possessed three functioning hearts. The circumstances under which the specimen was discovered, as well as the identity of those responsible for recovering the organ, remain undocumented. According to the records accompanying the artifact, implantation of the Second Heart into a human host can dramatically extend the recipient’s lifespan. Those who successfully undergo the procedure are said to live for an <b>additional 2,000 years</b> beyond the normal human lifespan. The procedure itself carries no listed charge, with the <i>surgery provided free of charge</i> to any approved buyer. The long-term effects of possessing two hearts, however, remain insufficiently documented.'
+},
+{
+  id: 'OA-0499',
+  name: 'Key of Doors',
+  price: 15000,
+  category: 'Artifact',
+  availability: 'Limited',
+  condition: 'Unknown',
+  image: 'OA-0499.webp',
+  origin: 'The <i>Key of Doors</i> is an unidentified artifact capable of opening <b>any door</b>, regardless of its lock, material, location, or apparent purpose. What lies beyond the door, however, is rarely what the user should expect. Rather than simply unlocking the intended destination, the key can cause a door to open into <i>another location entirely</i>. All known destinations appear to exist within the <b>present time</b>; the key does not appear to permit travel into the past or future. Reports describe doors opening into distant cities, abandoned buildings, private residences, remote wilderness, underground chambers, and locations that should be physically inaccessible from the door being opened. The destination appears to be determined by unknown conditions, and there is currently no reliable method of selecting where a particular door will lead. A door opened with the key will function normally once opened, but closing and reopening it may produce an entirely different destination. Several attempts to document its destinations have ended with the investigators being unable to locate their original entry point. The <i>Key of Doors</i> has no known manufacturer, owner, or recorded date of origin.'
+},
+{
+  id: 'OA-0500',
+  name: 'Hell Escape Card',
+  price: 55000,
+  category: 'Artifact',
+  availability: 'Limited',
+  condition: 'Unknown',
+  image: 'OA-0500.webp',
+  origin: 'The <i>Hell Escape Card</i> is an unidentified artifact whose creator and original purpose remain completely unknown. The card was not discovered, purchased, or recovered through any documented expedition. Instead, <b>Occult Arcana</b> received it unexpectedly, having found the card placed directly at the organization’s entrance as an apparent <i>gift from an unknown sender</i>. No individual has claimed responsibility for delivering it, and no reliable record exists of how the card reached the location without being detected. The card contains no visible markings identifying its creator, although its name has led researchers to believe that it may possess some connection to <b>Hell</b> or provide a means of escaping it. Whether this interpretation is accurate remains unconfirmed. Occult Arcana has been unable to determine how the card works, who it was intended for, or why it was left at their door. Its true function remains classified as <i>unknown</i>.'
+},
+{
+  id: 'OA-0501',
+  name: 'Naughty John Joy',
+  price: 9000,
+  category: 'Device',
+  availability: 'In Stock',
+  condition: 'New',
+  image: 'OA-0501.webp',
+  origin: 'The <i>Naughty John Joy</i> is an anomalous adult device reportedly manufactured by an unidentified company within the <b>adult toy industry</b>. The device is produced in multiple sizes and is designed exclusively for male users. Unlike conventional products of its kind, the object appears to be <i>biologically alive</i>, although its exact biological composition remains unknown. Its primary function appears to be the extraction and collection of <b>semen</b> from its user rather than blood or other bodily fluids. The device has shown no confirmed purpose beyond this function, and its method of operation remains poorly understood. The identity of the company responsible for manufacturing it has not yet been discovered, and <b>Occult Arcana researchers are still attempting to trace its origin</b>.'
+},
+{
+  id: 'OA-0502',
+  name: 'Milkanum',
+  price: 200,
+  category: 'Food',
+  availability: 'In Stock',
+  condition: 'New',
+  image: 'OA-0502.webp',
+  origin: 'The <i>Milkanum</i> is, according to all available examinations, simply <b>ordinary milk</b>. No unusual properties, anomalous effects, or unexplained ingredients have been identified. Despite this, the product has somehow found its way into the <i>Occult Arcana</i> catalogue and is currently being offered for sale. Researchers remain uncertain why the item was submitted in the first place, although several have suggested that its apparent normality may itself be worth investigating.'
+},
+{
+  id: 'OA-0503',
+  name: 'Depresso Tea',
+  price: 400,
+  category: 'Potion',
+  availability: 'In Stock',
+  condition: 'New',
+  image: 'OA-0503.webp',
+  origin: 'The <i>Depresso Tea</i> is an anomalous beverage with an unusually simple reported effect. Anyone who consumes it is said to experience a complete and <b>permanent relief from depression</b>. According to available accounts, the effect does not gradually diminish, nor can the condition reportedly return after consumption. The mechanism responsible for this effect remains unknown, and no reliable explanation has been established for how an ordinary-looking tea could produce such a profound psychological change. Despite its apparent effectiveness, <i>Depresso Tea</i> remains classified as an anomalous substance, with further testing currently restricted.'
+},
+{
+  id: 'OA-0504',
+  name: 'Skull of Roth',
+  price: 5000,
+  category: 'Relic',
+  availability: 'Limited',
+  condition: 'Unknown',
+  image: 'OA-0504.webp',
+  origin: 'The <i>Skull of Roth</i> was recovered from an ancient <b>pyramid</b> whose location has never been publicly disclosed. The identity of Roth, and the circumstances that led to the skull being placed within the structure, remain unknown. The artifact appears to possess no unusual properties until it is held directly by a living individual. If the holder speaks the phrase <b>"Rothacus Rathanos El&#39; Yelim"</b>, the skull reportedly induces a vivid vision depicting the user&#39;s <i>future life</i>. The duration and accuracy of these visions vary between individuals, and it remains unclear whether the scenes represent a predetermined future or merely one possible outcome. Attempts to repeat the ritual immediately after receiving a vision have produced inconsistent results. Occult Arcana has been unable to determine who originally created the ritual or what the name <i>Roth</i> refers to.'
+},
+{
+  id: 'OA-0505',
+  name: 'Clone Seeds',
+  price: 23000,
+  category: 'Artifact',
+  availability: 'In Stock',
+  condition: 'New',
+  image: 'OA-0505.webp',
+  origin: 'The <i>Clone Seeds</i> are a bio-anomalous product developed by the <b>Sosadium Company</b>. To activate a seed, it must be planted in soil and kept completely free of conventional water. Instead, the planted seed must be exposed to <b>urine three times a day</b>. Under these conditions, the plant will reportedly reach full maturity in less than a month. Once fully grown, the plant produces a single human clone corresponding to the individual who cultivated it. The resulting clone is said to be an almost exact biological duplicate of its source, although the long-term stability of the clone remains undocumented. Sosadium has provided no public explanation for how the seed acquires the biological information necessary to produce a human duplicate.'
+},
+{
+  id: 'OA-0506',
+  name: 'Womenslator',
+  price: 12000,
+  category: 'Device',
+  availability: 'In Stock',
+  condition: 'New',
+  image: 'OA-0506.webp',
+  origin: 'The <i>Womenslator</i> is a proprietary device developed by <b>Davenport</b> and designed to interpret the emotional and cognitive states of female subjects. When activated, the device reportedly translates not only the subject’s spoken words but also provides the user with information regarding <b>what she is thinking and the exact emotions she is experiencing</b> at the time. The device does not appear to require the subject’s cooperation, and its readings are presented directly to the user in an easily understandable form. Davenport has released no information regarding the technology behind the device, leaving researchers uncertain whether it relies on advanced psychological analysis, anomalous perception, or something considerably stranger.'
+},
+{
+  id: 'OA-0507',
+  name: 'No Scars Razor',
+  price: 3000,
+  category: 'Artifact',
+  availability: 'Limited',
+  condition: 'Unknown',
+  image: 'OA-0507.webp',
+  origin: 'The <i>No Scars Razor</i> was recovered from a crime scene where a person was found dead in a large pool of blood. Strangely, the body showed <b>no visible scars or wounds</b>, despite the amount of blood surrounding it. The razor was taken into Occult Arcana custody for examination. When used to cut a person, the blade causes normal bleeding, but approximately <b>10 minutes after the injury is inflicted, the wound completely closes</b>. No scar, mark, or other evidence of the injury remains. The exact mechanism behind the healing effect is unknown, as is the identity of the person who originally owned the razor.'
+},
+{
+  id: 'OA-0508',
+  name: 'Idiot Virus',
+  price: 19000,
+  category: 'Biological Artifact',
+  availability: 'Limited',
+  condition: 'New',
+  image: 'OA-0508.webp',
+  origin: 'The <i>Idiot Virus</i> was recovered from an abandoned scientist bunker in <i>Helen&#39;s Fields</i>. The bunker contained numerous abandoned experiments, but the most concerning discovery was a syringe containing an unidentified biological agent. When the syringe was opened, airborne particles escaped into the surrounding air. Anyone who inhaled the particles reportedly experienced a severe and permanent decline in cognitive ability, becoming unable to properly learn, retain knowledge, or acquire new information. <b>Once affected, the condition appears to be irreversible.</b> The original scientist responsible for the experiment, as well as the intended purpose of the virus, remains unknown.'
+},
+{
+  id: 'OA-0509',
+  name: 'Time Travelling Watch',
+  price: 21000,
+  category: 'Artifact',
+  availability: 'Limited',
+  condition: 'New',
+  image: 'OA-0509.webp',
+  origin: 'The <i>Time Travelling Watch</i> was discovered on the wrist of a corpse found in the <i>Hobo Alleys</i> of Southern Ravenport. The body showed no obvious explanation for how the watch came into its possession. Whoever wears it can send their <b>soul and consciousness to any point in time</b>, while retaining all memories and knowledge from their original life. However, the wearer cannot take their physical body with them. Their consciousness instead arrives within the body of another person living in that period. The original body remains behind, empty of its occupant. Returning to the living is considerably more complicated: the wearer must either convince another person to put on the watch, allowing the consciousness to return, or <b>take possession of another person&#39;s body</b>. How the watch determines its destination, and what happened to its previous owner, remain unknown.'
+},
   ];
 
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) =>

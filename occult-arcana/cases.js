@@ -33,7 +33,41 @@
   ['Mermaid', 'Said to grant <b>wealth through a deal</b>. Never look at its feminine features or become attracted to it.'],
   ['Carlos the Human', 'Carlos was <b>kidnapped from a beach</b> and reportedly possesses a <b>“third leg”</b> not used for walking.'],
   ["Eleanor's Panties", "Wearing them causes the wearer's <b>body to transform into Eleanor's body</b>."],
+  ['Unknown Love Tattoo', 'Applied exclusively by <b>Dan Donalds</b>, this tattoo causes anyone marked by it to <b>fall permanently in love with the wearer</b>, even after death.'],
 
+['3 Wishes Jinn', 'A <b>Jinn imprisoned in a cave</b> within the Dothmodon Wild Desert, capable of granting the buyer <b>three wishes</b>.'],
+
+['Diogenes', 'A legendary <b>assassin who accepts contracts against anyone</b>, including beings in Heaven and Hell.'],
+
+['Love Potion', 'Created by <b>Sosadium Company</b>, a single drop causes whoever drinks it to <b>fall in love with the person who administered it</b>.'],
+
+['Necklace of Cylus', 'An anomalous necklace that forces anyone commanded by its wearer to <b>complete any possible task</b>, with failure resulting in death.'],
+
+['Invitation Card', 'Found during an <b>anaconda hunting expedition</b> by Rodrigo Marinez, its purpose and supernatural properties remain unknown.'],
+
+['Second Heart', 'Recovered from an <b>Anunnaki with three hearts</b>, this organ is believed to grant its recipient <b>2,000 additional years of life</b>.'],
+
+['Key of Doors', 'A mysterious key capable of opening <b>any door to a different location in the present</b>, regardless of where the door originally leads.'],
+
+['Hell Escape Card', 'Delivered mysteriously to Occult Arcana as a <b>gift from an unknown sender</b>, the card is believed to provide a way out of Hell.'],
+
+['Naughty John Joy', 'An anomalous living device from an <b>unknown adult-toy manufacturer</b>, designed to extract <b>semen rather than blood</b>.'],
+
+['Milkanum', 'Apparently just <b>ordinary milk</b>, although nobody knows why such a mundane product ended up in the Occult Arcana catalogue.'],
+
+['Depresso Tea', 'An anomalous tea reportedly capable of providing <b>permanent relief from depression</b> after consumption.'],
+
+['Skull of Roth', 'Found inside an ancient pyramid, speaking <b>"Rothacus Rathanos El&#39; Yelim"</b> while holding the skull reportedly reveals <b>visions of your future life</b>.'],
+
+['Clone Seeds', 'Created by <b>Sosadium Company</b>, these seeds grow into plants that produce a <b>biological clone of the person who cultivated them</b>.'],
+
+['Womenslator', 'Created by <b>Davenport</b>, this device claims to reveal <b>what a woman is thinking and exactly what she is feeling</b>.'],
+
+['No Scars Razor', 'Recovered from a <b>blood-soaked crime scene with no visible wounds</b>, this razor causes injuries that completely heal without leaving scars after ten minutes.'],
+
+['Idiot Virus', 'Recovered from an abandoned bunker in <b>Helen&#39;s Fields</b>, the virus causes those who inhale it to <b>permanently lose the ability to learn and acquire knowledge</b>.'],
+
+['Time Travelling Watch', 'Found on a corpse in Southern Ravenport, this watch sends the wearer&#39;s <b>consciousness through time and into another person&#39;s body</b>.'],
   ];
 
   const grid = document.getElementById('cases-grid');
