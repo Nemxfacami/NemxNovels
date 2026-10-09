@@ -131,7 +131,7 @@ footer{
           height:100%;
           display:flex;
           justify-content:center;
-          aligm-items:center;
+          align-items:center;
           background:white;
           border-radius:2rem;
           padding:0.2rem;
@@ -153,6 +153,18 @@ footer{
           color:black;
           font-weight:bold;
       }
+
+       @font-face{
+          font-family: 'Caveat';
+          src: url('Caveat-Regular.ttf')
+          format('truetype');
+      }
+
+       div#storypage1,div#storypage2,
+       div#storypage3{
+           font-family: 'Caveat';
+       }
+
 
        div#storypage1{
            width:100%;
