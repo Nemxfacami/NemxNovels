@@ -12,7 +12,7 @@
 
 p {
     font-family: "Copperplate Gothic", "Garamond", "Times New Roman", serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 2rem;
     word-spacing: 5px;
 }
@@ -20,7 +20,7 @@ p {
 /* Phone */
 @media (max-width: 480px) {
     p {
-        font-size: 0.9rem;
+        font-size: 0.80rem;
     }
 }
       main.background-images-holder{
