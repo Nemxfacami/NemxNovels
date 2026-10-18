@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="../../favicon.png">
+<link rel="canonical" href="https://nemxnovels.site/havenfall/sevensteps/loverscase-quiz.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="LoversCase Quiz | 7 Steps of Death | NemxNovels">
+<meta property="og:description" content="Take the LoversCase aptitude test and find out which character from 7 Steps of Death, a Havenfall story, you would match with.">
+<meta property="og:image" content="https://nemxnovels.site/havenfall/sevensteps/sevensteps-og.webp">
+<meta property="og:url" content="https://nemxnovels.site/havenfall/sevensteps/loverscase-quiz.html">
+<meta property="og:type" content="website">
+<title>LoversCase Quiz | 7 Steps of Death | NemxNovels — A Havenfall Story</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --grey: #f2f1f4;
+    --grey-border: #e6e4ea;
+    --ink: #1a1a1a;
+    --sub: #6f6d76;
+    --red: #e0102a;
+    --red-dark: #7a0512;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    min-height: 100%;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    background-image:
+      radial-gradient(circle at 8% 8%, rgba(224,16,42,0.16), transparent 40%),
+      radial-gradient(circle at 95% 90%, rgba(15,2,4,0.14), transparent 45%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+  }
+  .phone {
+    width: 360px;
+    max-width: 100%;
+    background: #ffffff;
+    border-radius: 32px;
+    box-shadow: 0 30px 60px rgba(20,4,8,0.14), 0 2px 6px rgba(20,4,8,0.08);
+    padding: 28px 20px 26px;
+    position: relative;
+    overflow: hidden;
+  }
+  .phone::before {
+    content: "";
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 180px; height: 180px;
+    background: radial-gradient(circle, rgba(224,16,42,0.18), transparent 70%);
+    pointer-events: none;
+  }
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #0d0203;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .brand-name {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: var(--ink);
+  }
+  .done-link {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12.5px;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--red), var(--red-dark));
+    padding: 8px 14px;
+    border-radius: 20px;
+    box-shadow: 0 6px 14px rgba(224,16,42,0.25);
+    white-space: nowrap;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 4px 0 18px;
+  }
+  .question-block {
+    background: var(--grey);
+    border: 1px solid var(--grey-border);
+    border-radius: 18px;
+    padding: 16px 16px 18px;
+    margin-bottom: 16px;
+  }
+  .q-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 8px;
+  }
+  .q-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  .q-text p { margin: 0 0 8px; }
+  .q-text p.q-quote { font-style: italic; color: var(--red-dark); }
+  .q-ask {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.4;
+    margin-bottom: 14px;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border: 1.5px solid var(--grey-border);
+    border-radius: 12px;
+    padding: 11px 14px;
+    gap: 12px;
+    text-align: left;
+    line-height: 1.35;
+    font-size: 13.5px;
+    color: var(--ink);
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+    user-select: none;
+  }
+  .option:hover {
+    border-color: #d8d6de;
+  }
+  .option:active {
+    transform: scale(0.98);
+  }
+  .option.selected {
+    border-color: var(--red);
+    background: #fdecee;
+    color: var(--red-dark);
+    font-weight: 700;
+  }
+  .radio {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid var(--grey-border);
+    flex-shrink: 0;
+  }
+  .option.selected .radio {
+    border-color: var(--red);
+    background: radial-gradient(circle, var(--red) 0 42%, transparent 44%);
+  }
+  .done-btn {
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, #1a1a1a, #0d0203);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-top: 4px;
+  }
+  .question-block.unanswered { border-color: var(--red); }
+  .done-link.locked { opacity: 0.55; cursor: not-allowed; box-shadow: none; }
+  .toast {
+    position: absolute; left: 50%; top: 78px; transform: translate(-50%, -6px);
+    background: #1a1a1a; color: #fff; font-size: 12.5px; font-weight: 600;
+    padding: 9px 14px; border-radius: 12px; white-space: nowrap; z-index: 10;
+    opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .toast.show { opacity: 1; transform: translate(-50%, 0); }
+  .quiz-msg {
+    min-height: 16px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--red);
+  }
+</style>
+</head>
+<body>
+  <div class="phone">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo-box">
+        <img src="logo.png" alt="LoversCase logo">
+      
+        </div>
+        <div class="brand-name">LoversCase</div>
+      </div>
+      <a href="#" class="done-link" id="didItBtn">I did it</a>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <div class="title">Aptitude Test</div>
+
+    <div id="questions"></div>
+
+    <button class="done-btn" id="doneBtn">Done →</button>
+    <div class="quiz-msg" id="quizMsg"></div>
+  </div>
+
+  <script src="loverscase-questions.js"></script>
+  <script src="loverscase-scoring.js"></script>
+  <script>
+    // Change this to wherever your results page lives on your site
+    const RESULTS_PAGE = 'loverscase-results.html';
+    const DISCOVER_PAGE = 'loverscase-discover.html';
+
+    const answers = new Array(LC_QUESTIONS.length).fill(null);
+    const wrap = document.getElementById('questions');
+    const msg = document.getElementById('quizMsg');
+
+    function el(tag, cls, text) {
+      const n = document.createElement(tag);
+      if (cls) n.className = cls;
+      if (text !== undefined) n.textContent = text;
+      return n;
+    }
+
+    LC_QUESTIONS.forEach(function (q, qi) {
+      const block = el('div', 'question-block');
+      block.id = 'q' + qi;
+      block.appendChild(el('div', 'q-label', 'Question ' + (qi + 1) + ' of ' + LC_QUESTIONS.length));
+
+      if (q.scenario && q.scenario.length) {
+        const text = el('div', 'q-text');
+        q.scenario.forEach(function (p) {
+          text.appendChild(el('p', p.charAt(0) === '"' ? 'q-quote' : '', p));
+        });
+        block.appendChild(text);
+      }
+      block.appendChild(el('div', 'q-ask', q.ask));
+
+      const options = el('div', 'options');
+      q.choices.forEach(function (choice, ci) {
+        const opt = el('div', 'option');
+        opt.appendChild(el('span', '', choice.text));
+        opt.appendChild(el('span', 'radio'));
+        opt.addEventListener('click', function () {
+          options.querySelectorAll('.option').forEach(function (o) { o.classList.remove('selected'); });
+          opt.classList.add('selected');
+          answers[qi] = ci;
+          block.classList.remove('unanswered');
+          msg.textContent = '';
+        });
+        options.appendChild(opt);
+      });
+      block.appendChild(options);
+      wrap.appendChild(block);
+    });
+
+    document.getElementById('doneBtn').addEventListener('click', function () {
+      const missing = [];
+      answers.forEach(function (a, i) { if (a === null) missing.push(i); });
+
+      if (missing.length) {
+        missing.forEach(function (i) { document.getElementById('q' + i).classList.add('unanswered'); });
+        msg.textContent = 'Please answer every question (' + missing.length + ' left).';
+        document.getElementById('q' + missing[0]).scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      const scores = lcCalcScores(LC_QUESTIONS, answers);
+      if (!lcSaveProfile(scores, answers)) {
+        msg.textContent = 'Could not save your rating (browser storage is blocked).';
+        return;
+      }
+      window.location.href = RESULTS_PAGE;
+    });
+
+    // "I did it" only works once the user has saved results
+    const didIt = document.getElementById('didItBtn');
+    const toast = document.getElementById('toast');
+    let toastTimer = null;
+
+    function refreshDidIt() {
+      didIt.classList.toggle('locked', !lcLoadProfile());
+    }
+    refreshDidIt();
+    window.addEventListener('pageshow', refreshDidIt);
+
+    didIt.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (!lcLoadProfile()) {
+        toast.textContent = 'Finish the test first to see your matches.';
+        toast.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () { toast.classList.remove('show'); }, 2600);
+        return;
+      }
+      window.location.href = DISCOVER_PAGE;
+    });
+  </script>
+</body>
+</html>
